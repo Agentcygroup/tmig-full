@@ -1,0 +1,24 @@
+name: provenance
+on:
+  push: { branches: [main] }
+
+permissions:
+  contents: read
+  id-token: write
+  attestations: write
+
+jobs:
+  attest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+      - name: hash tree
+        id: hash
+        run: |
+          find . -type f -not -path './.git/*' -print0 \
+            | sort -z \
+            | xargs -0 sha256sum > /tmp/tree.sha256
+          echo "digest=$(sha256sum /tmp/tree.sha256 | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+      - uses: actions/attest-build-provenance@v1
+        with:
+          subject-path: /tmp/tree.sha256
