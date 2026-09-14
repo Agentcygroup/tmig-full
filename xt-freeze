@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+case "${1:-}" in
+  rewrite)
+    file="${2:-$HOME/intent/freeze/my-intent.freeze}"
+    repo="${3:-$PWD}"
+    python3 "$HOME/intent/freeze/rewrite.py" "$file" "$repo"
+    ;;
+  parse)
+    python3 - "$HOME/intent/freeze/my-intent.freeze" <<'PY'
+import sys, importlib.util, json, os
+spec = importlib.util.spec_from_file_location("rw", os.path.expanduser("~/intent/freeze/rewrite.py"))
+rw = importlib.util.module_from_spec(spec); spec.loader.exec_module(rw)
+print(json.dumps(rw.parse_freeze(open(sys.argv[1]).read()), indent=2))
+PY
+    ;;
+  show)
+    cat "$HOME/intent/freeze/my-intent.freeze"
+    ;;
+  *)
+    echo "usage: xt-freeze <rewrite|parse|show> [file] [repo]"
+    ;;
+esac
