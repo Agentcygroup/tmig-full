@@ -1,30 +1,6 @@
 [meta]
 languages = ["rust"]
 
-[layers.language]
-strength = 20
-
-[[layers.language.target]]
-id = "fmt"
-kind = "shell"
-cmd = "cargo fmt --all -- --check"
-
-[[layers.language.target]]
-id = "lint"
-kind = "shell"
-cmd = "cargo clippy --all-targets --all-features -- -D warnings"
-
-[[layers.language.target]]
-id = "build"
-kind = "shell"
-cmd = "cargo build --release --workspace"
-
-[[layers.language.target]]
-id = "test"
-kind = "shell"
-cmd = "cargo test --release --workspace"
-needs = ["build"]
-
 [layers.project]
 strength = 40
 
@@ -36,4 +12,9 @@ dir = "checks"
 [[layers.project.target]]
 id = "ci"
 kind = "composite"
-needs = ["fmt", "lint", "test", "checks"]
+needs = ["rust:fmt", "rust:lint", "rust:test", "checks"]
+
+[[layers.project.target]]
+id = "all"
+kind = "composite"
+needs = ["ci", "rust:build"]
