@@ -1,19 +1,46 @@
-name: CI
-
+name: ci
 on:
-  push:
-    branches: [ main ]
+  push:         { branches: [main] }
+  pull_request: { branches: [main] }
+  schedule:     [ { cron: '0 6 * * *' } ]
   workflow_dispatch:
-    inputs:
-      version:
-        description: 'Release version'
-        required: false
-        default: 'v0.1.0'
+
+permissions:
+  contents: read
+  security-events: write
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CARGO_TERM_COLOR: never
+  RUST_BACKTRACE: 1
+  SOURCE_DATE_EPOCH: 1700000000
 
 jobs:
-  ci:
+  verify:
     runs-on: macos-14
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
-      - name: Run CI Suite
-        run: echo "CI execution active"
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11  # v4.1.1
+        with: { fetch-depth: 0, persist-credentials: false }
+      - uses: dtolnay/rust-toolchain@stable
+      - name: cache
+        uses: actions/cache@13aacd865c20de90d75de3b17ebe84f7a17d57d2  # v4.0.0
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+      - name: gate
+        run: |
+          cargo fmt --all -- --check
+          cargo clippy --all-targets --all-features -- -D warnings
+          cargo test --release --all-targets
+  gate:
+    needs: verify
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "gate"
