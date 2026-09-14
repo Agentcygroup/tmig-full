@@ -1,0 +1,1094 @@
+2026-09-14 18:07:58 [WARN] unable to find a config path, falling back to default config
+error[rejected]: failed to satisfy license requirements
+  ┌─ /Users/metadusa/tmig-full/crates/addr/Cargo.toml:5:12
+  │
+5 │ license = "MIT OR Apache-2.0"
+  │            ━━━────━━━━━━━━━━
+  │            │      │
+  │            │      rejected: license is not explicitly allowed
+  │            rejected: license is not explicitly allowed
+  │
+  ├ MIT - MIT License:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ Apache-2.0 - Apache License 2.0:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ addr v0.1.0
+    ├── ffi v0.1.0
+    ├── intent v0.1.0
+    │   └── xt v0.1.0
+    ├── remote v0.1.0
+    │   ├── intent v0.1.0 (*)
+    │   └── xt v0.1.0 (*)
+    └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/block-buffer-0.10.4/Cargo.toml:28:12
+   │
+28 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ block-buffer v0.10.4
+     └── digest v0.10.7
+         └── sha2 v0.10.9
+             └── addr v0.1.0
+                 ├── ffi v0.1.0
+                 ├── intent v0.1.0
+                 │   └── xt v0.1.0
+                 ├── remote v0.1.0
+                 │   ├── intent v0.1.0 (*)
+                 │   └── xt v0.1.0 (*)
+                 └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cfg-if-1.0.4/Cargo.toml:30:12
+   │
+30 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ cfg-if v1.0.4
+     └── sha2 v0.10.9
+         └── addr v0.1.0
+             ├── ffi v0.1.0
+             ├── intent v0.1.0
+             │   └── xt v0.1.0
+             ├── remote v0.1.0
+             │   ├── intent v0.1.0 (*)
+             │   └── xt v0.1.0 (*)
+             └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cpufeatures-0.2.17/Cargo.toml:37:12
+   │
+37 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ cpufeatures v0.2.17
+     └── sha2 v0.10.9
+         └── addr v0.1.0
+             ├── ffi v0.1.0
+             ├── intent v0.1.0
+             │   └── xt v0.1.0
+             ├── remote v0.1.0
+             │   ├── intent v0.1.0 (*)
+             │   └── xt v0.1.0 (*)
+             └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.1.7/Cargo.toml:34:12
+   │
+34 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ crypto-common v0.1.7
+     └── digest v0.10.7
+         └── sha2 v0.10.9
+             └── addr v0.1.0
+                 ├── ffi v0.1.0
+                 ├── intent v0.1.0
+                 │   └── xt v0.1.0
+                 ├── remote v0.1.0
+                 │   ├── intent v0.1.0 (*)
+                 │   └── xt v0.1.0 (*)
+                 └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/digest-0.10.7/Cargo.toml:29:12
+   │
+29 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ digest v0.10.7
+     └── sha2 v0.10.9
+         └── addr v0.1.0
+             ├── ffi v0.1.0
+             ├── intent v0.1.0
+             │   └── xt v0.1.0
+             ├── remote v0.1.0
+             │   ├── intent v0.1.0 (*)
+             │   └── xt v0.1.0 (*)
+             └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/equivalent-1.0.2/Cargo.toml:32:12
+   │
+32 │ license = "Apache-2.0 OR MIT"
+   │            ━━━━━━━━━━────━━━
+   │            │             │
+   │            │             rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ equivalent v1.0.2
+     └── indexmap v2.14.2
+         └── toml_edit v0.22.27
+             └── toml v0.8.23
+                 ├── intent v0.1.0
+                 │   └── xt v0.1.0
+                 ├── layer v0.1.0
+                 │   └── intent v0.1.0 (*)
+                 └── policy v0.1.0
+                     └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+  ┌─ /Users/metadusa/tmig-full/crates/ffi/Cargo.toml:5:12
+  │
+5 │ license = "MIT OR Apache-2.0"
+  │            ━━━────━━━━━━━━━━
+  │            │      │
+  │            │      rejected: license is not explicitly allowed
+  │            rejected: license is not explicitly allowed
+  │
+  ├ MIT - MIT License:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ Apache-2.0 - Apache License 2.0:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ ffi v0.1.0
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/generic-array-0.14.7/Cargo.toml:37:12
+   │
+37 │ license = "MIT"
+   │            ━━━
+   │            │
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ generic-array v0.14.7
+     ├── block-buffer v0.10.4
+     │   └── digest v0.10.7
+     │       └── sha2 v0.10.9
+     │           └── addr v0.1.0
+     │               ├── ffi v0.1.0
+     │               ├── intent v0.1.0
+     │               │   └── xt v0.1.0
+     │               ├── remote v0.1.0
+     │               │   ├── intent v0.1.0 (*)
+     │               │   └── xt v0.1.0 (*)
+     │               └── xt v0.1.0 (*)
+     └── crypto-common v0.1.7
+         └── digest v0.10.7 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/glob-0.3.4/Cargo.toml:31:12
+   │
+31 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ glob v0.3.4
+     └── intent v0.1.0
+         └── xt v0.1.0
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.17.1/Cargo.toml:39:12
+   │
+39 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ hashbrown v0.17.1
+     └── indexmap v2.14.2
+         └── toml_edit v0.22.27
+             └── toml v0.8.23
+                 ├── intent v0.1.0
+                 │   └── xt v0.1.0
+                 ├── layer v0.1.0
+                 │   └── intent v0.1.0 (*)
+                 └── policy v0.1.0
+                     └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indexmap-2.14.2/Cargo.toml:34:12
+   │
+34 │ license = "Apache-2.0 OR MIT"
+   │            ━━━━━━━━━━────━━━
+   │            │             │
+   │            │             rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ indexmap v2.14.2
+     └── toml_edit v0.22.27
+         └── toml v0.8.23
+             ├── intent v0.1.0
+             │   └── xt v0.1.0
+             ├── layer v0.1.0
+             │   └── intent v0.1.0 (*)
+             └── policy v0.1.0
+                 └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+  ┌─ /Users/metadusa/tmig-full/crates/intent/Cargo.toml:5:12
+  │
+5 │ license = "MIT OR Apache-2.0"
+  │            ━━━────━━━━━━━━━━
+  │            │      │
+  │            │      rejected: license is not explicitly allowed
+  │            rejected: license is not explicitly allowed
+  │
+  ├ MIT - MIT License:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ Apache-2.0 - Apache License 2.0:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ intent v0.1.0
+    └── xt v0.1.0
+
+error[rejected]: failed to satisfy license requirements
+  ┌─ /Users/metadusa/tmig-full/crates/layer/Cargo.toml:5:12
+  │
+5 │ license = "MIT OR Apache-2.0"
+  │            ━━━────━━━━━━━━━━
+  │            │      │
+  │            │      rejected: license is not explicitly allowed
+  │            rejected: license is not explicitly allowed
+  │
+  ├ MIT - MIT License:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ Apache-2.0 - Apache License 2.0:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ layer v0.1.0
+    └── intent v0.1.0
+        └── xt v0.1.0
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.189/Cargo.toml:43:12
+   │
+43 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ libc v0.2.189
+     └── cpufeatures v0.2.17
+         └── sha2 v0.10.9
+             └── addr v0.1.0
+                 ├── ffi v0.1.0
+                 ├── intent v0.1.0
+                 │   └── xt v0.1.0
+                 ├── remote v0.1.0
+                 │   ├── intent v0.1.0 (*)
+                 │   └── xt v0.1.0 (*)
+                 └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+  ┌─ /Users/metadusa/tmig-full/crates/policy/Cargo.toml:5:12
+  │
+5 │ license = "MIT OR Apache-2.0"
+  │            ━━━────━━━━━━━━━━
+  │            │      │
+  │            │      rejected: license is not explicitly allowed
+  │            rejected: license is not explicitly allowed
+  │
+  ├ MIT - MIT License:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ Apache-2.0 - Apache License 2.0:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ policy v0.1.0
+    └── xt v0.1.0
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.107/Cargo.toml:35:12
+   │
+35 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ proc-macro2 v1.0.107
+     ├── quote v1.0.47
+     │   ├── serde_derive v1.0.229
+     │   │   └── serde v1.0.229
+     │   │       ├── intent v0.1.0
+     │   │       │   └── xt v0.1.0
+     │   │       ├── layer v0.1.0
+     │   │       │   └── intent v0.1.0 (*)
+     │   │       ├── policy v0.1.0
+     │   │       │   └── xt v0.1.0 (*)
+     │   │       ├── serde_spanned v0.6.9
+     │   │       │   ├── toml v0.8.23
+     │   │       │   │   ├── intent v0.1.0 (*)
+     │   │       │   │   ├── layer v0.1.0 (*)
+     │   │       │   │   └── policy v0.1.0 (*)
+     │   │       │   └── toml_edit v0.22.27
+     │   │       │       └── toml v0.8.23 (*)
+     │   │       ├── toml v0.8.23 (*)
+     │   │       ├── toml_datetime v0.6.11
+     │   │       │   ├── toml v0.8.23 (*)
+     │   │       │   └── toml_edit v0.22.27 (*)
+     │   │       └── toml_edit v0.22.27 (*)
+     │   └── syn v3.0.5
+     │       └── serde_derive v1.0.229 (*)
+     ├── serde_derive v1.0.229 (*)
+     └── syn v3.0.5 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.47/Cargo.toml:32:12
+   │
+32 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ quote v1.0.47
+     ├── serde_derive v1.0.229
+     │   └── serde v1.0.229
+     │       ├── intent v0.1.0
+     │       │   └── xt v0.1.0
+     │       ├── layer v0.1.0
+     │       │   └── intent v0.1.0 (*)
+     │       ├── policy v0.1.0
+     │       │   └── xt v0.1.0 (*)
+     │       ├── serde_spanned v0.6.9
+     │       │   ├── toml v0.8.23
+     │       │   │   ├── intent v0.1.0 (*)
+     │       │   │   ├── layer v0.1.0 (*)
+     │       │   │   └── policy v0.1.0 (*)
+     │       │   └── toml_edit v0.22.27
+     │       │       └── toml v0.8.23 (*)
+     │       ├── toml v0.8.23 (*)
+     │       ├── toml_datetime v0.6.11
+     │       │   ├── toml v0.8.23 (*)
+     │       │   └── toml_edit v0.22.27 (*)
+     │       └── toml_edit v0.22.27 (*)
+     └── syn v3.0.5
+         └── serde_derive v1.0.229 (*)
+
+error[rejected]: failed to satisfy license requirements
+  ┌─ /Users/metadusa/tmig-full/crates/remote/Cargo.toml:5:12
+  │
+5 │ license = "MIT OR Apache-2.0"
+  │            ━━━────━━━━━━━━━━
+  │            │      │
+  │            │      rejected: license is not explicitly allowed
+  │            rejected: license is not explicitly allowed
+  │
+  ├ MIT - MIT License:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ Apache-2.0 - Apache License 2.0:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ remote v0.1.0
+    ├── intent v0.1.0
+    │   └── xt v0.1.0
+    └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/same-file-1.0.6/Cargo.toml:24:12
+   │
+24 │ license = "Unlicense/MIT"
+   │            ━━━━━━━━━─━━━
+   │            │         │
+   │            │         rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ Unlicense - The Unlicense:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ same-file v1.0.6
+     └── walkdir v2.5.0
+         └── addr v0.1.0
+             ├── ffi v0.1.0
+             ├── intent v0.1.0
+             │   └── xt v0.1.0
+             ├── remote v0.1.0
+             │   ├── intent v0.1.0 (*)
+             │   └── xt v0.1.0 (*)
+             └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+  ┌─ /Users/metadusa/tmig-full/crates/schema/Cargo.toml:5:12
+  │
+5 │ license = "MIT OR Apache-2.0"
+  │            ━━━────━━━━━━━━━━
+  │            │      │
+  │            │      rejected: license is not explicitly allowed
+  │            rejected: license is not explicitly allowed
+  │
+  ├ MIT - MIT License:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ Apache-2.0 - Apache License 2.0:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ schema v0.1.0
+    └── verify v0.1.0
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/Cargo.toml:41:12
+   │
+41 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ serde v1.0.229
+     ├── intent v0.1.0
+     │   └── xt v0.1.0
+     ├── layer v0.1.0
+     │   └── intent v0.1.0 (*)
+     ├── policy v0.1.0
+     │   └── xt v0.1.0 (*)
+     ├── serde_spanned v0.6.9
+     │   ├── toml v0.8.23
+     │   │   ├── intent v0.1.0 (*)
+     │   │   ├── layer v0.1.0 (*)
+     │   │   └── policy v0.1.0 (*)
+     │   └── toml_edit v0.22.27
+     │       └── toml v0.8.23 (*)
+     ├── toml v0.8.23 (*)
+     ├── toml_datetime v0.6.11
+     │   ├── toml v0.8.23 (*)
+     │   └── toml_edit v0.22.27 (*)
+     └── toml_edit v0.22.27 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.229/Cargo.toml:41:12
+   │
+41 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ serde_core v1.0.229
+     └── serde v1.0.229
+         ├── intent v0.1.0
+         │   └── xt v0.1.0
+         ├── layer v0.1.0
+         │   └── intent v0.1.0 (*)
+         ├── policy v0.1.0
+         │   └── xt v0.1.0 (*)
+         ├── serde_spanned v0.6.9
+         │   ├── toml v0.8.23
+         │   │   ├── intent v0.1.0 (*)
+         │   │   ├── layer v0.1.0 (*)
+         │   │   └── policy v0.1.0 (*)
+         │   └── toml_edit v0.22.27
+         │       └── toml v0.8.23 (*)
+         ├── toml v0.8.23 (*)
+         ├── toml_datetime v0.6.11
+         │   ├── toml v0.8.23 (*)
+         │   └── toml_edit v0.22.27 (*)
+         └── toml_edit v0.22.27 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_derive-1.0.229/Cargo.toml:42:12
+   │
+42 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ serde_derive v1.0.229
+     └── serde v1.0.229
+         ├── intent v0.1.0
+         │   └── xt v0.1.0
+         ├── layer v0.1.0
+         │   └── intent v0.1.0 (*)
+         ├── policy v0.1.0
+         │   └── xt v0.1.0 (*)
+         ├── serde_spanned v0.6.9
+         │   ├── toml v0.8.23
+         │   │   ├── intent v0.1.0 (*)
+         │   │   ├── layer v0.1.0 (*)
+         │   │   └── policy v0.1.0 (*)
+         │   └── toml_edit v0.22.27
+         │       └── toml v0.8.23 (*)
+         ├── toml v0.8.23 (*)
+         ├── toml_datetime v0.6.11
+         │   ├── toml v0.8.23 (*)
+         │   └── toml_edit v0.22.27 (*)
+         └── toml_edit v0.22.27 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_spanned-0.6.9/Cargo.toml:44:12
+   │
+44 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ serde_spanned v0.6.9
+     ├── toml v0.8.23
+     │   ├── intent v0.1.0
+     │   │   └── xt v0.1.0
+     │   ├── layer v0.1.0
+     │   │   └── intent v0.1.0 (*)
+     │   └── policy v0.1.0
+     │       └── xt v0.1.0 (*)
+     └── toml_edit v0.22.27
+         └── toml v0.8.23 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sha2-0.10.9/Cargo.toml:39:12
+   │
+39 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ sha2 v0.10.9
+     └── addr v0.1.0
+         ├── ffi v0.1.0
+         ├── intent v0.1.0
+         │   └── xt v0.1.0
+         ├── remote v0.1.0
+         │   ├── intent v0.1.0 (*)
+         │   └── xt v0.1.0 (*)
+         └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.5/Cargo.toml:44:12
+   │
+44 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ syn v3.0.5
+     └── serde_derive v1.0.229
+         └── serde v1.0.229
+             ├── intent v0.1.0
+             │   └── xt v0.1.0
+             ├── layer v0.1.0
+             │   └── intent v0.1.0 (*)
+             ├── policy v0.1.0
+             │   └── xt v0.1.0 (*)
+             ├── serde_spanned v0.6.9
+             │   ├── toml v0.8.23
+             │   │   ├── intent v0.1.0 (*)
+             │   │   ├── layer v0.1.0 (*)
+             │   │   └── policy v0.1.0 (*)
+             │   └── toml_edit v0.22.27
+             │       └── toml v0.8.23 (*)
+             ├── toml v0.8.23 (*)
+             ├── toml_datetime v0.6.11
+             │   ├── toml v0.8.23 (*)
+             │   └── toml_edit v0.22.27 (*)
+             └── toml_edit v0.22.27 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.8.23/Cargo.toml:48:12
+   │
+48 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ toml v0.8.23
+     ├── intent v0.1.0
+     │   └── xt v0.1.0
+     ├── layer v0.1.0
+     │   └── intent v0.1.0 (*)
+     └── policy v0.1.0
+         └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-0.6.11/Cargo.toml:44:12
+   │
+44 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ toml_datetime v0.6.11
+     ├── toml v0.8.23
+     │   ├── intent v0.1.0
+     │   │   └── xt v0.1.0
+     │   ├── layer v0.1.0
+     │   │   └── intent v0.1.0 (*)
+     │   └── policy v0.1.0
+     │       └── xt v0.1.0 (*)
+     └── toml_edit v0.22.27
+         └── toml v0.8.23 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/Cargo.toml:44:12
+   │
+44 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ toml_edit v0.22.27
+     └── toml v0.8.23
+         ├── intent v0.1.0
+         │   └── xt v0.1.0
+         ├── layer v0.1.0
+         │   └── intent v0.1.0 (*)
+         └── policy v0.1.0
+             └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/Cargo.toml:41:12
+   │
+41 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ toml_write v0.1.2
+     └── toml_edit v0.22.27
+         └── toml v0.8.23
+             ├── intent v0.1.0
+             │   └── xt v0.1.0
+             ├── layer v0.1.0
+             │   └── intent v0.1.0 (*)
+             └── policy v0.1.0
+                 └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typenum-1.20.1/Cargo.toml:39:12
+   │
+39 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ typenum v1.20.1
+     ├── crypto-common v0.1.7
+     │   └── digest v0.10.7
+     │       └── sha2 v0.10.9
+     │           └── addr v0.1.0
+     │               ├── ffi v0.1.0
+     │               ├── intent v0.1.0
+     │               │   └── xt v0.1.0
+     │               ├── remote v0.1.0
+     │               │   ├── intent v0.1.0 (*)
+     │               │   └── xt v0.1.0 (*)
+     │               └── xt v0.1.0 (*)
+     └── generic-array v0.14.7
+         ├── block-buffer v0.10.4
+         │   └── digest v0.10.7 (*)
+         └── crypto-common v0.1.7 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-ident-1.0.24/Cargo.toml:36:13
+   │
+36 │ license = "(MIT OR Apache-2.0) AND Unicode-3.0"
+   │            ─━━━────━━━━━━━━━━──────━━━━━━━━━━━
+   │             │      │               │
+   │             │      │               rejected: license is not explicitly allowed
+   │             │      rejected: license is not explicitly allowed
+   │             rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Unicode-3.0 - Unicode License v3:
+   ├   - OSI approved
+   ├ unicode-ident v1.0.24
+     ├── proc-macro2 v1.0.107
+     │   ├── quote v1.0.47
+     │   │   ├── serde_derive v1.0.229
+     │   │   │   └── serde v1.0.229
+     │   │   │       ├── intent v0.1.0
+     │   │   │       │   └── xt v0.1.0
+     │   │   │       ├── layer v0.1.0
+     │   │   │       │   └── intent v0.1.0 (*)
+     │   │   │       ├── policy v0.1.0
+     │   │   │       │   └── xt v0.1.0 (*)
+     │   │   │       ├── serde_spanned v0.6.9
+     │   │   │       │   ├── toml v0.8.23
+     │   │   │       │   │   ├── intent v0.1.0 (*)
+     │   │   │       │   │   ├── layer v0.1.0 (*)
+     │   │   │       │   │   └── policy v0.1.0 (*)
+     │   │   │       │   └── toml_edit v0.22.27
+     │   │   │       │       └── toml v0.8.23 (*)
+     │   │   │       ├── toml v0.8.23 (*)
+     │   │   │       ├── toml_datetime v0.6.11
+     │   │   │       │   ├── toml v0.8.23 (*)
+     │   │   │       │   └── toml_edit v0.22.27 (*)
+     │   │   │       └── toml_edit v0.22.27 (*)
+     │   │   └── syn v3.0.5
+     │   │       └── serde_derive v1.0.229 (*)
+     │   ├── serde_derive v1.0.229 (*)
+     │   └── syn v3.0.5 (*)
+     └── syn v3.0.5 (*)
+
+error[rejected]: failed to satisfy license requirements
+  ┌─ /Users/metadusa/tmig-full/crates/verify/Cargo.toml:5:12
+  │
+5 │ license = "MIT OR Apache-2.0"
+  │            ━━━────━━━━━━━━━━
+  │            │      │
+  │            │      rejected: license is not explicitly allowed
+  │            rejected: license is not explicitly allowed
+  │
+  ├ MIT - MIT License:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ Apache-2.0 - Apache License 2.0:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ verify v0.1.0
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.5/Cargo.toml:31:12
+   │
+31 │ license = "MIT/Apache-2.0"
+   │            ━━━─━━━━━━━━━━
+   │            │   │
+   │            │   rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ version_check v0.9.5
+     └── (build) generic-array v0.14.7
+         ├── block-buffer v0.10.4
+         │   └── digest v0.10.7
+         │       └── sha2 v0.10.9
+         │           └── addr v0.1.0
+         │               ├── ffi v0.1.0
+         │               ├── intent v0.1.0
+         │               │   └── xt v0.1.0
+         │               ├── remote v0.1.0
+         │               │   ├── intent v0.1.0 (*)
+         │               │   └── xt v0.1.0 (*)
+         │               └── xt v0.1.0 (*)
+         └── crypto-common v0.1.7
+             └── digest v0.10.7 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/Cargo.toml:33:12
+   │
+33 │ license = "Unlicense/MIT"
+   │            ━━━━━━━━━─━━━
+   │            │         │
+   │            │         rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ Unlicense - The Unlicense:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ walkdir v2.5.0
+     └── addr v0.1.0
+         ├── ffi v0.1.0
+         ├── intent v0.1.0
+         │   └── xt v0.1.0
+         ├── remote v0.1.0
+         │   ├── intent v0.1.0 (*)
+         │   └── xt v0.1.0 (*)
+         └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winapi-util-0.1.11/Cargo.toml:37:12
+   │
+37 │ license = "Unlicense OR MIT"
+   │            ━━━━━━━━━────━━━
+   │            │            │
+   │            │            rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ Unlicense - The Unlicense:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ winapi-util v0.1.11
+     ├── same-file v1.0.6
+     │   └── walkdir v2.5.0
+     │       └── addr v0.1.0
+     │           ├── ffi v0.1.0
+     │           ├── intent v0.1.0
+     │           │   └── xt v0.1.0
+     │           ├── remote v0.1.0
+     │           │   ├── intent v0.1.0 (*)
+     │           │   └── xt v0.1.0 (*)
+     │           └── xt v0.1.0 (*)
+     └── walkdir v2.5.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-link-0.2.1/Cargo.toml:26:12
+   │
+26 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ windows-link v0.2.1
+     └── windows-sys v0.61.2
+         └── winapi-util v0.1.11
+             ├── same-file v1.0.6
+             │   └── walkdir v2.5.0
+             │       └── addr v0.1.0
+             │           ├── ffi v0.1.0
+             │           ├── intent v0.1.0
+             │           │   └── xt v0.1.0
+             │           ├── remote v0.1.0
+             │           │   ├── intent v0.1.0 (*)
+             │           │   └── xt v0.1.0 (*)
+             │           └── xt v0.1.0 (*)
+             └── walkdir v2.5.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-sys-0.61.2/Cargo.toml:26:12
+   │
+26 │ license = "MIT OR Apache-2.0"
+   │            ━━━────━━━━━━━━━━
+   │            │      │
+   │            │      rejected: license is not explicitly allowed
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ Apache-2.0 - Apache License 2.0:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ windows-sys v0.61.2
+     └── winapi-util v0.1.11
+         ├── same-file v1.0.6
+         │   └── walkdir v2.5.0
+         │       └── addr v0.1.0
+         │           ├── ffi v0.1.0
+         │           ├── intent v0.1.0
+         │           │   └── xt v0.1.0
+         │           ├── remote v0.1.0
+         │           │   ├── intent v0.1.0 (*)
+         │           │   └── xt v0.1.0 (*)
+         │           └── xt v0.1.0 (*)
+         └── walkdir v2.5.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+   ┌─ /Users/metadusa/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/Cargo.toml:42:12
+   │
+42 │ license = "MIT"
+   │            ━━━
+   │            │
+   │            rejected: license is not explicitly allowed
+   │
+   ├ MIT - MIT License:
+   ├   - OSI approved
+   ├   - FSF Free/Libre
+   ├ winnow v0.7.15
+     └── toml_edit v0.22.27
+         └── toml v0.8.23
+             ├── intent v0.1.0
+             │   └── xt v0.1.0
+             ├── layer v0.1.0
+             │   └── intent v0.1.0 (*)
+             └── policy v0.1.0
+                 └── xt v0.1.0 (*)
+
+error[rejected]: failed to satisfy license requirements
+  ┌─ /Users/metadusa/tmig-full/crates/xt/Cargo.toml:5:12
+  │
+5 │ license = "MIT OR Apache-2.0"
+  │            ━━━────━━━━━━━━━━
+  │            │      │
+  │            │      rejected: license is not explicitly allowed
+  │            rejected: license is not explicitly allowed
+  │
+  ├ MIT - MIT License:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ Apache-2.0 - Apache License 2.0:
+  ├   - OSI approved
+  ├   - FSF Free/Libre
+  ├ xt v0.1.0
+
+advisories ok, bans ok, licenses FAILED, sources ok

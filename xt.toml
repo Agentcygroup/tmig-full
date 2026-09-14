@@ -4,6 +4,24 @@ languages = ["rust"]
 [layers.project]
 strength = 40
 
+# want: a build system that captures intent as data and rewrites it into a tree
+# want: producers are data — new language, new standard, new class is one file
+# want: strength order is declared once, in one policy file
+# want: every schema declares its non-claims; a schema with none is rejected
+# want: every run writes a content-addressed receipt carrying four mandatory non-claims
+# want: plan computes the closure of every producer over the tree
+# want: ci runs the fixed gate; all runs the wider gate; <target> runs one target
+# artifact: Cargo.toml
+# artifact: xt.toml
+# artifact: crates/addr
+# artifact: crates/layer
+# artifact: crates/schema
+# artifact: crates/verify
+# artifact: crates/policy
+# artifact: crates/remote
+# artifact: crates/intent
+# artifact: crates/xt
+# artifact: crates/ffi
 [[layers.project.target]]
 id = "checks"
 kind = "checks"
@@ -12,9 +30,20 @@ dir = "checks"
 [[layers.project.target]]
 id = "ci"
 kind = "composite"
-needs = ["rust:fmt", "rust:lint", "rust:test", "checks"]
+needs = ["rust:fmt", "rust:lint", "rust:test", "checks", "freeze-check"]
 
 [[layers.project.target]]
 id = "all"
 kind = "composite"
 needs = ["ci", "rust:build"]
+
+[[layers.project.target]]
+id = "freeze"
+kind = "shell"
+cmd = "python3 $HOME/intent/freeze/rewrite.py $HOME/intent/freeze/my-intent.freeze $PWD"
+
+[[layers.project.target]]
+id = "freeze-check"
+kind = "shell"
+cmd = "python3 $HOME/intent/freeze/rewrite.py $HOME/intent/freeze/my-intent.freeze $PWD && git diff --quiet xt.toml docs/NON_CLAIMS.md"
+needs = ["freeze"]
