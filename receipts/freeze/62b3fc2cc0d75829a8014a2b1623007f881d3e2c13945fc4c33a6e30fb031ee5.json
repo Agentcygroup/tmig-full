@@ -1,0 +1,258 @@
+{
+  "records": [
+    {
+      "args": [
+        "a build system that captures intent as data and rewrites it into a tree"
+      ],
+      "kind": "want",
+      "line": 3
+    },
+    {
+      "args": [
+        "producers are data \u2014 new language, new standard, new class is one file"
+      ],
+      "kind": "want",
+      "line": 4
+    },
+    {
+      "args": [
+        "strength order is declared once, in one policy file"
+      ],
+      "kind": "want",
+      "line": 5
+    },
+    {
+      "args": [
+        "every schema declares its non-claims; a schema with none is rejected"
+      ],
+      "kind": "want",
+      "line": 6
+    },
+    {
+      "args": [
+        "every run writes a content-addressed receipt carrying four mandatory non-claims"
+      ],
+      "kind": "want",
+      "line": 7
+    },
+    {
+      "args": [
+        "plan computes the closure of every producer over the tree"
+      ],
+      "kind": "want",
+      "line": 8
+    },
+    {
+      "args": [
+        "ci runs the fixed gate; all runs the wider gate; <target> runs one target"
+      ],
+      "kind": "want",
+      "line": 9
+    },
+    {
+      "args": [
+        "Cargo.toml"
+      ],
+      "kind": "artifact",
+      "line": 11
+    },
+    {
+      "args": [
+        "xt.toml"
+      ],
+      "kind": "artifact",
+      "line": 12
+    },
+    {
+      "args": [
+        "crates/addr"
+      ],
+      "kind": "artifact",
+      "line": 13
+    },
+    {
+      "args": [
+        "crates/layer"
+      ],
+      "kind": "artifact",
+      "line": 14
+    },
+    {
+      "args": [
+        "crates/schema"
+      ],
+      "kind": "artifact",
+      "line": 15
+    },
+    {
+      "args": [
+        "crates/verify"
+      ],
+      "kind": "artifact",
+      "line": 16
+    },
+    {
+      "args": [
+        "crates/policy"
+      ],
+      "kind": "artifact",
+      "line": 17
+    },
+    {
+      "args": [
+        "crates/remote"
+      ],
+      "kind": "artifact",
+      "line": 18
+    },
+    {
+      "args": [
+        "crates/intent"
+      ],
+      "kind": "artifact",
+      "line": 19
+    },
+    {
+      "args": [
+        "crates/xt"
+      ],
+      "kind": "artifact",
+      "line": 20
+    },
+    {
+      "args": [
+        "crates/ffi"
+      ],
+      "kind": "artifact",
+      "line": 21
+    },
+    {
+      "args": [
+        "rust",
+        "class=\"producer\"",
+        "match=\"Cargo.toml\""
+      ],
+      "kind": "engine",
+      "line": 23
+    },
+    {
+      "args": [
+        "python",
+        "class=\"producer\"",
+        "match=\"pyproject.toml\""
+      ],
+      "kind": "engine",
+      "line": 24
+    },
+    {
+      "args": [
+        "node",
+        "class=\"producer\"",
+        "match=\"package.json\""
+      ],
+      "kind": "engine",
+      "line": 25
+    },
+    {
+      "args": [
+        "go",
+        "class=\"producer\"",
+        "match=\"go.mod\""
+      ],
+      "kind": "engine",
+      "line": 26
+    },
+    {
+      "args": [
+        "ruby",
+        "class=\"producer\"",
+        "match=\"Gemfile\""
+      ],
+      "kind": "engine",
+      "line": 27
+    },
+    {
+      "args": [
+        "nix",
+        "class=\"producer\"",
+        "match=\"flake.nix\""
+      ],
+      "kind": "engine",
+      "line": 28
+    },
+    {
+      "args": [
+        "docker",
+        "class=\"producer\"",
+        "match=\"Dockerfile\""
+      ],
+      "kind": "engine",
+      "line": 29
+    },
+    {
+      "args": [
+        "make",
+        "class=\"producer\"",
+        "match=\"Makefile\""
+      ],
+      "kind": "engine",
+      "line": 30
+    },
+    {
+      "args": [
+        "no-mastery",
+        "FREEZE does not confer mastery over any discipline."
+      ],
+      "kind": "non_claim",
+      "line": 32
+    },
+    {
+      "args": [
+        "no-accreditation",
+        "FREEZE does not confer institutional accreditation."
+      ],
+      "kind": "non_claim",
+      "line": 33
+    },
+    {
+      "args": [
+        "no-coherence-proof",
+        "FREEZE does not prove its own intent is internally coherent."
+      ],
+      "kind": "non_claim",
+      "line": 34
+    },
+    {
+      "args": [
+        "no-completeness",
+        "FREEZE does not enumerate every target; it rewrites what is written."
+      ],
+      "kind": "non_claim",
+      "line": 35
+    },
+    {
+      "args": [
+        "no HTTP server in tree"
+      ],
+      "kind": "boundary",
+      "line": 37
+    },
+    {
+      "args": [
+        "no DB engine in tree"
+      ],
+      "kind": "boundary",
+      "line": 38
+    },
+    {
+      "args": [
+        "self",
+        "accept",
+        "freeze round-trips cleanly on macOS stable"
+      ],
+      "kind": "referee",
+      "line": 40
+    }
+  ],
+  "ts": 1789409720
+}
