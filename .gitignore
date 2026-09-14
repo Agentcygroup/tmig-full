@@ -9,4 +9,3 @@ bindings/node/package-lock.json
 __pycache__/
 *.pyc
 .DS_Store
-bindings/node/package.json
