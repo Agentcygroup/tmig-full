@@ -1,0 +1,25 @@
+{
+  "nodes": [
+    "team-tmig",
+    "tmig-full",
+    "tmig-control",
+    "receipts"
+  ],
+  "edges": [
+    {
+      "from": "tmig-full",
+      "to": "team-tmig",
+      "type": "requires"
+    },
+    {
+      "from": "tmig-control",
+      "to": "tmig-full",
+      "type": "governs"
+    },
+    {
+      "from": "receipts",
+      "to": "tmig-control",
+      "type": "audits"
+    }
+  ]
+}
