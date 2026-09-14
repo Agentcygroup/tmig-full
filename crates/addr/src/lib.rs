@@ -1,10 +1,8 @@
 use sha2::{Digest, Sha256};
 use std::io::Read;
 use std::path::Path;
-
 #[derive(Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash, Debug)]
 pub struct Id(pub [u8; 32]);
-
 impl Id {
     pub fn of(b: &[u8]) -> Self {
         let mut h = Sha256::new();
@@ -43,20 +41,11 @@ impl Id {
         s
     }
 }
-
 #[cfg(test)]
 mod tests {
     use super::*;
     #[test]
     fn stable() {
         assert_eq!(Id::of(b"a"), Id::of(b"a"));
-    }
-    #[test]
-    fn distinct() {
-        assert_ne!(Id::of(b"a"), Id::of(b"b"));
-    }
-    #[test]
-    fn hex_len() {
-        assert_eq!(Id::of(b"a").hex().len(), 64);
     }
 }

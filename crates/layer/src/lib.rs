@@ -1,18 +1,15 @@
 use serde::Deserialize;
 use std::collections::BTreeMap;
-
 #[derive(Debug, Clone, Deserialize)]
 pub struct LayerFile {
     pub layers: BTreeMap<String, Layer>,
 }
-
 #[derive(Debug, Clone, Deserialize)]
 pub struct Layer {
     pub strength: u32,
     #[serde(default, rename = "target")]
     pub targets: Vec<Target>,
 }
-
 #[derive(Debug, Clone, Deserialize)]
 pub struct Target {
     pub id: String,
@@ -26,12 +23,10 @@ pub struct Target {
     #[serde(default)]
     pub optional: bool,
 }
-
 #[derive(Debug, Default)]
 pub struct Resolved {
     pub targets: BTreeMap<String, (u32, Target)>,
 }
-
 pub fn resolve(layers: &[(String, Layer)]) -> Resolved {
     let mut r = Resolved::default();
     let mut s: Vec<_> = layers.iter().collect();
@@ -50,7 +45,6 @@ pub fn resolve(layers: &[(String, Layer)]) -> Resolved {
     }
     r
 }
-
 #[cfg(test)]
 mod tests {
     use super::*;

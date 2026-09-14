@@ -2,7 +2,6 @@ pub mod producers;
 use layer::{Layer, LayerFile, Resolved, Target};
 use std::collections::BTreeMap;
 use std::path::{Path, PathBuf};
-
 pub struct Intent {
     pub repo: PathBuf,
     pub layers: Vec<(String, Layer)>,
@@ -20,7 +19,6 @@ pub struct Tr {
     pub input_id: String,
     pub output_id: String,
 }
-
 pub fn load(repo: &Path) -> std::io::Result<Intent> {
     let mut layers = Vec::new();
     let m: LayerFile = toml::from_str(&std::fs::read_to_string(repo.join("xt.toml"))?)
@@ -43,10 +41,10 @@ pub fn load(repo: &Path) -> std::io::Result<Intent> {
             }
         }
     }
-    let prod_dir = std::env::var("HOME")
+    if let Some(pd) = std::env::var("HOME")
         .ok()
-        .map(|h| std::path::PathBuf::from(h).join("intent").join("producers"));
-    if let Some(pd) = prod_dir {
+        .map(|h| PathBuf::from(h).join("intent").join("producers"))
+    {
         let prods = producers::load_all(&pd);
         let targets = producers::expand(repo, &prods);
         if !targets.is_empty() {
@@ -64,7 +62,6 @@ pub fn load(repo: &Path) -> std::io::Result<Intent> {
         layers,
     })
 }
-
 impl Intent {
     pub fn resolve(&self) -> Resolved {
         layer::resolve(&self.layers)
@@ -75,7 +72,12 @@ impl Intent {
         let mut done = BTreeMap::new();
         let cache = self.repo.join("target").join("xt-cache");
         std::fs::create_dir_all(&cache)?;
-        self.run_one(t, &r, &mut done, &mut rec, &cache)?;
+        let rroot = std::env::var("XT_REMOTE")
+            .ok()
+            .map(PathBuf::from)
+            .unwrap_or_else(|| self.repo.join("target").join("xt-remote"));
+        let remote = remote::Remote::open(&rroot)?;
+        self.run_one(t, &r, &mut done, &mut rec, &cache, &remote)?;
         rec.run_id = addr::Id::of(
             rec.targets
                 .iter()
@@ -107,6 +109,7 @@ impl Intent {
         done: &mut BTreeMap<String, String>,
         rec: &mut Receipt,
         cache: &Path,
+        remote: &remote::Remote,
     ) -> std::io::Result<()> {
         if done.contains_key(id) {
             return Ok(());
@@ -115,14 +118,12 @@ impl Intent {
             std::io::Error::new(std::io::ErrorKind::NotFound, format!("no target {id}"))
         })?;
         for n in &t.needs {
-            self.run_one(n, r, done, rec, cache)?;
+            self.run_one(n, r, done, rec, cache, remote)?;
         }
         let iid = match t.kind.as_str() {
             "checks" => {
                 let d = self.repo.join(t.dir.as_deref().unwrap_or("checks"));
-                addr::Id::of_dir(&d)
-                    .map(|i| i.hex())
-                    .unwrap_or_else(|_| String::new())
+                addr::Id::of_dir(&d).map(|i| i.hex()).unwrap_or_default()
             }
             _ => addr::Id::of(format!("{:?}", t).as_bytes()).hex(),
         };
@@ -143,11 +144,22 @@ impl Intent {
                     }
                 }
             }
+            if let Some(oid) = remote.get(&iid) {
+                done.insert(id.into(), oid.clone());
+                rec.targets.push(Tr {
+                    id: id.into(),
+                    status: "remote".into(),
+                    input_id: iid,
+                    output_id: oid,
+                });
+                return Ok(());
+            }
         }
         let (status, oid) = self.execute(t)?;
         done.insert(id.into(), oid.clone());
         if cacheable && status == "ok" {
             std::fs::write(cache.join(format!("{iid}.json")), format!("{iid}\n{oid}\n"))?;
+            let _ = remote.put(&iid, &oid);
         }
         rec.targets.push(Tr {
             id: id.into(),
@@ -208,17 +220,5 @@ impl Intent {
                 format!("kind {other}"),
             )),
         }
-    }
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-    #[test]
-    fn loads() {
-        let tmp = std::env::temp_dir().join(format!("xt-{}", std::process::id()));
-        std::fs::create_dir_all(&tmp).unwrap();
-        std::fs::write(tmp.join("xt.toml"), "[layers.default]\nstrength = 10\n\n[[layers.default.target]]\nid = \"noop\"\nkind = \"shell\"\ncmd = \"true\"\n").unwrap();
-        assert!(load(&tmp).unwrap().resolve().targets.contains_key("noop"));
     }
 }

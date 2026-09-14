@@ -8,3 +8,6 @@ name = "xt"
 path = "src/main.rs"
 [dependencies]
 intent = { path = "../intent" }
+policy = { path = "../policy" }
+remote = { path = "../remote" }
+addr = { path = "../addr" }

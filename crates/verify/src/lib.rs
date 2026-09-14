@@ -1,5 +1,4 @@
 use schema::{NonClaim, Schema};
-
 pub struct Shell;
 impl Schema for Shell {
     fn name(&self) -> &str {
@@ -21,7 +20,6 @@ impl Schema for Shell {
         }
     }
 }
-
 pub struct Checks;
 impl Schema for Checks {
     fn name(&self) -> &str {
@@ -43,11 +41,9 @@ impl Schema for Checks {
         }
     }
 }
-
 pub fn builtins() -> Vec<Box<dyn Schema>> {
     vec![Box::new(Shell), Box::new(Checks)]
 }
-
 #[cfg(test)]
 mod tests {
     use super::*;
