@@ -40,7 +40,7 @@ optuna==4.0.0
 hyperopt==0.2.7
 
 # ---------------------------------------------------------------- workflow
-mlflow==2.16.0
+mlflow==3.16.0
 apache-airflow==3.3.0
 celery==5.4.0
 luigi==3.6.0
