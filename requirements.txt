@@ -19,7 +19,7 @@ keras==3.5.0
 pytorch-lightning==2.4.0
 
 # ---------------------------------------------------------------- nlp
-transformers==4.44.2
+transformers==5.10.1
 huggingface_hub==0.24.6
 spacy==3.7.6
 nltk==3.10.3
