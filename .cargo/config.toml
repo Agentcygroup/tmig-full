@@ -1,0 +1,13 @@
+[build]
+incremental = false
+
+[net]
+retry = 3
+git-fetch-with-cli = true
+
+[term]
+color = "never"
+
+[env]
+CARGO_TERM_COLOR = "never"
+SOURCE_DATE_EPOCH = "1700000000"
