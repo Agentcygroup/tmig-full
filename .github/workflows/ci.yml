@@ -1,0 +1,11 @@
+name: ci
+on:
+  push:         { branches: [main] }
+  pull_request: { branches: [main] }
+jobs:
+  gate:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test --release --all-targets
