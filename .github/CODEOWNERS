@@ -1,0 +1,7 @@
+# default owners
+* @Agentcygroup
+
+# build + CI
+/checks/         @Agentcygroup
+/.github/        @Agentcygroup
+/freeze/         @Agentcygroup
