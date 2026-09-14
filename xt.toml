@@ -29,9 +29,20 @@ dir = "checks"
 [[layers.project.target]]
 id = "ci"
 kind = "composite"
-needs = ["rust:fmt", "rust:lint", "rust:test", "checks"]
+needs = ["rust:fmt", "rust:lint", "rust:test", "checks", "freeze-check"]
 
 [[layers.project.target]]
 id = "all"
 kind = "composite"
 needs = ["ci", "rust:build"]
+
+[[layers.project.target]]
+id = "freeze"
+kind = "shell"
+cmd = "python3 $HOME/intent/freeze/rewrite.py $HOME/intent/freeze/my-intent.freeze $PWD"
+
+[[layers.project.target]]
+id = "freeze-check"
+kind = "shell"
+cmd = "python3 $HOME/intent/freeze/rewrite.py $HOME/intent/freeze/my-intent.freeze $PWD && git diff --quiet docs/NON_CLAIMS.md"
+needs = ["freeze"]

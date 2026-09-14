@@ -1,0 +1,362 @@
+{
+  "records": [
+    {
+      "args": [
+        "a build system that captures intent as data and rewrites it into a tree"
+      ],
+      "kind": "want",
+      "line": 3
+    },
+    {
+      "args": [
+        "producers are data \u2014 new language, new standard, new class is one file"
+      ],
+      "kind": "want",
+      "line": 4
+    },
+    {
+      "args": [
+        "strength order is declared once, in one policy file"
+      ],
+      "kind": "want",
+      "line": 5
+    },
+    {
+      "args": [
+        "every schema declares its non-claims; a schema with none is rejected"
+      ],
+      "kind": "want",
+      "line": 6
+    },
+    {
+      "args": [
+        "every run writes a content-addressed receipt carrying four mandatory non-claims"
+      ],
+      "kind": "want",
+      "line": 7
+    },
+    {
+      "args": [
+        "plan computes the closure of every producer over the tree"
+      ],
+      "kind": "want",
+      "line": 8
+    },
+    {
+      "args": [
+        "ci runs the fixed gate; all runs the wider gate; <target> runs one target"
+      ],
+      "kind": "want",
+      "line": 9
+    },
+    {
+      "args": [
+        "the second ci is instant because nothing changed"
+      ],
+      "kind": "want",
+      "line": 10
+    },
+    {
+      "args": [
+        "the rewrite is deterministic \u2014 same .freeze in, same tree out"
+      ],
+      "kind": "want",
+      "line": 11
+    },
+    {
+      "args": [
+        "Cargo.toml"
+      ],
+      "kind": "artifact",
+      "line": 13
+    },
+    {
+      "args": [
+        "xt.toml"
+      ],
+      "kind": "artifact",
+      "line": 14
+    },
+    {
+      "args": [
+        "crates/addr"
+      ],
+      "kind": "artifact",
+      "line": 15
+    },
+    {
+      "args": [
+        "crates/layer"
+      ],
+      "kind": "artifact",
+      "line": 16
+    },
+    {
+      "args": [
+        "crates/schema"
+      ],
+      "kind": "artifact",
+      "line": 17
+    },
+    {
+      "args": [
+        "crates/verify"
+      ],
+      "kind": "artifact",
+      "line": 18
+    },
+    {
+      "args": [
+        "crates/intent"
+      ],
+      "kind": "artifact",
+      "line": 19
+    },
+    {
+      "args": [
+        "crates/xt"
+      ],
+      "kind": "artifact",
+      "line": 20
+    },
+    {
+      "args": [
+        "rust",
+        "class=\"producer\""
+      ],
+      "kind": "engine",
+      "line": 22
+    },
+    {
+      "args": [
+        "python",
+        "class=\"producer\""
+      ],
+      "kind": "engine",
+      "line": 23
+    },
+    {
+      "args": [
+        "node",
+        "class=\"producer\""
+      ],
+      "kind": "engine",
+      "line": 24
+    },
+    {
+      "args": [
+        "go",
+        "class=\"producer\""
+      ],
+      "kind": "engine",
+      "line": 25
+    },
+    {
+      "args": [
+        "ruby",
+        "class=\"producer\""
+      ],
+      "kind": "engine",
+      "line": 26
+    },
+    {
+      "args": [
+        "nix",
+        "class=\"producer\""
+      ],
+      "kind": "engine",
+      "line": 27
+    },
+    {
+      "args": [
+        "docker",
+        "class=\"producer\""
+      ],
+      "kind": "engine",
+      "line": 28
+    },
+    {
+      "args": [
+        "make",
+        "class=\"producer\""
+      ],
+      "kind": "engine",
+      "line": 29
+    },
+    {
+      "args": [
+        "sbom",
+        "class=\"standard\""
+      ],
+      "kind": "engine",
+      "line": 31
+    },
+    {
+      "args": [
+        "slsa",
+        "class=\"standard\""
+      ],
+      "kind": "engine",
+      "line": 32
+    },
+    {
+      "args": [
+        "sigstore",
+        "class=\"standard\""
+      ],
+      "kind": "engine",
+      "line": 33
+    },
+    {
+      "args": [
+        "scorecard",
+        "class=\"standard\""
+      ],
+      "kind": "engine",
+      "line": 34
+    },
+    {
+      "args": [
+        "iso27001",
+        "class=\"standard\""
+      ],
+      "kind": "engine",
+      "line": 35
+    },
+    {
+      "args": [
+        "soc2",
+        "class=\"standard\""
+      ],
+      "kind": "engine",
+      "line": 36
+    },
+    {
+      "args": [
+        "pci-dss",
+        "class=\"standard\""
+      ],
+      "kind": "engine",
+      "line": 37
+    },
+    {
+      "args": [
+        "fedramp",
+        "class=\"standard\""
+      ],
+      "kind": "engine",
+      "line": 38
+    },
+    {
+      "args": [
+        "iec61508",
+        "class=\"standard\""
+      ],
+      "kind": "engine",
+      "line": 39
+    },
+    {
+      "args": [
+        "iec62304",
+        "class=\"standard\""
+      ],
+      "kind": "engine",
+      "line": 40
+    },
+    {
+      "args": [
+        "iso26262",
+        "class=\"standard\""
+      ],
+      "kind": "engine",
+      "line": 41
+    },
+    {
+      "args": [
+        "shell",
+        "class=\"schema\""
+      ],
+      "kind": "engine",
+      "line": 43
+    },
+    {
+      "args": [
+        "checks",
+        "class=\"schema\""
+      ],
+      "kind": "engine",
+      "line": 44
+    },
+    {
+      "args": [
+        "non-claims",
+        "class=\"check\""
+      ],
+      "kind": "engine",
+      "line": 46
+    },
+    {
+      "args": [
+        "no-mastery",
+        "FREEZE does not confer mastery over any discipline."
+      ],
+      "kind": "non_claim",
+      "line": 48
+    },
+    {
+      "args": [
+        "no-accreditation",
+        "FREEZE does not confer institutional accreditation."
+      ],
+      "kind": "non_claim",
+      "line": 49
+    },
+    {
+      "args": [
+        "no-coherence-proof",
+        "FREEZE does not prove its own intent is internally coherent."
+      ],
+      "kind": "non_claim",
+      "line": 50
+    },
+    {
+      "args": [
+        "no-completeness",
+        "FREEZE does not enumerate every target; it rewrites what is written."
+      ],
+      "kind": "non_claim",
+      "line": 51
+    },
+    {
+      "args": [
+        "no HTTP server in tree"
+      ],
+      "kind": "boundary",
+      "line": 53
+    },
+    {
+      "args": [
+        "no DB engine in tree"
+      ],
+      "kind": "boundary",
+      "line": 54
+    },
+    {
+      "args": [
+        "no untrusted executable content"
+      ],
+      "kind": "boundary",
+      "line": 55
+    },
+    {
+      "args": [
+        "self",
+        "accept",
+        "freeze round-trips cleanly on macOS stable"
+      ],
+      "kind": "referee",
+      "line": 57
+    }
+  ],
+  "ts": 1789406882
+}
