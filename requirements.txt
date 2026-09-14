@@ -96,7 +96,7 @@ pmdarima==2.0.4
 beautifulsoup4==4.12.3
 lxml==5.3.0
 selenium==4.24.0
-scrapy==2.11.2
+scrapy==2.17.0
 
 # ---------------------------------------------------------------- crypto primitives
 cryptography==43.0.1
