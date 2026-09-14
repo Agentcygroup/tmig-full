@@ -1,0 +1,25 @@
+# normalize
+* text=auto eol=lf
+
+# binaries
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.tar binary
+*.a   binary
+*.rlib binary
+*.dylib binary
+*.so   binary
+*.dSYM/ binary
+
+# vendored / generated — exclude from diffs, PRs, and linguist
+target/** linguist-generated=true -diff
+node_modules/** linguist-vendored=true -diff
+__pycache__/** linguist-vendored=true -diff
+Cargo.lock linguist-generated=true
+package-lock.json linguist-generated=true
+*.min.js linguist-generated=true -diff
