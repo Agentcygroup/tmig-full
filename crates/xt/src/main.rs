@@ -31,9 +31,7 @@ fn main() {
                 println!("{n}");
             }
         }
-        "help" => {
-            eprintln!("usage: xt <target|plan|show|non-claims>");
-        }
+        "help" => eprintln!("usage: xt <target|plan|show|non-claims>"),
         target => match i.run(target) {
             Ok(r) => {
                 println!("run {}", r.run_id);

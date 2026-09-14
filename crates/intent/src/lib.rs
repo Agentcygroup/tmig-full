@@ -1,3 +1,4 @@
+pub mod producers;
 use layer::{Layer, LayerFile, Resolved, Target};
 use std::collections::BTreeMap;
 use std::path::{Path, PathBuf};
@@ -40,6 +41,22 @@ pub fn load(repo: &Path) -> std::io::Result<Intent> {
             for (id, l) in lf.layers {
                 layers.push((id, l));
             }
+        }
+    }
+    let prod_dir = std::env::var("HOME")
+        .ok()
+        .map(|h| std::path::PathBuf::from(h).join("intent").join("producers"));
+    if let Some(pd) = prod_dir {
+        let prods = producers::load_all(&pd);
+        let targets = producers::expand(repo, &prods);
+        if !targets.is_empty() {
+            layers.push((
+                "produced".to_string(),
+                Layer {
+                    strength: 15,
+                    targets,
+                },
+            ));
         }
     }
     Ok(Intent {
@@ -100,8 +117,16 @@ impl Intent {
         for n in &t.needs {
             self.run_one(n, r, done, rec, cache)?;
         }
-        let iid = addr::Id::of(format!("{:?}", t).as_bytes()).hex();
-        let cacheable = t.kind == "shell" && !t.optional;
+        let iid = match t.kind.as_str() {
+            "checks" => {
+                let d = self.repo.join(t.dir.as_deref().unwrap_or("checks"));
+                addr::Id::of_dir(&d)
+                    .map(|i| i.hex())
+                    .unwrap_or_else(|_| String::new())
+            }
+            _ => addr::Id::of(format!("{:?}", t).as_bytes()).hex(),
+        };
+        let cacheable = (t.kind == "shell" || t.kind == "checks") && !t.optional;
         if cacheable {
             let p = cache.join(format!("{iid}.json"));
             if p.exists() {
