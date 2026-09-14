@@ -1,0 +1,47 @@
+Receipt {
+    run_id: "b3cbfde674554f9a25f3462ac422d7d1f7be72ddd46939fab936087dbb7c43d6",
+    targets: [
+        Tr {
+            id: "fmt",
+            status: "cached",
+            input_id: "b3f6c7625706a82f522d37ca953e9ee44d8f2fd04e37035be35bc6d82b38f694",
+            output_id: "810e75f0d3dee10e68076ea4a252c5cad284ef355c74785fc33f0cd493f3b98e",
+        },
+        Tr {
+            id: "lint",
+            status: "cached",
+            input_id: "f1bc7a2411d78843f3898f64f1f23e58ad0e78f106901911cdea7d34c0ff92c7",
+            output_id: "a739d07f85093505a382d94ec2dc064dc26696c233f94ba0ecbedd6e98049f50",
+        },
+        Tr {
+            id: "build",
+            status: "cached",
+            input_id: "e3b1bf09169740a443c8467f41424d1a092d9c58a9f8f4d21296157c0762dab1",
+            output_id: "d4b1279490de0e744711a77c3b1fd159e6144763370e3d182a2d7638d3f12d1e",
+        },
+        Tr {
+            id: "test",
+            status: "cached",
+            input_id: "bf2bb7a0571f82b8407672afa862e700c2e98351a18da365f68045da3b0a42d4",
+            output_id: "8a51f1c3c1369dc09a032110c4bb1e0683136070b884d524ae796d750da1ff0d",
+        },
+        Tr {
+            id: "checks",
+            status: "ok",
+            input_id: "31e8514ae8b9fd0574ce6c9816e9158f59d71b390e2241976c28fb7e05881a04",
+            output_id: "97d7d1292509a4f7bff9f489fcdfc9f9e413dd587f5da17f7c3a3b999aa92832",
+        },
+        Tr {
+            id: "ci",
+            status: "ok",
+            input_id: "1e92e1e3c4b7c91e605a333879b37b1aea2ba0488ec20478be2430c872d15f5e",
+            output_id: "1b158839f8aa339e89bb50b1603e90ec68e0fd5565fe10a7cb32729fddf7070a",
+        },
+    ],
+    non_claims: [
+        "no-mastery",
+        "no-accreditation",
+        "no-coherence-proof",
+        "no-completeness",
+    ],
+}
