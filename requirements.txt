@@ -99,7 +99,7 @@ selenium==4.24.0
 scrapy==2.11.2
 
 # ---------------------------------------------------------------- crypto primitives
-cryptography==43.0.1
+cryptography==50.0.0
 pyjwt==2.9.0
 oauthlib==3.2.2
 pycryptodome==3.20.0
