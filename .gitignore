@@ -29,3 +29,13 @@ Thumbs.db
 !.env.example
 *.dylib
 *.so
+
+# virtualenvs — never commit these
+venvs/
+venvs-graph/
+
+# git-cloned security tools — they have their own .git
+tools/
+
+# pip logs and receipts that are regenerated
+receipts/reqs-logs/
