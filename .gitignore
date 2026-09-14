@@ -1,20 +1,11 @@
-# build artifacts
 target/
+target/xt-cache/
+target/xt-remote/
 *.d
 *.a
 *.rlib
-
-# xt cache + remote staging
-target/xt-cache/
-target/xt-remote/
-
-# node
 bindings/node/node_modules/
 bindings/node/package-lock.json
-
-# python
 __pycache__/
 *.pyc
-
-# os
 .DS_Store
