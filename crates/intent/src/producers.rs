@@ -1,8 +1,6 @@
-//! producers — expand the tree into targets without a hardcoded list.
 use layer::Target;
 use serde::Deserialize;
 use std::path::{Path, PathBuf};
-
 #[derive(Debug, Clone, Deserialize)]
 pub struct Producer {
     pub id: String,
@@ -26,7 +24,6 @@ pub struct Producer {
     #[serde(default)]
     pub target: Vec<ProducerTarget>,
 }
-
 #[derive(Debug, Clone, Deserialize)]
 pub struct ProducerTarget {
     pub id: String,
@@ -40,11 +37,9 @@ pub struct ProducerTarget {
     #[serde(default)]
     pub optional: bool,
 }
-
 pub fn load_all(dir: &Path) -> Vec<Producer> {
     let mut out = Vec::new();
     if !dir.is_dir() {
-        eprintln!("[producers] not a dir: {}", dir.display());
         return out;
     }
     let mut files: Vec<_> = std::fs::read_dir(dir)
@@ -56,34 +51,27 @@ pub fn load_all(dir: &Path) -> Vec<Producer> {
         .collect();
     files.sort_by_key(|e| e.path());
     for f in files {
-        match std::fs::read_to_string(f.path()) {
-            Ok(txt) => match toml::from_str::<Producer>(&txt) {
+        if let Ok(txt) = std::fs::read_to_string(f.path()) {
+            match toml::from_str::<Producer>(&txt) {
                 Ok(p) => out.push(p),
-                Err(e) => eprintln!("[producers] parse error {}: {}", f.path().display(), e),
-            },
-            Err(e) => eprintln!("[producers] read error {}: {}", f.path().display(), e),
+                Err(e) => eprintln!("[producers] {}: {}", f.path().display(), e),
+            }
         }
     }
     out
 }
-
 pub fn expand(repo: &Path, producers: &[Producer]) -> Vec<Target> {
-    let mut targets = Vec::new();
+    let mut t = Vec::new();
     for p in producers {
-        let produced = match p.class.as_str() {
+        t.extend(match p.class.as_str() {
             "manifest" => expand_manifest(repo, p),
             "treewalk" => expand_treewalk(repo, p),
             "standard-set" => expand_standard_set(p),
-            other => {
-                eprintln!("[producers] unknown class {} for {}", other, p.id);
-                Vec::new()
-            }
-        };
-        targets.extend(produced);
+            _ => Vec::new(),
+        });
     }
-    targets
+    t
 }
-
 fn expand_manifest(repo: &Path, p: &Producer) -> Vec<Target> {
     let Some(name) = p.match_file.as_deref() else {
         return Vec::new();
@@ -103,9 +91,8 @@ fn expand_manifest(repo: &Path, p: &Producer) -> Vec<Target> {
         })
         .collect()
 }
-
 fn expand_treewalk(repo: &Path, p: &Producer) -> Vec<Target> {
-    let Some(glob_pat) = p.glob.as_deref() else {
+    let Some(g) = p.glob.as_deref() else {
         return Vec::new();
     };
     let root: PathBuf = match p.root.as_deref() {
@@ -114,7 +101,7 @@ fn expand_treewalk(repo: &Path, p: &Producer) -> Vec<Target> {
             .unwrap_or_else(|_| PathBuf::from(".")),
         _ => repo.to_path_buf(),
     };
-    let pattern = format!("{}/{}", root.display(), glob_pat);
+    let pattern = format!("{}/{}", root.display(), g);
     let mut out = Vec::new();
     let Ok(entries) = glob::glob(&pattern) else {
         return out;
@@ -152,7 +139,6 @@ fn expand_treewalk(repo: &Path, p: &Producer) -> Vec<Target> {
     }
     out
 }
-
 fn expand_standard_set(p: &Producer) -> Vec<Target> {
     vec![Target {
         id: format!("{}:all", p.id),

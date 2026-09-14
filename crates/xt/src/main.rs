@@ -1,5 +1,4 @@
 use std::process::exit;
-
 fn main() {
     let repo = std::env::current_dir().expect("cwd");
     let args: Vec<String> = std::env::args().skip(1).collect();
@@ -31,7 +30,39 @@ fn main() {
                 println!("{n}");
             }
         }
-        "help" => eprintln!("usage: xt <target|plan|show|non-claims>"),
+        "policy" => {
+            let p = std::env::var("HOME")
+                .map(|h| {
+                    std::path::PathBuf::from(h)
+                        .join("intent")
+                        .join("policy.toml")
+                })
+                .unwrap();
+            match policy::load(&p) {
+                Ok(m) => {
+                    for (k, v) in m {
+                        println!("{v:>4}  {k}");
+                    }
+                }
+                Err(e) => {
+                    eprintln!("{e}");
+                    exit(1);
+                }
+            }
+        }
+        "remote" => {
+            let r = std::env::var("XT_REMOTE")
+                .map(std::path::PathBuf::from)
+                .unwrap_or_else(|_| repo.join("target").join("xt-remote"));
+            match remote::Remote::open(&r) {
+                Ok(_) => println!("remote cache: {}", r.display()),
+                Err(e) => {
+                    eprintln!("{e}");
+                    exit(1);
+                }
+            }
+        }
+        "help" => eprintln!("usage: xt <target|plan|show|non-claims|policy|remote>"),
         target => match i.run(target) {
             Ok(r) => {
                 println!("run {}", r.run_id);

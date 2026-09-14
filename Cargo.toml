@@ -1,3 +1,3 @@
 [workspace]
 resolver = "2"
-members = ["crates/addr","crates/layer","crates/schema","crates/verify","crates/intent","crates/xt"]
+members = ["crates/addr","crates/layer","crates/schema","crates/verify","crates/policy","crates/remote","crates/intent","crates/xt","crates/ffi"]
