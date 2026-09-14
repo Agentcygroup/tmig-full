@@ -1,0 +1,23 @@
+Receipt {
+    run_id: "dbc851cb6b163ccdbd87070a04c2d23a60d8f9707e3bed6fd6f294fde53fb0ee",
+    targets: [
+        Tr {
+            id: "freeze",
+            status: "ok",
+            input_id: "eb1734959363e6c2f902dddca85dc2d3c14b0470062eb69da01339bd14dd7714",
+            output_id: "23b0a89dbabebb6a1c30c9c4ebf9c47842e759995e53534b38a865c7abab8721",
+        },
+        Tr {
+            id: "freeze-check",
+            status: "fail",
+            input_id: "67b1f01bad0a6e45e7194ad41628085c42599272789e3490b91aa04338fd5895",
+            output_id: "41f8d5655cc583522cbc72af920488ae28632ef764089c8f12c8457320fe3a9f",
+        },
+    ],
+    non_claims: [
+        "no-mastery",
+        "no-accreditation",
+        "no-coherence-proof",
+        "no-completeness",
+    ],
+}
