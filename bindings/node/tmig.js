@@ -1,15 +1,18 @@
 const path = require('path');
-const ffi = require('ffi-napi');
+const koffi = require('koffi');
 const here = __dirname;
-const lib = ffi.Library(path.join(here, 'libffi.dylib'), {
-  tmig_id_of: ['pointer', ['pointer', 'size_t']],
-  tmig_free:  ['void',    ['pointer']],
-});
+const lib = koffi.load(path.join(here, 'libffi.dylib'));
+
+// real signature: char* tmig_id_of(const uint8_t* ptr, size_t len)
+const id_of = lib.func('tmig_id_of', 'void *', ['const uint8_t *', 'size_t']);
+const free  = lib.func('tmig_free',  'void',    ['void *']);
+
 function idOf(buf) {
-  const p = lib.tmig_id_of(buf, buf.length);
-  if (p.isNull()) return '';
-  const s = p.readCString();
-  lib.tmig_free(p);
+  const p = id_of(buf, buf.length);
+  if (!p) return '';
+  const s = koffi.decode(p, 'char', -1);
+  free(p);
   return s;
 }
+
 module.exports = { idOf };
