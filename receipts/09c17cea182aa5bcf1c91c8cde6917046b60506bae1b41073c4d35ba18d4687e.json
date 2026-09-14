@@ -1,0 +1,59 @@
+Receipt {
+    run_id: "09c17cea182aa5bcf1c91c8cde6917046b60506bae1b41073c4d35ba18d4687e",
+    targets: [
+        Tr {
+            id: "rust:fmt",
+            status: "cached",
+            input_id: "274d827d454004ca7fa1711827b724c9dff675196858f62d96e1fa84ee5fb9d8",
+            output_id: "810e75f0d3dee10e68076ea4a252c5cad284ef355c74785fc33f0cd493f3b98e",
+        },
+        Tr {
+            id: "rust:lint",
+            status: "cached",
+            input_id: "784c1587e33af20e94a69d94bfde52375dd13d57a43b5d9eca690f2af414367c",
+            output_id: "a739d07f85093505a382d94ec2dc064dc26696c233f94ba0ecbedd6e98049f50",
+        },
+        Tr {
+            id: "rust:build",
+            status: "cached",
+            input_id: "c2f02aca5ad3ef5457458f7b7fdf459a98f15f7437d8c285849f5c4115cb9c2b",
+            output_id: "d4b1279490de0e744711a77c3b1fd159e6144763370e3d182a2d7638d3f12d1e",
+        },
+        Tr {
+            id: "rust:test",
+            status: "cached",
+            input_id: "f31d6ace8d913698771cf08eef1c6034a70fa7f845de6aaad8091bc77f250042",
+            output_id: "8a51f1c3c1369dc09a032110c4bb1e0683136070b884d524ae796d750da1ff0d",
+        },
+        Tr {
+            id: "checks",
+            status: "cached",
+            input_id: "97d7d1292509a4f7bff9f489fcdfc9f9e413dd587f5da17f7c3a3b999aa92832",
+            output_id: "97d7d1292509a4f7bff9f489fcdfc9f9e413dd587f5da17f7c3a3b999aa92832",
+        },
+        Tr {
+            id: "freeze",
+            status: "cached",
+            input_id: "eb1734959363e6c2f902dddca85dc2d3c14b0470062eb69da01339bd14dd7714",
+            output_id: "23b0a89dbabebb6a1c30c9c4ebf9c47842e759995e53534b38a865c7abab8721",
+        },
+        Tr {
+            id: "freeze-check",
+            status: "fail",
+            input_id: "67b1f01bad0a6e45e7194ad41628085c42599272789e3490b91aa04338fd5895",
+            output_id: "41f8d5655cc583522cbc72af920488ae28632ef764089c8f12c8457320fe3a9f",
+        },
+        Tr {
+            id: "ci",
+            status: "ok",
+            input_id: "f7beece52ee2f200caec46438ef089771118e5e069e585a9d849fffe893d2617",
+            output_id: "1b158839f8aa339e89bb50b1603e90ec68e0fd5565fe10a7cb32729fddf7070a",
+        },
+    ],
+    non_claims: [
+        "no-mastery",
+        "no-accreditation",
+        "no-coherence-proof",
+        "no-completeness",
+    ],
+}

@@ -1,0 +1,2 @@
+warning: directory /Users/metadusa/.cargo/advisory-db is locked, waiting for up to 300 seconds for it to become available
+{"database":{"advisory-count":1246,"last-commit":"e2e640471715167f73e22eaf761f2e547adafeec","last-updated":"2026-09-14T18:06:06+02:00"},"lockfile":{"dependency-count":42},"settings":{"target_arch":[],"target_os":[],"severity":null,"ignore":[],"informational_warnings":["unmaintained","unsound","notice"]},"vulnerabilities":{"found":false,"count":0,"list":[]},"warnings":{}}
