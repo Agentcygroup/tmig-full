@@ -1,41 +1,24 @@
+# Rust
 target/
-target/xt-cache/
-target/xt-remote/
-*.d
-*.a
-*.rlib
-bindings/node/node_modules/
-bindings/node/package-lock.json
-__pycache__/
-*.pyc
-.DS_Store
-node_modules/
-.venv/
-venv/
-dist/
-build/
-.next/
-.turbo/
-Thumbs.db
-*.swp
-*.swo
-*~
-.idea/
-.vscode/
-*.log
-*.tmp
-.env
-.env.*
-!.env.example
-*.dylib
-*.so
 
-# virtualenvs — never commit these
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv*/
 venvs/
 venvs-graph/
+venv-*/
+tool-venvs/
 
-# git-cloned security tools — they have their own .git
+# build / cache
+.stacks/
+receipts/reqs-logs/
+receipts/automate.log
+
+# cloned external repos
 tools/
 
-# pip logs and receipts that are regenerated
-receipts/reqs-logs/
+# OS
+.DS_Store
