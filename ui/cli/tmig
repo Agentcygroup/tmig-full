@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -uo pipefail
+cd "$(dirname "$0")/../.." || exit 1
+cmd="${1:-status}"; shift || true
+case "$cmd" in
+  status)
+    printf '\n  HEAD:  %s\n' "$(git log --oneline -1)"
+    printf '  hooks: %s\n' "$(git config core.hooksPath)"
+    printf '  tag:   %s\n' "$(git tag --list | tr '\n' ' ')"
+    printf '  disk:  %s free\n' "$(df -h "$PWD" | tail -1 | awk '{print $4}')"
+    ;;
+  verify)          scripts/local-verify.sh ;;
+  doctor)          dxp/doctor.sh ;;
+  license)         licensing/check.sh ;;
+  health)          lifecycle/healthcheck.sh ;;
+  probe)           ix/probe.sh ;;
+  infra-status)    infra/status.sh ;;
+  infra-reconcile) infra/bin/reconcile ;;
+  release)         ci/release.sh "$@" ;;
+  ui-web)          python3 ui/web/server.py ;;
+  *) echo "unknown: $cmd" >&2; exit 1 ;;
+esac

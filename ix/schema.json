@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Sovereign endpoint",
+  "type": "object",
+  "required": ["port", "name", "health", "method"],
+  "properties": {
+    "port":   {"type": "integer", "minimum": 1024, "maximum": 65535},
+    "name":   {"type": "string",  "minLength": 1},
+    "health": {"type": "string",  "pattern": "^/"},
+    "method": {"type": "string",  "enum": ["GET", "POST"]}
+  }
+}

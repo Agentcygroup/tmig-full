@@ -1,0 +1,6 @@
+endpoints:
+  - {port: 8080, name: llama-cpp,       health: /v1/models, method: GET}
+  - {port: 8081, name: embeddings,      health: /health,    method: GET}
+  - {port: 8082, name: diffusers,       health: /health,    method: GET}
+  - {port: 8083, name: faster-whisper,  health: /health,    method: GET}
+  - {port: 8084, name: vision,          health: /health,    method: GET}
