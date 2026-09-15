@@ -21,7 +21,7 @@ pytorch-lightning==2.4.0
 # ---------------------------------------------------------------- nlp
 transformers>=4.46.3,<5
 huggingface_hub==0.24.6
-spacy==3.7.6
+spacy==3.8.16
 nltk>=3.9.1,<4
 gensim==4.3.3
 
