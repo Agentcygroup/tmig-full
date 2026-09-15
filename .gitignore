@@ -60,3 +60,4 @@ coverage/
 /.direnv/
 /.venv*
 *.bak
+*.pre-bump
