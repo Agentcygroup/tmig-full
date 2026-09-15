@@ -9,17 +9,17 @@ echo "== Initiating Sovereign Mesh Convergence Loop (Tag: $TAG) =="
 
 while [ $attempt -le $MAX_RETRIES ]; do
     echo "--- Convergence Iteration $attempt/$MAX_RETRIES ---"
-    
+
     # 1. Run runtime to refresh node receipts
     if [ -f "sovereign_runtime.py" ]; then
         python3 sovereign_runtime.py || true
     fi
-    
+
     # 2. Poll and merge pending compliance PRs
     if [ -f "poll-and-merge.sh" ]; then
         ./poll-and-merge.sh "$TAG" || true
     fi
-    
+
     # 3. Verify node receipt convergence
     converged=true
     for node in node-01 node-02 node-03; do
@@ -35,7 +35,7 @@ while [ $attempt -le $MAX_RETRIES ]; do
             fi
         fi
     done
-    
+
     # 4. Verify Git working trees are clean on main across repositories
     for repo in team-tmig tmig-full; do
         target_dir="$HOME/$repo"
@@ -49,14 +49,14 @@ while [ $attempt -le $MAX_RETRIES ]; do
             fi
         fi
     done
-    
+
     cd "$HOME/tmig-full"
-    
+
     if [ "$converged" = true ]; then
         echo "== Closure Convergence Achieved Successfully! All nodes and repositories synchronized. =="
         exit 0
     fi
-    
+
     echo "Convergence pending. Retrying in 5 seconds..."
     sleep 5
     attempt=$((attempt + 1))

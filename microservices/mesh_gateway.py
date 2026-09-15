@@ -17,7 +17,7 @@ async def dispatch_task(node_id: str, payload: dict):
     valid_nodes = ["node-01", "node-02", "node-03"]
     if node_id not in valid_nodes:
         raise HTTPException(status_code=400, detail="Invalid edge node identifier.")
-    
+
     future = execute_node_task.remote(node_id, payload)
     result = ray.get(future)
     return {"gateway": "active", "dispatch_result": result}

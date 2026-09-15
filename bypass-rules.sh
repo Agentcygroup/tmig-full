@@ -9,17 +9,17 @@ for repo in team-tmig tmig-full; do
   if [ -d "$target_dir" ]; then
     echo "Processing $repo..."
     cd "$target_dir"
-    
+
     # Close any blocking PRs to clear state
     PR_NUM=$(gh pr list --head fix/workflow-dispatch --json number --jq '.[0].number' || true)
     if [ -n "${PR_NUM:-}" ]; then
       gh pr close "$PR_NUM" --delete-branch || true
     fi
-    
+
     # Direct push to main, bypassing branch protection rule bottlenecks
     git checkout main
     git pull origin main
-    
+
     mkdir -p .github/workflows
     cat << 'YAML' > .github/workflows/ci.yml
 name: CI
@@ -59,10 +59,10 @@ for i in "${!NODES[@]}"; do
   x_coord=$(( i % GRID_SIZE ))
   y_coord=$(( (i + 1) % GRID_SIZE ))
   bounds_hash=$(echo -n "$node-$TAG-$x_coord-$y_coord" | shasum -a 256 | awk '{print $1}')
-  
+
   target_dir="$HOME/receipts/Agentcygroup/mlx-cluster/$node"
   mkdir -p "$target_dir"
-  
+
   cat << JSON > "$target_dir/toroidal_state.json"
 {
   "node": "$node",
