@@ -83,4 +83,8 @@ echo "== usd =="
 bash scripts/tests/usd-actions-covered.sh
 bash scripts/tests/usd-behaviors-covered.sh
 
+
+echo "== emergence-covered =="
+bash scripts/tests/emergence-covered.sh
+
 echo "ALL LOCAL CHECKS PASS"

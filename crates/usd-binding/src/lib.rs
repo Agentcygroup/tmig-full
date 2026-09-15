@@ -9,6 +9,7 @@ pub struct Prim {
     pub ty: String,
     pub name: String,
     pub strings: BTreeMap<String, String>,
+    pub rels: BTreeMap<String, String>,
 }
 
 pub fn parse(src: &str) -> Vec<Prim> {
@@ -35,11 +36,20 @@ pub fn parse(src: &str) -> Vec<Prim> {
                 ty,
                 name,
                 strings: BTreeMap::new(),
+                rels: BTreeMap::new(),
             });
             continue;
         }
 
         if let Some(p) = current.as_mut() {
+            if let Some(rest) = line.strip_prefix("rel ") {
+                if let Some((k, v)) = rest.split_once('=') {
+                    let key = k.trim().to_string();
+                    let val = v.trim().trim_end_matches(';').trim().to_string();
+                    p.rels.insert(key, val);
+                }
+                continue;
+            }
             if let Some(rest) = line.strip_prefix("string ") {
                 if let Some((k, v)) = rest.split_once('=') {
                     let key = k.trim().to_string();

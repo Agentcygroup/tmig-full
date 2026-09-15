@@ -1,0 +1,12 @@
+#usda 1.0
+(
+    defaultPrim = "EmergenceSchema"
+)
+
+class Emergence "EmergenceSchema" {
+    rel    from_action    # -> /Actions/<id>
+    rel    from_behavior  # -> /Behaviors/<id>
+    string property       # what emerges from the binding
+    string check          # the invariant that proves it
+    string nonclaim
+}

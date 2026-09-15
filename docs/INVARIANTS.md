@@ -15,6 +15,7 @@ Regenerate with `python3 scripts/regenerate-invariants.py`.
 - `scripts/tests/cross-target.sh`
 - `scripts/tests/docs-claims.sh`
 - `scripts/tests/edition-consistency.sh`
+- `scripts/tests/emergence-covered.sh`
 - `scripts/tests/go-xt-agree.sh`
 - `scripts/tests/hooks-installed.sh`
 - `scripts/tests/industries-covered.sh`
@@ -65,6 +66,7 @@ Regenerate with `python3 scripts/regenerate-invariants.py`.
 
 - `adversarial.rs`
 - `assertions.rs`
+- `emergence.rs`
 - `emit_all_phases.rs`
 - `emit_roundtrip.rs`
 - `escaping.rs`

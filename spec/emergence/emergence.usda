@@ -1,0 +1,141 @@
+#usda 1.0
+(
+    defaultPrim = "Emergence"
+    subLayers = [ "../schemas/emergence.usda" ]
+)
+
+def Scope "Emergence" {
+    def Emergence "read-via-parse" {
+        rel from_action = </Actions/read>
+        rel from_behavior = </Behaviors/parse>
+        string property = "grammar conformance"
+        string check = "INV-parse-roundtrip"
+        string nonclaim = "conformance is only to the declared grammar"
+    }
+    def Emergence "read-via-evaluate" {
+        rel from_action = </Actions/read>
+        rel from_behavior = </Behaviors/evaluate>
+        string property = "policy agreement"
+        string check = "make policy-agree"
+        string nonclaim = "agreement is between two evaluators, not proof"
+    }
+    def Emergence "write-via-emit" {
+        rel from_action = </Actions/write>
+        rel from_behavior = </Behaviors/emit>
+        string property = "artifact well-formedness"
+        string check = "INV-sdcl-valid-yaml"
+        string nonclaim = "well-formed is not correct"
+    }
+    def Emergence "exec-via-monitor" {
+        rel from_action = </Actions/exec>
+        rel from_behavior = </Behaviors/monitor>
+        string property = "liveness signal"
+        string check = "iso-42001-monitor"
+        string nonclaim = "signal is emitted, not confirmed"
+    }
+    def Emergence "exec-via-dispatch" {
+        rel from_action = </Actions/exec>
+        rel from_behavior = </Behaviors/dispatch>
+        string property = "routing stability"
+        string check = "go-xt-agree"
+        string nonclaim = "agreement is per-example, not exhaustive"
+    }
+    def Emergence "read-via-authorize" {
+        rel from_action = </Actions/read>
+        rel from_behavior = </Behaviors/authorize>
+        string property = "receipt accountability"
+        string check = "INV-nonclaim"
+        string nonclaim = "receipt names a principal; it does not verify one"
+    }
+    def Emergence "exec-via-seam-call" {
+        rel from_action = </Actions/exec>
+        rel from_behavior = </Behaviors/seam-call>
+        string property = "bounded recursion"
+        string check = "INV-seam-cycle"
+        string nonclaim = "bounded by depth, not by content"
+    }
+    def Emergence "release-via-release-tarball" {
+        rel from_action = </Actions/release>
+        rel from_behavior = </Behaviors/release-tarball>
+        string property = "hermetic output"
+        string check = "iso-9001-quality"
+        string nonclaim = "hermetic here means reproducible inputs, not scanned output"
+    }
+    def Emergence "release-via-sign" {
+        rel from_action = </Actions/sign>
+        rel from_behavior = </Behaviors/release-tarball>
+        string property = "artefact authentication"
+        string check = "release pipeline"
+        string nonclaim = "sign does not verify content"
+    }
+    def Emergence "release-via-push" {
+        rel from_action = </Actions/push>
+        rel from_behavior = </Behaviors/release-tarball>
+        string property = "remote state delivery"
+        string check = "git push output"
+        string nonclaim = "push does not imply review"
+    }
+    def Emergence "read-via-addr" {
+        rel from_action = </Actions/read>
+        rel from_behavior = </Behaviors/addr-do>
+        string property = "address resolvability"
+        string check = "smoke"
+        string nonclaim = "addr does not imply reachability"
+    }
+    def Emergence "exec-via-ffi" {
+        rel from_action = </Actions/exec>
+        rel from_behavior = </Behaviors/ffi-do>
+        string property = "abi contract"
+        string check = "smoke"
+        string nonclaim = "ffi does not imply memory safety across the boundary"
+    }
+    def Emergence "read-via-intent" {
+        rel from_action = </Actions/read>
+        rel from_behavior = </Behaviors/intent-do>
+        string property = "plan resolvability"
+        string check = "INV-extension-checks"
+        string nonclaim = "intent is a plan, not a commitment"
+    }
+    def Emergence "read-via-layer" {
+        rel from_action = </Actions/read>
+        rel from_behavior = </Behaviors/layer-do>
+        string property = "strength floor"
+        string check = "INV-nonclaim"
+        string nonclaim = "layer does not enforce strength by itself"
+    }
+    def Emergence "read-via-nonclaim" {
+        rel from_action = </Actions/read>
+        rel from_behavior = </Behaviors/nonclaim-do>
+        string property = "claim well-formedness"
+        string check = "INV-nonclaim"
+        string nonclaim = "nonclaim rejects empty and forbidden words only"
+    }
+    def Emergence "read-via-policy" {
+        rel from_action = </Actions/read>
+        rel from_behavior = </Behaviors/policy-do>
+        string property = "rule evaluation"
+        string check = "make policy-agree"
+        string nonclaim = "policy is a set of rules, not a proof of correctness"
+    }
+    def Emergence "read-via-remote" {
+        rel from_action = </Actions/read>
+        rel from_behavior = </Behaviors/remote-do>
+        string property = "cache locality"
+        string check = "smoke"
+        string nonclaim = "remote cache is local, not a network service"
+    }
+    def Emergence "read-via-schema" {
+        rel from_action = </Actions/read>
+        rel from_behavior = </Behaviors/schema-do>
+        string property = "registry consistency"
+        string check = "INV-schema-presence"
+        string nonclaim = "schema does not imply validation of every input"
+    }
+    def Emergence "read-via-verify" {
+        rel from_action = </Actions/read>
+        rel from_behavior = </Behaviors/verify-do>
+        string property = "schema coverage"
+        string check = "smoke"
+        string nonclaim = "verify exercises declared schemas only"
+    }
+}
