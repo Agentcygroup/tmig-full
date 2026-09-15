@@ -113,7 +113,7 @@ elif ! curl -sf http://127.0.0.1:8080/v1/models >/dev/null 2>&1; then
     export PATH="/opt/homebrew/bin:$PATH"
     LLAMA=/opt/homebrew/bin/llama-server
     log "  start :8080 llama.cpp"
-    setsid nohup "$LLAMA" --models-dir "$HOME/.llama/models" \
+    nohup "$LLAMA" --models-dir "$HOME/.llama/models" \
       --host 127.0.0.1 --port 8080 --ctx-size 32768 --n-gpu-layers 999 \
       > "$HOME/.llama/router.log" 2>&1 < /dev/null &
     disown
@@ -144,7 +144,7 @@ def health(): return {"ok": True}
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8081)
 PYEOF
-  setsid nohup "$PY" "$ROOT/oss-providers/embeddings_server.py" > "$HOME/.embeddings.log" 2>&1 < /dev/null &
+  nohup "$PY" "$ROOT/oss-providers/embeddings_server.py" > "$HOME/.embeddings.log" 2>&1 < /dev/null &
   disown
 fi
 
@@ -186,7 +186,7 @@ if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8082)
 PYEOF
-  setsid nohup "$PY" "$ROOT/oss-providers/diffusers_server.py" > "$HOME/.diffusers.log" 2>&1 < /dev/null &
+  nohup "$PY" "$ROOT/oss-providers/diffusers_server.py" > "$HOME/.diffusers.log" 2>&1 < /dev/null &
   disown
 fi
 
@@ -213,7 +213,7 @@ def health(): return {"ok": True}
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8083)
 PYEOF
-  setsid nohup "$PY" "$ROOT/oss-providers/whisper_server.py" > "$HOME/.whisper.log" 2>&1 < /dev/null &
+  nohup "$PY" "$ROOT/oss-providers/whisper_server.py" > "$HOME/.whisper.log" 2>&1 < /dev/null &
   disown
 fi
 
@@ -248,7 +248,7 @@ def health(): return {"ok": True}
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8084)
 PYEOF
-  setsid nohup "$PY" "$ROOT/oss-providers/vision_server.py" > "$HOME/.vision.log" 2>&1 < /dev/null &
+  nohup "$PY" "$ROOT/oss-providers/vision_server.py" > "$HOME/.vision.log" 2>&1 < /dev/null &
   disown
 fi
 
