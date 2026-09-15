@@ -1,0 +1,36 @@
+{
+  "": {
+    "entityTypes": {
+      "Principal": {
+        "shape": {
+          "type": "Record",
+          "attributes": {
+            "role": { "type": "String" }
+          }
+        }
+      },
+      "Action": {
+        "attributes": {
+          "effect": { "type": "String", "required": true }
+        }
+      },
+      "Resource": {
+        "shape": {
+          "type": "Record",
+          "attributes": {
+            "kind": { "type": "String" },
+            "path": { "type": "String" }
+          }
+        }
+      }
+    },
+    "actions": {
+      "read":    { "appliesTo": { "principalTypes": ["Principal"], "resourceTypes": ["Resource"] } },
+      "write":   { "appliesTo": { "principalTypes": ["Principal"], "resourceTypes": ["Resource"] } },
+      "exec":    { "appliesTo": { "principalTypes": ["Principal"], "resourceTypes": ["Resource"] } },
+      "release": { "appliesTo": { "principalTypes": ["Principal"], "resourceTypes": ["Resource"] } },
+      "sign":    { "appliesTo": { "principalTypes": ["Principal"], "resourceTypes": ["Resource"] } },
+      "push":    { "appliesTo": { "principalTypes": ["Principal"], "resourceTypes": ["Resource"] } }
+    }
+  }
+}
