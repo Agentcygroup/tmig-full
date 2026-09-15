@@ -1,39 +1,39 @@
 [[service]]
-name = "llama"
-port = 8080
+name   = "llama"
+port   = 8080
 health = "http://127.0.0.1:8080/v1/models"
-log = "~/.llama/router.log"
-cwd = "~"
-cmd = ["/opt/homebrew/bin/llama-server", "--models-dir", "~/.llama/models", "--host", "127.0.0.1", "--port", "8080", "--ctx-size", "32768", "--n-gpu-layers", "999"]
+log    = "~/.llama/router.log"
+cwd    = "~"
+cmd    = ["/opt/homebrew/bin/llama-server", "--models-dir", "~/.llama/models", "--host", "127.0.0.1", "--port", "8080", "--ctx-size", "32768", "--n-gpu-layers", "999"]
 
 [[service]]
-name = "embeddings"
-port = 8081
+name   = "embeddings"
+port   = 8081
 health = "http://127.0.0.1:8081/health"
-log = "~/.embeddings.log"
-cwd = "~/tmig-full"
-cmd = ["$VENV/bin/python", "oss-providers/embeddings_server.py"]
+log    = "~/.embeddings.log"
+cwd    = "~/tmig-full"
+cmd    = ["$VENV/bin/python", "oss-providers/embeddings_server.py"]
 
 [[service]]
-name = "diffusers"
-port = 8082
+name   = "diffusers"
+port   = 8082
 health = "http://127.0.0.1:8082/health"
-log = "~/.diffusers.log"
-cwd = "~/tmig-full"
-cmd = ["$VENV/bin/python", "oss-providers/diffusers_server.py"]
+log    = "~/.diffusers.log"
+cwd    = "~/tmig-full"
+cmd    = ["$VENV/bin/python", "oss-providers/diffusers_server.py"]
 
 [[service]]
-name = "whisper"
-port = 8083
+name   = "whisper"
+port   = 8083
 health = "http://127.0.0.1:8083/health"
-log = "~/.whisper.log"
-cwd = "~/tmig-full"
-cmd = ["$VENV/bin/python", "oss-providers/whisper_server.py"]
+log    = "~/.whisper.log"
+cwd    = "~/tmig-full"
+cmd    = ["$VENV/bin/python", "oss-providers/whisper_server.py"]
 
 [[service]]
-name = "vision"
-port = 8084
+name   = "vision"
+port   = 8084
 health = "http://127.0.0.1:8084/health"
-log = "~/.vision.log"
-cwd = "~/tmig-full"
-cmd = ["$VENV/bin/python", "oss-providers/vision_server.py"]
+log    = "~/.vision.log"
+cwd    = "~/tmig-full"
+cmd    = ["$VENV/bin/python", "oss-providers/vision_server.py"]
