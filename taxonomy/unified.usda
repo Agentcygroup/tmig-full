@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "Taxonomy"
+    upAxis = "Y"
+)
+
+def Scope "Taxonomy"
+{
+    def Scope "Host" (
+        prepend references = @/Users/metadusa/tmig-full/taxonomy/host/host.usda@
+    )
+    {
+    }
+}
+
