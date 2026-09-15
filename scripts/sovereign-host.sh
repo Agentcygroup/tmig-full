@@ -5,6 +5,7 @@
 set -uo pipefail
 
 # single-instance lock
+VENV="${TMIG_VENV:-$HOME/.pi-venv}"
 LOCK="$HOME/.sovereign-host.lock"
 if [ -e "$LOCK" ] && kill -0 "$(cat "$LOCK" 2>/dev/null)" 2>/dev/null; then
   echo "another sovereign-host is running (pid $(cat "$LOCK")); exiting"
@@ -17,7 +18,7 @@ ROOT="$HOME/tmig-full"
 TAX="$ROOT/taxonomy"
 HOST="$TAX/host"
 mkdir -p "$HOST"
-PY="$ROOT/venvs/hf/bin/python"
+PY="$VENV/bin/python"
 LOG="$ROOT/receipts/sovereign-host.log"
 mkdir -p "$(dirname "$LOG")"
 log() { printf '%s %s\n' "$(date +%H:%M:%S)" "$*" | tee -a "$LOG"; }
@@ -108,9 +109,11 @@ mkdir -p "$ROOT/oss-providers"
 if lsof -ti:8080 >/dev/null 2>&1; then
   log "  :8080 already running, skip"
 elif ! curl -sf http://127.0.0.1:8080/v1/models >/dev/null 2>&1; then
-  if command -v llama-server >/dev/null 2>&1; then
+  if command -v llama-server >/dev/null 2>&1 || [ -x /opt/homebrew/bin/llama-server ]; then
+    export PATH="/opt/homebrew/bin:$PATH"
+    LLAMA=/opt/homebrew/bin/llama-server
     log "  start :8080 llama.cpp"
-    nohup llama-server --models-dir "$HOME/.llama/models" \
+    nohup "$LLAMA" --models-dir "$HOME/.llama/models" \
       --host 127.0.0.1 --port 8080 --ctx-size 32768 --n-gpu-layers 999 \
       > "$HOME/.llama/router.log" 2>&1 &
   fi

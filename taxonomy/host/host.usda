@@ -14,7 +14,7 @@ def Scope "Host"
 
     def Xform "model_number"
     {
-        custom string notes = ""
+        custom string notes = "None"
         custom string value = "Z1FT000D8LL/A"
     }
 
@@ -44,31 +44,31 @@ def Scope "Host"
 
     def Xform "firmware"
     {
-        custom string notes = ""
+        custom string notes = "None"
         custom string value = "18000.161.10"
     }
 
     def Xform "serial"
     {
-        custom string notes = ""
+        custom string notes = "None"
         custom string value = "MY916YKY0Y"
     }
 
     def Xform "uuid"
     {
-        custom string notes = ""
+        custom string notes = "None"
         custom string value = "EA49ECB2-ED20-5372-BC7F-9B84A36E01F4"
     }
 
     def Xform "udid"
     {
-        custom string notes = ""
+        custom string notes = "None"
         custom string value = "00006041-001871A60EFA401C"
     }
 
     def Xform "activation_lock"
     {
-        custom string notes = ""
+        custom string notes = "None"
         custom string value = "enabled"
     }
 
@@ -92,7 +92,7 @@ def Scope "Host"
 
     def Xform "storage_type"
     {
-        custom string notes = ""
+        custom string notes = "None"
         custom string value = "NVMe SSD"
     }
 
