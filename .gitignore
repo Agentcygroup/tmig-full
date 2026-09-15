@@ -59,3 +59,4 @@ coverage/
 *.lcov
 /.direnv/
 /.venv*
+*.bak
