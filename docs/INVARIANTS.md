@@ -2,7 +2,7 @@
 
 Every invariant is a property a command can fail on. This file is
 the index. `scripts/tests/invariants-indexed.sh` verifies the two
-stay in sync. Update by running this script:
+stay in sync. Regenerate with:
 
 ```bash
 python3 scripts/regenerate-invariants.py

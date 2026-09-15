@@ -58,4 +58,17 @@ for t in concurrency invariants-indexed no-duplicate-types \
 done
 
 echo
+
+# --- standards-derived invariants ---
+for t in oecd-accountability oecd-risk unesco-eia coe-transparency \
+         nist-govern nist-measure iso-42001-monitor iso-42001-transparency \
+         iso-25010-quality ieee-7000-values ieee-7001-transparency \
+         ieee-7002-privacy eu-ai-act-prohibited nist-ssdf uk-ai-principles \
+         gdpr-principles wcag-accessibility iso-9001-quality \
+         iso-29119-testing iso-27001-security acm-avoid-harm acm-honesty \
+         bcs-competence se-code-product se-code-profession; do
+    echo "== standards: $t =="
+    bash scripts/tests/standards/$t.sh || { echo "FAIL: standards/$t"; exit 1; }
+done
+
 echo "ALL LOCAL CHECKS PASS"

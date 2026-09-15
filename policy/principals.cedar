@@ -1,3 +1,4 @@
+// Each principal carries a nonclaim; see policy/rules/04-nonclaims.cedar.
 // Exactly three principals are permitted. Any other is denied.
 @id("policy.principal.allow")
 permit (

@@ -1,29 +1,321 @@
 {
   "comment": "Each row is a request and the decision it must produce.",
   "rows": [
-    { "id": "allow-kernel-read",       "principal": "kernel",    "action": "read",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full/x",       "context": {"principal":"kernel","layer":"all","strength":40,"cmd":"","claim":""},    "expect": "allow" },
-    { "id": "allow-reconcile-read",    "principal": "reconcile", "action": "read",    "resource": "res:1", "resource_path": "/Users/metadusa/Library/LaunchAgents/com.sovereign.runtime.plist", "context": {"principal":"reconcile","layer":"host","strength":40,"cmd":"","claim":""}, "expect": "allow" },
-    { "id": "allow-xt-read",           "principal": "xt",        "action": "read",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full/Cargo.toml", "context": {"principal":"xt","layer":"all","strength":40,"cmd":"","claim":""}, "expect": "allow" },
-    { "id": "allow-xt-release",        "principal": "xt",        "action": "release", "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full/out/xt.tar.gz", "context": {"principal":"xt","layer":"all","strength":40,"cmd":"","claim":""}, "expect": "allow" },
-    { "id": "allow-xt-sign",           "principal": "xt",        "action": "sign",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full/out/xt.tar.gz", "context": {"principal":"xt","layer":"all","strength":40,"cmd":"","claim":""}, "expect": "allow" },
-    { "id": "allow-xt-push",           "principal": "xt",        "action": "push",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full", "context": {"principal":"xt","layer":"all","strength":40,"cmd":"","claim":""}, "expect": "allow" },
-
-    { "id": "deny-unknown-principal",  "principal": "root",      "action": "read",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full/Cargo.toml", "context": {"principal":"root","layer":"all","strength":40,"cmd":"","claim":""}, "expect": "deny" },
-    { "id": "deny-write-outside",      "principal": "xt",        "action": "write",   "resource": "res:1", "resource_path": "/etc/passwd", "context": {"principal":"xt","layer":"all","strength":40,"cmd":"","claim":""}, "expect": "deny" },
-    { "id": "allow-write-inside",      "principal": "xt",        "action": "write",   "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full/tmp.txt", "context": {"principal":"xt","layer":"all","strength":40,"cmd":"","claim":""}, "expect": "allow" },
-
-    { "id": "deny-exec-http-server",   "principal": "xt",        "action": "exec",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full", "context": {"principal":"xt","layer":"all","strength":40,"cmd":"python3 -m http.server 9000","claim":""}, "expect": "deny" },
-    { "id": "deny-exec-nc",            "principal": "xt",        "action": "exec",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full", "context": {"principal":"xt","layer":"all","strength":40,"cmd":"nc -l 4444","claim":""}, "expect": "deny" },
-    { "id": "deny-exec-postgres",      "principal": "reconcile", "action": "exec",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full", "context": {"principal":"reconcile","layer":"host","strength":40,"cmd":"postgres -D /var/lib/pg","claim":""}, "expect": "deny" },
-    { "id": "deny-exec-redis",         "principal": "reconcile", "action": "exec",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full", "context": {"principal":"reconcile","layer":"host","strength":40,"cmd":"redis-server","claim":""}, "expect": "deny" },
-    { "id": "allow-exec-make",         "principal": "xt",        "action": "exec",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full", "context": {"principal":"xt","layer":"all","strength":40,"cmd":"make verify","claim":""}, "expect": "allow" },
-
-    { "id": "deny-strength-zero",      "principal": "xt",        "action": "read",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full/Cargo.toml", "context": {"principal":"xt","layer":"all","strength":0,"cmd":"","claim":""},  "expect": "deny" },
-    { "id": "deny-strength-ci-low",    "principal": "xt",        "action": "read",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full/Cargo.toml", "context": {"principal":"xt","layer":"ci","strength":10,"cmd":"","claim":""}, "expect": "deny" },
-    { "id": "deny-strength-policy-low","principal": "xt",        "action": "read",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full/Cargo.toml", "context": {"principal":"xt","layer":"policy","strength":40,"cmd":"","claim":""}, "expect": "deny" },
-
-    { "id": "deny-no-nonclaim",        "principal": "xt",        "action": "read",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full/Cargo.toml", "context": {"principal":"xt","layer":"schema:new","strength":40,"cmd":"","claim":""}, "expect": "deny" },
-    { "id": "deny-claim-mastery",      "principal": "xt",        "action": "read",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full/Cargo.toml", "context": {"principal":"xt","layer":"all","strength":40,"cmd":"","claim":"mastery"}, "expect": "deny" },
-    { "id": "deny-claim-accreditation","principal": "xt",        "action": "read",    "resource": "res:1", "resource_path": "/Users/metadusa/tmig-full/Cargo.toml", "context": {"principal":"xt","layer":"all","strength":40,"cmd":"","claim":"accreditation"}, "expect": "deny" }
+    {
+      "id": "allow-kernel-read",
+      "principal": "kernel",
+      "action": "read",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full/x",
+      "context": {
+        "principal": "kernel",
+        "layer": "all",
+        "strength": 40,
+        "cmd": "",
+        "claim": ""
+      },
+      "expect": "allow"
+    },
+    {
+      "id": "allow-reconcile-read",
+      "principal": "reconcile",
+      "action": "read",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/Library/LaunchAgents/com.sovereign.runtime.plist",
+      "context": {
+        "principal": "reconcile",
+        "layer": "host",
+        "strength": 40,
+        "cmd": "",
+        "claim": ""
+      },
+      "expect": "allow"
+    },
+    {
+      "id": "allow-xt-read",
+      "principal": "xt",
+      "action": "read",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full/Cargo.toml",
+      "context": {
+        "principal": "xt",
+        "layer": "all",
+        "strength": 40,
+        "cmd": "",
+        "claim": ""
+      },
+      "expect": "allow"
+    },
+    {
+      "id": "allow-xt-release",
+      "principal": "xt",
+      "action": "release",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full/out/xt.tar.gz",
+      "context": {
+        "principal": "xt",
+        "layer": "all",
+        "strength": 40,
+        "cmd": "",
+        "claim": ""
+      },
+      "expect": "allow"
+    },
+    {
+      "id": "allow-xt-sign",
+      "principal": "xt",
+      "action": "sign",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full/out/xt.tar.gz",
+      "context": {
+        "principal": "xt",
+        "layer": "all",
+        "strength": 40,
+        "cmd": "",
+        "claim": ""
+      },
+      "expect": "allow"
+    },
+    {
+      "id": "allow-xt-push",
+      "principal": "xt",
+      "action": "push",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full",
+      "context": {
+        "principal": "xt",
+        "layer": "all",
+        "strength": 40,
+        "cmd": "",
+        "claim": ""
+      },
+      "expect": "allow"
+    },
+    {
+      "id": "deny-unknown-principal",
+      "principal": "root",
+      "action": "read",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full/Cargo.toml",
+      "context": {
+        "principal": "root",
+        "layer": "all",
+        "strength": 40,
+        "cmd": "",
+        "claim": ""
+      },
+      "expect": "deny"
+    },
+    {
+      "id": "deny-write-outside",
+      "principal": "xt",
+      "action": "write",
+      "resource": "res:1",
+      "resource_path": "/etc/passwd",
+      "context": {
+        "principal": "xt",
+        "layer": "all",
+        "strength": 40,
+        "cmd": "",
+        "claim": ""
+      },
+      "expect": "deny"
+    },
+    {
+      "id": "allow-write-inside",
+      "principal": "xt",
+      "action": "write",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full/tmp.txt",
+      "context": {
+        "principal": "xt",
+        "layer": "all",
+        "strength": 40,
+        "cmd": "",
+        "claim": ""
+      },
+      "expect": "allow"
+    },
+    {
+      "id": "deny-exec-http-server",
+      "principal": "xt",
+      "action": "exec",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full",
+      "context": {
+        "principal": "xt",
+        "layer": "all",
+        "strength": 40,
+        "cmd": "python3 -m http.server 9000",
+        "claim": ""
+      },
+      "expect": "deny"
+    },
+    {
+      "id": "deny-exec-nc",
+      "principal": "xt",
+      "action": "exec",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full",
+      "context": {
+        "principal": "xt",
+        "layer": "all",
+        "strength": 40,
+        "cmd": "nc -l 4444",
+        "claim": ""
+      },
+      "expect": "deny"
+    },
+    {
+      "id": "deny-exec-postgres",
+      "principal": "reconcile",
+      "action": "exec",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full",
+      "context": {
+        "principal": "reconcile",
+        "layer": "host",
+        "strength": 40,
+        "cmd": "postgres -D /var/lib/pg",
+        "claim": ""
+      },
+      "expect": "deny"
+    },
+    {
+      "id": "deny-exec-redis",
+      "principal": "reconcile",
+      "action": "exec",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full",
+      "context": {
+        "principal": "reconcile",
+        "layer": "host",
+        "strength": 40,
+        "cmd": "redis-server",
+        "claim": ""
+      },
+      "expect": "deny"
+    },
+    {
+      "id": "allow-exec-make",
+      "principal": "xt",
+      "action": "exec",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full",
+      "context": {
+        "principal": "xt",
+        "layer": "all",
+        "strength": 40,
+        "cmd": "make verify",
+        "claim": ""
+      },
+      "expect": "allow"
+    },
+    {
+      "id": "deny-strength-zero",
+      "principal": "xt",
+      "action": "read",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full/Cargo.toml",
+      "context": {
+        "principal": "xt",
+        "layer": "all",
+        "strength": 0,
+        "cmd": "",
+        "claim": ""
+      },
+      "expect": "deny"
+    },
+    {
+      "id": "deny-strength-ci-low",
+      "principal": "xt",
+      "action": "read",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full/Cargo.toml",
+      "context": {
+        "principal": "xt",
+        "layer": "ci",
+        "strength": 10,
+        "cmd": "",
+        "claim": ""
+      },
+      "expect": "deny"
+    },
+    {
+      "id": "deny-strength-policy-low",
+      "principal": "xt",
+      "action": "read",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full/Cargo.toml",
+      "context": {
+        "principal": "xt",
+        "layer": "policy",
+        "strength": 40,
+        "cmd": "",
+        "claim": ""
+      },
+      "expect": "deny"
+    },
+    {
+      "id": "deny-no-nonclaim",
+      "principal": "xt",
+      "action": "read",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full/Cargo.toml",
+      "context": {
+        "principal": "xt",
+        "layer": "schema:new",
+        "strength": 40,
+        "cmd": "",
+        "claim": ""
+      },
+      "expect": "deny"
+    },
+    {
+      "id": "deny-claim-mastery",
+      "principal": "xt",
+      "action": "read",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full/Cargo.toml",
+      "context": {
+        "principal": "xt",
+        "layer": "all",
+        "strength": 40,
+        "cmd": "",
+        "claim": "mastery"
+      },
+      "expect": "deny"
+    },
+    {
+      "id": "deny-claim-accreditation",
+      "principal": "xt",
+      "action": "read",
+      "resource": "res:1",
+      "resource_path": "/Users/metadusa/tmig-full/Cargo.toml",
+      "context": {
+        "principal": "xt",
+        "layer": "all",
+        "strength": 40,
+        "cmd": "",
+        "claim": "accreditation"
+      },
+      "expect": "deny"
+    },
+    {
+      "id": "deny-eu-ai-act-social-scoring",
+      "principal": "kernel",
+      "action": "classify",
+      "resource": "person:1",
+      "resource_path": "/Users/metadusa/tmig-full/x",
+      "context": {
+        "principal": "kernel",
+        "layer": "all",
+        "strength": 40,
+        "cmd": "",
+        "claim": "",
+        "purpose": "social_scoring"
+      },
+      "expect": "deny"
+    }
   ]
 }
