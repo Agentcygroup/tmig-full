@@ -7,10 +7,10 @@ REPOS=("team-tmig" "tmig-full" "tmig-control" "receipts")
 
 for repo in "${REPOS[@]}"; do
     echo "== Verifying / Protecting repo: Agentcygroup/$repo =="
-    
+
     # Ensure public visibility is fully propagated
     gh api -X PATCH "repos/Agentcygroup/$repo" -f private=false >/dev/null 2>&1 || true
-    
+
     # Apply strict branch protection now that repos are public (free tier compatible)
     gh api -X PUT "repos/Agentcygroup/$repo/branches/main/protection" \
         -f "required_status_checks[strict]=true" \

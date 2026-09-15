@@ -9,10 +9,10 @@ for repo in team-tmig tmig-full; do
   if [ -d "$target_dir" ]; then
     cd "$target_dir"
     PR_NUM=$(gh pr list --head "fix/mesh-compliance" --json number --jq '.[0].number' || true)
-    
+
     if [ -n "${PR_NUM:-}" ]; then
       echo "Monitoring PR #$PR_NUM on Agentcygroup/$repo..."
-      
+
       # Wait for required status check 'gate' to pass
       while true; do
         STATUS=$(gh pr checks "$PR_NUM" --json name,state --jq '.[] | select(.name=="gate") | .state' || echo "PENDING")
@@ -26,7 +26,7 @@ for repo in team-tmig tmig-full; do
         echo "Awaiting 'gate' check... current state: ${STATUS:-PENDING}"
         sleep 10
       done
-      
+
       # Execute compliant squash merge with admin privileges
       gh pr merge "$PR_NUM" --squash --admin --delete-branch
       git checkout main
