@@ -64,3 +64,5 @@ coverage/
 receipts/freeze/*.json
 requirements.d/vision.txt
 out/
+receipts/*.json
+receipts/freeze/*.json
