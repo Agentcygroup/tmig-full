@@ -61,3 +61,4 @@ coverage/
 /.venv*
 *.bak
 *.pre-bump
+receipts/freeze/*.json
