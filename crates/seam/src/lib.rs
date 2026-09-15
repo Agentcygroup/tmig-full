@@ -11,6 +11,7 @@
 //!
 //! Invariant: no `call` returns a `Message` without a nonclaim.
 
+pub mod limits;
 pub mod message;
 pub mod node;
 pub mod web;

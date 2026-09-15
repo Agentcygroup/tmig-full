@@ -1,0 +1,16 @@
+crates/addr
+crates/ffi
+crates/harness-lang
+crates/intent
+crates/kernel
+crates/layer
+crates/nonclaim
+crates/policy
+crates/policy-eval
+crates/release
+crates/remote
+crates/schema
+crates/sdcl
+crates/seam
+crates/verify
+crates/xt
