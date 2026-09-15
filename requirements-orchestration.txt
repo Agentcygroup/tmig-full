@@ -1,0 +1,7 @@
+# Orchestration extras — install into a SEPARATE venv.
+# apache-airflow 3.3.0 requires cachetools>=6.0.0, conflicting with
+# streamlit 1.38.0 (cachetools<6), and drags in a large provider tree.
+# Usage:
+#   python3 -m venv ~/tmig-full/venvs/orchestration
+#   ~/tmig-full/venvs/orchestration/bin/pip install -r ~/tmig-full/requirements-orchestration.txt
+apache-airflow==3.3.0
