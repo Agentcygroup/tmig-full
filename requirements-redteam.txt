@@ -6,4 +6,4 @@
 #   ~/tmig-full/venvs/redteam/bin/pip install -r ~/tmig-full/requirements-redteam.txt
 pyOpenSSL==24.0.0
 impacket==0.12.0
-mitmproxy==11.0.0
+mitmproxy==12.2.2
