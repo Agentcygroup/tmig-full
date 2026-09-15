@@ -1,9 +1,9 @@
 # Red-team / pentest extras — install into a SEPARATE venv.
-#   impacket 0.12.0  -> pyOpenSSL==24.0.0   (main uses pyOpenSSL>=24.3)
+#   impacket 0.12.0  -> pyOpenSSL==26.0.0   (main uses pyOpenSSL>=24.3)
 #   mitmproxy 11.0.0 -> protobuf>=5.27.2    (tensorflow caps protobuf <5.0.0)
 # Usage:
 #   python3 -m venv ~/tmig-full/venvs/redteam
 #   ~/tmig-full/venvs/redteam/bin/pip install -r ~/tmig-full/requirements-redteam.txt
-pyOpenSSL==24.0.0
+pyOpenSSL==26.0.0
 impacket==0.12.0
 mitmproxy==11.0.0
