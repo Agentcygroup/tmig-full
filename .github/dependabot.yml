@@ -2,13 +2,47 @@ version: 2
 updates:
   - package-ecosystem: cargo
     directory: /
-    schedule: { interval: weekly }
-    open-pull-requests-limit: 10
-    groups: { rust: { patterns: ["*"] } }
+    schedule: { interval: weekly, day: monday }
+    open-pull-requests-limit: 5
+    groups:
+      cargo-patch: { update-types: [patch] }
+      cargo-minor: { update-types: [minor] }
+
   - package-ecosystem: github-actions
     directory: /
-    schedule: { interval: weekly }
-  - package-ecosystem: npm
-    directory: /bindings/node
-    schedule: { interval: weekly }
-    open-pull-requests-limit: 5
+    schedule: { interval: weekly, day: monday }
+    open-pull-requests-limit: 3
+
+  - package-ecosystem: pip
+    directory: /
+    schedule: { interval: monthly }
+    open-pull-requests-limit: 1
+    groups:
+      pip-main: { patterns: ["*"] }
+    ignore:
+      # Pinned deliberately for build reproducibility / cross-package
+      # compatibility. See SECURITY.md. Dependabot alerts for these are
+      # acknowledged.
+      - dependency-name: "tensorflow"
+      - dependency-name: "keras"
+      - dependency-name: "numpy"
+      - dependency-name: "torch"
+      - dependency-name: "torchvision"
+      - dependency-name: "transformers"
+      - dependency-name: "spacy"
+      - dependency-name: "streamlit"
+      - dependency-name: "scrapy"
+      - dependency-name: "apache-airflow"
+      - dependency-name: "mitmproxy"
+      - dependency-name: "impacket"
+      - dependency-name: "mpi4py"
+      - dependency-name: "paramiko"
+      - dependency-name: "cryptography"
+      - dependency-name: "pyOpenSSL"
+      # Transitive-only entries that pull in most of the count
+      - dependency-name: "aiohttp"
+      - dependency-name: "urllib3"
+      - dependency-name: "requests"
+      - dependency-name: "certifi"
+      - dependency-name: "setuptools"
+      - dependency-name: "pip"
