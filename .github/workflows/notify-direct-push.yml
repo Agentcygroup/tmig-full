@@ -1,0 +1,19 @@
+name: notify-direct-push
+on:
+  push:
+    branches: [main]
+permissions:
+  issues: write
+  contents: read
+jobs:
+  notify:
+    if: "!startsWith(github.event.head_commit.message, 'Merge pull request')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Flag direct push
+        run: |
+          echo "::warning title=Direct push to main::Commit ${{ github.sha }} landed on main without a PR."
+      - name: Comment on recent open PR if any
+        if: github.event.pull_request.number == null
+        run: |
+          echo "Direct push: ${{ github.event.head_commit.message }}"
