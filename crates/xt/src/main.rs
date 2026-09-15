@@ -62,6 +62,32 @@ fn main() {
                 }
             }
         }
+        "policy-check" => {
+            let dir = repo.join("policies");
+            let bundle = match policy::load(&dir) {
+                Ok(b) => b,
+                Err(e) => { eprintln!("policy: {e}"); exit(2); }
+            };
+            let mut reqs = Vec::new();
+            for (name, layer) in &i.layers {
+                for (id, target) in &layer.targets {
+                    match policy::request_for(
+                        name, layer.strength, id, &target.kind,
+                        target.cmd.as_deref(),
+                    ) {
+                        Ok(r) => reqs.push(r),
+                        Err(e) => { eprintln!("policy: request: {e}"); exit(2); }
+                    }
+                }
+            }
+            match policy::check(&bundle, &reqs) {
+                Ok(()) => println!("policy: ok ({} requests)", reqs.len()),
+                Err(vs) => {
+                    for v in &vs { eprintln!("violation: {} — {}", v.policy_id, v.reason); }
+                    exit(1);
+                }
+            }
+        }
         "help" => eprintln!("usage: xt <target|plan|show|non-claims|policy|remote>"),
         target => match i.run(target) {
             Ok(r) => {

@@ -1,3 +1,9 @@
 [workspace]
 resolver = "2"
-members = ["crates/addr","crates/layer","crates/schema","crates/verify","crates/policy","crates/remote","crates/intent","crates/xt","crates/ffi"]
+members = [
+  "crates/release","crates/addr","crates/layer","crates/schema","crates/verify","crates/policy","crates/remote","crates/intent","crates/xt","crates/ffi"]
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+license = "Apache-2.0"

@@ -1,17 +1,65 @@
 name: release
 on:
-  push: { tags: ["v*.*.*"] }
-permissions: { contents: write }
+  push:
+    tags: ['v*']
+
+permissions:
+  id-token: write
+  contents: write
+  attestations: write
+
 jobs:
-  gated-release:
+  build:
     runs-on: ubuntu-latest
+    outputs:
+      tarball: ${{ steps.pack.outputs.tarball }}
     steps:
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
       - uses: dtolnay/rust-toolchain@stable
+      - run: cargo build --release --locked -p xt -p release
+      - id: pack
+        run: |
+          TARBALL=$(cargo run --release --locked -p release --bin xt-release -- \
+            --repo "$PWD" --out "$PWD/out")
+          echo "tarball=$TARBALL" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: xt-tarball
+          path: out/*.tar.gz
+
+  provenance:
+    needs: build
+    permissions:
+      id-token: write
+      contents: write
+      actions: read
+    uses: slsa-framework/slsa-github-generator/.github/workflows/generator_generic_slsa3.yml@v2.0.0
+    with:
+      base64-subjects: |
+        ${{ hashFiles('out/*.tar.gz') }}  ${{ needs.build.outputs.tarball }}
+      upload-assets: true
+
+  sign:
+    needs: [build, provenance]
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with: { name: xt-tarball }
+      - uses: sigstore/cosign-installer@v3
       - run: |
-          cargo build --release --workspace
-          ./target/release/xt ci
+          cosign sign-blob --yes \
+              --oidc-issuer https://token.actions.githubusercontent.com \
+              --output-signature xt.tar.gz.sig \
+              --output-certificate xt.tar.gz.crt \
+              xt-*.tar.gz
       - uses: softprops/action-gh-release@v2
         with:
-          generate_release_notes: true
-          draft: true
+          files: |
+            xt-*.tar.gz
+            xt.tar.gz.sig
+            xt.tar.gz.crt
+            *.intoto.jsonl
