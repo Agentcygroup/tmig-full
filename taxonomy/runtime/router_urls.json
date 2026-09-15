@@ -1,0 +1,11 @@
+{
+  "llama.cpp":       "http://127.0.0.1:8080/v1",
+  "ollama":          "http://127.0.0.1:11434/v1",
+  "embeddings":      "http://127.0.0.1:8081/v1",
+  "diffusers":       "http://127.0.0.1:8082",
+  "faster-whisper":  "http://127.0.0.1:8083",
+  "vision":          "http://127.0.0.1:8084",
+  "vLLM":            "http://127.0.0.1:8000/v1",
+  "MLX":             "http://127.0.0.1:8090/v1",
+  "transformers":    "http://127.0.0.1:8084"
+}
