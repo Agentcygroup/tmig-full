@@ -143,7 +143,8 @@ def health(): return {"ok": True}
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8081)
 PYEOF
-  nohup "$PY" "$ROOT/oss-providers/embeddings_server.py" > "$HOME/.embeddings.log" 2>&1 &
+  setsid nohup "$PY" "$ROOT/oss-providers/embeddings_server.py" > "$HOME/.embeddings.log" 2>&1 < /dev/null &
+  disown
 fi
 
 # --- 8082 diffusers ---
@@ -184,7 +185,8 @@ if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8082)
 PYEOF
-  nohup "$PY" "$ROOT/oss-providers/diffusers_server.py" > "$HOME/.diffusers.log" 2>&1 &
+  setsid nohup "$PY" "$ROOT/oss-providers/diffusers_server.py" > "$HOME/.diffusers.log" 2>&1 < /dev/null &
+  disown
 fi
 
 # --- 8083 faster-whisper ---
@@ -210,7 +212,8 @@ def health(): return {"ok": True}
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8083)
 PYEOF
-  nohup "$PY" "$ROOT/oss-providers/whisper_server.py" > "$HOME/.whisper.log" 2>&1 &
+  setsid nohup "$PY" "$ROOT/oss-providers/whisper_server.py" > "$HOME/.whisper.log" 2>&1 < /dev/null &
+  disown
 fi
 
 # --- 8084 vision ---
@@ -244,7 +247,8 @@ def health(): return {"ok": True}
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8084)
 PYEOF
-  nohup "$PY" "$ROOT/oss-providers/vision_server.py" > "$HOME/.vision.log" 2>&1 &
+  setsid nohup "$PY" "$ROOT/oss-providers/vision_server.py" > "$HOME/.vision.log" 2>&1 < /dev/null &
+  disown
 fi
 
 # ── 4. WAIT + HEALTH CHECK ────────────────────────────────────────
