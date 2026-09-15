@@ -15,3 +15,10 @@ health:      ; @lifecycle/healthcheck.sh
 probe:       ; @ix/probe.sh
 infra-check: ; @infra/check.sh
 infra-status:; @infra/status.sh
+
+go-build:
+	@cd "$(CURDIR)" && go build -o bin/tmig-go ./go/cmd/tmig
+	@echo "  bin/tmig-go"
+
+go-test:
+	@cd "$(CURDIR)" && go vet ./go/... && go test ./go/...

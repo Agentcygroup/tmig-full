@@ -8,8 +8,11 @@ pub fn run(args: &[String]) -> i32 {
     let action = args.first().map(String::as_str).unwrap_or("check");
     match action {
         "check" => check(),
-        "load"  => load(),
-        other   => { eprintln!("unknown kernel action: {other}"); 1 }
+        "load" => load(),
+        other => {
+            eprintln!("unknown kernel action: {other}");
+            1
+        }
     }
 }
 
@@ -34,7 +37,13 @@ fn check() -> i32 {
 fn load() -> i32 {
     let path = PathBuf::from("kernel/kernel.cedar");
     match Constitution::load(&path) {
-        Ok(c) => { println!("{}", c.origin().display()); 0 }
-        Err(e) => { eprintln!("{e}"); 1 }
+        Ok(c) => {
+            println!("{}", c.origin().display());
+            0
+        }
+        Err(e) => {
+            eprintln!("{e}");
+            1
+        }
     }
 }

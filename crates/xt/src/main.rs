@@ -68,7 +68,9 @@ fn dispatch() {
         }
         "policy-check" => run_policy_check(&repo, &i),
         "help" => {
-            eprintln!("usage: xt <plan|show|policy-check|policy authorize|kernel|non-claims|remote>")
+            eprintln!(
+                "usage: xt <plan|show|policy-check|policy authorize|kernel|non-claims|remote>"
+            )
         }
         target => match i.run(target) {
             Ok(r) => {

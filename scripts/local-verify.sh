@@ -17,5 +17,7 @@ run bash infra/check.sh
 
 run bash kernel/check.sh
 
+run bash go/check.sh
+
 echo
 echo "ALL LOCAL CHECKS PASS"

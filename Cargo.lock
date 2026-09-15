@@ -1830,8 +1830,10 @@ version = "0.2.0"
 dependencies = [
  "addr",
  "intent",
+ "kernel",
  "policy",
  "remote",
+ "serde_json",
 ]
 
 [[package]]
