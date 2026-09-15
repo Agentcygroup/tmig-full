@@ -1,0 +1,9 @@
+# MPI extras — install into a SEPARATE venv, and only after installing an MPI
+# implementation (mpi4py has no prebuilt wheel for macOS arm64 + py3.12):
+#   brew install open-mpi           # or: brew install mpich
+#   python3 -m venv ~/tmig-full/venvs/mpi
+#   ~/tmig-full/venvs/mpi/bin/pip install -r ~/tmig-full/requirements-mpi.txt
+#
+# ray / dask / joblib already provide process-based parallelism for most
+# workloads; mpi4py is only needed if you are linking against an MPI runtime.
+mpi4py==4.0.1
