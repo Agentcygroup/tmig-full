@@ -1,4 +1,5 @@
 // Boundaries from the freeze become deny rules.
+@id("boundary.forbid.00")
 forbid (principal, action, resource)
 when {
     context.cmd like "*python -m http.server*"  ||

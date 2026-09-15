@@ -36,36 +36,30 @@ pub fn load(dir: &Path) -> Result<PolicySetBundle, PolicyError> {
         None
     };
 
-    let mut policies = PolicySet::new();
+    // Parse every .cedar file in one pass. Per-file merging with
+    // cedar-policy 4.x triggers a deduplication map whose length equals
+    // the number of policies in the incoming file, which the previous
+    // code mislabeled as "collisions". Concatenating the sources
+    // sidesteps the ambiguity and lets Cedar's own parser own ID
+    // uniqueness.
     let mut entries: Vec<_> = std::fs::read_dir(dir)?
         .filter_map(|e| e.ok())
         .filter(|e| e.path().extension().map(|x| x == "cedar").unwrap_or(false))
         .collect();
     entries.sort_by_key(|e| e.path());
 
-    for e in entries {
+    let mut combined = String::new();
+    for e in &entries {
         let p = e.path();
-        let src = std::fs::read_to_string(&p)?;
-        let parsed = PolicySet::from_str(&src).map_err(|err| PolicyError::Parse {
-            file: p.clone(),
-            msg: err.to_string(),
-        })?;
-        // cedar-policy 4.12: merge mutates self in place and returns
-        // Result<HashMap<PolicyId, PolicyId>, PolicySetError>.
-        let collisions = policies
-            .merge(&parsed, true)
-            .map_err(|err| PolicyError::Parse {
-                file: p.clone(),
-                msg: err.to_string(),
-            })?;
-        if !collisions.is_empty() {
-            eprintln!(
-                "policy id collisions auto-renamed: {} in {}",
-                collisions.len(),
-                p.display()
-            );
-        }
+        combined.push_str(&format!("// policies/{} \n", p.display()));
+        combined.push_str(&std::fs::read_to_string(&p)?);
+        combined.push('\n');
     }
+
+    let policies = PolicySet::from_str(&combined).map_err(|err| PolicyError::Parse {
+        file: dir.to_path_buf(),
+        msg: err.to_string(),
+    })?;
 
     Ok(PolicySetBundle { policies, schema })
 }

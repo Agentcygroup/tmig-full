@@ -3,7 +3,7 @@ Receipt {
     targets: [
         Tr {
             id: "release",
-            status: "ok",
+            status: "cached",
             input_id: "520ed76fa6adc2fc8b05c6254c73e76b967e33981dd59dab9db6143ec328ef6b",
             output_id: "25bb84234fa4c42cf7b75753f461411bd58af75a53cd701359f9dcc3e50b4d53",
         },
