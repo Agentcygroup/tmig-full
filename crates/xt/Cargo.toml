@@ -1,13 +1,22 @@
 [package]
 name = "xt"
-version.workspace = true
-edition = "2021"
-license = "MIT OR Apache-2.0"
+description = "xt — CLI dispatcher for tmig-full"
+version.workspace      = true
+edition.workspace      = true
+rust-version.workspace = true
+license.workspace      = true
+authors.workspace      = true
+repository.workspace   = true
+homepage.workspace     = true
+
 [[bin]]
 name = "xt"
 path = "src/main.rs"
+
 [dependencies]
-intent = { path = "../intent" }
-policy = { path = "../policy" }
-remote = { path = "../remote" }
-addr = { path = "../addr" }
+intent     = { workspace = true }
+policy     = { workspace = true }
+remote     = { workspace = true }
+addr       = { workspace = true }
+kernel     = { workspace = true }
+serde_json = { workspace = true }

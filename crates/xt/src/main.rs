@@ -1,8 +1,22 @@
+//! xt — CLI dispatcher.
+//!
+//! Subcommands:
+//!   xt plan | show
+//!   xt non-claims
+//!   xt policy-check
+//!   xt policy authorize --principal P --action A --resource R --context JSON
+//!   xt kernel check | load
+//!   xt remote
+
+mod cmd;
+
 use std::process::exit;
-fn main() {
+
+fn dispatch() {
     let repo = std::env::current_dir().expect("cwd");
     let args: Vec<String> = std::env::args().skip(1).collect();
     let task = args.first().map(String::as_str).unwrap_or("help");
+
     let i = match intent::load(&repo) {
         Ok(i) => i,
         Err(e) => {
@@ -10,7 +24,17 @@ fn main() {
             exit(2);
         }
     };
+
     match task {
+        "kernel" => {
+            exit(cmd::kernel::run(&args[1..]));
+        }
+        "policy" => {
+            if args.get(1).map(String::as_str) == Some("authorize") {
+                exit(cmd::policy_authorize::run(&args[2..]));
+            }
+            run_policy_check(&repo, &i);
+        }
         "plan" | "show" => {
             for (id, (s, t)) in &i.resolve().targets {
                 println!(
@@ -42,44 +66,10 @@ fn main() {
                 }
             }
         }
-        "policy-check" => {
-            let dir = repo.join("policies");
-            let bundle = match policy::load(&dir) {
-                Ok(b) => b,
-                Err(e) => {
-                    eprintln!("policy: {e}");
-                    exit(2);
-                }
-            };
-            let mut reqs = Vec::new();
-            for (name, layer) in &i.layers {
-                for target in &layer.targets {
-                    match policy::request_for(
-                        name,
-                        layer.strength,
-                        &target.id,
-                        &target.kind,
-                        target.cmd.as_deref(),
-                    ) {
-                        Ok(r) => reqs.push(r),
-                        Err(e) => {
-                            eprintln!("policy: request: {e}");
-                            exit(2);
-                        }
-                    }
-                }
-            }
-            match policy::check(&bundle, &reqs) {
-                Ok(()) => println!("policy: ok ({} requests)", reqs.len()),
-                Err(vs) => {
-                    for v in &vs {
-                        eprintln!("violation: {} — {}", v.policy_id, v.reason);
-                    }
-                    exit(1);
-                }
-            }
+        "policy-check" => run_policy_check(&repo, &i),
+        "help" => {
+            eprintln!("usage: xt <plan|show|policy-check|policy authorize|kernel|non-claims|remote>")
         }
-        "help" => eprintln!("usage: xt <target|plan|show|non-claims|policy|remote>"),
         target => match i.run(target) {
             Ok(r) => {
                 println!("run {}", r.run_id);
@@ -93,4 +83,46 @@ fn main() {
             }
         },
     }
+}
+
+fn run_policy_check(repo: &std::path::Path, i: &intent::Intent) {
+    let dir = repo.join("policies");
+    let bundle = match policy::load(&dir) {
+        Ok(b) => b,
+        Err(e) => {
+            eprintln!("policy: {e}");
+            exit(2);
+        }
+    };
+    let mut reqs = Vec::new();
+    for (name, layer) in &i.layers {
+        for target in &layer.targets {
+            match policy::request_for(
+                name,
+                layer.strength,
+                &target.id,
+                &target.kind,
+                target.cmd.as_deref(),
+            ) {
+                Ok(r) => reqs.push(r),
+                Err(e) => {
+                    eprintln!("policy: request: {e}");
+                    exit(2);
+                }
+            }
+        }
+    }
+    match policy::check(&bundle, &reqs) {
+        Ok(()) => println!("policy: ok ({} requests)", reqs.len()),
+        Err(vs) => {
+            for v in &vs {
+                eprintln!("violation: {} — {}", v.policy_id, v.reason);
+            }
+            exit(1);
+        }
+    }
+}
+
+fn main() {
+    dispatch();
 }
