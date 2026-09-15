@@ -1,12 +1,10 @@
 # Invariants
 
-Every invariant is a property a command can fail on. This file is
-the index. `scripts/tests/invariants-indexed.sh` verifies the two
-stay in sync. Regenerate with:
+Every invariant MUST be enforced by a command that can fail (RFC 2119).
+An invariant that SHOULD hold but is not enforced MUST appear in OPEN.md.
 
-```bash
-python3 scripts/regenerate-invariants.py
-```
+`scripts/tests/invariants-indexed.sh` MUST keep this file in sync.
+Regenerate with `python3 scripts/regenerate-invariants.py`.
 
 ## Shell checks (`scripts/tests/*.sh`)
 
@@ -32,6 +30,34 @@ python3 scripts/regenerate-invariants.py
 - `scripts/tests/schema-presence.sh`
 - `scripts/tests/time-bounds.sh`
 - `scripts/tests/version-consistency.sh`
+
+## Standards checks (`scripts/tests/standards/*.sh`)
+
+- `scripts/tests/standards/acm-avoid-harm.sh`
+- `scripts/tests/standards/acm-honesty.sh`
+- `scripts/tests/standards/bcs-competence.sh`
+- `scripts/tests/standards/coe-transparency.sh`
+- `scripts/tests/standards/eu-ai-act-prohibited.sh`
+- `scripts/tests/standards/gdpr-principles.sh`
+- `scripts/tests/standards/ieee-7000-values.sh`
+- `scripts/tests/standards/ieee-7001-transparency.sh`
+- `scripts/tests/standards/ieee-7002-privacy.sh`
+- `scripts/tests/standards/iso-25010-quality.sh`
+- `scripts/tests/standards/iso-27001-security.sh`
+- `scripts/tests/standards/iso-29119-testing.sh`
+- `scripts/tests/standards/iso-42001-monitor.sh`
+- `scripts/tests/standards/iso-42001-transparency.sh`
+- `scripts/tests/standards/iso-9001-quality.sh`
+- `scripts/tests/standards/nist-govern.sh`
+- `scripts/tests/standards/nist-measure.sh`
+- `scripts/tests/standards/nist-ssdf.sh`
+- `scripts/tests/standards/oecd-accountability.sh`
+- `scripts/tests/standards/oecd-risk.sh`
+- `scripts/tests/standards/se-code-product.sh`
+- `scripts/tests/standards/se-code-profession.sh`
+- `scripts/tests/standards/uk-ai-principles.sh`
+- `scripts/tests/standards/unesco-eia.sh`
+- `scripts/tests/standards/wcag-accessibility.sh`
 
 ## Rust tests (`crates/*/tests/*.rs`)
 

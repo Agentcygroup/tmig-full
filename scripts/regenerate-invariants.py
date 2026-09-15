@@ -1,18 +1,28 @@
-"""Regenerate docs/INVARIANTS.md from the files on disk."""
+"""Regenerate docs/INVARIANTS.md.
+Every invariant MUST be enforced by a command that can fail (RFC 2119).
+An invariant that SHOULD hold but is not enforced MUST appear in OPEN.md.
+"""
 import pathlib
 
 scripts = sorted(p.name for p in pathlib.Path("scripts/tests").glob("*.sh")
                  if p.name != "invariants-indexed.sh")
+standards = sorted(p.name for p in pathlib.Path("scripts/tests/standards").glob("*.sh"))
 rusts = sorted(p.name for p in pathlib.Path(".").glob("crates/*/tests/*.rs"))
 
-lines = ["# Invariants", "",
-         "Every invariant is a property a command can fail on. This file is",
-         "the index. `scripts/tests/invariants-indexed.sh` verifies the two",
-         "stay in sync. Regenerate with:", "",
-         "```bash", "python3 scripts/regenerate-invariants.py", "```", "",
-         "## Shell checks (`scripts/tests/*.sh`)", ""]
+lines = [
+    "# Invariants", "",
+    "Every invariant MUST be enforced by a command that can fail (RFC 2119).",
+    "An invariant that SHOULD hold but is not enforced MUST appear in OPEN.md.",
+    "",
+    "`scripts/tests/invariants-indexed.sh` MUST keep this file in sync.",
+    "Regenerate with `python3 scripts/regenerate-invariants.py`.", "",
+    "## Shell checks (`scripts/tests/*.sh`)", "",
+]
 for s in scripts:
     lines.append(f"- `scripts/tests/{s}`")
+lines += ["", "## Standards checks (`scripts/tests/standards/*.sh`)", ""]
+for s in standards:
+    lines.append(f"- `scripts/tests/standards/{s}`")
 lines += ["", "## Rust tests (`crates/*/tests/*.rs`)", ""]
 for r in rusts:
     lines.append(f"- `{r}`")

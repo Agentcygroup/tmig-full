@@ -13,7 +13,7 @@ for s in A B C D E F G H I J K L M N O P Q R S T U; do
 done
 grep -qE '^\| J \|.*\*\*primary' docs/INDUSTRIES.md || {
     echo "FAIL: sector J not marked primary"; fail=1; }
-count=$(grep -c "not addressed" docs/INDUSTRIES.md)
+count=$(grep -cE "^\| [A-U] \|.*not addressed" docs/INDUSTRIES.md)
 [ "$count" -eq 19 ] || { echo "FAIL: expected 19 'not addressed', got $count"; fail=1; }
 
 [ $fail -eq 0 ] && echo "industries-covered: ok" || exit 1
