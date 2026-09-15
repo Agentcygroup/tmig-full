@@ -1,0 +1,13 @@
+[extend]
+useDefault = true
+
+[allowlist]
+description = "repo allowlist"
+paths = [
+  '''receipts/.*''',
+  '''taxonomy/runtime/receipts/.*''',
+]
+regexes = [
+  '''(?i)example[_-]?key''',
+  '''(?i)placeholder''',
+]
