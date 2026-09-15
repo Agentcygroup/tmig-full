@@ -1,0 +1,329 @@
+==> Downloading bottle manifests
+✔︎ Bottle Manifest nmap (7.991)
+==> Would install 1 formula:
+nmap
+==> Would install 1 dependency for nmap:
+liblinear
+==> Would upgrade 2 dependencies for nmap:
+libssh2
+xz
+==> Fetching downloads for: nmap
+✔︎ Bottle Manifest liblinear (2.50)
+✔︎ Bottle Manifest libssh2 (1.11.1_5)
+✔︎ Bottle Manifest xz (5.8.4)
+✔︎ Bottle liblinear (2.50)
+✔︎ Bottle xz (5.8.4)
+✔︎ Bottle libssh2 (1.11.1_5)
+✔︎ Bottle nmap (7.991)
+==> Installing nmap dependency: liblinear
+==> Pouring liblinear--2.50.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/liblinear/2.50: 10 files, 316.2KB
+==> Installing nmap
+==> Pouring nmap--7.991.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/nmap/7.991: 843 files, 30.7MB
+==> Downloading bottle manifests
+✔︎ Bottle Manifest nikto (2.6.1_1)
+==> Fetching downloads for: nikto
+==> Would install 1 formula:
+nikto
+✔︎ Bottle nikto (2.6.1_1)
+==> Pouring nikto--2.6.1_1.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/nikto/2.6.1_1: 68 files, 2.2MB
+==> Downloading bottle manifests
+✔︎ Bottle Manifest hydra (9.7)
+==> Would install 1 formula:
+hydra
+==> Would upgrade 1 dependency for hydra:
+xz
+==> Fetching downloads for: hydra
+✔︎ Bottle xz (5.8.4)
+✔︎ Bottle hydra (9.7)
+==> Pouring hydra--9.7.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/hydra/9.7: 17 files, 1.8MB
+==> Downloading bottle manifests
+✔︎ Bottle Manifest hashcat (7.1.2)
+==> Would install 1 formula:
+hashcat
+==> Would install 2 dependencies for hashcat:
+minizip
+xxhash
+==> Fetching downloads for: hashcat
+✔︎ Bottle Manifest minizip (1.3.2_1)
+✔︎ Bottle Manifest xxhash (0.8.3)
+✔︎ Bottle xxhash (0.8.3)
+✔︎ Bottle minizip (1.3.2_1)
+✔︎ Bottle hashcat (7.1.2)
+==> Installing dependencies for hashcat: minizip and xxhash
+==> Installing hashcat dependency: minizip
+==> Pouring minizip--1.3.2_1.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/minizip/1.3.2_1: 16 files, 265.4KB
+==> Installing hashcat dependency: xxhash
+==> Pouring xxhash--0.8.3.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/xxhash/0.8.3: 28 files, 556.5KB
+==> Installing hashcat
+==> Pouring hashcat--7.1.2.arm64_tahoe.bottle.2.tar.gz
+🍺  /opt/homebrew/Cellar/hashcat/7.1.2: 2,492 files, 170.6MB
+==> Downloading bottle manifests
+✔︎ Bottle Manifest john-jumbo (1.9.0_1)
+==> Would install 1 formula:
+john-jumbo
+==> Fetching downloads for: john-jumbo
+✔︎ Bottle john-jumbo (1.9.0_1)
+==> Pouring john-jumbo--1.9.0_1.arm64_tahoe.bottle.3.tar.gz
+🍺  /opt/homebrew/Cellar/john-jumbo/1.9.0_1: 447 files, 79.5MB
+==> Caveats
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> Downloading bottle manifests
+✔︎ Bottle Manifest aircrack-ng (1.7_2)
+==> Would install 1 formula:
+aircrack-ng
+==> Fetching downloads for: aircrack-ng
+✔︎ Bottle aircrack-ng (1.7_2)
+==> Pouring aircrack-ng--1.7_2.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/aircrack-ng/1.7_2: 110 files, 2.6MB
+==> Caveats
+==> aircrack-ng
+Run `airodump-ng-oui-update` install or update the Airodump-ng OUI file.
+==> Downloading bottle manifests
+✔︎ Bottle Manifest yara (4.5.8)
+==> Would install 1 formula:
+yara
+==> Would install 5 dependencies for yara:
+jansson
+libmagic
+abseil
+protobuf
+protobuf-c
+==> Fetching downloads for: yara
+✔︎ Bottle Manifest jansson (2.15.1)
+✔︎ Bottle Manifest libmagic (5.48)
+✔︎ Bottle jansson (2.15.1)
+✔︎ Bottle Manifest protobuf (36.1)
+✔︎ Bottle Manifest protobuf-c (1.5.2_19)
+✔︎ Bottle protobuf-c (1.5.2_19)
+✔︎ Bottle yara (4.5.8)
+✔︎ Bottle Manifest abseil (20260817.0)
+✔︎ Bottle libmagic (5.48)
+✔︎ Bottle protobuf (36.1)
+✔︎ Bottle abseil (20260817.0)
+==> Installing dependencies for yara: jansson, libmagic, abseil, protobuf and protobuf-c
+==> Installing yara dependency: jansson
+==> Pouring jansson--2.15.1.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/jansson/2.15.1: 12 files, 297.9KB
+==> Installing yara dependency: libmagic
+==> Pouring libmagic--5.48.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libmagic/5.48: 373 files, 13.2MB
+==> Installing yara dependency: abseil
+==> Pouring abseil--20260817.0.arm64_tahoe.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/abseil/20260817.0: 832 files, 11.8MB
+==> Installing yara dependency: protobuf
+==> Pouring protobuf--36.1.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/protobuf/36.1: 387 files, 17.8MB
+==> Installing yara dependency: protobuf-c
+==> Pouring protobuf-c--1.5.2_19.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/protobuf-c/1.5.2_19: 16 files, 551.3KB
+==> Installing yara
+==> Pouring yara--4.5.8.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/yara/4.5.8: 49 files, 2.3MB
+==> Downloading bottle manifests
+✔︎ Bottle Manifest proxychains-ng (4.17)
+==> Fetching downloads for: proxychains-ng
+==> Would install 1 formula:
+proxychains-ng
+✔︎ Bottle proxychains-ng (4.17)
+==> Pouring proxychains-ng--4.17.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/proxychains-ng/4.17: 11 files, 200.4KB
+==> Downloading bottle manifests
+✔︎ Bottle Manifest tor (0.4.9.12)
+==> Would install 1 formula:
+tor
+==> Would install 1 dependency for tor:
+libscrypt
+==> Fetching downloads for: tor
+✔︎ Bottle Manifest libscrypt (1.22)
+✔︎ Bottle libscrypt (1.22)
+✔︎ Bottle tor (0.4.9.12)
+==> Installing tor dependency: libscrypt
+==> Pouring libscrypt--1.22.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libscrypt/1.22: 9 files, 103.4KB
+==> Installing tor
+==> Pouring tor--0.4.9.12.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/tor/0.4.9.12: 26 files, 31.9MB
+==> Caveats
+==> tor
+To start tor now and restart at login:
+  brew services start tor
+Or, if you don't want/need a background service you can just run:
+  /opt/homebrew/opt/tor/bin/tor
+Warning: No available formula with the name "hping". Did you mean httping, dhcping, gping or fping?
+==> Searching for similarly named formulae and casks...
+==> Formulae
+httping
+dhcping
+gping
+fping
+
+To install httping, run:
+  brew install httping
+
+==> Casks
+hapigo
+
+To install hapigo, run:
+  brew install --cask hapigo
+==> Downloading bottle manifests
+✔︎ Bottle Manifest netcat (0.7.1)
+==> Would install 1 formula:
+netcat
+==> Fetching downloads for: netcat
+✔︎ Bottle netcat (0.7.1)
+==> Pouring netcat--0.7.1.arm64_tahoe.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/netcat/0.7.1: 14 files, 152.6KB
+==> Downloading bottle manifests
+✔︎ Bottle Manifest exploitdb (2026-09-12)
+==> Fetching downloads for: exploitdb
+==> Would install 1 formula:
+exploitdb
+✔︎ Bottle exploitdb (2026-09-12)
+==> Pouring exploitdb--2026-09-12.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/exploitdb/2026-09-12: 47,790 files, 437MB
+==> Downloading bottle manifests
+✔︎ Bottle Manifest graphviz (16.0.0)
+==> Would install 1 formula:
+graphviz
+==> Would install 4 dependencies for graphviz:
+jasper
+netpbm
+gts
+librsvg
+==> Would upgrade 2 dependencies for graphviz:
+libvmaf
+xz
+==> Fetching downloads for: graphviz
+✔︎ Bottle xz (5.8.4)
+✔︎ Bottle Manifest jasper (4.2.9)
+✔︎ Bottle Manifest libvmaf (3.2.1)
+✔︎ Bottle graphviz (16.0.0)
+✔︎ Bottle Manifest netpbm (11.02.29)
+✔︎ Bottle jasper (4.2.9)
+✔︎ Bottle Manifest gts (0.7.6_3)
+✔︎ Bottle libvmaf (3.2.1)
+✔︎ Bottle netpbm (11.02.29)
+✔︎ Bottle Manifest librsvg (2.63.0)
+✔︎ Bottle librsvg (2.63.0)
+✔︎ Bottle gts (0.7.6_3)
+==> Installing dependencies for graphviz: jasper, netpbm, gts and librsvg
+==> Installing graphviz dependency: jasper
+==> Pouring jasper--4.2.9.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/jasper/4.2.9: 45 files, 1.6MB
+==> Installing graphviz dependency: netpbm
+==> Pouring netpbm--11.02.29.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/netpbm/11.02.29: 826 files, 14.4MB
+==> Installing graphviz dependency: gts
+==> Pouring gts--0.7.6_3.arm64_tahoe.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/gts/0.7.6_3: 27 files, 1.6MB
+==> Installing graphviz dependency: librsvg
+==> Pouring librsvg--2.63.0.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/librsvg/2.63.0: 21 files, 13MB
+==> Installing graphviz
+==> Pouring graphviz--16.0.0.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/graphviz/16.0.0: 281 files, 7.9MB
+==> Downloading bottle manifests
+✔︎ Bottle Manifest feroxbuster (2.13.1)
+==> Would install 1 formula:
+feroxbuster
+==> Fetching downloads for: feroxbuster
+✔︎ Bottle feroxbuster (2.13.1)
+==> Pouring feroxbuster--2.13.1.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/feroxbuster/2.13.1: 11 files, 6.2MB
+==> Caveats
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> Downloading bottle manifests
+✔︎ Bottle Manifest sqlmap (1.10.9)
+==> Would install 1 formula:
+sqlmap
+==> Would upgrade 1 dependency for sqlmap:
+xz
+==> Fetching downloads for: sqlmap
+✔︎ Bottle xz (5.8.4)
+✔︎ Bottle sqlmap (1.10.9)
+==> Pouring sqlmap--1.10.9.all.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/sqlmap/1.10.9: 858 files, 14.9MB
+==> Would install 1 cask:
+wireshark-app
+==> Fetching downloads for: wireshark-app
+✔︎ Cask wireshark-app (4.6.8)
+==> Installing Cask wireshark-app
+==> Running installer for wireshark-app with `sudo` (which may request your password)...
+installer: Package name is Add Wireshark to the system PATH
+installer: Installing at base path /
+installer: The install was successful.
+==> Running installer for wireshark-app with `sudo` (which may request your password)...
+installer: Package name is ChmodBPF
+installer: Installing at base path /
+installer: The install was successful.
+==> Moving App 'Wireshark.app' to '/Applications/Wireshark.app'
+==> Linking Binary 'ciscodump' to '/opt/homebrew/bin/ciscodump'
+==> Linking Binary 'randpktdump' to '/opt/homebrew/bin/randpktdump'
+==> Linking Binary 'sshdump' to '/opt/homebrew/bin/sshdump'
+==> Linking Binary 'wifidump' to '/opt/homebrew/bin/wifidump'
+==> Linking Binary 'idl2wrs' to '/opt/homebrew/bin/idl2wrs'
+==> Linking Binary 'mergecap' to '/opt/homebrew/bin/mergecap'
+==> Linking Binary 'mmdbresolve' to '/opt/homebrew/bin/mmdbresolve'
+==> Linking Binary 'randpkt' to '/opt/homebrew/bin/randpkt'
+==> Linking Binary 'rawshark' to '/opt/homebrew/bin/rawshark'
+==> Linking Binary 'reordercap' to '/opt/homebrew/bin/reordercap'
+==> Linking Binary 'sharkd' to '/opt/homebrew/bin/sharkd'
+==> Linking Binary 'capinfos' to '/opt/homebrew/bin/capinfos'
+==> Linking Binary 'text2pcap' to '/opt/homebrew/bin/text2pcap'
+==> Linking Binary 'tshark' to '/opt/homebrew/bin/tshark'
+==> Linking Binary 'dftest' to '/opt/homebrew/bin/dftest'
+==> Linking Binary 'captype' to '/opt/homebrew/bin/captype'
+==> Linking Binary 'udpdump' to '/opt/homebrew/bin/udpdump'
+==> Linking Binary 'dumpcap' to '/opt/homebrew/bin/dumpcap'
+==> Linking Binary 'editcap' to '/opt/homebrew/bin/editcap'
+==> Linking Binary 'androiddump' to '/opt/homebrew/bin/androiddump'
+==> Linking Manpage 'reordercap.1' to '/opt/homebrew/share/man/man1/reordercap.1'
+==> Linking Manpage 'androiddump.1' to '/opt/homebrew/share/man/man1/androiddump.1'
+==> Linking Manpage 'capinfos.1' to '/opt/homebrew/share/man/man1/capinfos.1'
+==> Linking Manpage 'captype.1' to '/opt/homebrew/share/man/man1/captype.1'
+==> Linking Manpage 'ciscodump.1' to '/opt/homebrew/share/man/man1/ciscodump.1'
+==> Linking Manpage 'dumpcap.1' to '/opt/homebrew/share/man/man1/dumpcap.1'
+==> Linking Manpage 'editcap.1' to '/opt/homebrew/share/man/man1/editcap.1'
+==> Linking Manpage 'etwdump.1' to '/opt/homebrew/share/man/man1/etwdump.1'
+==> Linking Manpage 'mergecap.1' to '/opt/homebrew/share/man/man1/mergecap.1'
+==> Linking Manpage 'mmdbresolve.1' to '/opt/homebrew/share/man/man1/mmdbresolve.1'
+==> Linking Manpage 'randpkt.1' to '/opt/homebrew/share/man/man1/randpkt.1'
+==> Linking Manpage 'randpktdump.1' to '/opt/homebrew/share/man/man1/randpktdump.1'
+==> Linking Manpage 'rawshark.1' to '/opt/homebrew/share/man/man1/rawshark.1'
+==> Linking Manpage 'sshdump.1' to '/opt/homebrew/share/man/man1/sshdump.1'
+==> Linking Manpage 'text2pcap.1' to '/opt/homebrew/share/man/man1/text2pcap.1'
+==> Linking Manpage 'tshark.1' to '/opt/homebrew/share/man/man1/tshark.1'
+==> Linking Manpage 'udpdump.1' to '/opt/homebrew/share/man/man1/udpdump.1'
+==> Linking Manpage 'wifidump.1' to '/opt/homebrew/share/man/man1/wifidump.1'
+==> Linking Manpage 'wireshark.1' to '/opt/homebrew/share/man/man1/wireshark.1'
+==> Linking Manpage 'extcap.4' to '/opt/homebrew/share/man/man4/extcap.4'
+==> Linking Manpage 'wireshark-filter.4' to '/opt/homebrew/share/man/man4/wireshark-filter.4'
+🍺  wireshark-app was successfully installed!
+Warning: Cask 'zaproxy' is unavailable: No Cask with this name exists.
+==> Searching for similarly named casks...
+==> Casks
+zappy
+
+To install zappy, run:
+  brew install --cask zappy
+Cloning into '/Users/metadusa/tmig-full/tools/setoolkit'...
+Cloning into '/Users/metadusa/tmig-full/tools/xsser'...
+Cloning into '/Users/metadusa/tmig-full/tools/xsstrike'...
+Cloning into '/Users/metadusa/tmig-full/tools/dnschef'...
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Cloning into '/Users/metadusa/tmig-full/tools/wifite2'...
+Cloning into '/Users/metadusa/tmig-full/tools/evilginx2'...
+Cloning into '/Users/metadusa/tmig-full/tools/cuckoo'...
+Cloning into '/Users/metadusa/tmig-full/tools/cve-search'...

@@ -1,0 +1,5 @@
+sqlalchemy==2.0.34
+psycopg2-binary==2.9.9
+pymongo==4.8.0
+redis==5.0.8
+pyarrow==17.0.0

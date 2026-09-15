@@ -1,0 +1,36 @@
+19:13:25 == 1. install-missing ==
+19:13:40 == 2. license audit ==
+19:13:56   wrote /Users/metadusa/tmig-full/receipts/licenses.tsv (    1209 rows)
+19:13:56   copyleft:       37
+19:13:56 == 3. LICENSE files ==
+19:13:56   wrote tmig-full/LICENSE
+19:13:56   ok   team-tmig
+19:13:56   wrote tmig-control/LICENSE
+19:13:56   wrote receipts/LICENSE
+19:13:56 == 4. net surface ==
+19:13:56   ssh config: github over 443
+19:13:56   git protocol + url rewrites applied
+19:13:56 == 5. git invariants ==
+19:13:56   warn tmig-full fsck
+19:13:56   ok   tmig-full commit-graph
+19:13:56   warn team-tmig fsck
+19:13:56   ok   team-tmig commit-graph
+19:13:56   warn tmig-control fsck
+19:13:56   ok   tmig-control commit-graph
+19:13:56   warn receipts fsck
+19:13:56   ok   receipts commit-graph
+19:13:56 == 6. jupyter pins ==
+19:13:56   repinned 1 venv(s)
+19:13:56 == 7. status ==
+19:13:56   tracked:   169
+19:13:56   req venvs: 23
+19:13:56   grf venvs: 42
+19:13:56   tool venvs:8
+      cached  rust:fmt
+      cached  rust:lint
+      cached  rust:build
+      cached  rust:test
+      cached  checks
+      cached  freeze
+      cached  freeze-check
+      ok      ci

@@ -1,0 +1,646 @@
+19:46:13 == dedupe ==
+19:46:13   total:      309
+19:46:13   wrote /Users/metadusa/tmig-full/oss-breadth/all.txt
+19:46:13 == alternatives map ==
+19:46:13   wrote /Users/metadusa/tmig-full/oss-breadth/alternatives.tsv (     309 rows)
+19:46:13   unmapped: 19
+19:46:14 == installing breadth ==
+19:46:14   brew ok   ffmpeg
+19:46:14   brew ok   cmake
+19:46:14   brew ok   ninja
+19:46:15   brew ok   pkg-config
+19:46:15   brew ok   rust
+19:46:16   brew ok   go
+19:46:16   brew ok   node
+19:46:16   brew ok   python@3.12
+19:46:16   brew ok   nmap
+19:46:17   brew ok   nikto
+19:46:17   brew ok   hydra
+19:46:17   brew ok   hashcat
+19:46:17   brew ok   john-jumbo
+19:46:18   brew ok   aircrack-ng
+19:46:18   brew ok   yara
+19:46:18   brew ok   proxychains-ng
+19:46:18   brew ok   tor
+19:46:19   brew add  hping
+Warning: No available formula with the name "hping". Did you mean httping, dhcping, gping or fping?
+==> Searching for similarly named formulae and casks...
+==> Formulae
+httping
+dhcping
+gping
+fping
+
+To install httping, run:
+  brew install httping
+
+==> Casks
+hapigo
+
+To install hapigo, run:
+  brew install --cask hapigo
+19:46:19     skip
+19:46:19   brew ok   netcat
+19:46:20   brew ok   exploitdb
+19:46:20   brew ok   feroxbuster
+19:46:21   brew ok   sqlmap
+19:46:21   brew add  kismet
+Warning: No available formula with the name "kismet". Did you mean kissat?
+==> Searching for similarly named formulae and casks...
+==> Formulae
+kissat
+
+To install kissat, run:
+  brew install kissat
+
+==> Casks
+komet
+
+To install komet, run:
+  brew install --cask komet
+19:46:21     skip
+19:46:22   brew add  amass
+==> Downloading bottle manifests
+✔︎ Bottle Manifest amass (5.1.1)
+==> Would install 1 formula:
+amass
+==> Fetching downloads for: amass
+✔︎ Bottle amass (5.1.1)
+==> Pouring amass--5.1.1.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/amass/5.1.1: 6 files, 54.1MB
+19:46:23     ok
+19:46:24   brew add  bettercap
+==> Downloading bottle manifests
+✔︎ Bottle Manifest bettercap (2.41.7)
+==> Would install 1 formula:
+bettercap
+==> Fetching downloads for: bettercap
+✔︎ Bottle bettercap (2.41.7)
+==> Pouring bettercap--2.41.7.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/bettercap/2.41.7: 6 files, 70.2MB
+==> Caveats
+==> bettercap
+bettercap requires root privileges so you will need to run `sudo bettercap`.
+You should be certain that you trust any software you grant root privileges.
+19:46:26     ok
+19:46:26   brew add  zaproxy
+Warning: No available formula with the name "zaproxy". Did you mean haproxy, mapproxy, tproxy or sproxy?
+==> Searching for similarly named formulae and casks...
+==> Formulae
+haproxy
+mapproxy
+tproxy
+sproxy
+
+To install haproxy, run:
+  brew install haproxy
+
+==> Casks
+zappy
+
+To install zappy, run:
+  brew install --cask zappy
+19:46:27     skip
+19:46:27   brew ok   qemu
+19:46:27   brew add  nix
+Warning: No available formula with the name "nix". Did you mean ni, nim, nyx, nox, zix or six?
+==> Searching for similarly named formulae and casks...
+==> Formulae
+clearlooks-phenix
+dos2unix
+duo_unix
+mkvtoolnix
+nixfmt
+nixpacks
+oils-for-unix
+phoronix-test-suite
+qt-unixodbc
+unixodbc
+ni
+nim
+nyx
+nox
+zix
+six
+
+To install clearlooks-phenix, run:
+  brew install clearlooks-phenix
+
+==> Casks
+font-azonix
+font-fenix
+font-nixie-one
+mkvtoolnix-app
+phoenix
+phoenix-code
+phoenix-slides
+
+To install font-azonix, run:
+  brew install --cask font-azonix
+19:46:28     skip
+19:46:28   brew ok   graphviz
+19:46:28   brew ok   freetype
+19:46:28   brew add  opencv
+==> Downloading bottle manifests
+✔︎ Bottle Manifest opencv (5.0.0_7)
+==> Would install 1 formula:
+opencv
+==> Would install 39 dependencies for opencv:
+gflags
+glog
+eigen
+metis
+hwloc
+tbb
+ceres-solver
+jsoncpp
+numpy
+imath
+libdeflate
+openjph
+openexr
+openjpeg
+nlohmann-json
+onnx
+pugixml
+openvino
+leptonica
+libb2
+libarchive
+tesseract
+libaec
+hdf5
+cgns
+double-conversion
+libharu
+libogg
+netcdf
+proj
+md4c
+qtbase
+qtsvg
+qtdeclarative
+libvorbis
+theora
+utf8cpp
+vtk
+glew
+==> Would upgrade 3 dependencies for opencv:
+xz
+suite-sparse
+libvmaf
+==> Fetching downloads for: opencv
+✔︎ Bottle Manifest gflags (2.3.1)
+✔︎ Bottle gflags (2.3.1)
+✔︎ Bottle Manifest glog (0.7.1)
+✔︎ Bottle glog (0.7.1)
+✔︎ Bottle Manifest eigen (5.0.1)
+✔︎ Bottle eigen (5.0.1)
+✔︎ Bottle Manifest metis (5.1.0)
+✔︎ Bottle metis (5.1.0)
+✔︎ Bottle xz (5.8.4)
+✔︎ Bottle Manifest suite-sparse (7.14.1)
+✔︎ Bottle Manifest hwloc (2.14.0)
+✔︎ Bottle hwloc (2.14.0)
+✔︎ Bottle Manifest tbb (2023.1.0)
+✔︎ Bottle tbb (2023.1.0)
+✔︎ Bottle Manifest ceres-solver (2.2.0_6)
+✔︎ Bottle ceres-solver (2.2.0_6)
+✔︎ Bottle libvmaf (3.2.1)
+✔︎ Bottle Manifest jsoncpp (1.9.8)
+✔︎ Bottle jsoncpp (1.9.8)
+✔︎ Bottle Manifest numpy (2.5.3)
+✔︎ Bottle Manifest imath (3.2.3)
+✔︎ Bottle imath (3.2.3)
+✔︎ Bottle Manifest libdeflate (1.26)
+✔︎ Bottle libdeflate (1.26)
+✔︎ Bottle Manifest openjph (0.31.0)
+✔︎ Bottle openjph (0.31.0)
+✔︎ Bottle Manifest openexr (3.4.15)
+✔︎ Bottle openjpeg (2.5.4)
+✔︎ Bottle Manifest nlohmann-json (3.12.0)
+✔︎ Bottle nlohmann-json (3.12.0)
+✔︎ Bottle Manifest onnx (1.22.0_4)
+✔︎ Bottle onnx (1.22.0_4)
+✔︎ Bottle Manifest pugixml (1.16)
+✔︎ Bottle pugixml (1.16)
+✔︎ Bottle Manifest openvino (2026.3.1_1)
+✔︎ Bottle Manifest leptonica (1.87.0)
+✔︎ Bottle leptonica (1.87.0)
+✔︎ Bottle Manifest libb2 (0.98.1)
+✔︎ Bottle libb2 (0.98.1)
+✔︎ Bottle Manifest libarchive (3.8.9)
+✔︎ Bottle libarchive (3.8.9)
+✔︎ Bottle Manifest tesseract (5.5.3)
+✔︎ Bottle tesseract (5.5.3)
+✔︎ Bottle Manifest libaec (1.1.7)
+✔︎ Bottle libaec (1.1.7)
+✔︎ Bottle Manifest hdf5 (2.2.0)
+✔︎ Bottle Manifest cgns (4.5.2)
+✔︎ Bottle cgns (4.5.2)
+✔︎ Bottle Manifest double-conversion (3.4.0)
+✔︎ Bottle double-conversion (3.4.0)
+✔︎ Bottle Manifest libharu (2.4.6)
+✔︎ Bottle libharu (2.4.6)
+✔︎ Bottle Manifest libogg (1.3.6)
+✔︎ Bottle libogg (1.3.6)
+✔︎ Bottle Manifest netcdf (4.10.1_1)
+✔︎ Bottle netcdf (4.10.1_1)
+✔︎ Bottle Manifest proj (9.8.1)
+✔︎ Bottle Manifest md4c (0.5.3)
+✔︎ Bottle md4c (0.5.3)
+✔︎ Bottle Manifest qtbase (6.11.2)
+✔︎ Bottle Manifest qtsvg (6.11.2)
+✔︎ Bottle qtsvg (6.11.2)
+✔︎ Bottle Manifest theora (1.2.0)
+✔︎ Bottle Manifest utf8cpp (4.2.0)
+✔︎ Bottle Manifest libvorbis (1.3.7)
+✔︎ Bottle Manifest libvorbis (1.3.7)
+✔︎ Bottle Manifest openjpeg (2.5.4)
+✔︎ Bottle Manifest qtdeclarative (6.11.2)
+✔︎ Bottle openexr (3.4.15)
+✔︎ Bottle utf8cpp (4.2.0)
+✔︎ Bottle Manifest vtk (9.7.0)
+✔︎ Bottle theora (1.2.0)
+✔︎ Bottle hdf5 (2.2.0)
+✔︎ Bottle libvorbis (1.3.7)
+✔︎ Bottle glew (2.3.1)
+✔︎ Bottle opencv (5.0.0_7)
+✔︎ Bottle qtdeclarative (6.11.2)
+✔︎ Bottle Manifest glew (2.3.1)
+✔︎ Bottle numpy (2.5.3)
+✔︎ Bottle qtbase (6.11.2)
+✔︎ Bottle suite-sparse (7.14.1)
+✔︎ Bottle openvino (2026.3.1_1)
+✔︎ Bottle vtk (9.7.0)
+✔︎ Bottle proj (9.8.1)
+==> Installing dependencies for opencv: gflags, glog, eigen, metis, hwloc, tbb, ceres-solver, jsoncpp, numpy, imath, libdeflate, openjph, openexr, openjpeg, nlohmann-json, onnx, pugixml, openvino, leptonica, libb2, libarchive, tesseract, libaec, hdf5, cgns, double-conversion, libharu, libogg, netcdf, proj, md4c, qtbase, qtsvg, qtdeclarative, libvorbis, theora, utf8cpp, vtk and glew
+==> Installing opencv dependency: gflags
+==> Pouring gflags--2.3.1.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/gflags/2.3.1: 27 files, 719KB
+==> Installing opencv dependency: glog
+==> Pouring glog--0.7.1.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/glog/0.7.1: 25 files, 423KB
+==> Installing opencv dependency: eigen
+==> Pouring eigen--5.0.1.all.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/eigen/5.0.1: 615 files, 10.2MB
+==> Installing opencv dependency: metis
+==> Pouring metis--5.1.0.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/metis/5.1.0: 19 files, 12.6MB
+==> Installing opencv dependency: hwloc
+==> Pouring hwloc--2.14.0.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/hwloc/2.14.0: 994 files, 11.2MB
+==> Installing opencv dependency: tbb
+==> Pouring tbb--2023.1.0.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/tbb/2023.1.0: 185 files, 2.9MB
+==> Installing opencv dependency: ceres-solver
+==> Pouring ceres-solver--2.2.0_6.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/ceres-solver/2.2.0_6: 167 files, 14.4MB
+==> Installing opencv dependency: jsoncpp
+==> Pouring jsoncpp--1.9.8.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/jsoncpp/1.9.8: 21 files, 333.5KB
+==> Installing opencv dependency: numpy
+==> Pouring numpy--2.5.3.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/numpy/2.5.3: 1,855 files, 39.6MB
+==> Installing opencv dependency: imath
+==> Pouring imath--3.2.3.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/imath/3.2.3: 50 files, 977.2KB
+==> Installing opencv dependency: libdeflate
+==> Pouring libdeflate--1.26.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libdeflate/1.26: 17 files, 303.2KB
+==> Installing opencv dependency: openjph
+==> Pouring openjph--0.31.0.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/openjph/0.31.0: 25 files, 607.5KB
+==> Installing opencv dependency: openexr
+==> Pouring openexr--3.4.15.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/openexr/3.4.15: 212 files, 4.4MB
+==> Installing opencv dependency: openjpeg
+==> Pouring openjpeg--2.5.4.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/openjpeg/2.5.4: 512 files, 14.7MB
+==> Installing opencv dependency: nlohmann-json
+==> Pouring nlohmann-json--3.12.0.all.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/nlohmann-json/3.12.0: 56 files, 1.4MB
+==> Installing opencv dependency: onnx
+==> Pouring onnx--1.22.0_4.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/onnx/1.22.0_4: 117 files, 6.6MB
+==> Installing opencv dependency: pugixml
+==> Pouring pugixml--1.16.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/pugixml/1.16: 16 files, 505.3KB
+==> Installing opencv dependency: openvino
+==> Pouring openvino--2026.3.1_1.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/openvino/2026.3.1_1: 853 files, 128.6MB
+==> Installing opencv dependency: leptonica
+==> Pouring leptonica--1.87.0.arm64_tahoe.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/leptonica/1.87.0: 55 files, 7MB
+==> Installing opencv dependency: libb2
+==> Pouring libb2--0.98.1.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libb2/0.98.1: 9 files, 112.8KB
+==> Installing opencv dependency: libarchive
+==> Pouring libarchive--3.8.9.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libarchive/3.8.9: 65 files, 4MB
+==> Installing opencv dependency: tesseract
+==> Pouring tesseract--5.5.3.arm64_tahoe.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/tesseract/5.5.3: 74 files, 26MB
+==> Installing opencv dependency: libaec
+==> Pouring libaec--1.1.7.arm64_tahoe.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/libaec/1.1.7: 23 files, 222.4KB
+==> Installing opencv dependency: hdf5
+==> Pouring hdf5--2.2.0.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/hdf5/2.2.0: 272 files, 23.2MB
+==> Installing opencv dependency: cgns
+==> Pouring cgns--4.5.2.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/cgns/4.5.2: 30 files, 2.3MB
+==> Installing opencv dependency: double-conversion
+==> Pouring double-conversion--3.4.0.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/double-conversion/3.4.0: 29 files, 256.2KB
+==> Installing opencv dependency: libharu
+==> Pouring libharu--2.4.6.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libharu/2.4.6: 143 files, 2.8MB
+==> Installing opencv dependency: libogg
+==> Pouring libogg--1.3.6.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libogg/1.3.6: 103 files, 532.0KB
+==> Installing opencv dependency: netcdf
+==> Pouring netcdf--4.10.1_1.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/netcdf/4.10.1_1: 42 files, 4.5MB
+==> Installing opencv dependency: proj
+==> Pouring proj--9.8.1.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/proj/9.8.1: 530 files, 834.5MB
+==> Installing opencv dependency: md4c
+==> Pouring md4c--0.5.3.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/md4c/0.5.3: 20 files, 276KB
+==> Installing opencv dependency: qtbase
+==> Pouring qtbase--6.11.2.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/qtbase/6.11.2: 4,126 files, 60.7MB
+==> Installing opencv dependency: qtsvg
+==> Pouring qtsvg--6.11.2.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/qtsvg/6.11.2: 112 files, 1.2MB
+==> Installing opencv dependency: qtdeclarative
+==> Pouring qtdeclarative--6.11.2.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/qtdeclarative/6.11.2: 5,374 files, 145.2MB
+==> Installing opencv dependency: libvorbis
+==> Pouring libvorbis--1.3.7.arm64_tahoe.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/libvorbis/1.3.7: 158 files, 2.4MB
+==> Installing opencv dependency: theora
+==> Pouring theora--1.2.0.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/theora/1.2.0: 126 files, 2.6MB
+==> Installing opencv dependency: utf8cpp
+==> Pouring utf8cpp--4.2.0.all.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/utf8cpp/4.2.0: 15 files, 82.7KB
+==> Installing opencv dependency: vtk
+==> Pouring vtk--9.7.0.arm64_tahoe.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/vtk/9.7.0: 4,703 files, 305.6MB
+==> Installing opencv dependency: glew
+==> Pouring glew--2.3.1.arm64_tahoe.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/glew/2.3.1: 39 files, 3.3MB
+==> Installing opencv
+==> Pouring opencv--5.0.0_7.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/opencv/5.0.0_7: 982 files, 182.7MB
+19:47:00     ok
+19:47:01   brew ok   prometheus
+19:47:01   brew ok   grafana
+19:47:01   brew ok   ollama
+19:47:01   brew ok   llama.cpp
+19:47:01   pip: transformers
+19:47:02     ok
+19:47:02   pip: diffusers
+19:47:02     ok
+19:47:02   pip: accelerate
+19:47:02     ok
+19:47:02   pip: peft
+19:47:03     ok
+19:47:03   pip: trl
+19:47:03     ok
+19:47:03   pip: datasets
+19:47:04     ok
+19:47:04   pip: huggingface_hub
+19:47:04     ok
+19:47:04   pip: torch
+19:47:04     ok
+19:47:04   pip: torchvision
+19:47:05     ok
+19:47:05   pip: torchaudio
+19:47:05     ok
+19:47:05   pip: sentencepiece
+19:47:05     ok
+19:47:05   pip: protobuf
+19:47:06     ok
+19:47:06   pip: safetensors
+19:47:06     ok
+19:47:06   pip: fastapi
+19:47:06     ok
+19:47:06   pip: uvicorn
+19:47:07     ok
+19:47:07   pip: flask
+19:47:07     ok
+19:47:07   pip: django
+19:47:09     ok
+19:47:09   pip: express-generator
+ERROR: Could not find a version that satisfies the requirement express-generator (from versions: none)
+ERROR: No matching distribution found for express-generator
+19:47:09     skip
+19:47:09   pip: sqlalchemy
+19:47:10     ok
+19:47:10   pip: psycopg2-binary
+19:47:10     ok
+19:47:10   pip: pymongo
+19:47:11     ok
+19:47:11   pip: redis
+19:47:11     ok
+19:47:11   pip: numpy
+19:47:12     ok
+19:47:12   pip: pandas
+19:47:12     ok
+19:47:12   pip: scipy
+19:47:12     ok
+19:47:12   pip: scikit-learn
+19:47:13     ok
+19:47:13   pip: statsmodels
+19:47:15     ok
+19:47:15   pip: opencv-python
+19:47:15     ok
+19:47:15   pip: pillow
+19:47:16     ok
+19:47:16   pip: spacy
+19:47:16     ok
+19:47:16   pip: qiskit
+19:47:17     ok
+19:47:17   pip: qiskit-aer
+19:47:18     ok
+19:47:18   pip: pennylane
+19:47:21     ok
+19:47:21   pip: cirq
+19:47:24     ok
+19:47:24   pip: pyquil
+19:47:32     ok
+19:47:32   pip: mlflow
+19:47:36     ok
+19:47:36   pip: bentoml
+19:47:39     ok
+19:47:39   pip: optuna
+19:47:39     ok
+19:47:39   pip: ray
+19:47:43     ok
+19:47:43   pip: faiss-cpu
+19:47:44     ok
+19:47:44   pip: qdrant-client
+19:47:44     ok
+19:47:44   pip: weaviate-client
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+grpcio-status 1.84.0 requires grpcio>=1.84.0, but you have grpcio 1.78.0 which is incompatible.
+19:47:46     ok
+19:47:46   pip: milvus
+19:47:49     ok
+19:47:49   pip: langchain
+19:47:51     ok
+19:47:51   pip: llama-index
+19:47:54     ok
+19:47:54   pip: langgraph
+19:47:55     ok
+19:47:55   pip: autogen
+19:47:56     ok
+19:47:56   pip: crewai
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+flair 0.15.1 requires transformers[sentencepiece]<5.0.0,>=4.25.0, but you have transformers 5.17.0 which is incompatible.
+19:48:05     ok
+19:48:05   pip: openai
+19:48:05     ok
+19:48:05   pip: anthropic
+19:48:06     ok
+19:48:06   pip: faster-whisper
+19:48:07     ok
+19:48:07   pip: openai-whisper
+19:48:07     ok
+19:48:07   pip: mlx-whisper
+19:48:08     ok
+19:48:08   pip: speechbrain
+19:48:08     ok
+19:48:08   pip: coqui-tts
+19:48:10     ok
+19:48:10   pip: TTS
+ERROR: Ignored the following versions that require a different python version: 0.0.10.2 Requires-Python >=3.6.0,<3.9; 0.0.10.3 Requires-Python >=3.6.0,<3.9; 0.0.11 Requires-Python >=3.6.0,<3.9; 0.0.12 Requires-Python >=3.6.0,<3.9; 0.0.13.1 Requires-Python >=3.6.0,<3.9; 0.0.13.2 Requires-Python >=3.6.0,<3.9; 0.0.14.1 Requires-Python >=3.6.0,<3.9; 0.0.15 Requires-Python >=3.6.0,<3.9; 0.0.15.1 Requires-Python >=3.6.0,<3.9; 0.0.9 Requires-Python >=3.6.0,<3.9; 0.0.9.1 Requires-Python >=3.6.0,<3.9; 0.0.9.2 Requires-Python >=3.6.0,<3.9; 0.0.9a10 Requires-Python >=3.6.0,<3.9; 0.0.9a9 Requires-Python >=3.6.0,<3.9; 0.1.0 Requires-Python >=3.6.0,<3.10; 0.1.1 Requires-Python >=3.6.0,<3.10; 0.1.2 Requires-Python >=3.6.0,<3.10; 0.1.3 Requires-Python >=3.6.0,<3.10; 0.10.0 Requires-Python >=3.7.0,<3.11; 0.10.1 Requires-Python >=3.7.0,<3.11; 0.10.2 Requires-Python >=3.7.0,<3.11; 0.11.0 Requires-Python >=3.7.0,<3.11; 0.11.1 Requires-Python >=3.7.0,<3.11; 0.12.0 Requires-Python >=3.7.0,<3.11; 0.13.0 Requires-Python >=3.7.0,<3.11; 0.13.1 Requires-Python >=3.7.0,<3.11; 0.13.2 Requires-Python >=3.7.0,<3.11; 0.13.3 Requires-Python >=3.7.0,<3.11; 0.14.0 Requires-Python >=3.7.0,<3.11; 0.14.2 Requires-Python >=3.7.0,<3.11; 0.14.3 Requires-Python >=3.7.0,<3.11; 0.15.0 Requires-Python >=3.9.0,<3.12; 0.15.1 Requires-Python >=3.9.0,<3.12; 0.15.2 Requires-Python >=3.9.0,<3.12; 0.15.4 Requires-Python >=3.9.0,<3.12; 0.15.5 Requires-Python >=3.9.0,<3.12; 0.15.6 Requires-Python >=3.9.0,<3.12; 0.16.0 Requires-Python >=3.9.0,<3.12; 0.16.1 Requires-Python >=3.9.0,<3.12; 0.16.3 Requires-Python >=3.9.0,<3.12; 0.16.4 Requires-Python >=3.9.0,<3.12; 0.16.5 Requires-Python >=3.9.0,<3.12; 0.16.6 Requires-Python >=3.9.0,<3.12; 0.17.0 Requires-Python >=3.9.0,<3.12; 0.17.1 Requires-Python >=3.9.0,<3.12; 0.17.2 Requires-Python >=3.9.0,<3.12; 0.17.4 Requires-Python >=3.9.0,<3.12; 0.17.5 Requires-Python >=3.9.0,<3.12; 0.17.6 Requires-Python >=3.9.0,<3.12; 0.17.7 Requires-Python >=3.9.0,<3.12; 0.17.8 Requires-Python >=3.9.0,<3.12; 0.17.9 Requires-Python >=3.9.0,<3.12; 0.18.0 Requires-Python >=3.9.0,<3.12; 0.18.1 Requires-Python >=3.9.0,<3.12; 0.18.2 Requires-Python >=3.9.0,<3.12; 0.19.0 Requires-Python >=3.9.0,<3.12; 0.19.1 Requires-Python >=3.9.0,<3.12; 0.2.0 Requires-Python >=3.6.0,<3.10; 0.2.1 Requires-Python >=3.6.0,<3.10; 0.2.2 Requires-Python >=3.6.0,<3.10; 0.20.0 Requires-Python >=3.9.0,<3.12; 0.20.1 Requires-Python >=3.9.0,<3.12; 0.20.2 Requires-Python >=3.9.0,<3.12; 0.20.3 Requires-Python >=3.9.0,<3.12; 0.20.4 Requires-Python >=3.9.0,<3.12; 0.20.5 Requires-Python >=3.9.0,<3.12; 0.20.6 Requires-Python >=3.9.0,<3.12; 0.21.0 Requires-Python >=3.9.0,<3.12; 0.21.1 Requires-Python >=3.9.0,<3.12; 0.21.2 Requires-Python >=3.9.0,<3.12; 0.21.3 Requires-Python >=3.9.0,<3.12; 0.22.0 Requires-Python >=3.9.0,<3.12; 0.3.0 Requires-Python >=3.6.0,<3.10; 0.3.1 Requires-Python >=3.6.0,<3.10; 0.4.0 Requires-Python >=3.6.0,<3.10; 0.4.1 Requires-Python >=3.6.0,<3.10; 0.4.2 Requires-Python >=3.6.0,<3.10; 0.5.0 Requires-Python >=3.6.0,<3.10; 0.6.0 Requires-Python >=3.6.0,<3.10; 0.6.1 Requires-Python >=3.6.0,<3.10; 0.6.2 Requires-Python >=3.6.0,<3.10; 0.7.0 Requires-Python >=3.7.0,<3.11; 0.7.1 Requires-Python >=3.7.0,<3.11; 0.8.0 Requires-Python >=3.7.0,<3.11; 0.9.0 Requires-Python >=3.7.0,<3.11
+ERROR: Could not find a version that satisfies the requirement TTS (from versions: none)
+ERROR: No matching distribution found for TTS
+19:48:10     skip
+19:48:10   pip: requests
+19:48:11     ok
+19:48:11   pip: requests-html
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+instructor 1.17.0 requires urllib3<3.0.0,>=2.7.0; python_version >= "3.10", but you have urllib3 1.26.20 which is incompatible.
+langgraph-sdk 0.4.4 requires websockets<17,>=14, but you have websockets 10.4 which is incompatible.
+langsmith 0.12.4 requires websockets>=15.0, but you have websockets 10.4 which is incompatible.
+19:48:13     ok
+19:48:13   pip: scrapy
+19:48:16     ok
+19:48:16   pip: beautifulsoup4
+19:48:16     ok
+19:48:16   pip: selenium
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pyppeteer 2.0.0 requires urllib3<2.0.0,>=1.25.8, but you have urllib3 2.7.0 which is incompatible.
+19:48:18     ok
+19:48:18   pip: playwright
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pyppeteer 2.0.0 requires pyee<12.0.0,>=11.0.0, but you have pyee 13.0.1 which is incompatible.
+pyppeteer 2.0.0 requires urllib3<2.0.0,>=1.25.8, but you have urllib3 2.7.0 which is incompatible.
+19:48:18     ok
+19:48:18   pip: tweepy
+19:48:19     ok
+19:48:19   pip: alpha_vantage
+19:48:20     ok
+19:48:20   pip: pandas-ai
+ERROR: Could not find a version that satisfies the requirement pandas-ai (from versions: none)
+ERROR: No matching distribution found for pandas-ai
+19:48:20     skip
+19:48:20   pip: whisper
+19:48:22     ok
+19:48:22   pip: ultralytics
+19:48:29     ok
+19:48:29   pip: tensorflow
+19:48:38     ok
+19:48:38   pip: jax
+19:48:38     ok
+19:48:38   pip: jaxlib
+19:48:39     ok
+19:48:39   pip: nemo_toolkit[asr]
+19:48:39     ok
+19:48:39 == install done — see /Users/metadusa/tmig-full/receipts/oss-breadth.log ==
+19:48:40 == coverage ==
+19:48:40   -- brew tools --
+19:48:40     ok   ffmpeg
+19:48:40     ok   cmake
+19:48:40     ok   ninja
+19:48:40     ok   pkg-config
+19:48:40     --   rust
+19:48:40     ok   go
+19:48:40     ok   node
+19:48:40     --   python@3.12
+19:48:40     ok   nmap
+19:48:40     ok   nikto
+19:48:40     ok   hydra
+19:48:40     ok   hashcat
+19:48:40     --   john-jumbo
+19:48:40     ok   aircrack-ng
+19:48:40     ok   yara
+19:48:40     --   proxychains-ng
+19:48:40     ok   tor
+19:48:40     --   hping
+19:48:40     ok   netcat
+19:48:40     --   exploitdb
+19:48:40     ok   feroxbuster
+19:48:40     ok   sqlmap
+19:48:40     --   kismet
+19:48:40     ok   amass
+19:48:40     ok   bettercap
+19:48:40     --   zaproxy
+19:48:40     --   qemu
+19:48:40     ok   nix
+19:48:40     --   graphviz
+19:48:40     --   freetype
+19:48:40     --   opencv
+19:48:40     ok   prometheus
+19:48:40     ok   grafana
+19:48:40     ok   ollama
+19:48:40     --   llama.cpp
+19:48:40   -- python modules --
+19:48:41     ok   transformers
+19:48:44     ok   diffusers
+19:48:44     ok   torch
+19:48:44     ok   sentencepiece
+19:48:44     ok   safetensors
+19:48:44     ok   fastapi
+19:48:45     ok   flask
+19:48:45     ok   sqlalchemy
+19:48:45     ok   numpy
+19:48:45     ok   pandas
+19:48:45     ok   scipy
+19:48:46     ok   sklearn
+19:48:46     ok   statsmodels
+19:48:46     ok   cv2
+19:48:47     ok   spacy
+19:48:48     ok   qiskit
+19:48:50     ok   pennylane
+19:48:51     ok   cirq
+19:48:51     ok   pyquil
+19:48:52     ok   mlflow
+19:48:52     ok   bentoml
+19:48:52     ok   optuna
+19:48:53     ok   ray
+19:48:53     ok   faiss
+19:48:54     ok   qdrant_client
+19:48:54     ok   weaviate
+19:48:54     ok   langchain
+19:48:54     ok   llama_index
+19:48:54     ok   langgraph
+19:48:56     ok   autogen
+19:48:58     ok   crewai
+19:48:58     ok   openai
+19:48:58     ok   faster_whisper
+19:48:59     ok   whisper
+19:49:00     ok   speechbrain
+19:49:00     ok   requests
+19:49:00     ok   scrapy
+19:49:00     ok   bs4
+19:49:00     ok   selenium
+19:49:01     ok   tweepy
+19:49:01     ok   alpha_vantage
+19:49:04     ok   tensorflow
+19:49:04     ok   jax
