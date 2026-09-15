@@ -10,7 +10,11 @@ run cargo test --release --all-targets
 run cargo audit
 run cargo deny check
 run bash -c 'cargo sbom --output-format spdx_json_2_3 > /dev/null'
-run ./target/release/xt policy-check
+run if [ ! -x target/release/xt ]; then
+  echo "== building xt =="
+  cargo build --release -p xt || exit 1
+fi
+./target/release/xt policy-check
 run bash scripts/repro-check.sh
 
 run bash infra/check.sh
