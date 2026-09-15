@@ -1,0 +1,3 @@
+ops:
+  - {name: detect, effect: read, inputs: [image], outputs: [boxes]}
+  - {name: nms,    effect: read, inputs: [boxes], outputs: [boxes]}

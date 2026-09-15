@@ -1,0 +1,3 @@
+ops:
+  - {name: plan, effect: exec, inputs: [goal],       outputs: [trajectory]}
+  - {name: act,  effect: exec, inputs: [trajectory], outputs: [state]}

@@ -1,0 +1,3 @@
+ops:
+  - {name: generate, effect: read, inputs: [prompt], outputs: [text]}
+  - {name: embed,    effect: read, inputs: [text],   outputs: [vector]}

@@ -1,0 +1,5 @@
+entities:
+  - {id: doc:1,   kind: document}
+  - {id: page:1,  kind: page}
+  - {id: word:1,  kind: word}
+  - {id: label:1, kind: label}

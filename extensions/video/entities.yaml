@@ -1,0 +1,3 @@
+entities:
+  - {id: video:1,  kind: video}
+  - {id: frames:1, kind: frames}

@@ -1,0 +1,9 @@
+flows:
+  - id: health-check
+    steps: [tmig status, tmig health]
+  - id: reconcile
+    steps: [tmig infra-status, tmig infra-reconcile]
+  - id: verify
+    steps: [tmig verify]
+  - id: release
+    steps: [tmig verify, tmig release]

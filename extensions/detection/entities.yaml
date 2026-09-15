@@ -1,0 +1,3 @@
+entities:
+  - {id: image:1, kind: image}
+  - {id: bbox:1,  kind: bbox}

@@ -1,0 +1,24 @@
+$schema: "https://json-schema.org/draft-07/schema#"
+title: Organization
+type: object
+required: [name, roles, members]
+properties:
+  name: {type: string, minLength: 1}
+  roles:
+    type: array
+    items:
+      type: object
+      required: [id, permissions]
+      properties:
+        id: {type: string}
+        permissions:
+          type: array
+          items: {type: string}
+  members:
+    type: array
+    items:
+      type: object
+      required: [id, role]
+      properties:
+        id: {type: string}
+        role: {type: string}

@@ -1,0 +1,3 @@
+ops:
+  - {name: forecast, effect: read, inputs: [series], outputs: [series]}
+  - {name: backtest, effect: read, inputs: [series], outputs: [metrics]}

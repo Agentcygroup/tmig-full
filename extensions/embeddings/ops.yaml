@@ -1,0 +1,3 @@
+ops:
+  - {name: encode, effect: read, inputs: [text],   outputs: [vector]}
+  - {name: search, effect: read, inputs: [vector], outputs: [ids]}

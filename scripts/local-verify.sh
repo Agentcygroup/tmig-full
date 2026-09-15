@@ -15,5 +15,7 @@ run bash scripts/repro-check.sh
 
 run bash infra/check.sh
 
+run bash kernel/check.sh
+
 echo
 echo "ALL LOCAL CHECKS PASS"

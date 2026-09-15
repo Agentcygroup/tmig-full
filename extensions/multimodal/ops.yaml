@@ -1,0 +1,3 @@
+ops:
+  - {name: fuse,  effect: read, inputs: [modalities], outputs: [vector]}
+  - {name: align, effect: read, inputs: [vector],     outputs: [vector]}

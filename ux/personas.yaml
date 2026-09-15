@@ -1,0 +1,7 @@
+personas:
+  - id: operator
+    wants: [health, reconcile, release]
+    flows: [health-check, reconcile, release]
+  - id: auditor
+    wants: [verify, receipts]
+    flows: [verify, release]

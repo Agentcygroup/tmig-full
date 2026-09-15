@@ -1,0 +1,3 @@
+ops:
+  - {name: transcribe,     effect: read, inputs: [waveform], outputs: [text]}
+  - {name: classify_audio, effect: read, inputs: [waveform], outputs: [label]}

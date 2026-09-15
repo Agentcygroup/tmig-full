@@ -1,0 +1,11 @@
+name: tmig-full
+roles:
+  - id: operator
+    permissions: [reconcile, restart-service, read-receipts]
+  - id: releaser
+    permissions: [release, sign, push-tag]
+  - id: auditor
+    permissions: [read-receipts, verify-signature]
+members:
+  - {id: metadusa, role: operator}
+  - {id: metadusa, role: releaser}

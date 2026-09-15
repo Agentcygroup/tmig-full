@@ -1,0 +1,3 @@
+ops:
+  - {name: segment, effect: read, inputs: [image], outputs: [mask]}
+  - {name: refine,  effect: read, inputs: [mask],  outputs: [mask]}

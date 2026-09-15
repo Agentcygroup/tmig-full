@@ -1,0 +1,3 @@
+entities:
+  - {id: prompt:1,     kind: prompt}
+  - {id: completion:1, kind: completion}

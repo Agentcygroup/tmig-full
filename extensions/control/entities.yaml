@@ -1,0 +1,3 @@
+entities:
+  - {id: system:1,     kind: system}
+  - {id: controller:1, kind: controller}

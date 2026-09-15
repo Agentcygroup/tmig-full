@@ -1,0 +1,3 @@
+ops:
+  - {name: reconstruct, effect: read, inputs: [views], outputs: [mesh]}
+  - {name: render,      effect: read, inputs: [mesh],  outputs: [image]}

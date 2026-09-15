@@ -1,0 +1,3 @@
+ops:
+  - {name: observe, effect: read, inputs: [system], outputs: [state]}
+  - {name: command, effect: exec, inputs: [state],  outputs: [signal]}

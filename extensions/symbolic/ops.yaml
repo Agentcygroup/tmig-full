@@ -1,0 +1,3 @@
+ops:
+  - {name: unify, effect: read, inputs: [terms], outputs: [subst]}
+  - {name: prove, effect: exec, inputs: [goal],  outputs: [proof]}

@@ -1,0 +1,3 @@
+entities:
+  - {id: term:1,  kind: term}
+  - {id: proof:1, kind: proof}

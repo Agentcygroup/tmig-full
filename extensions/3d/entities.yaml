@@ -1,0 +1,3 @@
+entities:
+  - {id: mesh:1,  kind: mesh}
+  - {id: views:1, kind: views}

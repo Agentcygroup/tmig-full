@@ -1,0 +1,3 @@
+ops:
+  - {name: denoise,        effect: read, inputs: [latent], outputs: [latent]}
+  - {name: generate_image, effect: read, inputs: [prompt], outputs: [image]}

@@ -1,0 +1,3 @@
+ops:
+  - {name: compose,  effect: read, inputs: [models],   outputs: [pipeline]}
+  - {name: evaluate, effect: read, inputs: [pipeline], outputs: [metrics]}

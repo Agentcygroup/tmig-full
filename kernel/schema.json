@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Constitutional Kernel",
+  "definitions": {
+    "Entity": {
+      "type": "object",
+      "required": ["id", "kind"],
+      "properties": {
+        "id":    {"type": "string", "pattern": "^[a-z0-9:_-]{3,}$"},
+        "kind":  {"type": "string", "minLength": 2},
+        "attrs": {"type": "object"}
+      }
+    },
+    "Op": {
+      "type": "object",
+      "required": ["name", "effect", "inputs", "outputs"],
+      "properties": {
+        "name":    {"type": "string", "minLength": 1},
+        "effect":  {"type": "string", "enum": ["read", "write", "exec"]},
+        "inputs":  {"type": "array", "items": {"type": "string"}},
+        "outputs": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

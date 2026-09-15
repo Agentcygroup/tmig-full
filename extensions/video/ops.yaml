@@ -1,0 +1,3 @@
+ops:
+  - {name: decode, effect: read, inputs: [video],  outputs: [frames]}
+  - {name: track,  effect: read, inputs: [frames], outputs: [tracks]}

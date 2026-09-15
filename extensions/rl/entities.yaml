@@ -1,0 +1,3 @@
+entities:
+  - {id: policy:1, kind: policy}
+  - {id: env:1,    kind: environment}

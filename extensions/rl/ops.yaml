@@ -1,0 +1,3 @@
+ops:
+  - {name: step,    effect: exec, inputs: [state, action], outputs: [state, reward]}
+  - {name: rollout, effect: exec, inputs: [policy],        outputs: [trajectory]}

@@ -1,0 +1,5 @@
+ops:
+  - {name: tokenize,   effect: read, inputs: [doc],        outputs: [words]}
+  - {name: encode_box, effect: read, inputs: [word],       outputs: [box]}
+  - {name: classify,   effect: read, inputs: [word, box],  outputs: [label]}
+  - {name: extract_kv, effect: read, inputs: [doc],        outputs: [pairs]}
