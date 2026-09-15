@@ -1,3 +1,9 @@
+# Red-team / pentest extras — install into a SEPARATE venv.
+#   impacket 0.12.0  -> pyOpenSSL==24.0.0   (main uses pyOpenSSL>=24.3)
+#   mitmproxy 11.1.2 -> first patched version for GHSA-cq46-m9x9-j8w2
+# Usage:
+#   python3 -m venv ~/tmig-full/venvs/redteam
+#   ~/tmig-full/venvs/redteam/bin/pip install -r ~/tmig-full/requirements-redteam.txt
 impacket==0.12.0
 pyOpenSSL==24.0.0
 mitmproxy==11.1.2
