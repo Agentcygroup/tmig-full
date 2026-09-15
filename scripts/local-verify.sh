@@ -32,3 +32,7 @@ if [ ! -x target/release/xt ]; then
   cargo build --release -p xt
 fi
 ./target/release/xt policy-check
+
+# --- sdcl: every harness emits for every SDLC phase ---
+echo "== sdcl-check =="
+make sdcl-check
