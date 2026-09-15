@@ -4,7 +4,7 @@ version = 4
 
 [[package]]
 name = "addr"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "sha2 0.11.0",
  "walkdir",
@@ -474,7 +474,7 @@ checksum = "da7c62ceae207dd37ea5b845da6a0696c799f85e97da1ab5b7910be3c1c80223"
 
 [[package]]
 name = "ffi"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "addr",
 ]
@@ -651,7 +651,7 @@ dependencies = [
 
 [[package]]
 name = "intent"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "addr",
  "glob",
@@ -760,6 +760,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "kernel"
+version = "0.2.0"
+dependencies = [
+ "cedar-policy",
+ "hex",
+ "serde",
+ "serde_json",
+ "sha2 0.10.9",
+ "thiserror",
+ "toml",
+]
+
+[[package]]
 name = "lalrpop"
 version = "0.22.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -793,7 +806,7 @@ dependencies = [
 
 [[package]]
 name = "layer"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "serde",
  "toml",
@@ -1016,7 +1029,7 @@ checksum = "a89322df9ebe1c1578d689c92318e070967d1042b512afbe49518723f4e6d5cd"
 
 [[package]]
 name = "policy"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "cedar-policy",
  "serde",
@@ -1157,7 +1170,7 @@ checksum = "d6f6ff9a378485b298a5286656da665ba74413d36db0979633275d2e708145d4"
 
 [[package]]
 name = "release"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "flate2",
  "hex",
@@ -1171,7 +1184,7 @@ dependencies = [
 
 [[package]]
 name = "remote"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "addr",
 ]
@@ -1212,7 +1225,7 @@ dependencies = [
 
 [[package]]
 name = "schema"
-version = "0.1.0"
+version = "0.2.0"
 
 [[package]]
 name = "schemars"
@@ -1652,7 +1665,7 @@ checksum = "ebc1c04c71510c7f702b52b7c350734c9ff1295c464a03335b00bb84fc54f853"
 
 [[package]]
 name = "verify"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "schema",
 ]
@@ -1813,7 +1826,7 @@ dependencies = [
 
 [[package]]
 name = "xt"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "addr",
  "intent",

@@ -1,9 +1,47 @@
 [workspace]
 resolver = "2"
 members = [
-  "crates/release","crates/addr","crates/layer","crates/schema","crates/verify","crates/policy","crates/remote","crates/intent","crates/xt","crates/ffi"]
+    "crates/addr",
+    "crates/ffi",
+    "crates/intent",
+    "crates/kernel",
+    "crates/layer",
+    "crates/policy",
+    "crates/release",
+    "crates/remote",
+    "crates/schema",
+    "crates/verify",
+    "crates/xt",
+]
 
 [workspace.package]
-edition = "2021"
-version = "0.1.0"
-license = "Apache-2.0"
+version      = "0.2.0"
+edition      = "2021"
+rust-version = "1.75"
+license      = "BSD-3-Clause"
+authors      = ["Agentcygroup"]
+repository   = "https://github.com/Agentcygroup/tmig-full"
+homepage     = "https://github.com/Agentcygroup/tmig-full"
+readme       = "README.md"
+
+[workspace.dependencies]
+addr     = { path = "crates/addr",     version = "0.2.0" }
+ffi      = { path = "crates/ffi",      version = "0.2.0" }
+intent   = { path = "crates/intent",   version = "0.2.0" }
+kernel   = { path = "crates/kernel",   version = "0.2.0" }
+layer    = { path = "crates/layer",    version = "0.2.0" }
+policy   = { path = "crates/policy",   version = "0.2.0" }
+release  = { path = "crates/release",  version = "0.2.0" }
+remote   = { path = "crates/remote",   version = "0.2.0" }
+schema   = { path = "crates/schema",   version = "0.2.0" }
+verify   = { path = "crates/verify",   version = "0.2.0" }
+
+cedar-policy = "4.12.0"
+serde        = { version = "1.0", features = ["derive"] }
+serde_json   = "1.0"
+thiserror    = "2.0"
+sha2         = "0.10"
+hex          = "0.4"
+toml         = "1.1"
+clap         = { version = "4.6", features = ["derive"] }
+anyhow       = "1.0"

@@ -1,13 +1,20 @@
 [build]
-incremental = false
+rustflags = ["-C", "target-cpu=native"]
+
+[alias]
+k        = "run -p xt -- kernel"
+p        = "run -p xt -- policy-check"
+v        = "run -p xt -- verify"
+r        = "run -p xt -- release"
+verify   = "run --release -p xt -- verify"
+ci       = "run --release -p xt -- ci"
+fmt-all  = "fmt --all -- --check"
+lint-all = "clippy --all-targets --all-features -- -D warnings"
+test-all = "test --release --workspace"
 
 [net]
-retry = 3
 git-fetch-with-cli = true
 
 [term]
-color = "never"
-
-[env]
-CARGO_TERM_COLOR = "never"
-SOURCE_DATE_EPOCH = "1700000000"
+color = "auto"
+verbose = false
