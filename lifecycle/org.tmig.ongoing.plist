@@ -5,12 +5,12 @@
   <key>Label</key><string>org.tmig.ongoing</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/bin/bash</string>
-    <string>/Users/metadusa/tmig-full/lifecycle/ongoing.sh</string>
+    <string>/Users/metadusa/.pi-venv/bin/python</string>
+    <string>/Users/metadusa/tmig-full/lifecycle/ongoing.py</string>
   </array>
   <key>StartInterval</key><integer>300</integer>
   <key>RunAtLoad</key><true/>
-  <key>StandardOutPath</key><string>/Users/metadusa/Library/Logs/tmig-ongoing.log</string>
-  <key>StandardErrorPath</key><string>/Users/metadusa/Library/Logs/tmig-ongoing.error.log</string>
+  <key>StandardOutPath</key><string>/Users/metadusa/tmig-full/receipts/lifecycle-ongoing.log</string>
+  <key>StandardErrorPath</key><string>/Users/metadusa/tmig-full/receipts/lifecycle-ongoing.err</string>
 </dict>
 </plist>
