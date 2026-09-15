@@ -5,6 +5,10 @@ targets = []
 version = 2
 yanked = "warn"
 
+
+# fxhash is unmaintained, only transitively via wasmtime -> fxprof.
+# No safe upgrade available. Ignored until wasmtime drops fxprof.
+ignore = ["RUSTSEC-2025-0057"]
 [licenses]
 version = 2
 confidence-threshold = 0.8

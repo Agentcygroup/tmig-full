@@ -86,12 +86,8 @@ fn run_wasm(h: &Harness, workdir: &str) -> Result<Outcome, RunError> {
         ))
     })?;
     let mut store = wasmtime::Store::new(wasm_engine(), ());
-    let instance = wasmtime::Instance::new(&mut store, &module, &[]).map_err(|e| {
-        RunError::Io(std::io::Error::new(
-            std::io::ErrorKind::Other,
-            e.to_string(),
-        ))
-    })?;
+    let instance = wasmtime::Instance::new(&mut store, &module, &[])
+        .map_err(|e| RunError::Io(std::io::Error::other(e.to_string())))?;
     let ran = if let Ok(f) = instance.get_typed_func::<(), ()>(&mut store, "run") {
         f.call(&mut store, ())
             .map(|_| "run")

@@ -35,6 +35,15 @@ def wait_port_free(port, deadline=5.0):
         time.sleep(0.2)
     return not pid_on(port)
 
+def wait_ready(svc, timeout=45.0):
+    end = time.time() + timeout
+    url = svc['health']
+    while time.time() < end:
+        if healthy(url):
+            return True
+        time.sleep(0.25)
+    return False
+
 def kill_pids(pids):
     for pid in pids:
         try: os.kill(pid, signal.SIGTERM)
@@ -54,6 +63,7 @@ def start(svc):
         env=env, stdin=subprocess.DEVNULL, stdout=log, stderr=log,
         start_new_session=True,
     )
+    wait_ready(svc, timeout=45.0)
     return p.pid
 
 def reconcile(dry=False):
@@ -78,7 +88,6 @@ def main():
     rows = reconcile(dry=dry)
     for n, p, s, a in rows:
         print(f"  {n:<12} :{p}  {s:<5}  {a}")
-    time.sleep(2)
     ok = all(healthy(f"http://127.0.0.1:{p}/health") or
              healthy(f"http://127.0.0.1:{p}/v1/models") for _, p, _, _ in rows)
     return 0 if ok else 1

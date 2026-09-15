@@ -74,3 +74,5 @@ tmig-full.spdx.json
 
 # infra observed state (recomputed by reconcile)
 infra/state/
+receipts/lifecycle-ongoing.log
+receipts/lifecycle-ongoing.err
