@@ -1,0 +1,13 @@
+attr	value	notes
+name	Sovereign Intelligence	the entity
+root	/Taxonomy	USD defaultPrim
+version	1.0.0	first canonical
+host	Apple M4 Max 128GB	compute substrate
+runtime	Julia + Python + Rust	FFI polyglot
+composition	openusd sublayer + reference	stage tree
+verification	hash-chained receipts	every mutation
+invariants	8 classes / 90 rules	from git-invariants-deep
+tracks	17 domains	taxonomy breadth
+languages	88 curated + 5519 ISO	linguistic coverage
+models	143 families	catalog
+bands	20 FHSS + SI + hyperfine	physics

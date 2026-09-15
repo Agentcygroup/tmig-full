@@ -1,0 +1,9 @@
+system	transition	frequency_hz	wavelength_cm	notes
+Hydrogen 21cm	H 1s F=1 to F=0	1420405751.7667	21.1061	radial velocity astronomy
+Cesium 133	6S1/2 F=3 to F=4	9192631770	32.612	SI second definition
+Rubidium 87	5S1/2 F=1 to F=2	6834682610.904	43.87	Rb atomic clock
+Hydrogen maser	H 1s	1420405751.768	21.106	active maser
+Ytterbium 171	1S0 to 3P0	518295836590864	0.000578	optical lattice clock
+Strontium 87	1S0 to 3P0	429228004229873	0.000699	optical lattice clock
+Thulium	1S0 to 3P0	—	—	ion clock
+Aluminum ion	1S0 to 3P0	1121015393207857	0.000267	Al+ quantum logic clock

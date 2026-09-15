@@ -1,0 +1,57 @@
+20:56:27 == host inventory ==
+20:56:27   probing Metal / MLX / ANE
+torch_mps True
+torch_version 2.14.0
+mlx True
+mlx_device Device(gpu, 0)
+transformers 5.17.0
+diffusers 0.40.0
+faster_whisper True
+20:56:31 == host usda ==
+20:56:32 == modality servers ==
+20:56:32   start :8080 llama.cpp
+20:56:32   start :8081 embeddings
+20:56:32   start :8082 diffusers
+20:56:32   start :8083 faster-whisper
+20:56:32   start :8084 vision
+20:56:40 == health checks ==
+20:56:40   :8080 up
+20:56:40   :8081 down (see ~/.8081.log)
+20:56:40   :8082 up
+20:56:41   :8083 down (see ~/.8083.log)
+20:56:41   :8084 up
+20:56:41 == write router urls ==
+20:56:41   wrote /Users/metadusa/tmig-full/taxonomy/runtime/router_urls.json
+20:56:41 == hook host into unified ==
+20:56:41 == summary ==
+20:56:41   host: /Users/metadusa/tmig-full/taxonomy/host/host.usda
+20:56:41   inventory: /Users/metadusa/tmig-full/taxonomy/host/host.tsv
+20:56:41   capabilities: /Users/metadusa/tmig-full/taxonomy/host/capabilities.txt
+20:56:41   router urls: /Users/metadusa/tmig-full/taxonomy/runtime/router_urls.json
+20:56:41   log: /Users/metadusa/tmig-full/receipts/sovereign-host.log
+21:01:54 == host inventory ==
+21:01:54   probing Metal / MLX / ANE
+torch_mps True
+torch_version 2.14.0
+mlx True
+mlx_device Device(gpu, 0)
+transformers 5.17.0
+diffusers 0.40.0
+faster_whisper True
+21:02:20 == host usda ==
+21:02:25 == modality servers ==
+21:02:33 == health checks ==
+21:02:33   :8080 up
+21:02:33   :8081 up
+21:02:33   :8082 up
+21:02:34   :8083 up
+21:02:34   :8084 up
+21:02:34 == write router urls ==
+21:02:34   wrote /Users/metadusa/tmig-full/taxonomy/runtime/router_urls.json
+21:02:34 == hook host into unified ==
+21:02:34 == summary ==
+21:02:34   host: /Users/metadusa/tmig-full/taxonomy/host/host.usda
+21:02:34   inventory: /Users/metadusa/tmig-full/taxonomy/host/host.tsv
+21:02:34   capabilities: /Users/metadusa/tmig-full/taxonomy/host/capabilities.txt
+21:02:34   router urls: /Users/metadusa/tmig-full/taxonomy/runtime/router_urls.json
+21:02:34   log: /Users/metadusa/tmig-full/receipts/sovereign-host.log

@@ -1,0 +1,783 @@
+#usda 1.0
+(
+    defaultPrim = "Sovereign"
+    upAxis = "Y"
+)
+
+def Scope "Sovereign"
+{
+    def Scope "astronomy"
+    {
+        def Xform "stars"
+        {
+            custom string catalog = "SDSS"
+            custom string notes = ""
+            custom string scope = "500M objects"
+            custom string system = "stars"
+        }
+
+        def Xform "galaxies"
+        {
+            custom string catalog = "IC"
+            custom string notes = ""
+            custom string scope = "5,386 objects"
+            custom string system = "galaxies"
+        }
+
+        def Xform "exoplanets"
+        {
+            custom string catalog = "Exoplanet.eu"
+            custom string notes = ""
+            custom string scope = "EU mirror"
+            custom string system = "exoplanets"
+        }
+
+        def Xform "dwarf_planets"
+        {
+            custom string catalog = "IAU"
+            custom string notes = ""
+            custom string scope = "5 recognized"
+            custom string system = "dwarf planets"
+        }
+
+        def Xform "asteroids"
+        {
+            custom string catalog = "MPC"
+            custom string notes = ""
+            custom string scope = "1.3M numbered"
+            custom string system = "asteroids"
+        }
+
+        def Xform "solar_system"
+        {
+            custom string catalog = "JPL Horizons"
+            custom string notes = ""
+            custom string scope = "ephemerides"
+            custom string system = "solar system"
+        }
+
+        def Xform "deep_sky"
+        {
+            custom string catalog = "JWST"
+            custom string notes = ""
+            custom string scope = "2022+ deep field"
+            custom string system = "deep sky"
+        }
+
+        def Xform "radio"
+        {
+            custom string catalog = "FAST"
+            custom string notes = ""
+            custom string scope = "China 500m"
+            custom string system = "radio"
+        }
+    }
+
+    def Scope "bio"
+    {
+        def Xform "genomes"
+        {
+            custom string notes = ""
+            custom string registry = "1000 Genomes"
+            custom string scope = "human variation"
+            custom string system = "genomes"
+        }
+
+        def Xform "variants"
+        {
+            custom string notes = ""
+            custom string registry = "dbSNP"
+            custom string scope = "short variations"
+            custom string system = "variants"
+        }
+
+        def Xform "expression"
+        {
+            custom string notes = ""
+            custom string registry = "ArrayExpress"
+            custom string scope = "functional genomics"
+            custom string system = "expression"
+        }
+
+        def Xform "pathways"
+        {
+            custom string notes = ""
+            custom string registry = "Reactome"
+            custom string scope = "human pathways"
+            custom string system = "pathways"
+        }
+
+        def Xform "ontologies"
+        {
+            custom string notes = ""
+            custom string registry = "Disease Ontology"
+            custom string scope = "human disease"
+            custom string system = "ontologies"
+        }
+    }
+
+    def Scope "chemistry"
+    {
+        def Xform "elements"
+        {
+            custom string notes = ""
+            custom string registry = "IUPAC periodic table"
+            custom string scope = "118 confirmed"
+            custom string system = "elements"
+        }
+
+        def Xform "compounds"
+        {
+            custom string notes = ""
+            custom string registry = "ChEMBL"
+            custom string scope = "bioactive molecules"
+            custom string system = "compounds"
+        }
+
+        def Xform "reactions"
+        {
+            custom string notes = ""
+            custom string registry = "USPTO"
+            custom string scope = "patent reactions"
+            custom string system = "reactions"
+        }
+
+        def Xform "materials"
+        {
+            custom string notes = ""
+            custom string registry = "OQMD"
+            custom string scope = "1M+ entries"
+            custom string system = "materials"
+        }
+
+        def Xform "proteins"
+        {
+            custom string notes = ""
+            custom string registry = "AlphaFold DB"
+            custom string scope = "200M+ predictions"
+            custom string system = "proteins"
+        }
+
+        def Xform "genes"
+        {
+            custom string notes = ""
+            custom string registry = "NCBI Gene"
+            custom string scope = "all organisms"
+            custom string system = "genes"
+        }
+    }
+
+    def Scope "countries"
+    {
+        def Xform "United_States"
+        {
+            custom string data_law = "CCPA/state"
+            custom string fhss_regime = "FCC Part 15"
+            custom string iso3166 = "US"
+            custom string name = "United States"
+            custom string notes = "largest ML compute"
+            custom string region = "North America"
+            custom string regulator_lang = "English"
+        }
+
+        def Xform "China"
+        {
+            custom string data_law = "PIPL"
+            custom string fhss_regime = "MIIT SRRC"
+            custom string iso3166 = "CN"
+            custom string name = "China"
+            custom string notes = "deepseek/qwen home"
+            custom string region = "East Asia"
+            custom string regulator_lang = "Chinese"
+        }
+
+        def Xform "European_Union"
+        {
+            custom string data_law = "GDPR"
+            custom string fhss_regime = "ETSI EN 300"
+            custom string iso3166 = "EU"
+            custom string name = "European Union"
+            custom string notes = "27-member bloc"
+            custom string region = "Europe"
+            custom string regulator_lang = "multilingual"
+        }
+
+        def Xform "United_Kingdom"
+        {
+            custom string data_law = "UK GDPR"
+            custom string fhss_regime = "Ofcom IR 2030"
+            custom string iso3166 = "GB"
+            custom string name = "United Kingdom"
+            custom string notes = "post-brexit regime"
+            custom string region = "Europe"
+            custom string regulator_lang = "English"
+        }
+
+        def Xform "Japan"
+        {
+            custom string data_law = "APPI"
+            custom string fhss_regime = "MIC ARIB"
+            custom string iso3166 = "JP"
+            custom string name = "Japan"
+            custom string notes = "robotics frontier"
+            custom string region = "East Asia"
+            custom string regulator_lang = "Japanese"
+        }
+
+        def Xform "South_Korea"
+        {
+            custom string data_law = "PIPA"
+            custom string fhss_regime = "RRA"
+            custom string iso3166 = "KR"
+            custom string name = "South Korea"
+            custom string notes = "5G rollout leader"
+            custom string region = "East Asia"
+            custom string regulator_lang = "Korean"
+        }
+
+        def Xform "India"
+        {
+            custom string data_law = "DPDP"
+            custom string fhss_regime = "WPC ISM"
+            custom string iso3166 = "IN"
+            custom string name = "India"
+            custom string notes = "22 official langs"
+            custom string region = "South Asia"
+            custom string regulator_lang = "multilingual"
+        }
+
+        def Xform "Brazil"
+        {
+            custom string data_law = "LGPD"
+            custom string fhss_regime = "ANATEL"
+            custom string iso3166 = "BR"
+            custom string name = "Brazil"
+            custom string notes = "largest LatAm"
+            custom string region = "South America"
+            custom string regulator_lang = "Portuguese"
+        }
+
+        def Xform "Russia"
+        {
+            custom string data_law = "152-FZ"
+            custom string fhss_regime = "GRFC"
+            custom string iso3166 = "RU"
+            custom string name = "Russia"
+            custom string notes = "sovereign internet"
+            custom string region = "Eurasia"
+            custom string regulator_lang = "Russian"
+        }
+
+        def Xform "Germany"
+        {
+            custom string data_law = "GDPR"
+            custom string fhss_regime = "BNetzA"
+            custom string iso3166 = "DE"
+            custom string name = "Germany"
+            custom string notes = "industrial ML"
+            custom string region = "Europe"
+            custom string regulator_lang = "German"
+        }
+
+        def Xform "France"
+        {
+            custom string data_law = "GDPR"
+            custom string fhss_regime = "ANFR"
+            custom string iso3166 = "FR"
+            custom string name = "France"
+            custom string notes = "sovereign AI push"
+            custom string region = "Europe"
+            custom string regulator_lang = "French"
+        }
+
+        def Xform "Canada"
+        {
+            custom string data_law = "PIPEDA"
+            custom string fhss_regime = "ISED"
+            custom string iso3166 = "CA"
+            custom string name = "Canada"
+            custom string notes = "AI research hub"
+            custom string region = "North America"
+            custom string regulator_lang = "English/French"
+        }
+
+        def Xform "Australia"
+        {
+            custom string data_law = "Privacy Act"
+            custom string fhss_regime = "ACMA"
+            custom string iso3166 = "AU"
+            custom string name = "Australia"
+            custom string notes = "LIPD licence"
+            custom string region = "Oceania"
+            custom string regulator_lang = "English"
+        }
+    }
+
+    def Scope "economics"
+    {
+        def Xform "monetary"
+        {
+            custom string domain = "monetary"
+            custom string framework = "ISO 4217"
+            custom string notes = ""
+            custom string use = "currency codes"
+        }
+
+        def Xform "finance"
+        {
+            custom string domain = "finance"
+            custom string framework = "MiFID II"
+            custom string notes = ""
+            custom string use = "EU trading"
+        }
+
+        def Xform "markets"
+        {
+            custom string domain = "markets"
+            custom string framework = "EMIR"
+            custom string notes = ""
+            custom string use = "EU derivatives"
+        }
+
+        def Xform "accounting"
+        {
+            custom string domain = "accounting"
+            custom string framework = "GAAP"
+            custom string notes = ""
+            custom string use = "US accounting"
+        }
+
+        def Xform "crypto"
+        {
+            custom string domain = "crypto"
+            custom string framework = "EIP-1559"
+            custom string notes = ""
+            custom string use = "fee market"
+        }
+
+        def Xform "tax"
+        {
+            custom string domain = "tax"
+            custom string framework = "OECD BEPS"
+            custom string notes = ""
+            custom string use = "multinational"
+        }
+    }
+
+    def Scope "entity"
+    {
+        def Xform "name"
+        {
+            custom string attr = "name"
+            custom string notes = "the entity"
+            custom string value = "Sovereign Intelligence"
+        }
+
+        def Xform "root"
+        {
+            custom string attr = "root"
+            custom string notes = "USD defaultPrim"
+            custom string value = "/Taxonomy"
+        }
+
+        def Xform "version"
+        {
+            custom string attr = "version"
+            custom string notes = "first canonical"
+            custom string value = "1.0.0"
+        }
+
+        def Xform "host"
+        {
+            custom string attr = "host"
+            custom string notes = "compute substrate"
+            custom string value = "Apple M4 Max 128GB"
+        }
+
+        def Xform "runtime"
+        {
+            custom string attr = "runtime"
+            custom string notes = "FFI polyglot"
+            custom string value = "Julia + Python + Rust"
+        }
+
+        def Xform "composition"
+        {
+            custom string attr = "composition"
+            custom string notes = "stage tree"
+            custom string value = "openusd sublayer + reference"
+        }
+
+        def Xform "verification"
+        {
+            custom string attr = "verification"
+            custom string notes = "every mutation"
+            custom string value = "hash-chained receipts"
+        }
+
+        def Xform "invariants"
+        {
+            custom string attr = "invariants"
+            custom string notes = "from git-invariants-deep"
+            custom string value = "8 classes / 90 rules"
+        }
+
+        def Xform "tracks"
+        {
+            custom string attr = "tracks"
+            custom string notes = "taxonomy breadth"
+            custom string value = "17 domains"
+        }
+
+        def Xform "languages"
+        {
+            custom string attr = "languages"
+            custom string notes = "linguistic coverage"
+            custom string value = "88 curated + 5519 ISO"
+        }
+
+        def Xform "models"
+        {
+            custom string attr = "models"
+            custom string notes = "catalog"
+            custom string value = "143 families"
+        }
+
+        def Xform "bands"
+        {
+            custom string attr = "bands"
+            custom string notes = "physics"
+            custom string value = "20 FHSS + SI + hyperfine"
+        }
+    }
+
+    def Scope "history"
+    {
+        def Xform "ancient"
+        {
+            custom string era = "ancient"
+            custom string event = "library of Alexandria"
+            custom string impact = "first repository"
+            custom string year = "283 BCE"
+        }
+
+        def Xform "medieval"
+        {
+            custom string era = "medieval"
+            custom string event = "printing press"
+            custom string impact = "replication"
+            custom string year = "1440"
+        }
+
+        def Xform "enlightenment"
+        {
+            custom string era = "enlightenment"
+            custom string event = "Encyclopédie"
+            custom string impact = "knowledge aggregation"
+            custom string year = "1751"
+        }
+
+        def Xform "industrial"
+        {
+            custom string era = "industrial"
+            custom string event = "telephone"
+            custom string impact = "voice long-distance"
+            custom string year = "1876"
+        }
+
+        def Xform "information"
+        {
+            custom string era = "information"
+            custom string event = "Sovereign Intelligence"
+            custom string impact = "this catalog"
+            custom string year = "2026"
+        }
+    }
+
+    def Scope "law"
+    {
+        def Xform "data_protection"
+        {
+            custom string domain = "data protection"
+            custom string instrument = "LGPD"
+            custom string jurisdiction = "BR"
+            custom string notes = "GDPR-like"
+            custom string year = "2018"
+        }
+
+        def Xform "AI_regulation"
+        {
+            custom string domain = "AI regulation"
+            custom string instrument = "AI Act"
+            custom string jurisdiction = "EU"
+            custom string notes = "risk-tier framework"
+            custom string year = "2024"
+        }
+
+        def Xform "IP"
+        {
+            custom string domain = "IP"
+            custom string instrument = "DMCA"
+            custom string jurisdiction = "US"
+            custom string notes = "DMCA takedowns"
+            custom string year = "1998"
+        }
+
+        def Xform "cybersecurity"
+        {
+            custom string domain = "cybersecurity"
+            custom string instrument = "NIST CSF 2.0"
+            custom string jurisdiction = "US"
+            custom string notes = "voluntary"
+            custom string year = "2024"
+        }
+
+        def Xform "export_controls"
+        {
+            custom string domain = "export controls"
+            custom string instrument = "EAR / ITAR"
+            custom string jurisdiction = "US"
+            custom string notes = "dual-use"
+            custom string year = "ongoing"
+        }
+
+        def Xform "cybersec"
+        {
+            custom string domain = "cybersec"
+            custom string instrument = "Cybersecurity Law"
+            custom string jurisdiction = "CN"
+            custom string notes = "sovereignty"
+            custom string year = "2017"
+        }
+
+        def Xform "AI_guidelines"
+        {
+            custom string domain = "AI guidelines"
+            custom string instrument = "AI Guidelines"
+            custom string jurisdiction = "JP"
+            custom string notes = "soft law"
+            custom string year = "2024"
+        }
+
+        def Xform "sovereignty"
+        {
+            custom string domain = "sovereignty"
+            custom string instrument = "Data Localisation"
+            custom string jurisdiction = "RU"
+            custom string notes = "physical servers"
+            custom string year = "2015"
+        }
+
+        def Xform "treaty"
+        {
+            custom string domain = "treaty"
+            custom string instrument = "Budapest Convention"
+            custom string jurisdiction = "UN"
+            custom string notes = "cybercrime"
+            custom string year = "2001"
+        }
+
+        def Xform "standard"
+        {
+            custom string domain = "standard"
+            custom string instrument = "42001"
+            custom string jurisdiction = "ISO"
+            custom string notes = "AI management"
+            custom string year = "2023"
+        }
+    }
+
+    def Scope "medicine"
+    {
+        def Xform "ICD_11"
+        {
+            custom string domain = "ICD-11"
+            custom string notes = "global standard"
+            custom string scope = "disease classification"
+            custom string standard = "WHO"
+        }
+
+        def Xform "SNOMED_CT"
+        {
+            custom string domain = "SNOMED CT"
+            custom string notes = "licensed"
+            custom string scope = "clinical terminology"
+            custom string standard = "SNOMED Intl"
+        }
+
+        def Xform "HL7_FHIR"
+        {
+            custom string domain = "HL7 FHIR"
+            custom string notes = "modern API"
+            custom string scope = "health data exchange"
+            custom string standard = "HL7"
+        }
+
+        def Xform "DICOM"
+        {
+            custom string domain = "DICOM"
+            custom string notes = "every MRI"
+            custom string scope = "medical imaging"
+            custom string standard = "NEMA"
+        }
+
+        def Xform "LOINC"
+        {
+            custom string domain = "LOINC"
+            custom string notes = ""
+            custom string scope = "lab observations"
+            custom string standard = "Regenstrief"
+        }
+
+        def Xform "OMOP_CDM"
+        {
+            custom string domain = "OMOP CDM"
+            custom string notes = ""
+            custom string scope = "clinical data model"
+            custom string standard = "OHDSI"
+        }
+
+        def Xform "HPO"
+        {
+            custom string domain = "HPO"
+            custom string notes = ""
+            custom string scope = "human phenotype"
+            custom string standard = "HPO Consortium"
+        }
+
+        def Xform "MONDO"
+        {
+            custom string domain = "MONDO"
+            custom string notes = ""
+            custom string scope = "Monarch Disease Ontology"
+            custom string standard = "MONDO"
+        }
+
+        def Xform "MeSH"
+        {
+            custom string domain = "MeSH"
+            custom string notes = ""
+            custom string scope = "medical subject headings"
+            custom string standard = "NLM"
+        }
+
+        def Xform "GALEN"
+        {
+            custom string domain = "GALEN"
+            custom string notes = ""
+            custom string scope = "reference terminology"
+            custom string standard = "GALEN"
+        }
+    }
+
+    def Scope "networks"
+    {
+        def Xform "L1"
+        {
+            custom string layer = "L1"
+            custom string notes = ""
+            custom string protocol = "DOCSIS"
+            custom string standard = "CableLabs"
+        }
+
+        def Xform "L2"
+        {
+            custom string layer = "L2"
+            custom string notes = "sub-GHz"
+            custom string protocol = "LoRaWAN"
+            custom string standard = "LoRa Alliance"
+        }
+
+        def Xform "L3"
+        {
+            custom string layer = "L3"
+            custom string notes = ""
+            custom string protocol = "ICMP"
+            custom string standard = "RFC 792"
+        }
+
+        def Xform "L4"
+        {
+            custom string layer = "L4"
+            custom string notes = ""
+            custom string protocol = "QUIC"
+            custom string standard = "RFC 9000"
+        }
+
+        def Xform "L5"
+        {
+            custom string layer = "L5"
+            custom string notes = ""
+            custom string protocol = "TLS 1.3"
+            custom string standard = "RFC 8446"
+        }
+
+        def Xform "L7"
+        {
+            custom string layer = "L7"
+            custom string notes = ""
+            custom string protocol = "WebRTC"
+            custom string standard = "W3C"
+        }
+    }
+
+    def Scope "security"
+    {
+        def Xform "network"
+        {
+            custom string attack = "MITM"
+            custom string class = "network"
+            custom string mitigation = "TLS 1.3 + pinning"
+            custom string notes = ""
+        }
+
+        def Xform "host"
+        {
+            custom string attack = "side-channel"
+            custom string class = "host"
+            custom string mitigation = "constant-time + cache isolation"
+            custom string notes = ""
+        }
+
+        def Xform "app"
+        {
+            custom string attack = "SSRF"
+            custom string class = "app"
+            custom string mitigation = "allowlist + network policy"
+            custom string notes = ""
+        }
+
+        def Xform "crypto"
+        {
+            custom string attack = "key compromise"
+            custom string class = "crypto"
+            custom string mitigation = "HSM + rotation"
+            custom string notes = ""
+        }
+
+        def Xform "supply_chain"
+        {
+            custom string attack = "build attack"
+            custom string class = "supply chain"
+            custom string mitigation = "reproducible builds"
+            custom string notes = ""
+        }
+
+        def Xform "model"
+        {
+            custom string attack = "model theft"
+            custom string class = "model"
+            custom string mitigation = "watermark + rate-limit"
+            custom string notes = ""
+        }
+
+        def Xform "data"
+        {
+            custom string attack = "poisoning"
+            custom string class = "data"
+            custom string mitigation = "provenance + differential privacy"
+            custom string notes = ""
+        }
+    }
+}
+

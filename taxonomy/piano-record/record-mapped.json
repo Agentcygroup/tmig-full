@@ -1,0 +1,102 @@
+{
+  "record": {
+    "event": "88 children play one piano simultaneously",
+    "date": "2019-08-21",
+    "location": "Birmingham ICC, UK",
+    "previous_record": 21,
+    "participants": 88,
+    "age_range": [
+      6,
+      14
+    ],
+    "distance_meters": 7,
+    "mechanism": "custom finger-extenders via Cambridge + 9 UK universities",
+    "inspiration": "Leonardo da Vinci 500th anniversary (2018)"
+  },
+  "mapping": [
+    {
+      "element": "88 children",
+      "concept": "ensemble of agents",
+      "task": "reinforcement-learning",
+      "notes": "multi-agent coordination"
+    },
+    {
+      "element": "88 keys",
+      "concept": "piano is 88-key standard",
+      "task": "mask-generation",
+      "notes": "one output per key"
+    },
+    {
+      "element": "one piano",
+      "concept": "shared resource",
+      "task": "any-to-any",
+      "notes": "single pipeline, many inputs"
+    },
+    {
+      "element": "7 meters away",
+      "concept": "long-range action",
+      "task": "video-text-to-text",
+      "notes": "spatial grounding"
+    },
+    {
+      "element": "finger extenders",
+      "concept": "tool use / actuators",
+      "task": "robotics",
+      "notes": "mechanical augmentation"
+    },
+    {
+      "element": "rabbits/giraffes/trains/ballerinas",
+      "concept": "heterogeneous actuators",
+      "task": "image-text-to-image",
+      "notes": "varied mechanism shapes"
+    },
+    {
+      "element": "21 previous record",
+      "concept": "baseline model",
+      "task": "zero-shot-classification",
+      "notes": "beat prior benchmark"
+    },
+    {
+      "element": "2018 start",
+      "concept": "training period",
+      "task": "time-series-forecasting",
+      "notes": "multi-month horizon"
+    },
+    {
+      "element": "Cambridge + 9 universities",
+      "concept": "federated learning",
+      "task": "cross-lingual-transfer",
+      "notes": "distributed institutions"
+    },
+    {
+      "element": "Leonardo 500th anniversary",
+      "concept": "historical inspiration",
+      "task": "image-to-text",
+      "notes": "heritage metadata"
+    },
+    {
+      "element": "6-14 age range",
+      "concept": "curriculum learning",
+      "task": "text-generation",
+      "notes": "staged difficulty"
+    },
+    {
+      "element": "simultaneous strike",
+      "concept": "synchronous inference",
+      "task": "automatic-speech-recognition",
+      "notes": "parallel streams"
+    },
+    {
+      "element": "Guinness verification",
+      "concept": "ground-truth audit",
+      "task": "visual-document-retrieval",
+      "notes": "external validation"
+    },
+    {
+      "element": "Birmingham ICC",
+      "concept": "venue = compute cluster",
+      "task": "graph-ml",
+      "notes": "node topology"
+    }
+  ]
+}

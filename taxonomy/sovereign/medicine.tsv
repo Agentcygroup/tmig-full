@@ -1,0 +1,11 @@
+domain	standard	scope	notes
+ICD-11	WHO	disease classification	global standard
+SNOMED CT	SNOMED Intl	clinical terminology	licensed
+HL7 FHIR	HL7	health data exchange	modern API
+DICOM	NEMA	medical imaging	every MRI
+LOINC	Regenstrief	lab observations	
+OMOP CDM	OHDSI	clinical data model	
+HPO	HPO Consortium	human phenotype	
+MONDO	MONDO	Monarch Disease Ontology	
+MeSH	NLM	medical subject headings	
+GALEN	GALEN	reference terminology	

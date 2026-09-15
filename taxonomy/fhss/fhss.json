@@ -1,0 +1,368 @@
+{
+  "bands": [
+    {
+      "region": "US",
+      "regulator": "FCC",
+      "band_mhz": "902-928",
+      "bandwidth_mhz": "26",
+      "max_power_mw": "1000",
+      "hop_channels": ">=50",
+      "min_hop_hz": "2.5",
+      "duty_cycle_max": "1.0",
+      "notes": "Part 15.247 900 MHz ISM"
+    },
+    {
+      "region": "US",
+      "regulator": "FCC",
+      "band_mhz": "2400-2483.5",
+      "bandwidth_mhz": "83.5",
+      "max_power_mw": "1000",
+      "hop_channels": ">=75",
+      "min_hop_hz": "2.5",
+      "duty_cycle_max": "1.0",
+      "notes": "Part 15.247 2.4 GHz ISM"
+    },
+    {
+      "region": "US",
+      "regulator": "FCC",
+      "band_mhz": "5725-5850",
+      "bandwidth_mhz": "125",
+      "max_power_mw": "1000",
+      "hop_channels": ">=75",
+      "min_hop_hz": "2.5",
+      "duty_cycle_max": "1.0",
+      "notes": "Part 15.247 5.8 GHz ISM"
+    },
+    {
+      "region": "EU",
+      "regulator": "ETSI",
+      "band_mhz": "863-870",
+      "bandwidth_mhz": "7",
+      "max_power_mw": "25",
+      "hop_channels": ">=15",
+      "min_hop_hz": "1.0",
+      "duty_cycle_max": "0.01",
+      "notes": "EN 300 220 short-range"
+    },
+    {
+      "region": "EU",
+      "regulator": "ETSI",
+      "band_mhz": "2400-2483.5",
+      "bandwidth_mhz": "83.5",
+      "max_power_mw": "100",
+      "hop_channels": ">=15",
+      "min_hop_hz": "1.0",
+      "duty_cycle_max": "1.0",
+      "notes": "EN 300 328 wideband"
+    },
+    {
+      "region": "EU",
+      "regulator": "ETSI",
+      "band_mhz": "5150-5350",
+      "bandwidth_mhz": "200",
+      "max_power_mw": "200",
+      "hop_channels": ">=15",
+      "min_hop_hz": "1.0",
+      "duty_cycle_max": "1.0",
+      "notes": "EN 301 893 5 GHz RLAN"
+    },
+    {
+      "region": "EU",
+      "regulator": "ETSI",
+      "band_mhz": "5470-5725",
+      "bandwidth_mhz": "255",
+      "max_power_mw": "1000",
+      "hop_channels": ">=15",
+      "min_hop_hz": "1.0",
+      "duty_cycle_max": "1.0",
+      "notes": "EN 301 893 5 GHz RLAN"
+    },
+    {
+      "region": "UK",
+      "regulator": "Ofcom",
+      "band_mhz": "2400-2483.5",
+      "bandwidth_mhz": "83.5",
+      "max_power_mw": "100",
+      "hop_channels": ">=75",
+      "min_hop_hz": "2.5",
+      "duty_cycle_max": "1.0",
+      "notes": "UK IR 2030"
+    },
+    {
+      "region": "JP",
+      "regulator": "MIC",
+      "band_mhz": "2400-2483.5",
+      "bandwidth_mhz": "83.5",
+      "max_power_mw": "10",
+      "hop_channels": ">=15",
+      "min_hop_hz": "1.0",
+      "duty_cycle_max": "1.0",
+      "notes": "ARIB STD-T66"
+    },
+    {
+      "region": "JP",
+      "regulator": "MIC",
+      "band_mhz": "5150-5350",
+      "bandwidth_mhz": "200",
+      "max_power_mw": "10",
+      "hop_channels": ">=15",
+      "min_hop_hz": "1.0",
+      "duty_cycle_max": "1.0",
+      "notes": "ARIB STD-T71"
+    },
+    {
+      "region": "JP",
+      "regulator": "MIC",
+      "band_mhz": "920-928",
+      "bandwidth_mhz": "8",
+      "max_power_mw": "20",
+      "hop_channels": ">=15",
+      "min_hop_hz": "2.5",
+      "duty_cycle_max": "0.1",
+      "notes": "ARIB STD-T108"
+    },
+    {
+      "region": "CN",
+      "regulator": "MIIT",
+      "band_mhz": "2400-2483.5",
+      "bandwidth_mhz": "83.5",
+      "max_power_mw": "100",
+      "hop_channels": ">=75",
+      "min_hop_hz": "2.5",
+      "duty_cycle_max": "1.0",
+      "notes": "SRRC"
+    },
+    {
+      "region": "CN",
+      "regulator": "MIIT",
+      "band_mhz": "5725-5850",
+      "bandwidth_mhz": "125",
+      "max_power_mw": "500",
+      "hop_channels": ">=75",
+      "min_hop_hz": "2.5",
+      "duty_cycle_max": "1.0",
+      "notes": "SRRC"
+    },
+    {
+      "region": "IN",
+      "regulator": "WPC",
+      "band_mhz": "865-867",
+      "bandwidth_mhz": "2",
+      "max_power_mw": "25",
+      "hop_channels": ">=15",
+      "min_hop_hz": "1.0",
+      "duty_cycle_max": "0.01",
+      "notes": "India short-range"
+    },
+    {
+      "region": "IN",
+      "regulator": "WPC",
+      "band_mhz": "2400-2483.5",
+      "bandwidth_mhz": "83.5",
+      "max_power_mw": "100",
+      "hop_channels": ">=15",
+      "min_hop_hz": "1.0",
+      "duty_cycle_max": "1.0",
+      "notes": "India WPC"
+    },
+    {
+      "region": "AU",
+      "regulator": "ACMA",
+      "band_mhz": "915-928",
+      "bandwidth_mhz": "13",
+      "max_power_mw": "1000",
+      "hop_channels": ">=20",
+      "min_hop_hz": "2.5",
+      "duty_cycle_max": "1.0",
+      "notes": "LIPD Class Licence"
+    },
+    {
+      "region": "BR",
+      "regulator": "ANATEL",
+      "band_mhz": "902-907.5,915-928",
+      "bandwidth_mhz": "20.5",
+      "max_power_mw": "1000",
+      "hop_channels": ">=50",
+      "min_hop_hz": "2.5",
+      "duty_cycle_max": "1.0",
+      "notes": "Brazil ISM"
+    },
+    {
+      "region": "CA",
+      "regulator": "ISED",
+      "band_mhz": "902-928",
+      "bandwidth_mhz": "26",
+      "max_power_mw": "1000",
+      "hop_channels": ">=50",
+      "min_hop_hz": "2.5",
+      "duty_cycle_max": "1.0",
+      "notes": "RSS-247"
+    },
+    {
+      "region": "CA",
+      "regulator": "ISED",
+      "band_mhz": "2400-2483.5",
+      "bandwidth_mhz": "83.5",
+      "max_power_mw": "1000",
+      "hop_channels": ">=75",
+      "min_hop_hz": "2.5",
+      "duty_cycle_max": "1.0",
+      "notes": "RSS-247"
+    },
+    {
+      "region": "KR",
+      "regulator": "RRA",
+      "band_mhz": "2400-2483.5",
+      "bandwidth_mhz": "83.5",
+      "max_power_mw": "10",
+      "hop_channels": ">=15",
+      "min_hop_hz": "1.0",
+      "duty_cycle_max": "1.0",
+      "notes": "RRA Korea"
+    }
+  ],
+  "schemes": [
+    {
+      "name": "Bluetooth Classic FHSS",
+      "class": "slow",
+      "hops_per_bit": "1",
+      "dwell_us": "625",
+      "pattern": "79 channels \u00d7 1 MHz BT clock",
+      "use_case": "consumer wireless"
+    },
+    {
+      "name": "Bluetooth LE Adaptive FH",
+      "class": "slow",
+      "hops_per_bit": "1",
+      "dwell_us": "625",
+      "pattern": "37 channels, channel map update",
+      "use_case": "BLE"
+    },
+    {
+      "name": "HomeRF SWAP",
+      "class": "slow",
+      "hops_per_bit": "50",
+      "dwell_us": "400",
+      "pattern": "75 \u00d7 1 MHz pseudorandom",
+      "use_case": "legacy WLAN"
+    },
+    {
+      "name": "802.11 FHSS",
+      "class": "slow",
+      "hops_per_bit": "1",
+      "dwell_us": "20000",
+      "pattern": "26 channels \u00d7 1 MHz in US",
+      "use_case": "legacy Wi-Fi"
+    },
+    {
+      "name": "Zigbee (DSSS not FH)",
+      "class": "n/a",
+      "hops_per_bit": "n/a",
+      "dwell_us": "n/a",
+      "pattern": "direct sequence",
+      "use_case": "mesh"
+    },
+    {
+      "name": "LoRa FHSS region",
+      "class": "slow",
+      "hops_per_bit": "0",
+      "dwell_us": "20000",
+      "pattern": "sub-GHz hopping",
+      "use_case": "LPWAN"
+    },
+    {
+      "name": "Military JTIDS / Link-16",
+      "class": "fast",
+      "hops_per_bit": "77",
+      "dwell_us": "6.4",
+      "pattern": "51 frequencies, 77 hops/s",
+      "use_case": "fighter datalink"
+    },
+    {
+      "name": "Have Quick",
+      "class": "fast",
+      "hops_per_bit": "\u2014",
+      "dwell_us": "\u2014",
+      "pattern": "20 000 hops/s UHF",
+      "use_case": "USAF"
+    },
+    {
+      "name": "MIL-STD-188-141",
+      "class": "fast",
+      "hops_per_bit": "\u2014",
+      "dwell_us": "\u2014",
+      "pattern": "ALEP/ALE",
+      "use_case": "HF"
+    },
+    {
+      "name": "SINCGARS",
+      "class": "fast",
+      "hops_per_bit": "\u2014",
+      "dwell_us": "\u2014",
+      "pattern": "2320 channels, 100 hops/s",
+      "use_case": "ground radio"
+    }
+  ],
+  "mapping": [
+    {
+      "fhss_concept": "hop channel",
+      "ml_concept": "attention slot",
+      "taxonomy_task": "any-to-any",
+      "notes": "dynamic routing of compute"
+    },
+    {
+      "fhss_concept": "pseudorandom sequence",
+      "ml_concept": "diffusion noise schedule",
+      "taxonomy_task": "text-to-image",
+      "notes": "sampled timesteps"
+    },
+    {
+      "fhss_concept": "sync seed",
+      "ml_concept": "random seed / weight init",
+      "taxonomy_task": "text-generation",
+      "notes": "both sides start from same seed"
+    },
+    {
+      "fhss_concept": "dwell time",
+      "ml_concept": "token budget",
+      "taxonomy_task": "text-generation",
+      "notes": "one token per hop equivalent"
+    },
+    {
+      "fhss_concept": "interference resistance",
+      "ml_concept": "adversarial robustness",
+      "taxonomy_task": "image-classification",
+      "notes": "noise on one channel does not kill inference"
+    },
+    {
+      "fhss_concept": "eavesdrop resistance",
+      "ml_concept": "privacy preserving",
+      "taxonomy_task": "inference federated",
+      "notes": "cross-lingual-transfer"
+    },
+    {
+      "fhss_concept": "channel map update",
+      "ml_concept": "continual learning",
+      "taxonomy_task": "reinforcement-learning",
+      "notes": "reallocate capacity as band shifts"
+    },
+    {
+      "fhss_concept": "spreading factor",
+      "ml_concept": "context window",
+      "taxonomy_task": "size",
+      "notes": "video-text-to-text"
+    },
+    {
+      "fhss_concept": "frequency diversity",
+      "ml_concept": "ensemble diversity",
+      "taxonomy_task": "graph-ml",
+      "notes": "heterogeneous nodes"
+    },
+    {
+      "fhss_concept": "military FHSS",
+      "ml_concept": "high-assurance inference",
+      "taxonomy_task": "automatic-speech-recognition",
+      "notes": "low-latency on tactical audio"
+    }
+  ]
+}

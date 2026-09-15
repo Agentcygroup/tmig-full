@@ -1,0 +1,7 @@
+[
+  {
+    "task": "text-classification",
+    "wall_ms": 66263,
+    "out": "[{'label': 'POSITIVE', 'score': 0.9997522234916687}]\nlatency_ms 626\n"
+  }
+]

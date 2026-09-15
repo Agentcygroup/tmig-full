@@ -1,0 +1,54 @@
+branch	leaf	kind	notes
+Base	Base	model	pretrained foundation
+Adapters	Adapters	delta	LoRA/QLoRA/PEFT
+Finetunes	Finetunes	model	supervised or instruction-tuned
+Quantizations	Quantizations	weights	4-bit / 8-bit / GGUF / AWQ / GPTQ
+Merges	Merges	composite	mergekit, SLERP, TIES, DARE
+Apps	llama.cpp	runtime	C++ inference
+Apps	LM Studio	runtime	GUI + server
+Apps	Jan	runtime	GUI
+Apps	Draw Things	runtime	macOS image gen
+Apps	DiffusionBee	runtime	macOS image gen
+Apps	JoyFusion	runtime	macOS image gen
+Apps	vLLM	runtime	high-throughput serving
+Apps	Ollama	runtime	local LLM runner
+Apps	MLX LM	runtime	Apple Silicon
+Apps	Docker Model Runner	runtime	OCI container
+Apps	Lemonade	runtime	edge inference
+Apps	SGLang	runtime	structured LM serving
+Apps	Unsloth Desktop	runtime	GUI finetune
+Apps	Pi	runtime	personal assistant
+Apps	Hermes Agent	runtime	agent framework
+Apps	Atomic Chat	runtime	chat frontend
+Apps	OpenClaw	runtime	agent framework
+Inference Providers	Groq	api	LPU hardware
+Inference Providers	Novita	api	GPU cloud
+Inference Providers	Cerebras	api	WSE
+Inference Providers	Nscale	api	GPU cloud
+Inference Providers	fal	api	image/video gen
+Inference Providers	Together AI	api	GPU cloud
+Inference Providers	Fireworks	api	GPU cloud
+Inference Providers	Featherless AI	api	serverless
+Inference Providers	Zai	api	GPU cloud
+Inference Providers	Replicate	api	cog
+Inference Providers	Cohere	api	foundation models
+Inference Providers	Scaleway	api	EU GPU cloud
+Inference Providers	Public AI	api	public benefit
+Inference Providers	Baseten	api	Truss
+Inference Providers	OVHcloud AI Endpoints	api	EU GPU cloud
+Inference Providers	HF Inference API	api	huggingface
+Inference Providers	WaveSpeed	api	video gen
+Inference Providers	DeepInfra	api	GPU cloud
+One-click Deployment	Inference Endpoints	platform	HF managed
+One-click Deployment	Microsoft Foundry	platform	Azure
+One-click Deployment	Amazon SageMaker AI	platform	AWS
+Misc	text-generation-inference	server	TGI
+Misc	text-embeddings-inference	server	TEI
+Misc	custom_code	code	user-supplied
+Misc	4-bit precision	quant	bitsandbytes
+Misc	8-bit precision	quant	bitsandbytes
+Misc	Merge	tool	mergekit
+Misc	Mixture of Experts	arch	MoE
+Misc	Carbon Emissions	metric	green AI
+Misc	Eval Results	metric	benchmarks
+Misc	Eval Results (legacy)	metric	deprecated

@@ -1,0 +1,88 @@
+en|English|Germanic|Latin|Global code switching, instruction-following benchmark
+zh|Chinese|Sino-Tibetan|Han|Character-level tokenization, CJK segmentation, hanzi→pinyin
+fr|French|Romance|Latin|Morphosyntactic gold standard for evaluation (Universal Dependencies)
+es|Spanish|Romance|Latin|Regional dialect clustering, vosotros/vos handling
+de|German|Germanic|Latin|Compound word splitting, noun-capitalization detection
+ja|Japanese|Japonic|Kanji/Kana|No-space tokenization, keigo formality transfer
+ko|Korean|Koreanic|Hangul|Jamo decomposition, honorific-level prediction
+pt|Portuguese|Romance|Latin|PT-BR vs PT-PT dialect classification
+it|Italian|Romance|Latin|Clitic pronoun resolution, dialect-vs-standard separation
+ru|Russian|Slavic|Cyrillic|Morphological inflection, case marker tagging
+ar|Arabic|Semitic|Arabic|Root-and-pattern morphology, diacritic restoration, right-to-left
+hi|Hindi|Indo-Aryan|Devanagari|Verb-final parsing, code-mix Hinglish detection
+th|Thai|Kra-Dai|Thai|Zero-space tokenization, tone-aware ASR
+multilingual|Multilingual|—|—|Cross-lingual transfer, zero-shot language generalization
+tr|Turkish|Turkic|Latin|Agglutinative morphology, vowel harmony
+vi|Vietnamese|Austroasiatic|Latin|Tone diacritics, syllable-based tokenization
+nl|Dutch|Germanic|Latin|Compound splitting, diminutive detection
+pl|Polish|Slavic|Latin|Consonant clusters, gender agreement
+id|Indonesian|Austronesian|Latin|Affixation, informal-vs-formal register
+sv|Swedish|Germanic|Latin|Definite suffix, verb-second word order
+uk|Ukrainian|Slavic|Cyrillic|Russian-Ukrainian code-mix, Cyrillic-emoji overlap
+ro|Romanian|Romance|Latin|Definite article suffix, diacritic restoration
+fi|Finnish|Uralic|Latin|15-case system, compound word parsing
+cs|Czech|Slavic|Latin|Aspect-pair verbal morphology, clitic climbing
+fa|Persian|Iranian|Arabic|Right-to-left, Arabic loanword separation
+bn|Bengali|Indo-Aryan|Bengali|Conjunct consonants, transliteration into Latin
+da|Danish|Germanic|Latin|stød phonetic feature, compound splitting
+el|Greek|Hellenic|Greek|Greeklish conversion, polytonic-to-monotonic
+he|Hebrew|Semitic|Hebrew|Right-to-left, vowel omission (niqqud inference)
+ms|Malay|Austronesian|Latin|Bahasa register, loanword adaptation
+hu|Hungarian|Uralic|Latin|Agglutination, vowel harmony
+ne|Nepali|Indo-Aryan|Devanagari|Verb-final parsing, honorific levels
+ta|Tamil|Dravidian|Tamil|Diglossia (literary vs spoken), script transcription
+ur|Urdu|Indo-Aryan|Arabic|Right-to-left, Hindi-Urdu mutual intelligibility
+te|Telugu|Dravidian|Telugu|Agglutinative compounds, script transliteration
+bg|Bulgarian|Slavic|Cyrillic|Definite article suffix, Balkan sprachbund
+ca|Catalan|Romance|Latin|Catalan-Valencian-Balearic dialect clustering
+no|Norwegian|Germanic|Latin|Bokmål vs Nynorsk classification
+mr|Marathi|Indo-Aryan|Devanagari|Verb-final parsing, retroflex consonants
+sw|Swahili|Bantu|Latin|Noun class agreement, Arabic loanwords
+sl|Slovenian|Slavic|Latin|Dual number, case syncretism
+sk|Slovak|Slavic|Latin|Czech-Slovak code mixing, aspect pairs
+et|Estonian|Uralic|Latin|14-case system, Finno-Ugric transfer
+sr|Serbian|Slavic|Cyrillic/Latin|Dual-script detection, Cyrillic-Latin conversion
+gu|Gujarati|Indo-Aryan|Gujarati|Script transliteration, verb-final parsing
+lt|Lithuanian|Baltic|Latin|Pitch accent, dual number
+hr|Croatian|Slavic|Latin|Serbian-Croatian-Bosnian differentiation
+lv|Latvian|Baltic|Latin|Pitch accent, definite adjective endings
+my|Burmese|Sino-Tibetan|Myanmar|Zero-space tokenization, syllable segmentation
+ml|Malayalam|Dravidian|Malayalam|Agglutinative compounds, script transcription
+pa|Panjabi|Indo-Aryan|Gurmukhi|Gurmukhi-Shahmukhi script conversion, tone
+is|Icelandic|Germanic|Latin|Archaic morphology, compound neologisms
+kn|Kannada|Dravidian|Kannada|Agglutination, script transliteration
+gl|Galician|Romance|Latin|Portuguese-Galician dialect split, medieval texts
+km|Khmer|Austroasiatic|Khmer|Zero-space tokenization, subscript consonants
+tl|Tagalog|Austronesian|Latin|Focus system (verb voice), code-mix with English
+kk|Kazakh|Turkic|Cyrillic|Cyrillic-Latin transition (2025), vowel harmony
+eu|Basque|Isolate|Latin|Ergative-absolutive case, agglutination
+af|Afrikaans|Germanic|Latin|Dutch-Afrikaans distance, double negation
+am|Amharic|Semitic|Ethiopic|Script unique to Ethiopia, root morphology
+ka|Georgian|Kartvelian|Georgian|Unique script, complex consonant clusters
+mn|Mongolian|Mongolic|Cyrillic|Traditional-to-Cyrillic script transliteration
+ha|Hausa|Afro-Asiatic|Latin|Tonal Afro-Asiatic language, Arabic Ajami script
+as|Assamese|Indo-Aryan|Bengali|Bengali-Assamese script distinction
+lo|Lao|Kra-Dai|Lao|Zero-space tokenization, tonal
+hy|Armenian|Indo-European|Armenian|Unique script, Eastern vs Western dialect
+mk|Macedonian|Slavic|Cyrillic|Balkan sprachbund, Bulgarian-Macedonian split
+cy|Welsh|Celtic|Latin|VSO word order, consonant mutations
+si|Sinhala|Indo-Aryan|Sinhala|Unique script, Pali loanwords
+yo|Yoruba|Niger-Congo|Latin|Tonal, diacritic-heavy, Nigeria register
+be|Belarusian|Slavic|Cyrillic|Russian-Belarusian mix, Trasianka detection
+az|Azerbaijani|Turkic|Latin|Cyrillic-Arabic-Latin script history, vowel harmony
+uz|Uzbek|Turkic|Latin|Cyrillic-Latin transition, vowel harmony
+sq|Albanian|Indo-European|Latin|Tosk vs Gheg dialect split
+bs|Bosnian|Slavic|Latin|Serbo-Croatian variant tagging
+mt|Maltese|Semitic|Latin|Only Semitic language in Latin script, Arabic-Italian loans
+sd|Sindhi|Indo-Aryan|Arabic|Right-to-left, Devanagari-Sindhi conversion
+sa|Sanskrit|Indo-Aryan|Devanagari|Classical language, sandhi rules, compound formation
+ga|Irish|Celtic|Latin|Initial consonant mutations, VSO
+so|Somali|Cushitic|Latin|Tonal, Afro-Asiatic, Arabic loans
+la|Latin|Italic|Latin|Dead language, classical texts, medical terminology
+jv|Javanese|Austronesian|Latin|Register levels (ngoko/krama), Javanese script
+su|Sundanese|Austronesian|Latin|Register levels, Sundanese script
+ps|Pashto|Iranian|Arabic|Right-to-left, ergative alignment
+sn|Shona|Bantu|Latin|Noun classes, tonal
+mg|Malagasy|Austronesian|Latin|Austronesian in Africa, French loans
+or|Oriya/Odia|Indo-Aryan|Odia|Unique script, verb-final parsing
+ht|Haitian|French Creole|Latin|French-based creole, tonal

@@ -1,0 +1,17 @@
+Receipt {
+    run_id: "a5e76496d2d28fff45f1cedfbbc83c692d35eeaa8dc9a2da7aa408cf1f69b53f",
+    targets: [
+        Tr {
+            id: "freeze",
+            status: "cached",
+            input_id: "eb1734959363e6c2f902dddca85dc2d3c14b0470062eb69da01339bd14dd7714",
+            output_id: "23b0a89dbabebb6a1c30c9c4ebf9c47842e759995e53534b38a865c7abab8721",
+        },
+    ],
+    non_claims: [
+        "no-mastery",
+        "no-accreditation",
+        "no-coherence-proof",
+        "no-completeness",
+    ],
+}

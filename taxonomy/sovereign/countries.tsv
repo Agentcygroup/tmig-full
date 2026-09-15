@@ -1,0 +1,14 @@
+iso3166	name	region	regulator_lang	fhss_regime	data_law	notes
+US	United States	North America	English	FCC Part 15	CCPA/state	largest ML compute
+CN	China	East Asia	Chinese	MIIT SRRC	PIPL	deepseek/qwen home
+EU	European Union	Europe	multilingual	ETSI EN 300	GDPR	27-member bloc
+GB	United Kingdom	Europe	English	Ofcom IR 2030	UK GDPR	post-brexit regime
+JP	Japan	East Asia	Japanese	MIC ARIB	APPI	robotics frontier
+KR	South Korea	East Asia	Korean	RRA	PIPA	5G rollout leader
+IN	India	South Asia	multilingual	WPC ISM	DPDP	22 official langs
+BR	Brazil	South America	Portuguese	ANATEL	LGPD	largest LatAm
+RU	Russia	Eurasia	Russian	GRFC	152-FZ	sovereign internet
+DE	Germany	Europe	German	BNetzA	GDPR	industrial ML
+FR	France	Europe	French	ANFR	GDPR	sovereign AI push
+CA	Canada	North America	English/French	ISED	PIPEDA	AI research hub
+AU	Australia	Oceania	English	ACMA	Privacy Act	LIPD licence

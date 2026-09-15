@@ -1,0 +1,99 @@
+#usda 1.0
+(
+    defaultPrim = "Taxonomy"
+    upAxis = "Y"
+)
+
+def Scope "Taxonomy"
+{
+    def Scope "Languages" (
+        prepend references = @/Users/metadusa/tmig-full/taxonomy/languages/languages.usda@
+    )
+    {
+    }
+
+    def Scope "PianoRecord" (
+        prepend references = @/Users/metadusa/tmig-full/taxonomy/piano-record/record.usda@
+    )
+    {
+    }
+
+    def Scope "FHSS" (
+        prepend references = @/Users/metadusa/tmig-full/taxonomy/fhss/fhss.usda@
+    )
+    {
+    }
+
+    def Scope "Constants" (
+        prepend references = @/Users/metadusa/tmig-full/taxonomy/constants/constants.usda@
+    )
+    {
+    }
+
+    def Scope "Sovereign" (
+        prepend references = @/Users/metadusa/tmig-full/taxonomy/sovereign/sovereign.usda@
+    )
+    {
+    }
+
+    def Scope "Licenses" (
+        prepend references = @/Users/metadusa/tmig-full/taxonomy/licenses/licenses.usda@
+    )
+    {
+    }
+
+    def Scope "Host" (
+        prepend references = @/Users/metadusa/tmig-full/taxonomy/host/host.usda@
+    )
+    {
+    }
+
+    def Scope "Docs"
+    {
+        def Xform "Languages"
+        {
+            custom string description = "Natural languages + unique ML use per language"
+        }
+
+        def Xform "PianoRecord"
+        {
+            custom string description = "88-child piano record mapped to ML task families"
+        }
+
+        def Xform "FHSS"
+        {
+            custom string description = "Frequency-hopping spread spectrum"
+        }
+
+        def Xform "Constants"
+        {
+            custom string description = "SI + hyperfine physical constants"
+        }
+
+        def Xform "Licenses"
+        {
+            custom string description = "82 licenses with commercial classification"
+        }
+
+        def Xform "Sovereign"
+        {
+            custom string description = "11-domain sovereign substrate"
+        }
+
+        def Xform "Host"
+        {
+            custom string description = "This machine: M4 Max 128GB"
+        }
+
+        def Xform "ModelTree"
+        {
+            custom string description = "Base / Adapters / Finetunes / Quant / Apps / Providers"
+        }
+
+        def Xform "Meta"
+        {
+            custom string version = "1.0.0"
+        }
+    }
+}
+

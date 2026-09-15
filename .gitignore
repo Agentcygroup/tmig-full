@@ -22,3 +22,9 @@ tools/
 
 # OS
 .DS_Store
+
+# external clones — have their own .git
+copyleft/
+oss-providers/
+tool-venvs/
+tools/

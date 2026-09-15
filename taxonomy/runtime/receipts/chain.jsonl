@@ -1,0 +1,2 @@
+{"event": "run", "intent": "summarize a document", "task": "summarization", "runtime": "llama.cpp", "prim": "", "ts": 1789432740, "prev": "0000000000000000000000000000000000000000000000000000000000000000", "hash": "127b6e11e7468f0997eab402e800a0ea2b7d20c15a4be83f7a7294adeb3a2392"}
+{"event": "run", "intent": "translate hello world to french", "task": "translation", "runtime": "llama.cpp", "prim": "", "ts": 1789432928, "prev": "127b6e11e7468f0997eab402e800a0ea2b7d20c15a4be83f7a7294adeb3a2392", "hash": "94b6eddb3cf8c2412f17b9f74fde494dd13709b41997b5d1b6c68649c0911c6f"}

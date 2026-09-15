@@ -1,0 +1,11 @@
+{
+  "event": "88 children play one piano simultaneously",
+  "date": "2019-08-21",
+  "location": "Birmingham ICC, UK",
+  "previous_record": 21,
+  "participants": 88,
+  "age_range": [6, 14],
+  "distance_meters": 7,
+  "mechanism": "custom finger-extenders via Cambridge + 9 UK universities",
+  "inspiration": "Leonardo da Vinci 500th anniversary (2018)"
+}

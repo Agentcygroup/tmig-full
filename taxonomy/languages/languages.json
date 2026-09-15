@@ -1,0 +1,618 @@
+[
+  {
+    "code": "en",
+    "name": "English",
+    "family": "Germanic",
+    "script": "Latin",
+    "use": "Global code switching, instruction-following benchmark"
+  },
+  {
+    "code": "zh",
+    "name": "Chinese",
+    "family": "Sino-Tibetan",
+    "script": "Han",
+    "use": "Character-level tokenization, CJK segmentation, hanzi→pinyin"
+  },
+  {
+    "code": "fr",
+    "name": "French",
+    "family": "Romance",
+    "script": "Latin",
+    "use": "Morphosyntactic gold standard for evaluation (Universal Dependencies)"
+  },
+  {
+    "code": "es",
+    "name": "Spanish",
+    "family": "Romance",
+    "script": "Latin",
+    "use": "Regional dialect clustering, vosotros/vos handling"
+  },
+  {
+    "code": "de",
+    "name": "German",
+    "family": "Germanic",
+    "script": "Latin",
+    "use": "Compound word splitting, noun-capitalization detection"
+  },
+  {
+    "code": "ja",
+    "name": "Japanese",
+    "family": "Japonic",
+    "script": "Kanji/Kana",
+    "use": "No-space tokenization, keigo formality transfer"
+  },
+  {
+    "code": "ko",
+    "name": "Korean",
+    "family": "Koreanic",
+    "script": "Hangul",
+    "use": "Jamo decomposition, honorific-level prediction"
+  },
+  {
+    "code": "pt",
+    "name": "Portuguese",
+    "family": "Romance",
+    "script": "Latin",
+    "use": "PT-BR vs PT-PT dialect classification"
+  },
+  {
+    "code": "it",
+    "name": "Italian",
+    "family": "Romance",
+    "script": "Latin",
+    "use": "Clitic pronoun resolution, dialect-vs-standard separation"
+  },
+  {
+    "code": "ru",
+    "name": "Russian",
+    "family": "Slavic",
+    "script": "Cyrillic",
+    "use": "Morphological inflection, case marker tagging"
+  },
+  {
+    "code": "ar",
+    "name": "Arabic",
+    "family": "Semitic",
+    "script": "Arabic",
+    "use": "Root-and-pattern morphology, diacritic restoration, right-to-left"
+  },
+  {
+    "code": "hi",
+    "name": "Hindi",
+    "family": "Indo-Aryan",
+    "script": "Devanagari",
+    "use": "Verb-final parsing, code-mix Hinglish detection"
+  },
+  {
+    "code": "th",
+    "name": "Thai",
+    "family": "Kra-Dai",
+    "script": "Thai",
+    "use": "Zero-space tokenization, tone-aware ASR"
+  },
+  {
+    "code": "multilingual",
+    "name": "Multilingual",
+    "family": "—",
+    "script": "—",
+    "use": "Cross-lingual transfer, zero-shot language generalization"
+  },
+  {
+    "code": "tr",
+    "name": "Turkish",
+    "family": "Turkic",
+    "script": "Latin",
+    "use": "Agglutinative morphology, vowel harmony"
+  },
+  {
+    "code": "vi",
+    "name": "Vietnamese",
+    "family": "Austroasiatic",
+    "script": "Latin",
+    "use": "Tone diacritics, syllable-based tokenization"
+  },
+  {
+    "code": "nl",
+    "name": "Dutch",
+    "family": "Germanic",
+    "script": "Latin",
+    "use": "Compound splitting, diminutive detection"
+  },
+  {
+    "code": "pl",
+    "name": "Polish",
+    "family": "Slavic",
+    "script": "Latin",
+    "use": "Consonant clusters, gender agreement"
+  },
+  {
+    "code": "id",
+    "name": "Indonesian",
+    "family": "Austronesian",
+    "script": "Latin",
+    "use": "Affixation, informal-vs-formal register"
+  },
+  {
+    "code": "sv",
+    "name": "Swedish",
+    "family": "Germanic",
+    "script": "Latin",
+    "use": "Definite suffix, verb-second word order"
+  },
+  {
+    "code": "uk",
+    "name": "Ukrainian",
+    "family": "Slavic",
+    "script": "Cyrillic",
+    "use": "Russian-Ukrainian code-mix, Cyrillic-emoji overlap"
+  },
+  {
+    "code": "ro",
+    "name": "Romanian",
+    "family": "Romance",
+    "script": "Latin",
+    "use": "Definite article suffix, diacritic restoration"
+  },
+  {
+    "code": "fi",
+    "name": "Finnish",
+    "family": "Uralic",
+    "script": "Latin",
+    "use": "15-case system, compound word parsing"
+  },
+  {
+    "code": "cs",
+    "name": "Czech",
+    "family": "Slavic",
+    "script": "Latin",
+    "use": "Aspect-pair verbal morphology, clitic climbing"
+  },
+  {
+    "code": "fa",
+    "name": "Persian",
+    "family": "Iranian",
+    "script": "Arabic",
+    "use": "Right-to-left, Arabic loanword separation"
+  },
+  {
+    "code": "bn",
+    "name": "Bengali",
+    "family": "Indo-Aryan",
+    "script": "Bengali",
+    "use": "Conjunct consonants, transliteration into Latin"
+  },
+  {
+    "code": "da",
+    "name": "Danish",
+    "family": "Germanic",
+    "script": "Latin",
+    "use": "stød phonetic feature, compound splitting"
+  },
+  {
+    "code": "el",
+    "name": "Greek",
+    "family": "Hellenic",
+    "script": "Greek",
+    "use": "Greeklish conversion, polytonic-to-monotonic"
+  },
+  {
+    "code": "he",
+    "name": "Hebrew",
+    "family": "Semitic",
+    "script": "Hebrew",
+    "use": "Right-to-left, vowel omission (niqqud inference)"
+  },
+  {
+    "code": "ms",
+    "name": "Malay",
+    "family": "Austronesian",
+    "script": "Latin",
+    "use": "Bahasa register, loanword adaptation"
+  },
+  {
+    "code": "hu",
+    "name": "Hungarian",
+    "family": "Uralic",
+    "script": "Latin",
+    "use": "Agglutination, vowel harmony"
+  },
+  {
+    "code": "ne",
+    "name": "Nepali",
+    "family": "Indo-Aryan",
+    "script": "Devanagari",
+    "use": "Verb-final parsing, honorific levels"
+  },
+  {
+    "code": "ta",
+    "name": "Tamil",
+    "family": "Dravidian",
+    "script": "Tamil",
+    "use": "Diglossia (literary vs spoken), script transcription"
+  },
+  {
+    "code": "ur",
+    "name": "Urdu",
+    "family": "Indo-Aryan",
+    "script": "Arabic",
+    "use": "Right-to-left, Hindi-Urdu mutual intelligibility"
+  },
+  {
+    "code": "te",
+    "name": "Telugu",
+    "family": "Dravidian",
+    "script": "Telugu",
+    "use": "Agglutinative compounds, script transliteration"
+  },
+  {
+    "code": "bg",
+    "name": "Bulgarian",
+    "family": "Slavic",
+    "script": "Cyrillic",
+    "use": "Definite article suffix, Balkan sprachbund"
+  },
+  {
+    "code": "ca",
+    "name": "Catalan",
+    "family": "Romance",
+    "script": "Latin",
+    "use": "Catalan-Valencian-Balearic dialect clustering"
+  },
+  {
+    "code": "no",
+    "name": "Norwegian",
+    "family": "Germanic",
+    "script": "Latin",
+    "use": "Bokmål vs Nynorsk classification"
+  },
+  {
+    "code": "mr",
+    "name": "Marathi",
+    "family": "Indo-Aryan",
+    "script": "Devanagari",
+    "use": "Verb-final parsing, retroflex consonants"
+  },
+  {
+    "code": "sw",
+    "name": "Swahili",
+    "family": "Bantu",
+    "script": "Latin",
+    "use": "Noun class agreement, Arabic loanwords"
+  },
+  {
+    "code": "sl",
+    "name": "Slovenian",
+    "family": "Slavic",
+    "script": "Latin",
+    "use": "Dual number, case syncretism"
+  },
+  {
+    "code": "sk",
+    "name": "Slovak",
+    "family": "Slavic",
+    "script": "Latin",
+    "use": "Czech-Slovak code mixing, aspect pairs"
+  },
+  {
+    "code": "et",
+    "name": "Estonian",
+    "family": "Uralic",
+    "script": "Latin",
+    "use": "14-case system, Finno-Ugric transfer"
+  },
+  {
+    "code": "sr",
+    "name": "Serbian",
+    "family": "Slavic",
+    "script": "Cyrillic/Latin",
+    "use": "Dual-script detection, Cyrillic-Latin conversion"
+  },
+  {
+    "code": "gu",
+    "name": "Gujarati",
+    "family": "Indo-Aryan",
+    "script": "Gujarati",
+    "use": "Script transliteration, verb-final parsing"
+  },
+  {
+    "code": "lt",
+    "name": "Lithuanian",
+    "family": "Baltic",
+    "script": "Latin",
+    "use": "Pitch accent, dual number"
+  },
+  {
+    "code": "hr",
+    "name": "Croatian",
+    "family": "Slavic",
+    "script": "Latin",
+    "use": "Serbian-Croatian-Bosnian differentiation"
+  },
+  {
+    "code": "lv",
+    "name": "Latvian",
+    "family": "Baltic",
+    "script": "Latin",
+    "use": "Pitch accent, definite adjective endings"
+  },
+  {
+    "code": "my",
+    "name": "Burmese",
+    "family": "Sino-Tibetan",
+    "script": "Myanmar",
+    "use": "Zero-space tokenization, syllable segmentation"
+  },
+  {
+    "code": "ml",
+    "name": "Malayalam",
+    "family": "Dravidian",
+    "script": "Malayalam",
+    "use": "Agglutinative compounds, script transcription"
+  },
+  {
+    "code": "pa",
+    "name": "Panjabi",
+    "family": "Indo-Aryan",
+    "script": "Gurmukhi",
+    "use": "Gurmukhi-Shahmukhi script conversion, tone"
+  },
+  {
+    "code": "is",
+    "name": "Icelandic",
+    "family": "Germanic",
+    "script": "Latin",
+    "use": "Archaic morphology, compound neologisms"
+  },
+  {
+    "code": "kn",
+    "name": "Kannada",
+    "family": "Dravidian",
+    "script": "Kannada",
+    "use": "Agglutination, script transliteration"
+  },
+  {
+    "code": "gl",
+    "name": "Galician",
+    "family": "Romance",
+    "script": "Latin",
+    "use": "Portuguese-Galician dialect split, medieval texts"
+  },
+  {
+    "code": "km",
+    "name": "Khmer",
+    "family": "Austroasiatic",
+    "script": "Khmer",
+    "use": "Zero-space tokenization, subscript consonants"
+  },
+  {
+    "code": "tl",
+    "name": "Tagalog",
+    "family": "Austronesian",
+    "script": "Latin",
+    "use": "Focus system (verb voice), code-mix with English"
+  },
+  {
+    "code": "kk",
+    "name": "Kazakh",
+    "family": "Turkic",
+    "script": "Cyrillic",
+    "use": "Cyrillic-Latin transition (2025), vowel harmony"
+  },
+  {
+    "code": "eu",
+    "name": "Basque",
+    "family": "Isolate",
+    "script": "Latin",
+    "use": "Ergative-absolutive case, agglutination"
+  },
+  {
+    "code": "af",
+    "name": "Afrikaans",
+    "family": "Germanic",
+    "script": "Latin",
+    "use": "Dutch-Afrikaans distance, double negation"
+  },
+  {
+    "code": "am",
+    "name": "Amharic",
+    "family": "Semitic",
+    "script": "Ethiopic",
+    "use": "Script unique to Ethiopia, root morphology"
+  },
+  {
+    "code": "ka",
+    "name": "Georgian",
+    "family": "Kartvelian",
+    "script": "Georgian",
+    "use": "Unique script, complex consonant clusters"
+  },
+  {
+    "code": "mn",
+    "name": "Mongolian",
+    "family": "Mongolic",
+    "script": "Cyrillic",
+    "use": "Traditional-to-Cyrillic script transliteration"
+  },
+  {
+    "code": "ha",
+    "name": "Hausa",
+    "family": "Afro-Asiatic",
+    "script": "Latin",
+    "use": "Tonal Afro-Asiatic language, Arabic Ajami script"
+  },
+  {
+    "code": "as",
+    "name": "Assamese",
+    "family": "Indo-Aryan",
+    "script": "Bengali",
+    "use": "Bengali-Assamese script distinction"
+  },
+  {
+    "code": "lo",
+    "name": "Lao",
+    "family": "Kra-Dai",
+    "script": "Lao",
+    "use": "Zero-space tokenization, tonal"
+  },
+  {
+    "code": "hy",
+    "name": "Armenian",
+    "family": "Indo-European",
+    "script": "Armenian",
+    "use": "Unique script, Eastern vs Western dialect"
+  },
+  {
+    "code": "mk",
+    "name": "Macedonian",
+    "family": "Slavic",
+    "script": "Cyrillic",
+    "use": "Balkan sprachbund, Bulgarian-Macedonian split"
+  },
+  {
+    "code": "cy",
+    "name": "Welsh",
+    "family": "Celtic",
+    "script": "Latin",
+    "use": "VSO word order, consonant mutations"
+  },
+  {
+    "code": "si",
+    "name": "Sinhala",
+    "family": "Indo-Aryan",
+    "script": "Sinhala",
+    "use": "Unique script, Pali loanwords"
+  },
+  {
+    "code": "yo",
+    "name": "Yoruba",
+    "family": "Niger-Congo",
+    "script": "Latin",
+    "use": "Tonal, diacritic-heavy, Nigeria register"
+  },
+  {
+    "code": "be",
+    "name": "Belarusian",
+    "family": "Slavic",
+    "script": "Cyrillic",
+    "use": "Russian-Belarusian mix, Trasianka detection"
+  },
+  {
+    "code": "az",
+    "name": "Azerbaijani",
+    "family": "Turkic",
+    "script": "Latin",
+    "use": "Cyrillic-Arabic-Latin script history, vowel harmony"
+  },
+  {
+    "code": "uz",
+    "name": "Uzbek",
+    "family": "Turkic",
+    "script": "Latin",
+    "use": "Cyrillic-Latin transition, vowel harmony"
+  },
+  {
+    "code": "sq",
+    "name": "Albanian",
+    "family": "Indo-European",
+    "script": "Latin",
+    "use": "Tosk vs Gheg dialect split"
+  },
+  {
+    "code": "bs",
+    "name": "Bosnian",
+    "family": "Slavic",
+    "script": "Latin",
+    "use": "Serbo-Croatian variant tagging"
+  },
+  {
+    "code": "mt",
+    "name": "Maltese",
+    "family": "Semitic",
+    "script": "Latin",
+    "use": "Only Semitic language in Latin script, Arabic-Italian loans"
+  },
+  {
+    "code": "sd",
+    "name": "Sindhi",
+    "family": "Indo-Aryan",
+    "script": "Arabic",
+    "use": "Right-to-left, Devanagari-Sindhi conversion"
+  },
+  {
+    "code": "sa",
+    "name": "Sanskrit",
+    "family": "Indo-Aryan",
+    "script": "Devanagari",
+    "use": "Classical language, sandhi rules, compound formation"
+  },
+  {
+    "code": "ga",
+    "name": "Irish",
+    "family": "Celtic",
+    "script": "Latin",
+    "use": "Initial consonant mutations, VSO"
+  },
+  {
+    "code": "so",
+    "name": "Somali",
+    "family": "Cushitic",
+    "script": "Latin",
+    "use": "Tonal, Afro-Asiatic, Arabic loans"
+  },
+  {
+    "code": "la",
+    "name": "Latin",
+    "family": "Italic",
+    "script": "Latin",
+    "use": "Dead language, classical texts, medical terminology"
+  },
+  {
+    "code": "jv",
+    "name": "Javanese",
+    "family": "Austronesian",
+    "script": "Latin",
+    "use": "Register levels (ngoko/krama), Javanese script"
+  },
+  {
+    "code": "su",
+    "name": "Sundanese",
+    "family": "Austronesian",
+    "script": "Latin",
+    "use": "Register levels, Sundanese script"
+  },
+  {
+    "code": "ps",
+    "name": "Pashto",
+    "family": "Iranian",
+    "script": "Arabic",
+    "use": "Right-to-left, ergative alignment"
+  },
+  {
+    "code": "sn",
+    "name": "Shona",
+    "family": "Bantu",
+    "script": "Latin",
+    "use": "Noun classes, tonal"
+  },
+  {
+    "code": "mg",
+    "name": "Malagasy",
+    "family": "Austronesian",
+    "script": "Latin",
+    "use": "Austronesian in Africa, French loans"
+  },
+  {
+    "code": "or",
+    "name": "Oriya/Odia",
+    "family": "Indo-Aryan",
+    "script": "Odia",
+    "use": "Unique script, verb-final parsing"
+  },
+  {
+    "code": "ht",
+    "name": "Haitian",
+    "family": "French Creole",
+    "script": "Latin",
+    "use": "French-based creole, tonal"
+  }
+]

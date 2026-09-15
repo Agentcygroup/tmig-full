@@ -1,0 +1,182 @@
+{
+  "si": [
+    {
+      "quantity": "speed of light",
+      "symbol": "c",
+      "value": "299792458",
+      "unit": "m/s",
+      "exact": "yes",
+      "notes": "SI defining"
+    },
+    {
+      "quantity": "Planck constant",
+      "symbol": "h",
+      "value": "6.62607015e-34",
+      "unit": "J\u00b7s",
+      "exact": "yes",
+      "notes": "SI defining"
+    },
+    {
+      "quantity": "reduced Planck",
+      "symbol": "\u0127",
+      "value": "1.054571817e-34",
+      "unit": "J\u00b7s",
+      "exact": "no",
+      "notes": "h/2\u03c0"
+    },
+    {
+      "quantity": "elementary charge",
+      "symbol": "e",
+      "value": "1.602176634e-19",
+      "unit": "C",
+      "exact": "yes",
+      "notes": "SI defining"
+    },
+    {
+      "quantity": "Boltzmann",
+      "symbol": "constant",
+      "value": "k_B",
+      "unit": "1.380649e-23",
+      "exact": "J/K",
+      "notes": "yes"
+    },
+    {
+      "quantity": "Avogadro",
+      "symbol": "N_A",
+      "value": "6.02214076e23",
+      "unit": "1/mol",
+      "exact": "yes",
+      "notes": "SI defining"
+    },
+    {
+      "quantity": "fine structure",
+      "symbol": "\u03b1",
+      "value": "7.2973525693e-3",
+      "unit": "dimensionless",
+      "exact": "no",
+      "notes": "CODATA 2018"
+    },
+    {
+      "quantity": "Rydberg",
+      "symbol": "R\u221e",
+      "value": "10973731.568160",
+      "unit": "1/m",
+      "exact": "no",
+      "notes": "CODATA 2018"
+    },
+    {
+      "quantity": "Bohr radius",
+      "symbol": "a0",
+      "value": "5.29177210903e-11",
+      "unit": "m",
+      "exact": "no",
+      "notes": "CODATA 2018"
+    },
+    {
+      "quantity": "electron mass",
+      "symbol": "m_e",
+      "value": "9.1093837015e-31",
+      "unit": "kg",
+      "exact": "no",
+      "notes": "CODATA 2018"
+    },
+    {
+      "quantity": "proton mass",
+      "symbol": "m_p",
+      "value": "1.67262192369e-27",
+      "unit": "kg",
+      "exact": "no",
+      "notes": "CODATA 2018"
+    },
+    {
+      "quantity": "neutron mass",
+      "symbol": "m_n",
+      "value": "1.67492749804e-27",
+      "unit": "kg",
+      "exact": "no",
+      "notes": "CODATA 2018"
+    },
+    {
+      "quantity": "gravitational",
+      "symbol": "constant",
+      "value": "G",
+      "unit": "6.67430e-11",
+      "exact": "m^3/(kg\u00b7s^2)",
+      "notes": "no"
+    },
+    {
+      "quantity": "vacuum permittivity",
+      "symbol": "\u03b50",
+      "value": "8.8541878128e-12",
+      "unit": "F/m",
+      "exact": "no",
+      "notes": "derived"
+    },
+    {
+      "quantity": "vacuum permeability",
+      "symbol": "\u03bc0",
+      "value": "1.25663706212e-6",
+      "unit": "H/m",
+      "exact": "no",
+      "notes": "derived"
+    }
+  ],
+  "hyperfine": [
+    {
+      "system": "Hydrogen 21cm",
+      "transition": "H 1s F=1 to F=0",
+      "frequency_hz": "1420405751.7667",
+      "wavelength_cm": "21.1061",
+      "notes": "radial velocity astronomy"
+    },
+    {
+      "system": "Cesium 133",
+      "transition": "6S1/2 F=3 to F=4",
+      "frequency_hz": "9192631770",
+      "wavelength_cm": "32.612",
+      "notes": "SI second definition"
+    },
+    {
+      "system": "Rubidium 87",
+      "transition": "5S1/2 F=1 to F=2",
+      "frequency_hz": "6834682610.904",
+      "wavelength_cm": "43.87",
+      "notes": "Rb atomic clock"
+    },
+    {
+      "system": "Hydrogen maser",
+      "transition": "H 1s",
+      "frequency_hz": "1420405751.768",
+      "wavelength_cm": "21.106",
+      "notes": "active maser"
+    },
+    {
+      "system": "Ytterbium 171",
+      "transition": "1S0 to 3P0",
+      "frequency_hz": "518295836590864",
+      "wavelength_cm": "0.000578",
+      "notes": "optical lattice clock"
+    },
+    {
+      "system": "Strontium 87",
+      "transition": "1S0 to 3P0",
+      "frequency_hz": "429228004229873",
+      "wavelength_cm": "0.000699",
+      "notes": "optical lattice clock"
+    },
+    {
+      "system": "Thulium",
+      "transition": "1S0 to 3P0",
+      "frequency_hz": "\u2014",
+      "wavelength_cm": "\u2014",
+      "notes": "ion clock"
+    },
+    {
+      "system": "Aluminum ion",
+      "transition": "1S0 to 3P0",
+      "frequency_hz": "1121015393207857",
+      "wavelength_cm": "0.000267",
+      "notes": "Al+ quantum logic clock"
+    }
+  ]
+}

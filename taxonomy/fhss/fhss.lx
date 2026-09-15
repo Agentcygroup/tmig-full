@@ -1,0 +1,8 @@
+node FHSS {
+  description = "frequency-hopping spread spectrum"
+  key_props   = ["interference-resistance" "privacy" "shared-spectrum"]
+}
+node Bands {
+  regions = ["US" "EU" "UK" "JP" "CN" "IN" "AU" "BR" "CA" "KR"]
+  bands   = ["902-928" "2400-2483.5" "5150-5350" "5470-5725" "5725-5850"]
+}

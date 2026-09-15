@@ -1,0 +1,14 @@
+domain	framework	use	notes
+monetary	ISO 4217	currency codes	
+finance	SWIFT MT	interbank messaging	
+finance	ISO 20022	modern messaging	
+finance	FIX protocol	order routing	
+finance	MiFID II	EU trading	
+markets	Reg NMS	US equities	
+markets	EMIR	EU derivatives	
+accounting	IFRS	global accounting	
+accounting	GAAP	US accounting	
+crypto	ERC-20	token standard	
+crypto	ERC-721	NFT standard	
+crypto	EIP-1559	fee market	
+tax	OECD BEPS	multinational	

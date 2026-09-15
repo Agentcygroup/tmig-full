@@ -1,0 +1,13 @@
+20:16:26 == 1. create venv at /Users/metadusa/tmig-full/venvs/hf ==
+20:16:34 == 2. install core ==
+WARNING: huggingface-hub 1.31.0 does not provide the extra 'cli'
+20:16:59 == 3. verify hf ==
+20:16:59   hf = /Users/metadusa/tmig-full/venvs/hf/bin/hf
+20:16:59 == 4. generate composed.usda ==
+20:16:59 == 5. export catalog.json ==
+20:16:59 == 6. write install driver ==
+20:16:59 == done ==
+20:16:59   composed.usda: /Users/metadusa/tmig-full/model-catalog/composed.usda
+20:16:59   catalog.json:  /Users/metadusa/tmig-full/model-catalog/catalog.json
+20:16:59   installer:     ~/model-catalog-install.py
+20:16:59   hf binary:     /Users/metadusa/tmig-full/venvs/hf/bin/hf

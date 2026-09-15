@@ -1,0 +1,1157 @@
+#usda 1.0
+(
+    defaultPrim = "Licenses"
+    upAxis = "Y"
+)
+
+def Scope "Licenses"
+{
+    def Xform "apache_2_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "apache-2.0"
+        custom string notes = "patent grant; model-friendly"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "Apache-2.0"
+    }
+
+    def Xform "mit"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "mit"
+        custom string notes = "shortest permissive"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "MIT"
+    }
+
+    def Xform "bsd_2_clause"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "bsd-2-clause"
+        custom string notes = "no patent grant"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "BSD-2-Clause"
+    }
+
+    def Xform "bsd_3_clause"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "bsd-3-clause"
+        custom string notes = "no endorsement clause"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "BSD-3-Clause"
+    }
+
+    def Xform "bsd_3_clause_clear"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "bsd-3-clause-clear"
+        custom string notes = "explicit patent disclaimer"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "BSD-3-Clause-Clear"
+    }
+
+    def Xform "bsd"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "bsd"
+        custom string notes = "unspecified variant"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "BSD"
+    }
+
+    def Xform "bsl_1_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "bsl-1.0"
+        custom string notes = "Boost software license"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "BSL-1.0"
+    }
+
+    def Xform "isc"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "isc"
+        custom string notes = "similar to MIT"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "ISC"
+    }
+
+    def Xform "zlib"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "zlib"
+        custom string notes = "short permissive"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "Zlib"
+    }
+
+    def Xform "unlicense"
+    {
+        custom string attribution = "no"
+        custom string category = "public-domain"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "unlicense"
+        custom string notes = "public domain dedication"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "Unlicense"
+    }
+
+    def Xform "wtfpl"
+    {
+        custom string attribution = "no"
+        custom string category = "public-domain"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "wtfpl"
+        custom string notes = "do what the fuck you want"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "WTFPL"
+    }
+
+    def Xform "cc0_1_0"
+    {
+        custom string attribution = "no"
+        custom string category = "public-domain"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "cc0-1.0"
+        custom string notes = "CC public domain"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "CC0-1.0"
+    }
+
+    def Xform "pddl"
+    {
+        custom string attribution = "no"
+        custom string category = "public-domain"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "pddl"
+        custom string notes = "public domain license"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "PDDL"
+    }
+
+    def Xform "postgresql"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "postgresql"
+        custom string notes = "postgres-style"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "PostgreSQL"
+    }
+
+    def Xform "ms_pl"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "ms-pl"
+        custom string notes = "microsoft public license"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "MS-PL"
+    }
+
+    def Xform "ncsa"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "ncsa"
+        custom string notes = "UIUC/NCSA"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "NCSA"
+    }
+
+    def Xform "afl_3_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "afl-3.0"
+        custom string notes = "academic free; patent grant"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "AFL-3.0"
+    }
+
+    def Xform "artistic_2_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "artistic-2.0"
+        custom string notes = "perl artistic 2"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "Artistic-2.0"
+    }
+
+    def Xform "mpl_2_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "weak-copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "partial"
+        custom string derivatives = "yes"
+        custom string id = "mpl-2.0"
+        custom string notes = "file-level copyleft"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "MPL-2.0"
+    }
+
+    def Xform "epl_1_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "weak-copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "partial"
+        custom string derivatives = "yes"
+        custom string id = "epl-1.0"
+        custom string notes = "eclipse public 1"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "EPL-1.0"
+    }
+
+    def Xform "epl_2_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "weak-copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "partial"
+        custom string derivatives = "yes"
+        custom string id = "epl-2.0"
+        custom string notes = "eclipse public 2"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "EPL-2.0"
+    }
+
+    def Xform "ecl_2_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "ecl-2.0"
+        custom string notes = "educational community"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "ECL-2.0"
+    }
+
+    def Xform "eupl_1_1"
+    {
+        custom string attribution = "yes"
+        custom string category = "strong-copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "yes"
+        custom string derivatives = "yes"
+        custom string id = "eupl-1.1"
+        custom string notes = "EU public license"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "EUPL-1.1"
+    }
+
+    def Xform "eupl_1_2"
+    {
+        custom string attribution = "yes"
+        custom string category = "strong-copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "yes"
+        custom string derivatives = "yes"
+        custom string id = "eupl-1.2"
+        custom string notes = "EU public license v1.2"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "EUPL-1.2"
+    }
+
+    def Xform "osl_3_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "strong-copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "yes"
+        custom string derivatives = "yes"
+        custom string id = "osl-3.0"
+        custom string notes = "open software license"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "OSL-3.0"
+    }
+
+    def Xform "cdla_permissive_1_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "cdla-permissive-1.0"
+        custom string notes = "community data license (data)"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "CDLA-Permissive-1.0"
+    }
+
+    def Xform "cdla_permissive_2_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "cdla-permissive-2.0"
+        custom string notes = "data, rev 2"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "CDLA-Permissive-2.0"
+    }
+
+    def Xform "cdla_sharing_1_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "yes"
+        custom string derivatives = "yes"
+        custom string id = "cdla-sharing-1.0"
+        custom string notes = "data, share-alike"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "CDLA-Sharing-1.0"
+    }
+
+    def Xform "odc_by"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "odc-by"
+        custom string notes = "open data attribution"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "ODC-By"
+    }
+
+    def Xform "odbl"
+    {
+        custom string attribution = "yes"
+        custom string category = "copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "yes"
+        custom string derivatives = "yes"
+        custom string id = "odbl"
+        custom string notes = "open database license"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "ODbL"
+    }
+
+    def Xform "ofl_1_1"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "ofl-1.1"
+        custom string notes = "SIL open font license"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "OFL-1.1"
+    }
+
+    def Xform "lppl_1_3c"
+    {
+        custom string attribution = "yes"
+        custom string category = "permissive"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "lppl-1.3c"
+        custom string notes = "LaTeX project license"
+        custom string osi_approved = "yes"
+        custom string share_alike = "no"
+        custom string spdx = "LPPL-1.3c"
+    }
+
+    def Xform "gfdl"
+    {
+        custom string attribution = "yes"
+        custom string category = "strong-copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "yes"
+        custom string derivatives = "yes"
+        custom string id = "gfdl"
+        custom string notes = "GNU free documentation"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "GFDL"
+    }
+
+    def Xform "gpl"
+    {
+        custom string attribution = "yes"
+        custom string category = "strong-copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "yes"
+        custom string derivatives = "yes"
+        custom string id = "gpl"
+        custom string notes = "unspecified version"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "GPL"
+    }
+
+    def Xform "gpl_2_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "strong-copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "yes"
+        custom string derivatives = "yes"
+        custom string id = "gpl-2.0"
+        custom string notes = "GNU GPL v2"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "GPL-2.0"
+    }
+
+    def Xform "gpl_3_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "strong-copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "yes"
+        custom string derivatives = "yes"
+        custom string id = "gpl-3.0"
+        custom string notes = "GNU GPL v3"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "GPL-3.0"
+    }
+
+    def Xform "agpl_3_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "network-copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "yes"
+        custom string derivatives = "yes"
+        custom string id = "agpl-3.0"
+        custom string notes = "network use triggers distribution"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "AGPL-3.0"
+    }
+
+    def Xform "lgpl"
+    {
+        custom string attribution = "yes"
+        custom string category = "weak-copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "partial"
+        custom string derivatives = "yes"
+        custom string id = "lgpl"
+        custom string notes = "unspecified version"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "LGPL"
+    }
+
+    def Xform "lgpl_2_1"
+    {
+        custom string attribution = "yes"
+        custom string category = "weak-copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "partial"
+        custom string derivatives = "yes"
+        custom string id = "lgpl-2.1"
+        custom string notes = "GNU LGPL v2.1"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "LGPL-2.1"
+    }
+
+    def Xform "lgpl_3_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "weak-copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "partial"
+        custom string derivatives = "yes"
+        custom string id = "lgpl-3.0"
+        custom string notes = "GNU LGPL v3"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "LGPL-3.0"
+    }
+
+    def Xform "lgpl_lr"
+    {
+        custom string attribution = "yes"
+        custom string category = "weak-copyleft"
+        custom string commercial_use = "yes"
+        custom string copyleft = "partial"
+        custom string derivatives = "yes"
+        custom string id = "lgpl-lr"
+        custom string notes = "LGPL for libraries, less restrictive"
+        custom string osi_approved = "yes"
+        custom string share_alike = "yes"
+        custom string spdx = "LGPL-LR"
+    }
+
+    def Xform "cc"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "varies"
+        custom string copyleft = "no"
+        custom string derivatives = "varies"
+        custom string id = "cc"
+        custom string notes = "CC umbrella"
+        custom string osi_approved = "no"
+        custom string share_alike = "varies"
+        custom string spdx = "CC"
+    }
+
+    def Xform "cc_by_2_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "cc-by-2.0"
+        custom string notes = "CC attribution 2.0"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "CC-BY-2.0"
+    }
+
+    def Xform "cc_by_2_5"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "cc-by-2.5"
+        custom string notes = "CC attribution 2.5"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "CC-BY-2.5"
+    }
+
+    def Xform "cc_by_3_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "cc-by-3.0"
+        custom string notes = "CC attribution 3.0"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "CC-BY-3.0"
+    }
+
+    def Xform "cc_by_4_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "cc-by-4.0"
+        custom string notes = "CC attribution 4.0"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "CC-BY-4.0"
+    }
+
+    def Xform "cc_by_sa_3_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "yes"
+        custom string copyleft = "partial"
+        custom string derivatives = "yes"
+        custom string id = "cc-by-sa-3.0"
+        custom string notes = "CC share-alike 3.0"
+        custom string osi_approved = "no"
+        custom string share_alike = "yes"
+        custom string spdx = "CC-BY-SA-3.0"
+    }
+
+    def Xform "cc_by_sa_4_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "yes"
+        custom string copyleft = "partial"
+        custom string derivatives = "yes"
+        custom string id = "cc-by-sa-4.0"
+        custom string notes = "CC share-alike 4.0"
+        custom string osi_approved = "no"
+        custom string share_alike = "yes"
+        custom string spdx = "CC-BY-SA-4.0"
+    }
+
+    def Xform "cc_by_nd_4_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "no"
+        custom string id = "cc-by-nd-4.0"
+        custom string notes = "no derivatives"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "CC-BY-ND-4.0"
+    }
+
+    def Xform "cc_by_nc_2_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "no"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "cc-by-nc-2.0"
+        custom string notes = "non-commercial"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "CC-BY-NC-2.0"
+    }
+
+    def Xform "cc_by_nc_3_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "no"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "cc-by-nc-3.0"
+        custom string notes = "non-commercial"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "CC-BY-NC-3.0"
+    }
+
+    def Xform "cc_by_nc_4_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "no"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "cc-by-nc-4.0"
+        custom string notes = "non-commercial"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "CC-BY-NC-4.0"
+    }
+
+    def Xform "cc_by_nc_sa_2_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "no"
+        custom string copyleft = "yes"
+        custom string derivatives = "yes"
+        custom string id = "cc-by-nc-sa-2.0"
+        custom string notes = "NC + share-alike"
+        custom string osi_approved = "no"
+        custom string share_alike = "yes"
+        custom string spdx = "CC-BY-NC-SA-2.0"
+    }
+
+    def Xform "cc_by_nc_sa_3_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "no"
+        custom string copyleft = "yes"
+        custom string derivatives = "yes"
+        custom string id = "cc-by-nc-sa-3.0"
+        custom string notes = "NC + share-alike"
+        custom string osi_approved = "no"
+        custom string share_alike = "yes"
+        custom string spdx = "CC-BY-NC-SA-3.0"
+    }
+
+    def Xform "cc_by_nc_sa_4_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "no"
+        custom string copyleft = "yes"
+        custom string derivatives = "yes"
+        custom string id = "cc-by-nc-sa-4.0"
+        custom string notes = "NC + share-alike"
+        custom string osi_approved = "no"
+        custom string share_alike = "yes"
+        custom string spdx = "CC-BY-NC-SA-4.0"
+    }
+
+    def Xform "cc_by_nc_nd_3_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "no"
+        custom string copyleft = "no"
+        custom string derivatives = "no"
+        custom string id = "cc-by-nc-nd-3.0"
+        custom string notes = "NC + no derivatives"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "CC-BY-NC-ND-3.0"
+    }
+
+    def Xform "cc_by_nc_nd_4_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "creative-commons"
+        custom string commercial_use = "no"
+        custom string copyleft = "no"
+        custom string derivatives = "no"
+        custom string id = "cc-by-nc-nd-4.0"
+        custom string notes = "NC + no derivatives"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "CC-BY-NC-ND-4.0"
+    }
+
+    def Xform "openrail"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "openrail"
+        custom string notes = "responsible AI clauses"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "OpenRAIL"
+    }
+
+    def Xform "openrail__"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "openrail++"
+        custom string notes = "stronger RAIL"
+        custom string osi_approved = "no"
+        custom string share_alike = "yes"
+        custom string spdx = "OpenRAIL++"
+    }
+
+    def Xform "openrail_m"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "openrail-m"
+        custom string notes = "model-specific RAIL"
+        custom string osi_approved = "no"
+        custom string share_alike = "yes"
+        custom string spdx = "OpenRAIL-M"
+    }
+
+    def Xform "creativeml_openrail_m"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "creativeml-openrail-m"
+        custom string notes = "Stable Diffusion 1.x/2.x"
+        custom string osi_approved = "no"
+        custom string share_alike = "yes"
+        custom string spdx = "CreativeML-OpenRAIL-M"
+    }
+
+    def Xform "bigscience_bloom_rail_1_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "bigscience-bloom-rail-1.0"
+        custom string notes = "BLOOM RAIL"
+        custom string osi_approved = "no"
+        custom string share_alike = "yes"
+        custom string spdx = "BigScience-BLOOM-RAIL-1.0"
+    }
+
+    def Xform "bigscience_openrail_m"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "bigscience-openrail-m"
+        custom string notes = "BigScience RAIL"
+        custom string osi_approved = "no"
+        custom string share_alike = "yes"
+        custom string spdx = "BigScience-OpenRAIL-M"
+    }
+
+    def Xform "bigcode_openrail_m"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "bigcode-openrail-m"
+        custom string notes = "StarCoder family"
+        custom string osi_approved = "no"
+        custom string share_alike = "yes"
+        custom string spdx = "BigCode-OpenRAIL-M"
+    }
+
+    def Xform "llama2"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "varies"
+        custom string copyleft = "no"
+        custom string derivatives = "varies"
+        custom string id = "llama2"
+        custom string notes = "Meta Llama 2 license"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "Llama-2-Community"
+    }
+
+    def Xform "llama3"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "varies"
+        custom string copyleft = "no"
+        custom string derivatives = "varies"
+        custom string id = "llama3"
+        custom string notes = "Meta Llama 3 license"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "Llama-3-Community"
+    }
+
+    def Xform "llama3_1"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "varies"
+        custom string copyleft = "no"
+        custom string derivatives = "varies"
+        custom string id = "llama3.1"
+        custom string notes = "Meta Llama 3.1"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "Llama-3.1-Community"
+    }
+
+    def Xform "llama3_2"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "varies"
+        custom string copyleft = "no"
+        custom string derivatives = "varies"
+        custom string id = "llama3.2"
+        custom string notes = "Meta Llama 3.2"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "Llama-3.2-Community"
+    }
+
+    def Xform "llama3_3"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "varies"
+        custom string copyleft = "no"
+        custom string derivatives = "varies"
+        custom string id = "llama3.3"
+        custom string notes = "Meta Llama 3.3"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "Llama-3.3-Community"
+    }
+
+    def Xform "llama4"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "varies"
+        custom string copyleft = "no"
+        custom string derivatives = "varies"
+        custom string id = "llama4"
+        custom string notes = "Meta Llama 4"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "Llama-4-Community"
+    }
+
+    def Xform "gemma"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "varies"
+        custom string copyleft = "no"
+        custom string derivatives = "varies"
+        custom string id = "gemma"
+        custom string notes = "Google Gemma"
+        custom string osi_approved = "no"
+        custom string share_alike = "yes"
+        custom string spdx = "Gemma-Terms"
+    }
+
+    def Xform "apple_amlr"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "apple-amlr"
+        custom string notes = "Apple ML research"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "Apple-AMLR"
+    }
+
+    def Xform "apple_ascl"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "varies"
+        custom string copyleft = "no"
+        custom string derivatives = "varies"
+        custom string id = "apple-ascl"
+        custom string notes = "Apple sample code"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "Apple-ASCL"
+    }
+
+    def Xform "c_uda"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "varies"
+        custom string copyleft = "no"
+        custom string derivatives = "varies"
+        custom string id = "c-uda"
+        custom string notes = "computational use of data"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "C-UDA"
+    }
+
+    def Xform "h_research"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "no"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "h-research"
+        custom string notes = "research only (health)"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "H-Research"
+    }
+
+    def Xform "intel_research"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "no"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "intel-research"
+        custom string notes = "research only"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "Intel-Research"
+    }
+
+    def Xform "deepfloyd_if_license"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "deepfloyd-if-license"
+        custom string notes = "DeepFloyd IF model"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "DeepFloyd-IF"
+    }
+
+    def Xform "grok2_community"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "varies"
+        custom string copyleft = "no"
+        custom string derivatives = "varies"
+        custom string id = "grok2-community"
+        custom string notes = "xAI Grok 2"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "Grok-2-Community"
+    }
+
+    def Xform "etalab_2_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "open-data"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "etalab-2.0"
+        custom string notes = "French government"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "Etalab-2.0"
+    }
+
+    def Xform "fair_noncommercial_research_license"
+    {
+        custom string attribution = "yes"
+        custom string category = "research-only"
+        custom string commercial_use = "no"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "fair-noncommercial-research-license"
+        custom string notes = "non-commercial research"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "Fair-NC-Research"
+    }
+
+    def Xform "openmdw_1_0"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "openmdw-1.0"
+        custom string notes = "open model data"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "OpenMDW-1.0"
+    }
+
+    def Xform "openmdw_1_1"
+    {
+        custom string attribution = "yes"
+        custom string category = "model-specific"
+        custom string commercial_use = "yes"
+        custom string copyleft = "no"
+        custom string derivatives = "yes"
+        custom string id = "openmdw-1.1"
+        custom string notes = "open model data rev 1.1"
+        custom string osi_approved = "no"
+        custom string share_alike = "no"
+        custom string spdx = "OpenMDW-1.1"
+    }
+}
+

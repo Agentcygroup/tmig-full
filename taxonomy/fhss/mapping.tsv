@@ -1,0 +1,11 @@
+fhss_concept	ml_concept	taxonomy_task	notes
+hop channel	attention slot	any-to-any	dynamic routing of compute
+pseudorandom sequence	diffusion noise schedule	text-to-image	sampled timesteps
+sync seed	random seed / weight init	text-generation	both sides start from same seed
+dwell time	token budget	text-generation	one token per hop equivalent
+interference resistance	adversarial robustness	image-classification	noise on one channel does not kill inference
+eavesdrop resistance	privacy preserving	inference federated	cross-lingual-transfer	gradient obfuscation across institutions
+channel map update	continual learning	reinforcement-learning	reallocate capacity as band shifts
+spreading factor	context window	size	video-text-to-text	wide vs narrow attention
+frequency diversity	ensemble diversity	graph-ml	heterogeneous nodes
+military FHSS	high-assurance inference	automatic-speech-recognition	low-latency on tactical audio

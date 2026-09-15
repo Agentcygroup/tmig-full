@@ -1,0 +1,117 @@
+#usda 1.0
+(
+    defaultPrim = "Host"
+    upAxis = "Y"
+)
+
+def Scope "Host"
+{
+    def Xform "model"
+    {
+        custom string notes = "Mac16,5"
+        custom string value = "MacBook Pro"
+    }
+
+    def Xform "model_number"
+    {
+        custom string notes = ""
+        custom string value = "Z1FT000D8LL/A"
+    }
+
+    def Xform "chip"
+    {
+        custom string notes = "16-core"
+        custom string value = "Apple M4 Max"
+    }
+
+    def Xform "cores_p"
+    {
+        custom string notes = "performance"
+        custom string value = "12"
+    }
+
+    def Xform "cores_e"
+    {
+        custom string notes = "efficiency"
+        custom string value = "4"
+    }
+
+    def Xform "memory_gb"
+    {
+        custom string notes = "unified"
+        custom string value = "128"
+    }
+
+    def Xform "firmware"
+    {
+        custom string notes = ""
+        custom string value = "18000.161.10"
+    }
+
+    def Xform "serial"
+    {
+        custom string notes = ""
+        custom string value = "MY916YKY0Y"
+    }
+
+    def Xform "uuid"
+    {
+        custom string notes = ""
+        custom string value = "EA49ECB2-ED20-5372-BC7F-9B84A36E01F4"
+    }
+
+    def Xform "udid"
+    {
+        custom string notes = ""
+        custom string value = "00006041-001871A60EFA401C"
+    }
+
+    def Xform "activation_lock"
+    {
+        custom string notes = ""
+        custom string value = "enabled"
+    }
+
+    def Xform "chip_gpu_cores"
+    {
+        custom string notes = "M4 Max has 40-core GPU"
+        custom string value = "40"
+    }
+
+    def Xform "neural_engine"
+    {
+        custom string notes = "Apple Neural Engine"
+        custom string value = "16_core"
+    }
+
+    def Xform "memory_bandwidth_gbps"
+    {
+        custom string notes = "LPDDR5x-8533"
+        custom string value = "546"
+    }
+
+    def Xform "storage_type"
+    {
+        custom string notes = ""
+        custom string value = "NVMe SSD"
+    }
+
+    def Xform "mlx_capable"
+    {
+        custom string notes = "Apple silicon native"
+        custom string value = "yes"
+    }
+
+    def Xform "metal_capable"
+    {
+        custom string notes = "Metal 3"
+        custom string value = "yes"
+    }
+
+    def Xform "ane_capable"
+    {
+        custom string notes = "Core ML"
+        custom string value = "yes"
+    }
+}
+

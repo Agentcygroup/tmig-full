@@ -1,0 +1,14 @@
+node Record {
+  event      = "88 children play one piano simultaneously"
+  date       = "2019-08-21"
+  location   = "Birmingham ICC, UK"
+  previous   = 21
+  participants = 88
+  ageMin     = 6
+  ageMax     = 14
+  distance   = 7
+}
+node Lesson {
+  teaching = "88-way synchronization = multi-agent + multi-output + shared resource"
+  parallel = ["robotics" "reinforcement-learning" "mask-generation" "any-to-any"]
+}

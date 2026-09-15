@@ -1,0 +1,15 @@
+record_element	ml_concept	taxonomy_task	notes
+88 children	ensemble of agents	reinforcement-learning	multi-agent coordination
+88 keys	piano is 88-key standard	mask-generation	one output per key
+one piano	shared resource	any-to-any	single pipeline, many inputs
+7 meters away	long-range action	video-text-to-text	spatial grounding
+finger extenders	tool use / actuators	robotics	mechanical augmentation
+rabbits/giraffes/trains/ballerinas	heterogeneous actuators	image-text-to-image	varied mechanism shapes
+21 previous record	baseline model	zero-shot-classification	beat prior benchmark
+2018 start	training period	time-series-forecasting	multi-month horizon
+Cambridge + 9 universities	federated learning	cross-lingual-transfer	distributed institutions
+Leonardo 500th anniversary	historical inspiration	image-to-text	heritage metadata
+6-14 age range	curriculum learning	text-generation	staged difficulty
+simultaneous strike	synchronous inference	automatic-speech-recognition	parallel streams
+Guinness verification	ground-truth audit	visual-document-retrieval	external validation
+Birmingham ICC	venue = compute cluster	graph-ml	node topology

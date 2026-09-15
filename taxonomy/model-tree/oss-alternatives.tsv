@@ -1,0 +1,25 @@
+leaf	license	oss_alternative	alt_license	notes
+LM Studio	proprietary	llama.cpp / Ollama	MIT	self-hosted
+Draw Things	proprietary	diffusers+ComfyUI	GPL-3/Apache-2
+JoyFusion	proprietary	diffusers+ComfyUI	GPL-3/Apache-2
+Groq	proprietary	vLLM / llama.cpp	Apache-2/MIT
+Novita	proprietary	ComfyUI / vLLM	GPL-3/Apache-2
+Cerebras	proprietary	vLLM / SGLang	Apache-2
+Nscale	proprietary	vLLM / TGI	Apache-2
+fal	proprietary	ComfyUI / diffusers+FastAPI	GPL-3/Apache-2
+Together AI	proprietary	vLLM / SGLang	Apache-2
+Fireworks	proprietary	vLLM / SGLang	Apache-2
+Featherless AI	proprietary	Ollama / llama.cpp	MIT
+Zai	proprietary	vLLM / SGLang	Apache-2
+Replicate	proprietary	Cog / BentoML	Apache-2
+Cohere	proprietary	vLLM / TGI	Apache-2
+Scaleway	proprietary	vLLM / llama.cpp	Apache-2/MIT
+Public AI	unknown	Ollama / llama.cpp	MIT
+Baseten	proprietary	BentoML / Ray Serve	Apache-2
+OVHcloud AI Endpoints	proprietary	vLLM / TGI	Apache-2
+HF Inference API	proprietary	TGI / TEI / vLLM	Apache-2
+WaveSpeed	proprietary	ComfyUI / diffusers+FastAPI	GPL-3/Apache-2
+DeepInfra	proprietary	vLLM / TGI	Apache-2
+Inference Endpoints	proprietary	vLLM / BentoML / KServe	Apache-2
+Microsoft Foundry	proprietary	BentoML / KServe / Ray Serve	Apache-2
+Amazon SageMaker AI	proprietary	KServe / BentoML / Ray Serve	Apache-2

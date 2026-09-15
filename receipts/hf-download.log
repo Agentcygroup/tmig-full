@@ -1,0 +1,779 @@
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Fetching 14 files: 100%|██████████| 14/14 [00:00<00:00, 3410.40it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a
+Fetching 28 files:   0%|          | 0/28 [00:00<?, ?it/s]Fetching 28 files: 100%|██████████| 28/28 [00:00<00:00, 4122.46it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--HuggingFaceTB--SmolLM2-1.7B-Instruct/snapshots/31b70e2e869a7173562077fd711b654946d38674
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Fetching 14 files: 100%|██████████| 14/14 [00:00<00:00, 3466.16it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--Qwen--Qwen2-VL-2B-Instruct/snapshots/895c3a49bc3fa70a340399125c650a463535e71c
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 3741.24it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B/snapshots/8faed761d45a263340a0528343f099c05c9a4323
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 3619.21it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--Salesforce--blip-image-captioning-base/snapshots/82a37760796d32b1411fe092ab5d4e227313294b
+Fetching 19 files:   0%|          | 0/19 [00:00<?, ?it/s]Fetching 19 files:   5%|▌         | 1/19 [00:00<00:04,  4.29it/s]Fetching 19 files:  42%|████▏     | 8/19 [00:00<00:00, 25.76it/s]Fetching 19 files:  63%|██████▎   | 12/19 [00:00<00:00, 26.03it/s]Fetching 19 files:  79%|███████▉  | 15/19 [00:01<00:00, 12.82it/s]Fetching 19 files:  79%|███████▉  | 15/19 [00:20<00:00, 12.82it/s]Fetching 19 files:  84%|████████▍ | 16/19 [00:38<00:14,  5.00s/it]Fetching 19 files:  89%|████████▉ | 17/19 [01:35<00:26, 13.13s/it]Fetching 19 files:  95%|█████████▍| 18/19 [01:48<00:13, 13.04s/it]Fetching 19 files: 100%|██████████| 19/19 [02:03<00:00, 13.39s/it]Fetching 19 files: 100%|██████████| 19/19 [02:03<00:00,  6.49s/it]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--THUDM--CogVideoX-2b/snapshots/1137dacfc2c9c012bed6a0793f4ecf2ca8e7ba01
+Fetching 28 files:   0%|          | 0/28 [00:00<?, ?it/s]Fetching 28 files:   0%|          | 0/28 [00:00<?, ?it/s]
+[1m[31mError: Access denied. This repository requires approval.[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files:  11%|█         | 1/9 [00:00<00:01,  6.39it/s]Fetching 9 files:  56%|█████▌    | 5/9 [00:00<00:00, 21.40it/s]Fetching 9 files:  78%|███████▊  | 7/9 [00:20<00:00, 21.40it/s]Fetching 9 files:  89%|████████▉ | 8/9 [01:18<00:12, 12.47s/it]Fetching 9 files: 100%|██████████| 9/9 [01:47<00:00, 15.44s/it]Fetching 9 files: 100%|██████████| 9/9 [01:47<00:00, 11.90s/it]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--deepseek-ai--deepseek-llm-7b-base/snapshots/7683fea62db869066ddaff6a41d032262c490d4f
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files:  17%|█▋        | 1/6 [00:00<00:00,  6.97it/s]Fetching 6 files:  83%|████████▎ | 5/6 [00:03<00:00,  1.50it/s]Fetching 6 files: 100%|██████████| 6/6 [00:03<00:00,  1.69it/s]Fetching 6 files: 100%|██████████| 6/6 [00:03<00:00,  1.70it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--facebook--convnext-tiny-224/snapshots/6166b7613034066690a621d8bf25ffdf181a34f0
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files:  17%|█▋        | 1/6 [00:00<00:00,  7.18it/s]Fetching 6 files:  83%|████████▎ | 5/6 [00:08<00:01,  1.81s/it]Fetching 6 files: 100%|██████████| 6/6 [00:09<00:00,  1.56s/it]Fetching 6 files: 100%|██████████| 6/6 [00:09<00:00,  1.55s/it]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--facebook--mask2former-swin-small-coco-instance/snapshots/1b7ac418a0f3cb5edfc5037e488d53587b8bb76b
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files:   8%|▊         | 1/13 [00:00<00:01,  7.15it/s]Fetching 13 files:  46%|████▌     | 6/13 [00:00<00:00, 20.78it/s]Fetching 13 files:  69%|██████▉   | 9/13 [00:00<00:00, 12.05it/s]Fetching 13 files:  77%|███████▋  | 10/13 [00:20<00:00, 12.05it/s]Fetching 13 files:  85%|████████▍ | 11/13 [00:37<00:10,  5.46s/it]Fetching 13 files:  92%|█████████▏| 12/13 [00:39<00:04,  4.79s/it]Fetching 13 files: 100%|██████████| 13/13 [00:39<00:00,  3.04s/it]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--facebook--musicgen-small/snapshots/4c8334b02c6ec4e8664a91979669a501ec497792
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files:  11%|█         | 1/9 [00:00<00:01,  5.88it/s]Fetching 9 files:  78%|███████▊  | 7/9 [00:00<00:00, 25.13it/s]Fetching 9 files: 100%|██████████| 9/9 [00:19<00:00,  2.14s/it]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--facebook--sam2-hiera-large/snapshots/e6a8e8809b8f1bfa2238b6d080f3d05cc76bd251
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files:  64%|██████▎   | 7/11 [00:00<00:00, 47.98it/s]Fetching 11 files: 100%|██████████| 11/11 [00:06<00:00,  1.79it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--facebook--wav2vec2-base-960h/snapshots/22aad52d435eb6dbaf354bdad9b0da84ce7d6156
+Fetching 20 files:   0%|          | 0/20 [00:00<?, ?it/s]Fetching 20 files:   5%|▌         | 1/20 [00:00<00:03,  6.23it/s]Fetching 20 files:  25%|██▌       | 5/20 [00:01<00:06,  2.46it/s]Fetching 20 files:  30%|███       | 6/20 [00:03<00:11,  1.27it/s]Fetching 20 files:  35%|███▌      | 7/20 [00:04<00:08,  1.53it/s]Fetching 20 files:  40%|████      | 8/20 [00:08<00:18,  1.53s/it]Fetching 20 files:  45%|████▌     | 9/20 [00:08<00:13,  1.20s/it]Fetching 20 files:  50%|█████     | 10/20 [00:08<00:09,  1.08it/s]Fetching 20 files:  55%|█████▌    | 11/20 [00:09<00:08,  1.08it/s]Fetching 20 files:  60%|██████    | 12/20 [00:09<00:05,  1.39it/s]Fetching 20 files:  65%|██████▌   | 13/20 [00:10<00:03,  1.75it/s]Fetching 20 files:  70%|███████   | 14/20 [00:11<00:04,  1.44it/s]Fetching 20 files:  75%|███████▌  | 15/20 [00:12<00:03,  1.31it/s]Fetching 20 files:  85%|████████▌ | 17/20 [00:12<00:01,  1.59it/s]Fetching 20 files:  90%|█████████ | 18/20 [00:13<00:01,  1.72it/s]Fetching 20 files:  95%|█████████▌| 19/20 [00:14<00:00,  1.57it/s]Fetching 20 files: 100%|██████████| 20/20 [00:14<00:00,  1.72it/s]Fetching 20 files: 100%|██████████| 20/20 [00:14<00:00,  1.36it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--google-t5--t5-small/snapshots/df1b051c49625cf57a3d0d8d3863ed4d13564fe4
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files:   9%|▉         | 1/11 [00:00<00:00, 10.37it/s]
+[1m[31mError: Access denied. This repository requires approval.[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files:  17%|█▋        | 1/6 [00:00<00:00,  6.41it/s]Fetching 6 files:  83%|████████▎ | 5/6 [00:01<00:00,  4.12it/s]Fetching 6 files: 100%|██████████| 6/6 [00:01<00:00,  3.04it/s]Fetching 6 files: 100%|██████████| 6/6 [00:01<00:00,  3.33it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--google--mobilenet_v2_1.0_224/snapshots/75e607b00aeae1297cc89d026a118bce012f5c5a
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  10%|█         | 1/10 [00:00<00:01,  6.66it/s]Fetching 10 files:  60%|██████    | 6/10 [00:00<00:00, 17.25it/s]Fetching 10 files:  80%|████████  | 8/10 [00:00<00:00, 10.57it/s]Fetching 10 files: 100%|██████████| 10/10 [00:17<00:00,  2.79s/it]Fetching 10 files: 100%|██████████| 10/10 [00:17<00:00,  1.76s/it]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--google--siglip-base-patch16-224/snapshots/7fd15f0689c79d79e38b1c2e2e2370a7bf2761ed
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Downloading 'pytorch_model.bin' to '/Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/ff91705b718f692fa0c994a49d094154583db40b536e80f20f52e05498ff6856.incomplete'
+Downloading 'spiece.model' to '/Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86.incomplete'
+Downloading 'config.json' to '/Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/1d18bc031c095a79a938a2ec9e04c141b660739d.incomplete'
+Downloading 'generation_config.json' to '/Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/d52815623b46b7db1c4b957b5a83a8ad30b0146a.incomplete'
+Downloading 'special_tokens_map.json' to '/Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/2c19eb6e3b583f52d34b903b5978d3d30b6b7682.incomplete'
+Downloading 'tokenizer.json' to '/Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/698d7a6a181bc68bbeb97703edc841c911e39a0c.incomplete'
+Downloading '.gitattributes' to '/Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/e2e68308705c59d0e047f13c1116ed223f9b7fec.incomplete'
+Download complete. Moving file to /Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/1d18bc031c095a79a938a2ec9e04c141b660739d
+Downloading 'README.md' to '/Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/a89d4747cfddc3126e187618dfe664bc2a2b5782.incomplete'
+Download complete. Moving file to /Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/2c19eb6e3b583f52d34b903b5978d3d30b6b7682
+Download complete. Moving file to /Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/e2e68308705c59d0e047f13c1116ed223f9b7fec
+Download complete. Moving file to /Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/d52815623b46b7db1c4b957b5a83a8ad30b0146a
+Download complete. Moving file to /Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/a89d4747cfddc3126e187618dfe664bc2a2b5782
+Downloading 'tokenizer_config.json' to '/Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/fc9b1b5ec024637d0cdb9f88b3835db43028e5b9.incomplete'
+Download complete. Moving file to /Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/698d7a6a181bc68bbeb97703edc841c911e39a0c
+Download complete. Moving file to /Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/fc9b1b5ec024637d0cdb9f88b3835db43028e5b9
+Download complete. Moving file to /Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86
+Fetching 9 files:  89%|████████▉ | 8/9 [00:00<00:00, 10.58it/s]Download complete. Moving file to /Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/blobs/ff91705b718f692fa0c994a49d094154583db40b536e80f20f52e05498ff6856
+Fetching 9 files: 100%|██████████| 9/9 [00:11<00:00,  1.31s/it]
+/Users/metadusa/.cache/huggingface/hub/models--google--switch-base-8/snapshots/92fe2d22b024d9937146fe097ba3d3a7ba146e1b
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]Fetching 8 files:  50%|█████     | 4/8 [00:00<00:00, 27.41it/s]Fetching 8 files:  88%|████████▊ | 7/8 [00:11<00:01,  1.97s/it]Fetching 8 files: 100%|██████████| 8/8 [00:12<00:00,  1.85s/it]Fetching 8 files: 100%|██████████| 8/8 [00:12<00:00,  1.60s/it]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--google--vit-base-patch16-224/snapshots/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  5.98it/s]Fetching 4 files: 100%|██████████| 4/4 [00:42<00:00, 11.56s/it]Fetching 4 files: 100%|██████████| 4/4 [00:42<00:00, 10.70s/it]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--hpcai-tech--OpenSora-STDiT-v3/snapshots/9a8583918505ee93bd9fae8dd5ce32e1f9334c71
+Fetching 20 files:   0%|          | 0/20 [00:00<?, ?it/s]Fetching 20 files:   5%|▌         | 1/20 [00:00<00:02,  7.39it/s]Fetching 20 files:  30%|███       | 6/20 [00:00<00:00, 18.42it/s]Fetching 20 files:  40%|████      | 8/20 [00:00<00:00, 16.21it/s]Fetching 20 files:  50%|█████     | 10/20 [00:01<00:02,  4.37it/s]Fetching 20 files:  55%|█████▌    | 11/20 [00:01<00:02,  4.32it/s]Fetching 20 files:  60%|██████    | 12/20 [00:02<00:01,  4.41it/s]Fetching 20 files:  65%|██████▌   | 13/20 [00:02<00:02,  3.45it/s]Fetching 20 files:  75%|███████▌  | 15/20 [00:03<00:01,  3.89it/s]Fetching 20 files:  80%|████████  | 16/20 [00:04<00:02,  1.67it/s]Fetching 20 files:  85%|████████▌ | 17/20 [00:05<00:01,  1.74it/s]Fetching 20 files:  90%|█████████ | 18/20 [00:06<00:01,  1.66it/s]Fetching 20 files:  95%|█████████▌| 19/20 [00:06<00:00,  1.49it/s]Fetching 20 files: 100%|██████████| 20/20 [00:07<00:00,  1.31it/s]Fetching 20 files: 100%|██████████| 20/20 [00:07<00:00,  2.54it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--intfloat--e5-small-v2/snapshots/ffb93f3bd4047442299a41ebb6fa998a38507c52
+Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]Fetching 17 files:   6%|▌         | 1/17 [00:00<00:02,  7.20it/s]Fetching 17 files:  47%|████▋     | 8/17 [00:00<00:00, 28.79it/s]Fetching 17 files:  71%|███████   | 12/17 [00:00<00:00, 28.53it/s]Fetching 17 files:  82%|████████▏ | 14/17 [00:20<00:00, 28.53it/s]Fetching 17 files:  88%|████████▊ | 15/17 [02:03<00:25, 12.89s/it]Fetching 17 files:  94%|█████████▍| 16/17 [02:03<00:11, 11.26s/it]Fetching 17 files: 100%|██████████| 17/17 [02:04<00:00,  7.31s/it]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--llava-hf--llava-1.5-7b-hf/snapshots/b234b804b114d9e37bb655e11cbbb5f5e971b7a9
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files:   7%|▋         | 1/15 [00:00<00:02,  6.75it/s]Fetching 15 files:  33%|███▎      | 5/15 [00:00<00:00, 15.26it/s]Fetching 15 files:  53%|█████▎    | 8/15 [00:00<00:00, 15.27it/s]Fetching 15 files:  67%|██████▋   | 10/15 [00:00<00:00,  9.25it/s]Fetching 15 files:  73%|███████▎  | 11/15 [00:20<00:00,  9.25it/s]Fetching 15 files:  80%|████████  | 12/15 [00:36<00:16,  5.63s/it]Fetching 15 files:  87%|████████▋ | 13/15 [00:37<00:09,  4.75s/it]Fetching 15 files:  93%|█████████▎| 14/15 [00:38<00:03,  3.87s/it]Fetching 15 files: 100%|██████████| 15/15 [00:38<00:00,  3.07s/it]Fetching 15 files: 100%|██████████| 15/15 [00:38<00:00,  2.57s/it]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--lllyasviel--control_v11p_sd15_canny/snapshots/115a470d547982438f70198e353a921996e2e819
+Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]
+[1m[31mError: Access denied. This repository requires approval.[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files:  15%|█▌        | 2/13 [00:00<00:00, 16.08it/s]Fetching 13 files:  62%|██████▏   | 8/13 [00:00<00:00, 38.62it/s]Fetching 13 files:  85%|████████▍ | 11/13 [00:20<00:00, 38.62it/s]Fetching 13 files:  92%|█████████▏| 12/13 [00:35<00:03,  3.90s/it]Fetching 13 files: 100%|██████████| 13/13 [00:40<00:00,  4.00s/it]Fetching 13 files: 100%|██████████| 13/13 [00:40<00:00,  3.12s/it]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08
+Fetching 20 files:   0%|          | 0/20 [00:00<?, ?it/s]Fetching 20 files: 100%|██████████| 20/20 [00:00<00:00, 4493.34it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--microsoft--Phi-3.5-mini-instruct/snapshots/2fe192450127e6a83f7441aef6e3ca586c338b77
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]Fetching 8 files:  12%|█▎        | 1/8 [00:00<00:01,  5.56it/s]Fetching 8 files:  62%|██████▎   | 5/8 [00:03<00:02,  1.21it/s]Fetching 8 files:  75%|███████▌  | 6/8 [00:04<00:01,  1.48it/s]Fetching 8 files: 100%|██████████| 8/8 [00:05<00:00,  1.54it/s]Fetching 8 files: 100%|██████████| 8/8 [00:05<00:00,  1.50it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--microsoft--resnet-50/snapshots/34c2154c194f829b11125337b98c8f5f9965ff19
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files:  11%|█         | 1/9 [00:00<00:01,  6.45it/s]Fetching 9 files:  78%|███████▊  | 7/9 [00:00<00:00, 26.00it/s]Fetching 9 files: 100%|██████████| 9/9 [00:05<00:00,  1.54it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--microsoft--speecht5_tts/snapshots/30fcde30f19b87502b8435427b5f5068e401d5f6
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:01,  5.45it/s]Fetching 7 files:  71%|███████▏  | 5/7 [00:03<00:01,  1.48it/s]Fetching 7 files:  86%|████████▌ | 6/7 [00:05<00:00,  1.06it/s]Fetching 7 files: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s]Fetching 7 files: 100%|██████████| 7/7 [00:05<00:00,  1.28it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--microsoft--swin-tiny-patch4-window7-224/snapshots/d00d478bfaf1f417d34a1186673ad4b4be264c51
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 4010.62it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mistral-7B-Instruct-v0.3/snapshots/c170c708c41dac9275d15a8fff4eca08d52bab71
+Fetching 69 files:   0%|          | 0/69 [00:00<?, ?it/s]Fetching 69 files:   1%|▏         | 1/69 [00:00<00:11,  5.88it/s]Fetching 69 files:   7%|▋         | 5/69 [04:48<1:05:32, 61.45s/it]Fetching 69 files:   9%|▊         | 6/69 [04:49<49:39, 47.30s/it]  Fetching 69 files:  10%|█         | 7/69 [04:49<36:44, 35.56s/it]Fetching 69 files:  12%|█▏        | 8/69 [04:51<27:11, 26.75s/it]Fetching 69 files:  13%|█▎        | 9/69 [04:53<19:55, 19.92s/it]Fetching 69 files:  14%|█▍        | 10/69 [04:54<14:25, 14.67s/it]Fetching 69 files:  16%|█▌        | 11/69 [04:56<10:26, 10.81s/it]Fetching 69 files:  17%|█▋        | 12/69 [04:58<07:49,  8.24s/it]Fetching 69 files:  19%|█▉        | 13/69 [08:54<1:10:00, 75.01s/it]Fetching 69 files:  20%|██        | 14/69 [09:34<59:22, 64.78s/it]  Fetching 69 files:  22%|██▏       | 15/69 [09:41<42:48, 47.56s/it]Fetching 69 files:  23%|██▎       | 16/69 [09:43<30:04, 34.05s/it]Fetching 69 files:  25%|██▍       | 17/69 [10:11<27:57, 32.26s/it]Fetching 69 files:  26%|██▌       | 18/69 [10:11<19:16, 22.68s/it]Fetching 69 files:  28%|██▊       | 19/69 [10:40<20:21, 24.42s/it]Fetching 69 files:  29%|██▉       | 20/69 [10:50<16:27, 20.15s/it]Fetching 69 files:  30%|███       | 21/69 [12:23<33:39, 42.07s/it]Fetching 69 files:  32%|███▏      | 22/69 [14:58<59:29, 75.94s/it]Fetching 69 files:  33%|███▎      | 23/69 [15:14<44:27, 57.99s/it]Fetching 69 files:  35%|███▍      | 24/69 [15:22<32:13, 42.97s/it]Fetching 69 files:  36%|███▌      | 25/69 [15:28<23:17, 31.77s/it]Fetching 69 files:  39%|███▉      | 27/69 [15:34<12:59, 18.55s/it]Fetching 69 files:  41%|████      | 28/69 [15:45<11:23, 16.68s/it]Fetching 69 files:  42%|████▏     | 29/69 [15:53<09:35, 14.39s/it]Fetching 69 files:  43%|████▎     | 30/69 [16:22<12:01, 18.50s/it]Fetching 69 files:  45%|████▍     | 31/69 [21:17<1:00:35, 95.66s/it]/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 4806.80 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x22B-Instruct-v0.1/blobs only has 195.59 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 4806.80 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x22B-Instruct-v0.1/blobs only has 195.42 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 4806.80 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x22B-Instruct-v0.1/blobs only has 195.56 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 4806.80 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x22B-Instruct-v0.1/blobs only has 197.67 MB free disk space.
+  warnings.warn(
+Fetching 69 files:  49%|████▉     | 34/69 [21:17<25:24, 43.55s/it]  /Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 4806.80 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x22B-Instruct-v0.1/blobs only has 228.43 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 4806.80 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x22B-Instruct-v0.1/blobs only has 228.48 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 4806.80 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x22B-Instruct-v0.1/blobs only has 234.38 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 4806.80 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x22B-Instruct-v0.1/blobs only has 234.40 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 4806.80 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x22B-Instruct-v0.1/blobs only has 235.09 MB free disk space.
+  warnings.warn(
+Fetching 69 files:  52%|█████▏    | 36/69 [26:03<23:53, 43.44s/it]
+Traceback (most recent call last):
+  File "/Users/metadusa/tmig-full/venvs/hf/bin/hf", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/hf.py", line 133, in main
+    app()
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1631, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1552, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/_cli_utils.py", line 131, in invoke
+    return super().invoke(ctx)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 2032, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1415, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 910, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/_framework.py", line 365, in handler
+    return func(**call_kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 228, in download
+    _print_result(run_download())
+                  ^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 187, in run_download
+    return snapshot_download(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 529, in snapshot_download
+    hf_thread_map(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 509, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1035, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1257, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1980, in _download_to_tmp_and_move
+    xet_get(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 578, in xet_get
+    with session.new_file_download_group(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Task error: File reconstruction error: IO Error: No space left on device (os error 28)
+Fetching 36 files:   0%|          | 0/36 [00:00<?, ?it/s]/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 12134.47 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x7B-Instruct-v0.1/blobs only has 3972.18 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 12134.47 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x7B-Instruct-v0.1/blobs only has 3972.19 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 12134.47 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x7B-Instruct-v0.1/blobs only has 3972.25 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 12134.47 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x7B-Instruct-v0.1/blobs only has 3972.24 MB free disk space.
+  warnings.warn(
+Fetching 36 files:   3%|▎         | 1/36 [00:00<00:05,  6.82it/s]/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 12134.47 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x7B-Instruct-v0.1/blobs only has 3978.35 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 12134.47 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x7B-Instruct-v0.1/blobs only has 3978.92 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 12134.47 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x7B-Instruct-v0.1/blobs only has 3978.93 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 12134.47 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--mistralai--Mixtral-8x7B-Instruct-v0.1/blobs only has 3979.30 MB free disk space.
+  warnings.warn(
+Fetching 36 files:   8%|▊         | 3/36 [05:18<58:24, 106.18s/it]
+Traceback (most recent call last):
+  File "/Users/metadusa/tmig-full/venvs/hf/bin/hf", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/hf.py", line 133, in main
+    app()
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1631, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1552, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/_cli_utils.py", line 131, in invoke
+    return super().invoke(ctx)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 2032, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1415, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 910, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/_framework.py", line 365, in handler
+    return func(**call_kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 228, in download
+    _print_result(run_download())
+                  ^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 187, in run_download
+    return snapshot_download(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 529, in snapshot_download
+    hf_thread_map(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 509, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1035, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1257, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1980, in _download_to_tmp_and_move
+    xet_get(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 578, in xet_get
+    with session.new_file_download_group(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Task error: File reconstruction error: IO Error: No space left on device (os error 28)
+Fetching 20 files:   0%|          | 0/20 [00:00<?, ?it/s]Fetching 20 files:   5%|▌         | 1/20 [00:00<00:02,  6.91it/s]Still waiting to acquire lock on /Users/metadusa/.cache/huggingface/hub/.locks/models--nomic-ai--nomic-embed-text-v1.5/b4342336debaea79de872370664b0aaeb67dea4605513d00ee236ea871a81f27.lock (elapsed: 10.0 seconds)
+Fetching 20 files:  35%|███▌      | 7/20 [00:12<00:24,  1.88s/it]Fetching 20 files:  40%|████      | 8/20 [00:13<00:20,  1.70s/it]Fetching 20 files:  45%|████▌     | 9/20 [00:14<00:17,  1.61s/it]Fetching 20 files:  50%|█████     | 10/20 [00:14<00:12,  1.30s/it]Fetching 20 files:  55%|█████▌    | 11/20 [00:15<00:09,  1.04s/it]Fetching 20 files:  60%|██████    | 12/20 [00:15<00:06,  1.23it/s]Fetching 20 files:  65%|██████▌   | 13/20 [00:15<00:04,  1.55it/s]Fetching 20 files:  70%|███████   | 14/20 [00:15<00:03,  1.99it/s]Fetching 20 files:  75%|███████▌  | 15/20 [00:16<00:02,  2.14it/s]Fetching 20 files:  80%|████████  | 16/20 [00:17<00:02,  1.36it/s]Fetching 20 files:  90%|█████████ | 18/20 [00:18<00:01,  1.76it/s]Fetching 20 files:  95%|█████████▌| 19/20 [00:19<00:00,  1.51it/s]Fetching 20 files: 100%|██████████| 20/20 [00:19<00:00,  1.78it/s]Fetching 20 files: 100%|██████████| 20/20 [00:19<00:00,  1.03it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--nomic-ai--nomic-embed-text-v1.5/snapshots/e9b6763023c676ca8431644204f50c2b100d9aab
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:00,  6.33it/s]Fetching 7 files:  71%|███████▏  | 5/7 [00:01<00:00,  3.39it/s]Fetching 7 files:  86%|████████▌ | 6/7 [00:01<00:00,  3.60it/s]Fetching 7 files: 100%|██████████| 7/7 [00:02<00:00,  3.24it/s]Fetching 7 files: 100%|██████████| 7/7 [00:02<00:00,  3.40it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--nvidia--segformer-b0-finetuned-ade-512-512/snapshots/489d5cd81a0b59fab9b7ea758d3548ebe99677da
+Fetching 26 files:   0%|          | 0/26 [00:00<?, ?it/s]Fetching 26 files:   4%|▍         | 1/26 [00:00<00:03,  7.47it/s]Fetching 26 files:  19%|█▉        | 5/26 [00:00<00:01, 19.17it/s]Fetching 26 files:  27%|██▋       | 7/26 [00:09<00:34,  1.83s/it]Fetching 26 files:  35%|███▍      | 9/26 [00:10<00:22,  1.35s/it]Fetching 26 files:  38%|███▊      | 10/26 [00:11<00:19,  1.22s/it]No local file found. Retrying..
+'[Errno 8] nodename nor servname provided, or not known' thrown while requesting HEAD https://huggingface.co/openai-community/gpt2/resolve/607a30d783dfa663caf39e06633721c8d4cfcd7e/onnx/tokenizer.json
+Retrying in 1s [Retry 1/5].
+'[Errno 8] nodename nor servname provided, or not known' thrown while requesting HEAD https://huggingface.co/openai-community/gpt2/resolve/607a30d783dfa663caf39e06633721c8d4cfcd7e/onnx/tokenizer.json
+Retrying in 2s [Retry 2/5].
+'[Errno 8] nodename nor servname provided, or not known' thrown while requesting HEAD https://huggingface.co/openai-community/gpt2/resolve/607a30d783dfa663caf39e06633721c8d4cfcd7e/onnx/tokenizer.json
+Retrying in 4s [Retry 3/5].
+'[Errno 8] nodename nor servname provided, or not known' thrown while requesting HEAD https://huggingface.co/openai-community/gpt2/resolve/607a30d783dfa663caf39e06633721c8d4cfcd7e/onnx/tokenizer.json
+Retrying in 8s [Retry 4/5].
+Fetching 26 files:  42%|████▏     | 11/26 [00:36<01:38,  6.59s/it]Fetching 26 files:  46%|████▌     | 12/26 [00:36<01:10,  5.04s/it]Fetching 26 files:  50%|█████     | 13/26 [00:37<00:49,  3.80s/it]Fetching 26 files:  54%|█████▍    | 14/26 [01:07<02:10, 10.86s/it]Fetching 26 files:  58%|█████▊    | 15/26 [01:09<01:31,  8.33s/it]Fetching 26 files:  62%|██████▏   | 16/26 [01:16<01:20,  8.01s/it]Fetching 26 files:  65%|██████▌   | 17/26 [01:17<00:53,  5.94s/it]Fetching 26 files:  69%|██████▉   | 18/26 [01:18<00:35,  4.50s/it]Fetching 26 files:  73%|███████▎  | 19/26 [01:18<00:23,  3.32s/it]Fetching 26 files:  77%|███████▋  | 20/26 [01:22<00:20,  3.47s/it]Fetching 26 files:  81%|████████  | 21/26 [01:23<00:14,  2.91s/it]Fetching 26 files:  85%|████████▍ | 22/26 [01:28<00:13,  3.25s/it]Fetching 26 files:  88%|████████▊ | 23/26 [01:28<00:07,  2.35s/it]Fetching 26 files:  92%|█████████▏| 24/26 [01:29<00:04,  2.05s/it]Fetching 26 files:  96%|█████████▌| 25/26 [01:32<00:02,  2.42s/it]Fetching 26 files: 100%|██████████| 26/26 [01:41<00:00,  4.17s/it]Fetching 26 files: 100%|██████████| 26/26 [01:41<00:00,  3.89s/it]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--openai-community--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]Fetching 12 files:   8%|▊         | 1/12 [00:00<00:01,  6.97it/s]Fetching 12 files:  58%|█████▊    | 7/12 [00:00<00:00, 23.08it/s]Fetching 12 files:  83%|████████▎ | 10/12 [00:07<00:01,  1.01it/s]Fetching 12 files: 100%|██████████| 12/12 [00:19<00:00,  2.32s/it]Fetching 12 files: 100%|██████████| 12/12 [00:19<00:00,  1.63s/it]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--openai--clip-vit-base-patch32/snapshots/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268
+Fetching 21 files:   0%|          | 0/21 [00:00<?, ?it/s]/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 4993.45 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--openai--whisper-large-v3/blobs only has 1076.22 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 6174.01 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--openai--whisper-large-v3/blobs only has 1076.22 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 1180.66 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--openai--whisper-large-v3/blobs only has 1076.22 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 3087.39 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--openai--whisper-large-v3/blobs only has 1076.22 MB free disk space.
+  warnings.warn(
+Fetching 21 files:  38%|███▊      | 8/21 [00:00<00:00, 52.02it/s]/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 4993.68 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--openai--whisper-large-v3/blobs only has 1074.03 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 1180.73 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--openai--whisper-large-v3/blobs only has 1073.70 MB free disk space.
+  warnings.warn(
+Fetching 21 files:  71%|███████▏  | 15/21 [00:20<00:00, 52.02it/s]Fetching 21 files:  71%|███████▏  | 15/21 [00:51<00:20,  3.45s/it]
+Traceback (most recent call last):
+  File "/Users/metadusa/tmig-full/venvs/hf/bin/hf", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/hf.py", line 133, in main
+    app()
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1631, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1552, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/_cli_utils.py", line 131, in invoke
+    return super().invoke(ctx)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 2032, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1415, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 910, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/_framework.py", line 365, in handler
+    return func(**call_kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 228, in download
+    _print_result(run_download())
+                  ^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 187, in run_download
+    return snapshot_download(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 529, in snapshot_download
+    hf_thread_map(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 509, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1035, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1257, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1980, in _download_to_tmp_and_move
+    xet_get(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 578, in xet_get
+    with session.new_file_download_group(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Task error: File reconstruction error: IO Error: No space left on device (os error 28)
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 1617.82 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--openai--whisper-large-v3-turbo/blobs only has 778.67 MB free disk space.
+  warnings.warn(
+Fetching 13 files:   8%|▊         | 1/13 [00:00<00:01,  7.00it/s]Fetching 13 files:  54%|█████▍    | 7/13 [00:00<00:00, 30.34it/s]Fetching 13 files:  85%|████████▍ | 11/13 [00:00<00:00, 31.10it/s]Fetching 13 files:  92%|█████████▏| 12/13 [00:11<00:00,  1.02it/s]
+Traceback (most recent call last):
+  File "/Users/metadusa/tmig-full/venvs/hf/bin/hf", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/hf.py", line 133, in main
+    app()
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1631, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1552, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/_cli_utils.py", line 131, in invoke
+    return super().invoke(ctx)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 2032, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1415, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 910, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/_framework.py", line 365, in handler
+    return func(**call_kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 228, in download
+    _print_result(run_download())
+                  ^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 187, in run_download
+    return snapshot_download(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 529, in snapshot_download
+    hf_thread_map(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 509, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1035, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1257, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1980, in _download_to_tmp_and_move
+    xet_get(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 578, in xet_get
+    with session.new_file_download_group(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Task error: File reconstruction error: IO Error: No space left on device (os error 28)
+Fetching 36 files:   0%|          | 0/36 [00:00<?, ?it/s]/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 1216.06 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--runwayml--stable-diffusion-v1-5/blobs only has 689.57 MB free disk space.
+  warnings.warn(
+Fetching 36 files:  22%|██▏       | 8/36 [00:00<00:00, 42.19it/s]/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 3438.35 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--runwayml--stable-diffusion-v1-5/blobs only has 687.75 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 1719.33 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--runwayml--stable-diffusion-v1-5/blobs only has 687.73 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 1719.13 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--runwayml--stable-diffusion-v1-5/blobs only has 563.84 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 1719.13 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--runwayml--stable-diffusion-v1-5/blobs only has 563.83 MB free disk space.
+  warnings.warn(
+Fetching 36 files:  39%|███▉      | 14/36 [00:20<00:00, 42.19it/s]Fetching 36 files:  39%|███▉      | 14/36 [01:27<02:18,  6.28s/it]
+Traceback (most recent call last):
+  File "/Users/metadusa/tmig-full/venvs/hf/bin/hf", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/hf.py", line 133, in main
+    app()
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1631, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1552, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/_cli_utils.py", line 131, in invoke
+    return super().invoke(ctx)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 2032, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1415, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 910, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/_framework.py", line 365, in handler
+    return func(**call_kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 228, in download
+    _print_result(run_download())
+                  ^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 187, in run_download
+    return snapshot_download(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 529, in snapshot_download
+    hf_thread_map(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 509, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1035, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1257, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1980, in _download_to_tmp_and_move
+    xet_get(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 578, in xet_get
+    with session.new_file_download_group(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Task error: File reconstruction error: IO Error: No space left on device (os error 28)
+Fetching 57 files:   0%|          | 0/57 [00:00<?, ?it/s]Fetching 57 files:   2%|▏         | 1/57 [00:00<00:08,  6.89it/s]/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 6938.08 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs only has 1886.08 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 6938.08 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs only has 1885.29 MB free disk space.
+  warnings.warn(
+Fetching 57 files:  14%|█▍        | 8/57 [00:00<00:01, 28.01it/s]Fetching 57 files:  19%|█▉        | 11/57 [00:10<00:54,  1.19s/it]/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 2778.66 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs only has 2515.64 MB free disk space.
+  warnings.warn(
+/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py:762: UserWarning: Not enough free disk space to download the file. The expected file size is: 2778.66 MB. The target location /Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs only has 2515.63 MB free disk space.
+  warnings.warn(
+Could not set the permissions on the file '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/80269e53c9d09b1f19c6227cf903a5032878ed31ea8b49b8ecfa7808b81568d9.54b7ef21.incomplete'. Error: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/80269e53c9d09b1f19c6227cf903a5032878ed31ea8b49b8ecfa7808b81568d9.54b7ef21.incomplete'.
+Continuing without setting permissions.
+Fetching 57 files:  21%|██        | 12/57 [00:30<00:53,  1.19s/it]Could not set the permissions on the file '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/ab5cf7327374d8c984f4e963564a329f92c9dad08dac9eee9b8dca86b912f1c9.198020d9.incomplete'. Error: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/ab5cf7327374d8c984f4e963564a329f92c9dad08dac9eee9b8dca86b912f1c9.198020d9.incomplete'.
+Continuing without setting permissions.
+Could not set the permissions on the file '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/bbc78395c8cee553a17380e9b1a9a47da926c98731ba31306032d7d45fadb29b.e7ad0d2a.incomplete'. Error: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/bbc78395c8cee553a17380e9b1a9a47da926c98731ba31306032d7d45fadb29b.e7ad0d2a.incomplete'.
+Continuing without setting permissions.
+Could not set the permissions on the file '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/5c3d6454dd2d23414b56aa1b5858a72487a656937847b6fea8d0606d7a42cdbc.c3728ca0.incomplete'. Error: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/5c3d6454dd2d23414b56aa1b5858a72487a656937847b6fea8d0606d7a42cdbc.c3728ca0.incomplete'.
+Continuing without setting permissions.
+Could not set the permissions on the file '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/e27bafa0b3029ad637ef3ace24ce1efe85b8d0dbd22e03a2e70bda6fc88963a1.8b32cc0b.incomplete'. Error: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/e27bafa0b3029ad637ef3ace24ce1efe85b8d0dbd22e03a2e70bda6fc88963a1.8b32cc0b.incomplete'.
+Continuing without setting permissions.
+Could not set the permissions on the file '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/ec310df2af79c318e24d20511b601a591ca8cd4f1fce1d8dff822a356bcdb1f4.a153f9ae.incomplete'. Error: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/ec310df2af79c318e24d20511b601a591ca8cd4f1fce1d8dff822a356bcdb1f4.a153f9ae.incomplete'.
+Continuing without setting permissions.
+Could not set the permissions on the file '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/dc025fc8d206bafd2ebf2f2cbf0b6f791c314612b5613c3737bf368236ac657f.23cda7f8.incomplete'. Error: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/dc025fc8d206bafd2ebf2f2cbf0b6f791c314612b5613c3737bf368236ac657f.23cda7f8.incomplete'.
+Continuing without setting permissions.
+Could not set the permissions on the file '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/31e35c80fc4829d14f90153f4c74cd59c90b779f6afe05a74cd6120b893f7e5b.58d5f56f.incomplete'. Error: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/31e35c80fc4829d14f90153f4c74cd59c90b779f6afe05a74cd6120b893f7e5b.58d5f56f.incomplete'.
+Continuing without setting permissions.
+Could not set the permissions on the file '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/e6bb9ea85bbf7bf6478a7c6d18b71246f22e95d41bcdd80ed40aa212c33cfeff.9d5599cf.incomplete'. Error: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/e6bb9ea85bbf7bf6478a7c6d18b71246f22e95d41bcdd80ed40aa212c33cfeff.9d5599cf.incomplete'.
+Continuing without setting permissions.
+Fetching 57 files:  21%|██        | 12/57 [02:53<10:50, 14.46s/it]
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/shutil.py", line 847, in move
+    os.rename(src, real_dst)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/80269e53c9d09b1f19c6227cf903a5032878ed31ea8b49b8ecfa7808b81568d9.54b7ef21.incomplete' -> '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/80269e53c9d09b1f19c6227cf903a5032878ed31ea8b49b8ecfa7808b81568d9'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2065, in _copy_no_matter_what
+    shutil.copy2(src, dst)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/shutil.py", line 475, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/80269e53c9d09b1f19c6227cf903a5032878ed31ea8b49b8ecfa7808b81568d9.54b7ef21.incomplete'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/metadusa/tmig-full/venvs/hf/bin/hf", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/hf.py", line 133, in main
+    app()
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1631, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1552, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/_cli_utils.py", line 131, in invoke
+    return super().invoke(ctx)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 2032, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1415, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 910, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/_framework.py", line 365, in handler
+    return func(**call_kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 228, in download
+    _print_result(run_download())
+                  ^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 187, in run_download
+    return snapshot_download(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 529, in snapshot_download
+    hf_thread_map(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 509, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1035, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1257, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2005, in _download_to_tmp_and_move
+    _chmod_and_move(tmp_path, destination_path)
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2054, in _chmod_and_move
+    shutil.move(str(src), str(dst), copy_function=_copy_no_matter_what)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/shutil.py", line 867, in move
+    copy_function(src, real_dst)
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2068, in _copy_no_matter_what
+    shutil.copyfile(src, dst)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/blobs/80269e53c9d09b1f19c6227cf903a5032878ed31ea8b49b8ecfa7808b81568d9.54b7ef21.incomplete'
+Fetching 19 files:   0%|          | 0/19 [00:00<?, ?it/s]Fetching 19 files:   5%|▌         | 1/19 [00:00<00:03,  5.44it/s]Fetching 19 files:  37%|███▋      | 7/19 [00:00<00:00, 24.23it/s]Fetching 19 files:  53%|█████▎    | 10/19 [00:00<00:00, 19.92it/s]Fetching 19 files:  58%|█████▊    | 11/19 [00:20<00:00, 19.92it/s]Fetching 19 files:  63%|██████▎   | 12/19 [00:57<00:53,  7.71s/it]Fetching 19 files:  68%|██████▊   | 13/19 [02:00<01:40, 16.70s/it]Fetching 19 files:  74%|███████▎  | 14/19 [02:04<01:11, 14.38s/it]Fetching 19 files:  74%|███████▎  | 14/19 [02:20<01:11, 14.38s/it]Fetching 19 files:  79%|███████▉  | 15/19 [04:20<02:40, 40.12s/it]Could not set the permissions on the file '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-video-diffusion-img2vid-xt/blobs/99aa889bf6d1ca28e026755b83ba37e3072ad79b45dd4c94fae14bee7482263b.c076721a.incomplete'. Error: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-video-diffusion-img2vid-xt/blobs/tmp_205f75ba-827a-4ebc-9771-63b012fcf9b9'.
+Continuing without setting permissions.
+Could not set the permissions on the file '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-video-diffusion-img2vid-xt/blobs/b2652c23d64a1da5f14d55011b9b6dce55f2e72e395719f1cd1f8a079b00a451.9becdcc4.incomplete'. Error: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-video-diffusion-img2vid-xt/blobs/tmp_5da28768-8a58-4787-8cd4-83496e7e5f53'.
+Continuing without setting permissions.
+Could not set the permissions on the file '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-video-diffusion-img2vid-xt/blobs/ed1e5af7b4042ca30ec29999a4a5cfcac90b7fb610fd05ace834f2dcbb763eab.9f338356.incomplete'. Error: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-video-diffusion-img2vid-xt/blobs/tmp_106be098-8b8a-4946-9ae8-2ef718044503'.
+Continuing without setting permissions.
+Could not set the permissions on the file '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-video-diffusion-img2vid-xt/blobs/7783d82729af04f26ded4641a5952617fe331fc46add332fb9e47674fecc6ad7.7246a6bf.incomplete'. Error: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-video-diffusion-img2vid-xt/blobs/tmp_5a8eebf8-3858-4dad-9487-7542f090290d'.
+Continuing without setting permissions.
+Fetching 19 files:  79%|███████▉  | 15/19 [08:22<02:13, 33.50s/it]
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/shutil.py", line 847, in move
+    os.rename(src, real_dst)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-video-diffusion-img2vid-xt/blobs/99aa889bf6d1ca28e026755b83ba37e3072ad79b45dd4c94fae14bee7482263b.c076721a.incomplete' -> '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-video-diffusion-img2vid-xt/blobs/99aa889bf6d1ca28e026755b83ba37e3072ad79b45dd4c94fae14bee7482263b'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2065, in _copy_no_matter_what
+    shutil.copy2(src, dst)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/shutil.py", line 475, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-video-diffusion-img2vid-xt/blobs/99aa889bf6d1ca28e026755b83ba37e3072ad79b45dd4c94fae14bee7482263b.c076721a.incomplete'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/metadusa/tmig-full/venvs/hf/bin/hf", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/hf.py", line 133, in main
+    app()
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1631, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1552, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/_cli_utils.py", line 131, in invoke
+    return super().invoke(ctx)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 2032, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 1415, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/click/core.py", line 910, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/_framework.py", line 365, in handler
+    return func(**call_kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 228, in download
+    _print_result(run_download())
+                  ^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 187, in run_download
+    return snapshot_download(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 529, in snapshot_download
+    hf_thread_map(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 509, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1035, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1257, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2005, in _download_to_tmp_and_move
+    _chmod_and_move(tmp_path, destination_path)
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2054, in _chmod_and_move
+    shutil.move(str(src), str(dst), copy_function=_copy_no_matter_what)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/shutil.py", line 867, in move
+    copy_function(src, real_dst)
+  File "/Users/metadusa/tmig-full/venvs/hf/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2068, in _copy_no_matter_what
+    shutil.copyfile(src, dst)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/metadusa/.cache/huggingface/hub/models--stabilityai--stable-video-diffusion-img2vid-xt/blobs/99aa889bf6d1ca28e026755b83ba37e3072ad79b45dd4c94fae14bee7482263b.c076721a.incomplete'
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:   4%|▍         | 1/23 [00:00<00:03,  6.11it/s]Fetching 23 files:  26%|██▌       | 6/23 [00:00<00:00, 21.35it/s]Fetching 23 files:  39%|███▉      | 9/23 [00:00<00:01, 13.03it/s]Fetching 23 files:  48%|████▊     | 11/23 [00:02<00:03,  3.68it/s]Fetching 23 files:  57%|█████▋    | 13/23 [00:02<00:03,  3.22it/s]Fetching 23 files:  65%|██████▌   | 15/23 [00:03<00:02,  3.93it/s]Fetching 23 files:  74%|███████▍  | 17/23 [00:03<00:01,  4.78it/s]Fetching 23 files:  78%|███████▊  | 18/23 [00:03<00:01,  4.63it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:04<00:01,  2.46it/s]Fetching 23 files:  87%|████████▋ | 20/23 [00:05<00:01,  1.77it/s]Fetching 23 files:  91%|█████████▏| 21/23 [00:06<00:01,  1.82it/s]Fetching 23 files:  96%|█████████▌| 22/23 [00:07<00:00,  1.40it/s]Fetching 23 files: 100%|██████████| 23/23 [00:08<00:00,  1.15it/s]Fetching 23 files: 100%|██████████| 23/23 [00:08<00:00,  2.57it/s]
+[32m✓ Downloaded[0m
+  path: /Users/metadusa/.cache/huggingface/hub/models--thenlper--gte-small/snapshots/17e1f347d17fe144873b1201da91788898c639cd
+0 pip deps, 68 models
+>> hf download BAAI/bge-small-en-v1.5
+>> hf download HuggingFaceTB/SmolLM2-1.7B-Instruct
+>> hf download Qwen/Qwen2-VL-2B-Instruct
+>> hf download Qwen/Qwen2.5-1.5B
+>> hf download Salesforce/blip-image-captioning-base
+>> hf download THUDM/CogVideoX-2b
+>> hf download black-forest-labs/FLUX.1-schnell
+>> hf download deepseek-ai/deepseek-llm-7b-base
+>> hf download facebook/convnext-tiny-224
+>> hf download facebook/mask2former-swin-small-coco-instance
+>> hf download facebook/musicgen-small
+>> hf download facebook/sam2-hiera-large
+>> hf download facebook/wav2vec2-base-960h
+>> hf download google-t5/t5-small
+>> hf download google/gemma-2-2b-it
+>> hf download google/mobilenet_v2_1.0_224
+>> hf download google/siglip-base-patch16-224
+>> hf download google/switch-base-8
+>> hf download google/vit-base-patch16-224
+>> hf download hpcai-tech/OpenSora-STDiT-v3
+>> hf download intfloat/e5-small-v2
+>> hf download llava-hf/llava-1.5-7b-hf
+>> hf download lllyasviel/control_v11p_sd15_canny
+>> hf download meta-llama/Llama-3.1-8B
+>> hf download meta-llama/Llama-3.2-1B
+>> hf download microsoft/Phi-3.5-mini-instruct
+>> hf download microsoft/resnet-50
+>> hf download microsoft/speecht5_tts
+>> hf download microsoft/swin-tiny-patch4-window7-224
+>> hf download mistralai/Mistral-7B-Instruct-v0.3
+>> hf download mistralai/Mixtral-8x22B-Instruct-v0.1
+>> hf download mistralai/Mixtral-8x7B-Instruct-v0.1
+>> hf download nomic-ai/nomic-embed-text-v1.5
+>> hf download nvidia/segformer-b0-finetuned-ade-512-512
+>> hf download openai-community/gpt2
+>> hf download openai/clip-vit-base-patch32
+>> hf download openai/whisper-large-v3
+>> hf download openai/whisper-large-v3-turbo
+>> hf download runwayml/stable-diffusion-v1-5
+>> hf download stabilityai/stable-diffusion-xl-base-1.0
+>> hf download stabilityai/stable-video-diffusion-img2vid-xt
+>> hf download thenlper/gte-small

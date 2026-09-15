@@ -1,0 +1,11 @@
+name	class	hops_per_bit	dwell_us	pattern	use_case
+Bluetooth Classic FHSS	slow	1	625	79 channels × 1 MHz BT clock	consumer wireless
+Bluetooth LE Adaptive FH	slow	1	625	37 channels, channel map update	BLE
+HomeRF SWAP	slow	50	400	75 × 1 MHz pseudorandom	legacy WLAN
+802.11 FHSS	slow	1	20000	26 channels × 1 MHz in US	legacy Wi-Fi
+Zigbee (DSSS not FH)	n/a	n/a	n/a	direct sequence	mesh
+LoRa FHSS region	slow	0	20000	sub-GHz hopping	LPWAN
+Military JTIDS / Link-16	fast	77	6.4	51 frequencies, 77 hops/s	fighter datalink
+Have Quick	fast	—	—	20 000 hops/s UHF	USAF
+MIL-STD-188-141	fast	—	—	ALEP/ALE	HF
+SINCGARS	fast	—	—	2320 channels, 100 hops/s	ground radio

@@ -1,0 +1,16 @@
+jurisdiction	domain	instrument	year	notes
+EU	data protection	GDPR	2016	extraterritorial
+EU	AI regulation	AI Act	2024	risk-tier framework
+US	IP	DMCA	1998	DMCA takedowns
+US	cybersecurity	NIST CSF 2.0	2024	voluntary
+US	export controls	EAR / ITAR	ongoing	dual-use
+CN	cybersec	Cybersecurity Law	2017	sovereignty
+UK	data protection	UK GDPR	2018	post-brexit
+JP	AI guidelines	AI Guidelines	2024	soft law
+IN	data protection	DPDP Act	2023	consent-based
+BR	data protection	LGPD	2018	GDPR-like
+RU	sovereignty	Data Localisation	2015	physical servers
+UN	treaty	ICCPR	1966	human rights
+UN	treaty	Budapest Convention	2001	cybercrime
+ISO	standard	27001	2022	infosec management
+ISO	standard	42001	2023	AI management

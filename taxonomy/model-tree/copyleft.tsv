@@ -1,0 +1,54 @@
+leaf	license	copyleft	commercial	source	notes
+Base	apache-2.0	no	yes	upstream	typically Apache-2.0
+Adapters	apache-2.0	no	yes	upstream	inherits base license
+Finetunes	varies	varies	varies	upstream	inherits base license
+Quantizations	inherits	inherit	inherit	upstream	quantized weights same as base
+Merges	inherits	inherit	inherit	upstream	merged weights honor all inputs
+llama.cpp	MIT	no	yes	github:ggml-org/llama.cpp
+LM Studio	proprietary	—	varies	lmstudio.ai
+Jan	AGPL-3.0	yes	yes	github:janhq/jan
+Draw Things	proprietary	—	varies	drawthings.ai
+DiffusionBee	MIT	no	yes	github:divamgupta/diffusionbee-stable-diffusion-ui
+JoyFusion	proprietary	—	varies	joyfusion
+vLLM	Apache-2.0	no	yes	github:vllm-project/vllm
+Ollama	MIT	no	yes	github:ollama/ollama
+MLX LM	MIT	no	yes	github:ml-explore/mlx-lm
+Docker Model Runner	Apache-2.0	no	yes	docker
+Lemonade	MIT	no	yes	github:lemonade-sdk/lemonade
+SGLang	Apache-2.0	no	yes	github:sgl-project/sglang
+Unsloth Desktop	Apache-2.0	no	yes	github:unslothai/unsloth
+Pi	Apache-2.0	no	yes	pi-inflection
+Hermes Agent	Apache-2.0	no	yes	NousResearch
+Atomic Chat	Apache-2.0	no	yes	atomic-chat
+OpenClaw	Apache-2.0	no	yes	openclaw
+Groq	proprietary	—	varies	groq.com
+Novita	proprietary	—	varies	novita.ai
+Cerebras	proprietary	—	varies	cerebras.net
+Nscale	proprietary	—	varies	nscale.com
+fal	proprietary	—	varies	fal.ai
+Together AI	proprietary	—	varies	together.ai
+Fireworks	proprietary	—	varies	fireworks.ai
+Featherless AI	proprietary	—	varies	featherless.ai
+Zai	proprietary	—	varies	z.ai
+Replicate	proprietary	—	varies	replicate.com
+Cohere	proprietary	—	varies	cohere.com
+Scaleway	proprietary	—	varies	scaleway.com
+Public AI	unknown	—	varies	publicai
+Baseten	proprietary	—	varies	baseten.co
+OVHcloud AI Endpoints	proprietary	—	varies	ovhcloud.com
+HF Inference API	proprietary	—	varies	huggingface.co
+WaveSpeed	proprietary	—	varies	wavespeed.ai
+DeepInfra	proprietary	—	varies	deepinfra.com
+Inference Endpoints	proprietary	—	varies	huggingface.co
+Microsoft Foundry	proprietary	—	varies	microsoft.com
+Amazon SageMaker AI	proprietary	—	varies	aws.amazon.com
+text-generation-inference	Apache-2.0	no	yes	github:huggingface/text-generation-inference
+text-embeddings-inference	Apache-2.0	no	yes	github:huggingface/text-embeddings-inference
+custom_code	user-supplied	—	varies	user
+4-bit precision	Apache-2.0	no	yes	github:bitsandbytes-foundation/bitsandbytes
+8-bit precision	Apache-2.0	no	yes	github:bitsandbytes-foundation/bitsandbytes
+Merge	Apache-2.0	no	yes	github:arcee-ai/mergekit
+Mixture of Experts	Apache-2.0	no	yes	architecture pattern
+Carbon Emissions	CC-BY-4.0	no	yes	metric
+Eval Results	Apache-2.0	no	yes	benchmark output
+Eval Results (legacy)	Apache-2.0	no	yes	deprecated

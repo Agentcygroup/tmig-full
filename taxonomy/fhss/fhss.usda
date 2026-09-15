@@ -1,0 +1,265 @@
+#usda 1.0
+(
+    defaultPrim = "FHSS"
+    upAxis = "Y"
+)
+
+def Scope "FHSS"
+{
+    def "Regions"
+    {
+        def Xform "US_FCC_902_928"
+        {
+            custom string band_mhz = "902-928"
+            custom string notes = "Part 15.247 900 MHz ISM"
+            custom string region = "US"
+            custom string regulator = "FCC"
+        }
+
+        def Xform "US_FCC_2400_2483_5"
+        {
+            custom string band_mhz = "2400-2483.5"
+            custom string notes = "Part 15.247 2.4 GHz ISM"
+            custom string region = "US"
+            custom string regulator = "FCC"
+        }
+
+        def Xform "US_FCC_5725_5850"
+        {
+            custom string band_mhz = "5725-5850"
+            custom string notes = "Part 15.247 5.8 GHz ISM"
+            custom string region = "US"
+            custom string regulator = "FCC"
+        }
+
+        def Xform "EU_ETSI_863_870"
+        {
+            custom string band_mhz = "863-870"
+            custom string notes = "EN 300 220 short-range"
+            custom string region = "EU"
+            custom string regulator = "ETSI"
+        }
+
+        def Xform "EU_ETSI_2400_2483_5"
+        {
+            custom string band_mhz = "2400-2483.5"
+            custom string notes = "EN 300 328 wideband"
+            custom string region = "EU"
+            custom string regulator = "ETSI"
+        }
+
+        def Xform "EU_ETSI_5150_5350"
+        {
+            custom string band_mhz = "5150-5350"
+            custom string notes = "EN 301 893 5 GHz RLAN"
+            custom string region = "EU"
+            custom string regulator = "ETSI"
+        }
+
+        def Xform "EU_ETSI_5470_5725"
+        {
+            custom string band_mhz = "5470-5725"
+            custom string notes = "EN 301 893 5 GHz RLAN"
+            custom string region = "EU"
+            custom string regulator = "ETSI"
+        }
+
+        def Xform "UK_Ofcom_2400_2483_5"
+        {
+            custom string band_mhz = "2400-2483.5"
+            custom string notes = "UK IR 2030"
+            custom string region = "UK"
+            custom string regulator = "Ofcom"
+        }
+
+        def Xform "JP_MIC_2400_2483_5"
+        {
+            custom string band_mhz = "2400-2483.5"
+            custom string notes = "ARIB STD-T66"
+            custom string region = "JP"
+            custom string regulator = "MIC"
+        }
+
+        def Xform "JP_MIC_5150_5350"
+        {
+            custom string band_mhz = "5150-5350"
+            custom string notes = "ARIB STD-T71"
+            custom string region = "JP"
+            custom string regulator = "MIC"
+        }
+
+        def Xform "JP_MIC_920_928"
+        {
+            custom string band_mhz = "920-928"
+            custom string notes = "ARIB STD-T108"
+            custom string region = "JP"
+            custom string regulator = "MIC"
+        }
+
+        def Xform "CN_MIIT_2400_2483_5"
+        {
+            custom string band_mhz = "2400-2483.5"
+            custom string notes = "SRRC"
+            custom string region = "CN"
+            custom string regulator = "MIIT"
+        }
+
+        def Xform "CN_MIIT_5725_5850"
+        {
+            custom string band_mhz = "5725-5850"
+            custom string notes = "SRRC"
+            custom string region = "CN"
+            custom string regulator = "MIIT"
+        }
+
+        def Xform "IN_WPC_865_867"
+        {
+            custom string band_mhz = "865-867"
+            custom string notes = "India short-range"
+            custom string region = "IN"
+            custom string regulator = "WPC"
+        }
+
+        def Xform "IN_WPC_2400_2483_5"
+        {
+            custom string band_mhz = "2400-2483.5"
+            custom string notes = "India WPC"
+            custom string region = "IN"
+            custom string regulator = "WPC"
+        }
+
+        def Xform "AU_ACMA_915_928"
+        {
+            custom string band_mhz = "915-928"
+            custom string notes = "LIPD Class Licence"
+            custom string region = "AU"
+            custom string regulator = "ACMA"
+        }
+
+        def Xform "BR_ANATEL_902_907_5_915_928"
+        {
+            custom string band_mhz = "902-907.5,915-928"
+            custom string notes = "Brazil ISM"
+            custom string region = "BR"
+            custom string regulator = "ANATEL"
+        }
+
+        def Xform "CA_ISED_902_928"
+        {
+            custom string band_mhz = "902-928"
+            custom string notes = "RSS-247"
+            custom string region = "CA"
+            custom string regulator = "ISED"
+        }
+
+        def Xform "CA_ISED_2400_2483_5"
+        {
+            custom string band_mhz = "2400-2483.5"
+            custom string notes = "RSS-247"
+            custom string region = "CA"
+            custom string regulator = "ISED"
+        }
+
+        def Xform "KR_RRA_2400_2483_5"
+        {
+            custom string band_mhz = "2400-2483.5"
+            custom string notes = "RRA Korea"
+            custom string region = "KR"
+            custom string regulator = "RRA"
+        }
+    }
+
+    def "Schemes"
+    {
+        def Xform "Bluetooth_Classic_FHSS"
+        {
+            custom string class = "slow"
+            custom string hops_per_bit = "1"
+            custom string name = "Bluetooth Classic FHSS"
+            custom string pattern = "79 channels × 1 MHz BT clock"
+            custom string use_case = "consumer wireless"
+        }
+
+        def Xform "Bluetooth_LE_Adaptive_FH"
+        {
+            custom string class = "slow"
+            custom string hops_per_bit = "1"
+            custom string name = "Bluetooth LE Adaptive FH"
+            custom string pattern = "37 channels, channel map update"
+            custom string use_case = "BLE"
+        }
+
+        def Xform "HomeRF_SWAP"
+        {
+            custom string class = "slow"
+            custom string hops_per_bit = "50"
+            custom string name = "HomeRF SWAP"
+            custom string pattern = "75 × 1 MHz pseudorandom"
+            custom string use_case = "legacy WLAN"
+        }
+
+        def Xform "v_802_11_FHSS"
+        {
+            custom string class = "slow"
+            custom string hops_per_bit = "1"
+            custom string name = "802.11 FHSS"
+            custom string pattern = "26 channels × 1 MHz in US"
+            custom string use_case = "legacy Wi-Fi"
+        }
+
+        def Xform "Zigbee__DSSS_not_FH_"
+        {
+            custom string class = "n/a"
+            custom string hops_per_bit = "n/a"
+            custom string name = "Zigbee (DSSS not FH)"
+            custom string pattern = "direct sequence"
+            custom string use_case = "mesh"
+        }
+
+        def Xform "LoRa_FHSS_region"
+        {
+            custom string class = "slow"
+            custom string hops_per_bit = "0"
+            custom string name = "LoRa FHSS region"
+            custom string pattern = "sub-GHz hopping"
+            custom string use_case = "LPWAN"
+        }
+
+        def Xform "Military_JTIDS___Link_16"
+        {
+            custom string class = "fast"
+            custom string hops_per_bit = "77"
+            custom string name = "Military JTIDS / Link-16"
+            custom string pattern = "51 frequencies, 77 hops/s"
+            custom string use_case = "fighter datalink"
+        }
+
+        def Xform "Have_Quick"
+        {
+            custom string class = "fast"
+            custom string hops_per_bit = "—"
+            custom string name = "Have Quick"
+            custom string pattern = "20 000 hops/s UHF"
+            custom string use_case = "USAF"
+        }
+
+        def Xform "MIL_STD_188_141"
+        {
+            custom string class = "fast"
+            custom string hops_per_bit = "—"
+            custom string name = "MIL-STD-188-141"
+            custom string pattern = "ALEP/ALE"
+            custom string use_case = "HF"
+        }
+
+        def Xform "SINCGARS"
+        {
+            custom string class = "fast"
+            custom string hops_per_bit = "—"
+            custom string name = "SINCGARS"
+            custom string pattern = "2320 channels, 100 hops/s"
+            custom string use_case = "ground radio"
+        }
+    }
+}
+

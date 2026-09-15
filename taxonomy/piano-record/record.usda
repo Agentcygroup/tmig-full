@@ -1,0 +1,641 @@
+#usda 1.0
+(
+    defaultPrim = "PianoRecord"
+    upAxis = "Y"
+)
+
+def Scope "PianoRecord"
+{
+    def Xform "Event"
+    {
+        custom int ageMax = 14
+        custom int ageMin = 6
+        custom string date = "2019-08-21"
+        custom int distance = 7
+        custom string event = "88 children play one piano simultaneously"
+        custom string inspiration = "Leonardo da Vinci 500th anniversary"
+        custom string location = "Birmingham ICC, UK"
+        custom int participants = 88
+        custom int previous = 21
+    }
+
+    def "Participants"
+    {
+        def Xform "Child_001"
+        {
+            custom int distance_m = 7
+            custom int index = 1
+            custom string task = "reinforcement-learning"
+        }
+
+        def Xform "Child_002"
+        {
+            custom int distance_m = 7
+            custom int index = 2
+            custom string task = "mask-generation"
+        }
+
+        def Xform "Child_003"
+        {
+            custom int distance_m = 7
+            custom int index = 3
+            custom string task = "any-to-any"
+        }
+
+        def Xform "Child_004"
+        {
+            custom int distance_m = 7
+            custom int index = 4
+            custom string task = "video-text-to-text"
+        }
+
+        def Xform "Child_005"
+        {
+            custom int distance_m = 7
+            custom int index = 5
+            custom string task = "robotics"
+        }
+
+        def Xform "Child_006"
+        {
+            custom int distance_m = 7
+            custom int index = 6
+            custom string task = "image-text-to-image"
+        }
+
+        def Xform "Child_007"
+        {
+            custom int distance_m = 7
+            custom int index = 7
+            custom string task = "zero-shot-classification"
+        }
+
+        def Xform "Child_008"
+        {
+            custom int distance_m = 7
+            custom int index = 8
+            custom string task = "time-series-forecasting"
+        }
+
+        def Xform "Child_009"
+        {
+            custom int distance_m = 7
+            custom int index = 9
+            custom string task = "cross-lingual-transfer"
+        }
+
+        def Xform "Child_010"
+        {
+            custom int distance_m = 7
+            custom int index = 10
+            custom string task = "image-to-text"
+        }
+
+        def Xform "Child_011"
+        {
+            custom int distance_m = 7
+            custom int index = 11
+            custom string task = "text-generation"
+        }
+
+        def Xform "Child_012"
+        {
+            custom int distance_m = 7
+            custom int index = 12
+            custom string task = "automatic-speech-recognition"
+        }
+
+        def Xform "Child_013"
+        {
+            custom int distance_m = 7
+            custom int index = 13
+            custom string task = "visual-document-retrieval"
+        }
+
+        def Xform "Child_014"
+        {
+            custom int distance_m = 7
+            custom int index = 14
+            custom string task = "graph-ml"
+        }
+
+        def Xform "Child_015"
+        {
+            custom int distance_m = 7
+            custom int index = 15
+            custom string task = "reinforcement-learning"
+        }
+
+        def Xform "Child_016"
+        {
+            custom int distance_m = 7
+            custom int index = 16
+            custom string task = "mask-generation"
+        }
+
+        def Xform "Child_017"
+        {
+            custom int distance_m = 7
+            custom int index = 17
+            custom string task = "any-to-any"
+        }
+
+        def Xform "Child_018"
+        {
+            custom int distance_m = 7
+            custom int index = 18
+            custom string task = "video-text-to-text"
+        }
+
+        def Xform "Child_019"
+        {
+            custom int distance_m = 7
+            custom int index = 19
+            custom string task = "robotics"
+        }
+
+        def Xform "Child_020"
+        {
+            custom int distance_m = 7
+            custom int index = 20
+            custom string task = "image-text-to-image"
+        }
+
+        def Xform "Child_021"
+        {
+            custom int distance_m = 7
+            custom int index = 21
+            custom string task = "zero-shot-classification"
+        }
+
+        def Xform "Child_022"
+        {
+            custom int distance_m = 7
+            custom int index = 22
+            custom string task = "time-series-forecasting"
+        }
+
+        def Xform "Child_023"
+        {
+            custom int distance_m = 7
+            custom int index = 23
+            custom string task = "cross-lingual-transfer"
+        }
+
+        def Xform "Child_024"
+        {
+            custom int distance_m = 7
+            custom int index = 24
+            custom string task = "image-to-text"
+        }
+
+        def Xform "Child_025"
+        {
+            custom int distance_m = 7
+            custom int index = 25
+            custom string task = "text-generation"
+        }
+
+        def Xform "Child_026"
+        {
+            custom int distance_m = 7
+            custom int index = 26
+            custom string task = "automatic-speech-recognition"
+        }
+
+        def Xform "Child_027"
+        {
+            custom int distance_m = 7
+            custom int index = 27
+            custom string task = "visual-document-retrieval"
+        }
+
+        def Xform "Child_028"
+        {
+            custom int distance_m = 7
+            custom int index = 28
+            custom string task = "graph-ml"
+        }
+
+        def Xform "Child_029"
+        {
+            custom int distance_m = 7
+            custom int index = 29
+            custom string task = "reinforcement-learning"
+        }
+
+        def Xform "Child_030"
+        {
+            custom int distance_m = 7
+            custom int index = 30
+            custom string task = "mask-generation"
+        }
+
+        def Xform "Child_031"
+        {
+            custom int distance_m = 7
+            custom int index = 31
+            custom string task = "any-to-any"
+        }
+
+        def Xform "Child_032"
+        {
+            custom int distance_m = 7
+            custom int index = 32
+            custom string task = "video-text-to-text"
+        }
+
+        def Xform "Child_033"
+        {
+            custom int distance_m = 7
+            custom int index = 33
+            custom string task = "robotics"
+        }
+
+        def Xform "Child_034"
+        {
+            custom int distance_m = 7
+            custom int index = 34
+            custom string task = "image-text-to-image"
+        }
+
+        def Xform "Child_035"
+        {
+            custom int distance_m = 7
+            custom int index = 35
+            custom string task = "zero-shot-classification"
+        }
+
+        def Xform "Child_036"
+        {
+            custom int distance_m = 7
+            custom int index = 36
+            custom string task = "time-series-forecasting"
+        }
+
+        def Xform "Child_037"
+        {
+            custom int distance_m = 7
+            custom int index = 37
+            custom string task = "cross-lingual-transfer"
+        }
+
+        def Xform "Child_038"
+        {
+            custom int distance_m = 7
+            custom int index = 38
+            custom string task = "image-to-text"
+        }
+
+        def Xform "Child_039"
+        {
+            custom int distance_m = 7
+            custom int index = 39
+            custom string task = "text-generation"
+        }
+
+        def Xform "Child_040"
+        {
+            custom int distance_m = 7
+            custom int index = 40
+            custom string task = "automatic-speech-recognition"
+        }
+
+        def Xform "Child_041"
+        {
+            custom int distance_m = 7
+            custom int index = 41
+            custom string task = "visual-document-retrieval"
+        }
+
+        def Xform "Child_042"
+        {
+            custom int distance_m = 7
+            custom int index = 42
+            custom string task = "graph-ml"
+        }
+
+        def Xform "Child_043"
+        {
+            custom int distance_m = 7
+            custom int index = 43
+            custom string task = "reinforcement-learning"
+        }
+
+        def Xform "Child_044"
+        {
+            custom int distance_m = 7
+            custom int index = 44
+            custom string task = "mask-generation"
+        }
+
+        def Xform "Child_045"
+        {
+            custom int distance_m = 7
+            custom int index = 45
+            custom string task = "any-to-any"
+        }
+
+        def Xform "Child_046"
+        {
+            custom int distance_m = 7
+            custom int index = 46
+            custom string task = "video-text-to-text"
+        }
+
+        def Xform "Child_047"
+        {
+            custom int distance_m = 7
+            custom int index = 47
+            custom string task = "robotics"
+        }
+
+        def Xform "Child_048"
+        {
+            custom int distance_m = 7
+            custom int index = 48
+            custom string task = "image-text-to-image"
+        }
+
+        def Xform "Child_049"
+        {
+            custom int distance_m = 7
+            custom int index = 49
+            custom string task = "zero-shot-classification"
+        }
+
+        def Xform "Child_050"
+        {
+            custom int distance_m = 7
+            custom int index = 50
+            custom string task = "time-series-forecasting"
+        }
+
+        def Xform "Child_051"
+        {
+            custom int distance_m = 7
+            custom int index = 51
+            custom string task = "cross-lingual-transfer"
+        }
+
+        def Xform "Child_052"
+        {
+            custom int distance_m = 7
+            custom int index = 52
+            custom string task = "image-to-text"
+        }
+
+        def Xform "Child_053"
+        {
+            custom int distance_m = 7
+            custom int index = 53
+            custom string task = "text-generation"
+        }
+
+        def Xform "Child_054"
+        {
+            custom int distance_m = 7
+            custom int index = 54
+            custom string task = "automatic-speech-recognition"
+        }
+
+        def Xform "Child_055"
+        {
+            custom int distance_m = 7
+            custom int index = 55
+            custom string task = "visual-document-retrieval"
+        }
+
+        def Xform "Child_056"
+        {
+            custom int distance_m = 7
+            custom int index = 56
+            custom string task = "graph-ml"
+        }
+
+        def Xform "Child_057"
+        {
+            custom int distance_m = 7
+            custom int index = 57
+            custom string task = "reinforcement-learning"
+        }
+
+        def Xform "Child_058"
+        {
+            custom int distance_m = 7
+            custom int index = 58
+            custom string task = "mask-generation"
+        }
+
+        def Xform "Child_059"
+        {
+            custom int distance_m = 7
+            custom int index = 59
+            custom string task = "any-to-any"
+        }
+
+        def Xform "Child_060"
+        {
+            custom int distance_m = 7
+            custom int index = 60
+            custom string task = "video-text-to-text"
+        }
+
+        def Xform "Child_061"
+        {
+            custom int distance_m = 7
+            custom int index = 61
+            custom string task = "robotics"
+        }
+
+        def Xform "Child_062"
+        {
+            custom int distance_m = 7
+            custom int index = 62
+            custom string task = "image-text-to-image"
+        }
+
+        def Xform "Child_063"
+        {
+            custom int distance_m = 7
+            custom int index = 63
+            custom string task = "zero-shot-classification"
+        }
+
+        def Xform "Child_064"
+        {
+            custom int distance_m = 7
+            custom int index = 64
+            custom string task = "time-series-forecasting"
+        }
+
+        def Xform "Child_065"
+        {
+            custom int distance_m = 7
+            custom int index = 65
+            custom string task = "cross-lingual-transfer"
+        }
+
+        def Xform "Child_066"
+        {
+            custom int distance_m = 7
+            custom int index = 66
+            custom string task = "image-to-text"
+        }
+
+        def Xform "Child_067"
+        {
+            custom int distance_m = 7
+            custom int index = 67
+            custom string task = "text-generation"
+        }
+
+        def Xform "Child_068"
+        {
+            custom int distance_m = 7
+            custom int index = 68
+            custom string task = "automatic-speech-recognition"
+        }
+
+        def Xform "Child_069"
+        {
+            custom int distance_m = 7
+            custom int index = 69
+            custom string task = "visual-document-retrieval"
+        }
+
+        def Xform "Child_070"
+        {
+            custom int distance_m = 7
+            custom int index = 70
+            custom string task = "graph-ml"
+        }
+
+        def Xform "Child_071"
+        {
+            custom int distance_m = 7
+            custom int index = 71
+            custom string task = "reinforcement-learning"
+        }
+
+        def Xform "Child_072"
+        {
+            custom int distance_m = 7
+            custom int index = 72
+            custom string task = "mask-generation"
+        }
+
+        def Xform "Child_073"
+        {
+            custom int distance_m = 7
+            custom int index = 73
+            custom string task = "any-to-any"
+        }
+
+        def Xform "Child_074"
+        {
+            custom int distance_m = 7
+            custom int index = 74
+            custom string task = "video-text-to-text"
+        }
+
+        def Xform "Child_075"
+        {
+            custom int distance_m = 7
+            custom int index = 75
+            custom string task = "robotics"
+        }
+
+        def Xform "Child_076"
+        {
+            custom int distance_m = 7
+            custom int index = 76
+            custom string task = "image-text-to-image"
+        }
+
+        def Xform "Child_077"
+        {
+            custom int distance_m = 7
+            custom int index = 77
+            custom string task = "zero-shot-classification"
+        }
+
+        def Xform "Child_078"
+        {
+            custom int distance_m = 7
+            custom int index = 78
+            custom string task = "time-series-forecasting"
+        }
+
+        def Xform "Child_079"
+        {
+            custom int distance_m = 7
+            custom int index = 79
+            custom string task = "cross-lingual-transfer"
+        }
+
+        def Xform "Child_080"
+        {
+            custom int distance_m = 7
+            custom int index = 80
+            custom string task = "image-to-text"
+        }
+
+        def Xform "Child_081"
+        {
+            custom int distance_m = 7
+            custom int index = 81
+            custom string task = "text-generation"
+        }
+
+        def Xform "Child_082"
+        {
+            custom int distance_m = 7
+            custom int index = 82
+            custom string task = "automatic-speech-recognition"
+        }
+
+        def Xform "Child_083"
+        {
+            custom int distance_m = 7
+            custom int index = 83
+            custom string task = "visual-document-retrieval"
+        }
+
+        def Xform "Child_084"
+        {
+            custom int distance_m = 7
+            custom int index = 84
+            custom string task = "graph-ml"
+        }
+
+        def Xform "Child_085"
+        {
+            custom int distance_m = 7
+            custom int index = 85
+            custom string task = "reinforcement-learning"
+        }
+
+        def Xform "Child_086"
+        {
+            custom int distance_m = 7
+            custom int index = 86
+            custom string task = "mask-generation"
+        }
+
+        def Xform "Child_087"
+        {
+            custom int distance_m = 7
+            custom int index = 87
+            custom string task = "any-to-any"
+        }
+
+        def Xform "Child_088"
+        {
+            custom int distance_m = 7
+            custom int index = 88
+            custom string task = "video-text-to-text"
+        }
+    }
+}
+

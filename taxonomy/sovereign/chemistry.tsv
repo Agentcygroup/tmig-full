@@ -1,0 +1,14 @@
+system	registry	scope	notes
+elements	IUPAC periodic table	118 confirmed	
+compounds	CAS Registry	200M+ substances	
+compounds	PubChem	110M+ compounds	
+compounds	ChEMBL	bioactive molecules	
+reactions	Reaxys	organic reactions	
+reactions	USPTO	patent reactions	
+materials	Materials Project	150k+ materials	
+materials	AFLOW	3.5M+ compounds	
+materials	OQMD	1M+ entries	
+proteins	PDB	220k+ structures	
+proteins	AlphaFold DB	200M+ predictions	
+genes	Ensembl	vertebrate genomes	
+genes	NCBI Gene	all organisms	

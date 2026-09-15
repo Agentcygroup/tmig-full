@@ -1,0 +1,237 @@
+#usda 1.0
+(
+    defaultPrim = "Constants"
+    upAxis = "Y"
+)
+
+def Scope "Constants"
+{
+    def Scope "SI"
+    {
+        def Xform "speed_of_light"
+        {
+            custom string exact = "yes"
+            custom string notes = "SI defining"
+            custom string quantity = "speed of light"
+            custom string symbol = "c"
+            custom string unit = "m/s"
+            custom string value = "299792458"
+        }
+
+        def Xform "Planck_constant"
+        {
+            custom string exact = "yes"
+            custom string notes = "SI defining"
+            custom string quantity = "Planck constant"
+            custom string symbol = "h"
+            custom string unit = "J·s"
+            custom string value = "6.62607015e-34"
+        }
+
+        def Xform "reduced_Planck"
+        {
+            custom string exact = "no"
+            custom string notes = "h/2π"
+            custom string quantity = "reduced Planck"
+            custom string symbol = "ħ"
+            custom string unit = "J·s"
+            custom string value = "1.054571817e-34"
+        }
+
+        def Xform "elementary_charge"
+        {
+            custom string exact = "yes"
+            custom string notes = "SI defining"
+            custom string quantity = "elementary charge"
+            custom string symbol = "e"
+            custom string unit = "C"
+            custom string value = "1.602176634e-19"
+        }
+
+        def Xform "Boltzmann"
+        {
+            custom string exact = "J/K"
+            custom string notes = "yes"
+            custom string quantity = "Boltzmann"
+            custom string symbol = "constant"
+            custom string unit = "1.380649e-23"
+            custom string value = "k_B"
+        }
+
+        def Xform "Avogadro"
+        {
+            custom string exact = "yes"
+            custom string notes = "SI defining"
+            custom string quantity = "Avogadro"
+            custom string symbol = "N_A"
+            custom string unit = "1/mol"
+            custom string value = "6.02214076e23"
+        }
+
+        def Xform "fine_structure"
+        {
+            custom string exact = "no"
+            custom string notes = "CODATA 2018"
+            custom string quantity = "fine structure"
+            custom string symbol = "α"
+            custom string unit = "dimensionless"
+            custom string value = "7.2973525693e-3"
+        }
+
+        def Xform "Rydberg"
+        {
+            custom string exact = "no"
+            custom string notes = "CODATA 2018"
+            custom string quantity = "Rydberg"
+            custom string symbol = "R∞"
+            custom string unit = "1/m"
+            custom string value = "10973731.568160"
+        }
+
+        def Xform "Bohr_radius"
+        {
+            custom string exact = "no"
+            custom string notes = "CODATA 2018"
+            custom string quantity = "Bohr radius"
+            custom string symbol = "a0"
+            custom string unit = "m"
+            custom string value = "5.29177210903e-11"
+        }
+
+        def Xform "electron_mass"
+        {
+            custom string exact = "no"
+            custom string notes = "CODATA 2018"
+            custom string quantity = "electron mass"
+            custom string symbol = "m_e"
+            custom string unit = "kg"
+            custom string value = "9.1093837015e-31"
+        }
+
+        def Xform "proton_mass"
+        {
+            custom string exact = "no"
+            custom string notes = "CODATA 2018"
+            custom string quantity = "proton mass"
+            custom string symbol = "m_p"
+            custom string unit = "kg"
+            custom string value = "1.67262192369e-27"
+        }
+
+        def Xform "neutron_mass"
+        {
+            custom string exact = "no"
+            custom string notes = "CODATA 2018"
+            custom string quantity = "neutron mass"
+            custom string symbol = "m_n"
+            custom string unit = "kg"
+            custom string value = "1.67492749804e-27"
+        }
+
+        def Xform "gravitational"
+        {
+            custom string exact = "m^3/(kg·s^2)"
+            custom string notes = "no"
+            custom string quantity = "gravitational"
+            custom string symbol = "constant"
+            custom string unit = "6.67430e-11"
+            custom string value = "G"
+        }
+
+        def Xform "vacuum_permittivity"
+        {
+            custom string exact = "no"
+            custom string notes = "derived"
+            custom string quantity = "vacuum permittivity"
+            custom string symbol = "ε0"
+            custom string unit = "F/m"
+            custom string value = "8.8541878128e-12"
+        }
+
+        def Xform "vacuum_permeability"
+        {
+            custom string exact = "no"
+            custom string notes = "derived"
+            custom string quantity = "vacuum permeability"
+            custom string symbol = "μ0"
+            custom string unit = "H/m"
+            custom string value = "1.25663706212e-6"
+        }
+    }
+
+    def Scope "Hyperfine"
+    {
+        def Xform "Hydrogen_21cm"
+        {
+            custom string frequency_hz = "1420405751.7667"
+            custom string notes = "radial velocity astronomy"
+            custom string system = "Hydrogen 21cm"
+            custom string transition = "H 1s F=1 to F=0"
+            custom string wavelength_cm = "21.1061"
+        }
+
+        def Xform "Cesium_133"
+        {
+            custom string frequency_hz = "9192631770"
+            custom string notes = "SI second definition"
+            custom string system = "Cesium 133"
+            custom string transition = "6S1/2 F=3 to F=4"
+            custom string wavelength_cm = "32.612"
+        }
+
+        def Xform "Rubidium_87"
+        {
+            custom string frequency_hz = "6834682610.904"
+            custom string notes = "Rb atomic clock"
+            custom string system = "Rubidium 87"
+            custom string transition = "5S1/2 F=1 to F=2"
+            custom string wavelength_cm = "43.87"
+        }
+
+        def Xform "Hydrogen_maser"
+        {
+            custom string frequency_hz = "1420405751.768"
+            custom string notes = "active maser"
+            custom string system = "Hydrogen maser"
+            custom string transition = "H 1s"
+            custom string wavelength_cm = "21.106"
+        }
+
+        def Xform "Ytterbium_171"
+        {
+            custom string frequency_hz = "518295836590864"
+            custom string notes = "optical lattice clock"
+            custom string system = "Ytterbium 171"
+            custom string transition = "1S0 to 3P0"
+            custom string wavelength_cm = "0.000578"
+        }
+
+        def Xform "Strontium_87"
+        {
+            custom string frequency_hz = "429228004229873"
+            custom string notes = "optical lattice clock"
+            custom string system = "Strontium 87"
+            custom string transition = "1S0 to 3P0"
+            custom string wavelength_cm = "0.000699"
+        }
+
+        def Xform "Thulium"
+        {
+            custom string frequency_hz = "—"
+            custom string notes = "ion clock"
+            custom string system = "Thulium"
+            custom string transition = "1S0 to 3P0"
+            custom string wavelength_cm = "—"
+        }
+
+        def Xform "Aluminum_ion"
+        {
+            custom string frequency_hz = "1121015393207857"
+            custom string notes = "Al+ quantum logic clock"
+            custom string system = "Aluminum ion"
+            custom string transition = "1S0 to 3P0"
+            custom string wavelength_cm = "0.000267"
+        }
+    }
+}
+

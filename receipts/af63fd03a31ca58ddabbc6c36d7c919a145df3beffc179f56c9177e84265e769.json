@@ -1,0 +1,17 @@
+Receipt {
+    run_id: "af63fd03a31ca58ddabbc6c36d7c919a145df3beffc179f56c9177e84265e769",
+    targets: [
+        Tr {
+            id: "checks",
+            status: "cached",
+            input_id: "05c90649677208f7b9cc630b54d543a79bcf2d9cca82825d79839dd88fa34665",
+            output_id: "05c90649677208f7b9cc630b54d543a79bcf2d9cca82825d79839dd88fa34665",
+        },
+    ],
+    non_claims: [
+        "no-mastery",
+        "no-accreditation",
+        "no-coherence-proof",
+        "no-completeness",
+    ],
+}

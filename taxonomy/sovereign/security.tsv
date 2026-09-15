@@ -1,0 +1,19 @@
+class	attack	mitigation	notes
+network	DDoS	anycast + rate-limit	
+network	BGP hijack	RPKI + ROA	
+network	DNS poisoning	DNSSEC + DoH	
+network	MITM	TLS 1.3 + pinning	
+host	privilege escalation	least-privilege + seccomp	
+host	rootkit	secure boot + IMA	
+host	side-channel	constant-time + cache isolation	
+app	injection	parameterized queries	
+app	XSS	CSP + escaping	
+app	SSRF	allowlist + network policy	
+crypto	weak RNG	CSPRNG + entropy pool	
+crypto	key compromise	HSM + rotation	
+supply chain	dependency attack	SLSA + SBOM + signing	
+supply chain	build attack	reproducible builds	
+model	adversarial example	adversarial training	
+model	backdoor	provenance + fine-tune checks	
+model	model theft	watermark + rate-limit	
+data	poisoning	provenance + differential privacy	

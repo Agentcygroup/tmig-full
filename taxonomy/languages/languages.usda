@@ -1,0 +1,889 @@
+#usda 1.0
+(
+    defaultPrim = "Languages"
+    upAxis = "Y"
+)
+
+def Scope "Languages"
+{
+    def Xform "Lang_en"
+    {
+        custom string code = "en"
+        custom string family = "Germanic"
+        custom string[] hfTags = ["en"]
+        custom string name = "English"
+        custom string script = "Latin"
+        custom string use = "Global code switching, instruction-following benchmark"
+    }
+
+    def Xform "Lang_zh"
+    {
+        custom string code = "zh"
+        custom string family = "Sino-Tibetan"
+        custom string[] hfTags = ["zh"]
+        custom string name = "Chinese"
+        custom string script = "Han"
+        custom string use = "Character-level tokenization, CJK segmentation, hanzi→pinyin"
+    }
+
+    def Xform "Lang_fr"
+    {
+        custom string code = "fr"
+        custom string family = "Romance"
+        custom string[] hfTags = ["fr"]
+        custom string name = "French"
+        custom string script = "Latin"
+        custom string use = "Morphosyntactic gold standard for evaluation (Universal Dependencies)"
+    }
+
+    def Xform "Lang_es"
+    {
+        custom string code = "es"
+        custom string family = "Romance"
+        custom string[] hfTags = ["es"]
+        custom string name = "Spanish"
+        custom string script = "Latin"
+        custom string use = "Regional dialect clustering, vosotros/vos handling"
+    }
+
+    def Xform "Lang_de"
+    {
+        custom string code = "de"
+        custom string family = "Germanic"
+        custom string[] hfTags = ["de"]
+        custom string name = "German"
+        custom string script = "Latin"
+        custom string use = "Compound word splitting, noun-capitalization detection"
+    }
+
+    def Xform "Lang_ja"
+    {
+        custom string code = "ja"
+        custom string family = "Japonic"
+        custom string[] hfTags = ["ja"]
+        custom string name = "Japanese"
+        custom string script = "Kanji/Kana"
+        custom string use = "No-space tokenization, keigo formality transfer"
+    }
+
+    def Xform "Lang_ko"
+    {
+        custom string code = "ko"
+        custom string family = "Koreanic"
+        custom string[] hfTags = ["ko"]
+        custom string name = "Korean"
+        custom string script = "Hangul"
+        custom string use = "Jamo decomposition, honorific-level prediction"
+    }
+
+    def Xform "Lang_pt"
+    {
+        custom string code = "pt"
+        custom string family = "Romance"
+        custom string[] hfTags = ["pt"]
+        custom string name = "Portuguese"
+        custom string script = "Latin"
+        custom string use = "PT-BR vs PT-PT dialect classification"
+    }
+
+    def Xform "Lang_it"
+    {
+        custom string code = "it"
+        custom string family = "Romance"
+        custom string[] hfTags = ["it"]
+        custom string name = "Italian"
+        custom string script = "Latin"
+        custom string use = "Clitic pronoun resolution, dialect-vs-standard separation"
+    }
+
+    def Xform "Lang_ru"
+    {
+        custom string code = "ru"
+        custom string family = "Slavic"
+        custom string[] hfTags = ["ru"]
+        custom string name = "Russian"
+        custom string script = "Cyrillic"
+        custom string use = "Morphological inflection, case marker tagging"
+    }
+
+    def Xform "Lang_ar"
+    {
+        custom string code = "ar"
+        custom string family = "Semitic"
+        custom string[] hfTags = ["ar"]
+        custom string name = "Arabic"
+        custom string script = "Arabic"
+        custom string use = "Root-and-pattern morphology, diacritic restoration, right-to-left"
+    }
+
+    def Xform "Lang_hi"
+    {
+        custom string code = "hi"
+        custom string family = "Indo-Aryan"
+        custom string[] hfTags = ["hi"]
+        custom string name = "Hindi"
+        custom string script = "Devanagari"
+        custom string use = "Verb-final parsing, code-mix Hinglish detection"
+    }
+
+    def Xform "Lang_th"
+    {
+        custom string code = "th"
+        custom string family = "Kra-Dai"
+        custom string[] hfTags = ["th"]
+        custom string name = "Thai"
+        custom string script = "Thai"
+        custom string use = "Zero-space tokenization, tone-aware ASR"
+    }
+
+    def Xform "Lang_multilingual"
+    {
+        custom string code = "multilingual"
+        custom string family = "—"
+        custom string[] hfTags = ["multilingual"]
+        custom string name = "Multilingual"
+        custom string script = "—"
+        custom string use = "Cross-lingual transfer, zero-shot language generalization"
+    }
+
+    def Xform "Lang_tr"
+    {
+        custom string code = "tr"
+        custom string family = "Turkic"
+        custom string[] hfTags = ["tr"]
+        custom string name = "Turkish"
+        custom string script = "Latin"
+        custom string use = "Agglutinative morphology, vowel harmony"
+    }
+
+    def Xform "Lang_vi"
+    {
+        custom string code = "vi"
+        custom string family = "Austroasiatic"
+        custom string[] hfTags = ["vi"]
+        custom string name = "Vietnamese"
+        custom string script = "Latin"
+        custom string use = "Tone diacritics, syllable-based tokenization"
+    }
+
+    def Xform "Lang_nl"
+    {
+        custom string code = "nl"
+        custom string family = "Germanic"
+        custom string[] hfTags = ["nl"]
+        custom string name = "Dutch"
+        custom string script = "Latin"
+        custom string use = "Compound splitting, diminutive detection"
+    }
+
+    def Xform "Lang_pl"
+    {
+        custom string code = "pl"
+        custom string family = "Slavic"
+        custom string[] hfTags = ["pl"]
+        custom string name = "Polish"
+        custom string script = "Latin"
+        custom string use = "Consonant clusters, gender agreement"
+    }
+
+    def Xform "Lang_id"
+    {
+        custom string code = "id"
+        custom string family = "Austronesian"
+        custom string[] hfTags = ["id"]
+        custom string name = "Indonesian"
+        custom string script = "Latin"
+        custom string use = "Affixation, informal-vs-formal register"
+    }
+
+    def Xform "Lang_sv"
+    {
+        custom string code = "sv"
+        custom string family = "Germanic"
+        custom string[] hfTags = ["sv"]
+        custom string name = "Swedish"
+        custom string script = "Latin"
+        custom string use = "Definite suffix, verb-second word order"
+    }
+
+    def Xform "Lang_uk"
+    {
+        custom string code = "uk"
+        custom string family = "Slavic"
+        custom string[] hfTags = ["uk"]
+        custom string name = "Ukrainian"
+        custom string script = "Cyrillic"
+        custom string use = "Russian-Ukrainian code-mix, Cyrillic-emoji overlap"
+    }
+
+    def Xform "Lang_ro"
+    {
+        custom string code = "ro"
+        custom string family = "Romance"
+        custom string[] hfTags = ["ro"]
+        custom string name = "Romanian"
+        custom string script = "Latin"
+        custom string use = "Definite article suffix, diacritic restoration"
+    }
+
+    def Xform "Lang_fi"
+    {
+        custom string code = "fi"
+        custom string family = "Uralic"
+        custom string[] hfTags = ["fi"]
+        custom string name = "Finnish"
+        custom string script = "Latin"
+        custom string use = "15-case system, compound word parsing"
+    }
+
+    def Xform "Lang_cs"
+    {
+        custom string code = "cs"
+        custom string family = "Slavic"
+        custom string[] hfTags = ["cs"]
+        custom string name = "Czech"
+        custom string script = "Latin"
+        custom string use = "Aspect-pair verbal morphology, clitic climbing"
+    }
+
+    def Xform "Lang_fa"
+    {
+        custom string code = "fa"
+        custom string family = "Iranian"
+        custom string[] hfTags = ["fa"]
+        custom string name = "Persian"
+        custom string script = "Arabic"
+        custom string use = "Right-to-left, Arabic loanword separation"
+    }
+
+    def Xform "Lang_bn"
+    {
+        custom string code = "bn"
+        custom string family = "Indo-Aryan"
+        custom string[] hfTags = ["bn"]
+        custom string name = "Bengali"
+        custom string script = "Bengali"
+        custom string use = "Conjunct consonants, transliteration into Latin"
+    }
+
+    def Xform "Lang_da"
+    {
+        custom string code = "da"
+        custom string family = "Germanic"
+        custom string[] hfTags = ["da"]
+        custom string name = "Danish"
+        custom string script = "Latin"
+        custom string use = "stød phonetic feature, compound splitting"
+    }
+
+    def Xform "Lang_el"
+    {
+        custom string code = "el"
+        custom string family = "Hellenic"
+        custom string[] hfTags = ["el"]
+        custom string name = "Greek"
+        custom string script = "Greek"
+        custom string use = "Greeklish conversion, polytonic-to-monotonic"
+    }
+
+    def Xform "Lang_he"
+    {
+        custom string code = "he"
+        custom string family = "Semitic"
+        custom string[] hfTags = ["he"]
+        custom string name = "Hebrew"
+        custom string script = "Hebrew"
+        custom string use = "Right-to-left, vowel omission (niqqud inference)"
+    }
+
+    def Xform "Lang_ms"
+    {
+        custom string code = "ms"
+        custom string family = "Austronesian"
+        custom string[] hfTags = ["ms"]
+        custom string name = "Malay"
+        custom string script = "Latin"
+        custom string use = "Bahasa register, loanword adaptation"
+    }
+
+    def Xform "Lang_hu"
+    {
+        custom string code = "hu"
+        custom string family = "Uralic"
+        custom string[] hfTags = ["hu"]
+        custom string name = "Hungarian"
+        custom string script = "Latin"
+        custom string use = "Agglutination, vowel harmony"
+    }
+
+    def Xform "Lang_ne"
+    {
+        custom string code = "ne"
+        custom string family = "Indo-Aryan"
+        custom string[] hfTags = ["ne"]
+        custom string name = "Nepali"
+        custom string script = "Devanagari"
+        custom string use = "Verb-final parsing, honorific levels"
+    }
+
+    def Xform "Lang_ta"
+    {
+        custom string code = "ta"
+        custom string family = "Dravidian"
+        custom string[] hfTags = ["ta"]
+        custom string name = "Tamil"
+        custom string script = "Tamil"
+        custom string use = "Diglossia (literary vs spoken), script transcription"
+    }
+
+    def Xform "Lang_ur"
+    {
+        custom string code = "ur"
+        custom string family = "Indo-Aryan"
+        custom string[] hfTags = ["ur"]
+        custom string name = "Urdu"
+        custom string script = "Arabic"
+        custom string use = "Right-to-left, Hindi-Urdu mutual intelligibility"
+    }
+
+    def Xform "Lang_te"
+    {
+        custom string code = "te"
+        custom string family = "Dravidian"
+        custom string[] hfTags = ["te"]
+        custom string name = "Telugu"
+        custom string script = "Telugu"
+        custom string use = "Agglutinative compounds, script transliteration"
+    }
+
+    def Xform "Lang_bg"
+    {
+        custom string code = "bg"
+        custom string family = "Slavic"
+        custom string[] hfTags = ["bg"]
+        custom string name = "Bulgarian"
+        custom string script = "Cyrillic"
+        custom string use = "Definite article suffix, Balkan sprachbund"
+    }
+
+    def Xform "Lang_ca"
+    {
+        custom string code = "ca"
+        custom string family = "Romance"
+        custom string[] hfTags = ["ca"]
+        custom string name = "Catalan"
+        custom string script = "Latin"
+        custom string use = "Catalan-Valencian-Balearic dialect clustering"
+    }
+
+    def Xform "Lang_no"
+    {
+        custom string code = "no"
+        custom string family = "Germanic"
+        custom string[] hfTags = ["no"]
+        custom string name = "Norwegian"
+        custom string script = "Latin"
+        custom string use = "Bokmål vs Nynorsk classification"
+    }
+
+    def Xform "Lang_mr"
+    {
+        custom string code = "mr"
+        custom string family = "Indo-Aryan"
+        custom string[] hfTags = ["mr"]
+        custom string name = "Marathi"
+        custom string script = "Devanagari"
+        custom string use = "Verb-final parsing, retroflex consonants"
+    }
+
+    def Xform "Lang_sw"
+    {
+        custom string code = "sw"
+        custom string family = "Bantu"
+        custom string[] hfTags = ["sw"]
+        custom string name = "Swahili"
+        custom string script = "Latin"
+        custom string use = "Noun class agreement, Arabic loanwords"
+    }
+
+    def Xform "Lang_sl"
+    {
+        custom string code = "sl"
+        custom string family = "Slavic"
+        custom string[] hfTags = ["sl"]
+        custom string name = "Slovenian"
+        custom string script = "Latin"
+        custom string use = "Dual number, case syncretism"
+    }
+
+    def Xform "Lang_sk"
+    {
+        custom string code = "sk"
+        custom string family = "Slavic"
+        custom string[] hfTags = ["sk"]
+        custom string name = "Slovak"
+        custom string script = "Latin"
+        custom string use = "Czech-Slovak code mixing, aspect pairs"
+    }
+
+    def Xform "Lang_et"
+    {
+        custom string code = "et"
+        custom string family = "Uralic"
+        custom string[] hfTags = ["et"]
+        custom string name = "Estonian"
+        custom string script = "Latin"
+        custom string use = "14-case system, Finno-Ugric transfer"
+    }
+
+    def Xform "Lang_sr"
+    {
+        custom string code = "sr"
+        custom string family = "Slavic"
+        custom string[] hfTags = ["sr"]
+        custom string name = "Serbian"
+        custom string script = "Cyrillic/Latin"
+        custom string use = "Dual-script detection, Cyrillic-Latin conversion"
+    }
+
+    def Xform "Lang_gu"
+    {
+        custom string code = "gu"
+        custom string family = "Indo-Aryan"
+        custom string[] hfTags = ["gu"]
+        custom string name = "Gujarati"
+        custom string script = "Gujarati"
+        custom string use = "Script transliteration, verb-final parsing"
+    }
+
+    def Xform "Lang_lt"
+    {
+        custom string code = "lt"
+        custom string family = "Baltic"
+        custom string[] hfTags = ["lt"]
+        custom string name = "Lithuanian"
+        custom string script = "Latin"
+        custom string use = "Pitch accent, dual number"
+    }
+
+    def Xform "Lang_hr"
+    {
+        custom string code = "hr"
+        custom string family = "Slavic"
+        custom string[] hfTags = ["hr"]
+        custom string name = "Croatian"
+        custom string script = "Latin"
+        custom string use = "Serbian-Croatian-Bosnian differentiation"
+    }
+
+    def Xform "Lang_lv"
+    {
+        custom string code = "lv"
+        custom string family = "Baltic"
+        custom string[] hfTags = ["lv"]
+        custom string name = "Latvian"
+        custom string script = "Latin"
+        custom string use = "Pitch accent, definite adjective endings"
+    }
+
+    def Xform "Lang_my"
+    {
+        custom string code = "my"
+        custom string family = "Sino-Tibetan"
+        custom string[] hfTags = ["my"]
+        custom string name = "Burmese"
+        custom string script = "Myanmar"
+        custom string use = "Zero-space tokenization, syllable segmentation"
+    }
+
+    def Xform "Lang_ml"
+    {
+        custom string code = "ml"
+        custom string family = "Dravidian"
+        custom string[] hfTags = ["ml"]
+        custom string name = "Malayalam"
+        custom string script = "Malayalam"
+        custom string use = "Agglutinative compounds, script transcription"
+    }
+
+    def Xform "Lang_pa"
+    {
+        custom string code = "pa"
+        custom string family = "Indo-Aryan"
+        custom string[] hfTags = ["pa"]
+        custom string name = "Panjabi"
+        custom string script = "Gurmukhi"
+        custom string use = "Gurmukhi-Shahmukhi script conversion, tone"
+    }
+
+    def Xform "Lang_is"
+    {
+        custom string code = "is"
+        custom string family = "Germanic"
+        custom string[] hfTags = ["is"]
+        custom string name = "Icelandic"
+        custom string script = "Latin"
+        custom string use = "Archaic morphology, compound neologisms"
+    }
+
+    def Xform "Lang_kn"
+    {
+        custom string code = "kn"
+        custom string family = "Dravidian"
+        custom string[] hfTags = ["kn"]
+        custom string name = "Kannada"
+        custom string script = "Kannada"
+        custom string use = "Agglutination, script transliteration"
+    }
+
+    def Xform "Lang_gl"
+    {
+        custom string code = "gl"
+        custom string family = "Romance"
+        custom string[] hfTags = ["gl"]
+        custom string name = "Galician"
+        custom string script = "Latin"
+        custom string use = "Portuguese-Galician dialect split, medieval texts"
+    }
+
+    def Xform "Lang_km"
+    {
+        custom string code = "km"
+        custom string family = "Austroasiatic"
+        custom string[] hfTags = ["km"]
+        custom string name = "Khmer"
+        custom string script = "Khmer"
+        custom string use = "Zero-space tokenization, subscript consonants"
+    }
+
+    def Xform "Lang_tl"
+    {
+        custom string code = "tl"
+        custom string family = "Austronesian"
+        custom string[] hfTags = ["tl"]
+        custom string name = "Tagalog"
+        custom string script = "Latin"
+        custom string use = "Focus system (verb voice), code-mix with English"
+    }
+
+    def Xform "Lang_kk"
+    {
+        custom string code = "kk"
+        custom string family = "Turkic"
+        custom string[] hfTags = ["kk"]
+        custom string name = "Kazakh"
+        custom string script = "Cyrillic"
+        custom string use = "Cyrillic-Latin transition (2025), vowel harmony"
+    }
+
+    def Xform "Lang_eu"
+    {
+        custom string code = "eu"
+        custom string family = "Isolate"
+        custom string[] hfTags = ["eu"]
+        custom string name = "Basque"
+        custom string script = "Latin"
+        custom string use = "Ergative-absolutive case, agglutination"
+    }
+
+    def Xform "Lang_af"
+    {
+        custom string code = "af"
+        custom string family = "Germanic"
+        custom string[] hfTags = ["af"]
+        custom string name = "Afrikaans"
+        custom string script = "Latin"
+        custom string use = "Dutch-Afrikaans distance, double negation"
+    }
+
+    def Xform "Lang_am"
+    {
+        custom string code = "am"
+        custom string family = "Semitic"
+        custom string[] hfTags = ["am"]
+        custom string name = "Amharic"
+        custom string script = "Ethiopic"
+        custom string use = "Script unique to Ethiopia, root morphology"
+    }
+
+    def Xform "Lang_ka"
+    {
+        custom string code = "ka"
+        custom string family = "Kartvelian"
+        custom string[] hfTags = ["ka"]
+        custom string name = "Georgian"
+        custom string script = "Georgian"
+        custom string use = "Unique script, complex consonant clusters"
+    }
+
+    def Xform "Lang_mn"
+    {
+        custom string code = "mn"
+        custom string family = "Mongolic"
+        custom string[] hfTags = ["mn"]
+        custom string name = "Mongolian"
+        custom string script = "Cyrillic"
+        custom string use = "Traditional-to-Cyrillic script transliteration"
+    }
+
+    def Xform "Lang_ha"
+    {
+        custom string code = "ha"
+        custom string family = "Afro-Asiatic"
+        custom string[] hfTags = ["ha"]
+        custom string name = "Hausa"
+        custom string script = "Latin"
+        custom string use = "Tonal Afro-Asiatic language, Arabic Ajami script"
+    }
+
+    def Xform "Lang_as"
+    {
+        custom string code = "as"
+        custom string family = "Indo-Aryan"
+        custom string[] hfTags = ["as"]
+        custom string name = "Assamese"
+        custom string script = "Bengali"
+        custom string use = "Bengali-Assamese script distinction"
+    }
+
+    def Xform "Lang_lo"
+    {
+        custom string code = "lo"
+        custom string family = "Kra-Dai"
+        custom string[] hfTags = ["lo"]
+        custom string name = "Lao"
+        custom string script = "Lao"
+        custom string use = "Zero-space tokenization, tonal"
+    }
+
+    def Xform "Lang_hy"
+    {
+        custom string code = "hy"
+        custom string family = "Indo-European"
+        custom string[] hfTags = ["hy"]
+        custom string name = "Armenian"
+        custom string script = "Armenian"
+        custom string use = "Unique script, Eastern vs Western dialect"
+    }
+
+    def Xform "Lang_mk"
+    {
+        custom string code = "mk"
+        custom string family = "Slavic"
+        custom string[] hfTags = ["mk"]
+        custom string name = "Macedonian"
+        custom string script = "Cyrillic"
+        custom string use = "Balkan sprachbund, Bulgarian-Macedonian split"
+    }
+
+    def Xform "Lang_cy"
+    {
+        custom string code = "cy"
+        custom string family = "Celtic"
+        custom string[] hfTags = ["cy"]
+        custom string name = "Welsh"
+        custom string script = "Latin"
+        custom string use = "VSO word order, consonant mutations"
+    }
+
+    def Xform "Lang_si"
+    {
+        custom string code = "si"
+        custom string family = "Indo-Aryan"
+        custom string[] hfTags = ["si"]
+        custom string name = "Sinhala"
+        custom string script = "Sinhala"
+        custom string use = "Unique script, Pali loanwords"
+    }
+
+    def Xform "Lang_yo"
+    {
+        custom string code = "yo"
+        custom string family = "Niger-Congo"
+        custom string[] hfTags = ["yo"]
+        custom string name = "Yoruba"
+        custom string script = "Latin"
+        custom string use = "Tonal, diacritic-heavy, Nigeria register"
+    }
+
+    def Xform "Lang_be"
+    {
+        custom string code = "be"
+        custom string family = "Slavic"
+        custom string[] hfTags = ["be"]
+        custom string name = "Belarusian"
+        custom string script = "Cyrillic"
+        custom string use = "Russian-Belarusian mix, Trasianka detection"
+    }
+
+    def Xform "Lang_az"
+    {
+        custom string code = "az"
+        custom string family = "Turkic"
+        custom string[] hfTags = ["az"]
+        custom string name = "Azerbaijani"
+        custom string script = "Latin"
+        custom string use = "Cyrillic-Arabic-Latin script history, vowel harmony"
+    }
+
+    def Xform "Lang_uz"
+    {
+        custom string code = "uz"
+        custom string family = "Turkic"
+        custom string[] hfTags = ["uz"]
+        custom string name = "Uzbek"
+        custom string script = "Latin"
+        custom string use = "Cyrillic-Latin transition, vowel harmony"
+    }
+
+    def Xform "Lang_sq"
+    {
+        custom string code = "sq"
+        custom string family = "Indo-European"
+        custom string[] hfTags = ["sq"]
+        custom string name = "Albanian"
+        custom string script = "Latin"
+        custom string use = "Tosk vs Gheg dialect split"
+    }
+
+    def Xform "Lang_bs"
+    {
+        custom string code = "bs"
+        custom string family = "Slavic"
+        custom string[] hfTags = ["bs"]
+        custom string name = "Bosnian"
+        custom string script = "Latin"
+        custom string use = "Serbo-Croatian variant tagging"
+    }
+
+    def Xform "Lang_mt"
+    {
+        custom string code = "mt"
+        custom string family = "Semitic"
+        custom string[] hfTags = ["mt"]
+        custom string name = "Maltese"
+        custom string script = "Latin"
+        custom string use = "Only Semitic language in Latin script, Arabic-Italian loans"
+    }
+
+    def Xform "Lang_sd"
+    {
+        custom string code = "sd"
+        custom string family = "Indo-Aryan"
+        custom string[] hfTags = ["sd"]
+        custom string name = "Sindhi"
+        custom string script = "Arabic"
+        custom string use = "Right-to-left, Devanagari-Sindhi conversion"
+    }
+
+    def Xform "Lang_sa"
+    {
+        custom string code = "sa"
+        custom string family = "Indo-Aryan"
+        custom string[] hfTags = ["sa"]
+        custom string name = "Sanskrit"
+        custom string script = "Devanagari"
+        custom string use = "Classical language, sandhi rules, compound formation"
+    }
+
+    def Xform "Lang_ga"
+    {
+        custom string code = "ga"
+        custom string family = "Celtic"
+        custom string[] hfTags = ["ga"]
+        custom string name = "Irish"
+        custom string script = "Latin"
+        custom string use = "Initial consonant mutations, VSO"
+    }
+
+    def Xform "Lang_so"
+    {
+        custom string code = "so"
+        custom string family = "Cushitic"
+        custom string[] hfTags = ["so"]
+        custom string name = "Somali"
+        custom string script = "Latin"
+        custom string use = "Tonal, Afro-Asiatic, Arabic loans"
+    }
+
+    def Xform "Lang_la"
+    {
+        custom string code = "la"
+        custom string family = "Italic"
+        custom string[] hfTags = ["la"]
+        custom string name = "Latin"
+        custom string script = "Latin"
+        custom string use = "Dead language, classical texts, medical terminology"
+    }
+
+    def Xform "Lang_jv"
+    {
+        custom string code = "jv"
+        custom string family = "Austronesian"
+        custom string[] hfTags = ["jv"]
+        custom string name = "Javanese"
+        custom string script = "Latin"
+        custom string use = "Register levels (ngoko/krama), Javanese script"
+    }
+
+    def Xform "Lang_su"
+    {
+        custom string code = "su"
+        custom string family = "Austronesian"
+        custom string[] hfTags = ["su"]
+        custom string name = "Sundanese"
+        custom string script = "Latin"
+        custom string use = "Register levels, Sundanese script"
+    }
+
+    def Xform "Lang_ps"
+    {
+        custom string code = "ps"
+        custom string family = "Iranian"
+        custom string[] hfTags = ["ps"]
+        custom string name = "Pashto"
+        custom string script = "Arabic"
+        custom string use = "Right-to-left, ergative alignment"
+    }
+
+    def Xform "Lang_sn"
+    {
+        custom string code = "sn"
+        custom string family = "Bantu"
+        custom string[] hfTags = ["sn"]
+        custom string name = "Shona"
+        custom string script = "Latin"
+        custom string use = "Noun classes, tonal"
+    }
+
+    def Xform "Lang_mg"
+    {
+        custom string code = "mg"
+        custom string family = "Austronesian"
+        custom string[] hfTags = ["mg"]
+        custom string name = "Malagasy"
+        custom string script = "Latin"
+        custom string use = "Austronesian in Africa, French loans"
+    }
+
+    def Xform "Lang_or"
+    {
+        custom string code = "or"
+        custom string family = "Indo-Aryan"
+        custom string[] hfTags = ["or"]
+        custom string name = "Oriya/Odia"
+        custom string script = "Odia"
+        custom string use = "Unique script, verb-final parsing"
+    }
+
+    def Xform "Lang_ht"
+    {
+        custom string code = "ht"
+        custom string family = "French_Creole"
+        custom string[] hfTags = ["ht"]
+        custom string name = "Haitian"
+        custom string script = "Latin"
+        custom string use = "French-based creole, tonal"
+    }
+}
+

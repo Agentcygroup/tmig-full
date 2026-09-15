@@ -1,0 +1,13 @@
+system	registry	scope	notes
+genomes	NCBI GenBank	all public DNA	
+genomes	Ensembl	vertebrate reference	
+genomes	1000 Genomes	human variation	
+variants	ClinVar	clinical variants	
+variants	gnomAD	population frequencies	
+variants	dbSNP	short variations	
+expression	GEO	gene expression	
+expression	ArrayExpress	functional genomics	
+pathways	KEGG	metabolic + signaling	
+pathways	Reactome	human pathways	
+ontologies	Gene Ontology	gene function	
+ontologies	Disease Ontology	human disease	

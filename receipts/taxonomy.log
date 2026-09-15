@@ -1,0 +1,8 @@
+20:45:41 == taxonomy coverage ==
+20:46:44 == taxonomy coverage ==
+20:47:48 == text-classification (NLP) → distilbert-base-uncased-finetuned-sst-2-english ==
+20:47:54 == fill-mask (NLP) → bert-base-uncased ==
+20:50:14 == question-answering (NLP) → deepset/roberta-base-squad2 ==
+20:50:21 == sentence-similarity (NLP) → sentence-transformers/all-MiniLM-L6-v2 ==
+20:51:08 == image-classification (Computer Vision) → google/vit-base-patch16-224 ==
+20:51:19 == automatic-speech-recognition (Audio) → openai/whisper-large-v3 ==

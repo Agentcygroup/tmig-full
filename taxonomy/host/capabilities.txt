@@ -1,0 +1,7 @@
+torch_mps True
+torch_version 2.14.0
+mlx True
+mlx_device Device(gpu, 0)
+transformers 5.17.0
+diffusers 0.40.0
+faster_whisper True

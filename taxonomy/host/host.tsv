@@ -1,0 +1,19 @@
+attr	value	notes
+model	MacBook Pro	Mac16,5
+model_number	Z1FT000D8LL/A	
+chip	Apple M4 Max	16-core
+cores_p	12	performance
+cores_e	4	efficiency
+memory_gb	128	unified
+firmware	18000.161.10	
+serial	MY916YKY0Y	
+uuid	EA49ECB2-ED20-5372-BC7F-9B84A36E01F4	
+udid	00006041-001871A60EFA401C	
+activation_lock	enabled	
+chip_gpu_cores	40	M4 Max has 40-core GPU
+neural_engine	16_core	Apple Neural Engine
+memory_bandwidth_gbps	546	LPDDR5x-8533
+storage_type	NVMe SSD	
+mlx_capable	yes	Apple silicon native
+metal_capable	yes	Metal 3
+ane_capable	yes	Core ML
