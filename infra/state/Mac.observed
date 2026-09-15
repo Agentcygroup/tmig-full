@@ -1,0 +1,15 @@
+{
+  "host": "Mac",
+  "ts": 1789481137,
+  "units": {
+    "sovereign-runtime/write-launchagent": {
+      "kind": "file",
+      "present": true,
+      "sha256": "e21fce1549d6459e55e02be87cfa611a2c7b49cb5a89ecd426e9125200888486"
+    },
+    "sovereign-runtime/load-launchagent": {
+      "kind": "service",
+      "loaded": true
+    }
+  }
+}

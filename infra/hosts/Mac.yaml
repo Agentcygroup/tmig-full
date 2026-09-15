@@ -1,0 +1,14 @@
+# Desired state for Mac.
+# Every recipe referenced here must exist in infra/recipes/.
+apiVersion: tmig.io/v1
+kind: Host
+metadata:
+  name: Mac
+  signed: true   # reconcile refuses to act until this is true
+spec:
+  recipes:
+    - sovereign-runtime
+  sandbox:
+    - /Users/metadusa
+    - /opt/tmig
+    - /tmp/tmig-*

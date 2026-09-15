@@ -1,0 +1,16 @@
+apiVersion: tmig.io/v1
+kind: Recipe
+metadata:
+  name: sovereign-runtime
+  version: "0.1.0"
+spec:
+  units:
+    - kind: file
+      name: write-launchagent
+      path: /Users/metadusa/Library/LaunchAgents/com.sovereign.runtime.plist
+      mode: "0644"
+      source: units/com.sovereign.runtime.plist
+    - kind: service
+      name: load-launchagent
+      label: com.sovereign.runtime
+      state: loaded

@@ -13,5 +13,7 @@ run bash -c 'cargo sbom --output-format spdx_json_2_3 > /dev/null'
 run ./target/release/xt policy-check
 run bash scripts/repro-check.sh
 
+run bash infra/check.sh
+
 echo
 echo "ALL LOCAL CHECKS PASS"

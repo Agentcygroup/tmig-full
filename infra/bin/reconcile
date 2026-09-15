@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# reconcile — compute observed state, diff against desired, apply the diff.
+# Refuses to act on an unsigned host description.
+set -uo pipefail
+
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+HOST="${1:-$(hostname -s)}"
+DESIRED="$ROOT/hosts/${HOST}.yaml"
+OBSERVED="$ROOT/state/${HOST}.observed"
+RECEIPT="$ROOT/receipts/${HOST}.$(date -u +%Y%m%dT%H%M%SZ).json"
+
+die() { printf 'reconcile: %s\n' "$*" >&2; exit 1; }
+
+[ -f "$DESIRED" ] || die "no desired state for host: $HOST"
+[ -f "$ROOT/policy.cedar" ] || die "no policy"
+[ -x "$ROOT/bin/_reconcile.py" ] || die "no engine"
+
+# Signature gate
+if ! grep -q '^\s*signed: true' "$DESIRED"; then
+    die "host description is not signed; edit and set signed: true after signing"
+fi
+
+echo "== reconcile $HOST =="
+python3 "$ROOT/bin/_reconcile.py" \
+    --root "$ROOT" \
+    --host "$HOST" \
+    --desired "$DESIRED" \
+    --observed "$OBSERVED" \
+    --receipt "$RECEIPT"
+RC=$?
+if [ $RC -eq 0 ]; then
+    echo "converged"
+else
+    echo "drift detected; see $RECEIPT"
+fi
+exit $RC

@@ -1,0 +1,24 @@
+{
+  "host": "Mac",
+  "ts": 1789481137,
+  "converged": false,
+  "actions": [
+    {
+      "kind": "write-file",
+      "unit": {
+        "kind": "file",
+        "name": "write-launchagent",
+        "path": "/Users/metadusa/Library/LaunchAgents/com.sovereign.runtime.plist",
+        "mode": "0644",
+        "source": "units/com.sovereign.runtime.plist"
+      },
+      "recipe": "sovereign-runtime"
+    }
+  ],
+  "applied": [
+    {
+      "applied": "write-file",
+      "path": "/Users/metadusa/Library/LaunchAgents/com.sovereign.runtime.plist"
+    }
+  ]
+}
