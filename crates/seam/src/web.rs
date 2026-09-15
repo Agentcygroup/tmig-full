@@ -3,6 +3,9 @@ use crate::node::{Node, NodeId, SeamError};
 use std::collections::BTreeMap;
 use std::sync::Arc;
 
+/// `Web` is `Send` but not `Sync`: call takes `&mut self`, so a
+/// Web may be moved between threads but not shared. This is a
+/// deliberate constraint, not an oversight.
 pub struct Web {
     nodes: BTreeMap<String, Arc<dyn Node>>,
 }

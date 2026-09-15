@@ -1,11 +1,11 @@
-pub struct NonClaim {
+pub struct NonClaimRecord {
     pub id: String,
     pub statement: String,
     pub rationale: String,
 }
 pub trait Schema: Send + Sync {
     fn name(&self) -> &str;
-    fn non_claims(&self) -> &[NonClaim];
+    fn non_claims(&self) -> &[NonClaimRecord];
     fn verify(&self, v: &str) -> Result<(), String>;
 }
 #[derive(Default)]
@@ -43,7 +43,7 @@ mod tests {
         fn name(&self) -> &str {
             "e"
         }
-        fn non_claims(&self) -> &[NonClaim] {
+        fn non_claims(&self) -> &[NonClaimRecord] {
             &[]
         }
         fn verify(&self, _: &str) -> Result<(), String> {

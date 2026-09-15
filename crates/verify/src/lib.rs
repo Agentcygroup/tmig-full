@@ -1,11 +1,11 @@
-use schema::{NonClaim, Schema};
+use schema::{NonClaimRecord, Schema};
 pub struct Shell;
 impl Schema for Shell {
     fn name(&self) -> &str {
         "shell"
     }
-    fn non_claims(&self) -> &[NonClaim] {
-        const NC: &[NonClaim] = &[NonClaim {
+    fn non_claims(&self) -> &[NonClaimRecord] {
+        const NC: &[NonClaimRecord] = &[NonClaimRecord {
             id: String::new(),
             statement: String::new(),
             rationale: String::new(),
@@ -25,8 +25,8 @@ impl Schema for Checks {
     fn name(&self) -> &str {
         "checks"
     }
-    fn non_claims(&self) -> &[NonClaim] {
-        const NC: &[NonClaim] = &[NonClaim {
+    fn non_claims(&self) -> &[NonClaimRecord] {
+        const NC: &[NonClaimRecord] = &[NonClaimRecord {
             id: String::new(),
             statement: String::new(),
             rationale: String::new(),
@@ -41,6 +41,8 @@ impl Schema for Checks {
         }
     }
 }
+/// All built-in schemas known to this binary.
+/// Each has a name, a set of non-claims, and a verifier.
 pub fn builtins() -> Vec<Box<dyn Schema>> {
     vec![Box::new(Shell), Box::new(Checks)]
 }

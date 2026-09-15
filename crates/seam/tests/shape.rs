@@ -89,9 +89,9 @@ fn open_set_grows_at_runtime() {
 
 #[test]
 fn nonclaim_is_mandatory() {
-    assert!(NonClaim::new("").is_none());
-    assert!(NonClaim::new("   ").is_none());
-    assert!(NonClaim::new("real").is_some());
+    assert!(NonClaim::new("").is_err());
+    assert!(NonClaim::new("   ").is_err());
+    assert!(NonClaim::new("real").is_ok());
 }
 
 #[test]

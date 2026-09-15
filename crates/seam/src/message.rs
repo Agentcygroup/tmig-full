@@ -1,21 +1,6 @@
+pub use nonclaim::NonClaim;
+
 use serde::{Deserialize, Serialize};
-
-#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize, Deserialize)]
-pub struct NonClaim(String);
-
-impl NonClaim {
-    pub fn new(s: impl Into<String>) -> Option<Self> {
-        let s = s.into();
-        if s.trim().is_empty() {
-            None
-        } else {
-            Some(Self(s))
-        }
-    }
-    pub fn as_str(&self) -> &str {
-        &self.0
-    }
-}
 
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct Message {
@@ -34,6 +19,19 @@ impl Message {
         depth: u32,
         nonclaim: NonClaim,
     ) -> Self {
+        assert!(
+            depth <= crate::limits::MAX_DEPTH,
+            "depth {} exceeds MAX_DEPTH {}",
+            depth,
+            crate::limits::MAX_DEPTH
+        );
+        let bytes = serde_json::to_vec(&body).map(|v| v.len()).unwrap_or(0);
+        assert!(
+            bytes <= crate::limits::MAX_BODY_BYTES,
+            "body {} bytes exceeds MAX_BODY_BYTES {}",
+            bytes,
+            crate::limits::MAX_BODY_BYTES
+        );
         Self {
             from,
             to,

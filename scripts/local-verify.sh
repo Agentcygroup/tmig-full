@@ -36,3 +36,26 @@ fi
 # --- sdcl: every harness emits for every SDLC phase ---
 echo "== sdcl-check =="
 make sdcl-check
+
+# --- go-xt agreement: the Go dispatcher and xt must agree on policy ---
+echo "== go-xt-agree =="
+bash scripts/tests/go-xt-agree.sh
+
+# --- invariant checks ---
+for t in commit-nonclaim nonclaim-type-identity locked-build \
+         hooks-installed resource-bounds docs-claims open-tracking \
+         time-bounds cross-target; do
+    echo "== $t =="
+    bash scripts/tests/$t.sh || { echo "FAIL: $t"; exit 1; }
+done
+
+for t in concurrency invariants-indexed no-duplicate-types \
+         version-consistency rustdoc cli-contracts schema-presence \
+         coverage-by-name edition-consistency no-absolute-paths \
+         makefile-docs; do
+    echo "== $t =="
+    bash scripts/tests/$t.sh || { echo "FAIL: $t"; exit 1; }
+done
+
+echo
+echo "ALL LOCAL CHECKS PASS"
