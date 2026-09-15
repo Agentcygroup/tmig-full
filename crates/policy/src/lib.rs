@@ -99,7 +99,7 @@ pub fn request_for(
     let ctx = Context::from_json_str(&context_json, None)
         .map_err(|e| PolicyError::Schema(e.to_string()))?;
 
-    Ok(Request::new(p, a, r, ctx, None).map_err(|e| PolicyError::Schema(e.to_string()))?)
+    Request::new(p, a, r, ctx, None).map_err(|e| PolicyError::Schema(e.to_string()))
 }
 
 pub fn check(bundle: &PolicySetBundle, requests: &[Request]) -> Result<(), Vec<Violation>> {

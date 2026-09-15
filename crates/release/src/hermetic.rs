@@ -115,10 +115,7 @@ fn run_capture(cwd: &Path, cmd: &str, args: &[&str]) -> std::io::Result<String> 
         .current_dir(cwd)
         .output()?;
     if !out.status.success() {
-        return Err(std::io::Error::new(
-            std::io::ErrorKind::Other,
-            format!("{cmd} failed"),
-        ));
+        return Err(std::io::Error::other(format!("{cmd} failed")));
     }
     Ok(String::from_utf8_lossy(&out.stdout).trim().to_string())
 }
