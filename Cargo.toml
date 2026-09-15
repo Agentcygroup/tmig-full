@@ -1,6 +1,9 @@
 [workspace]
 resolver = "2"
 members = [
+    "crates/sdcl",
+    "crates/policy-eval",
+    "crates/harness-lang",
     "crates/addr",
     "crates/ffi",
     "crates/intent",

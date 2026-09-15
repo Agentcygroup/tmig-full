@@ -22,3 +22,13 @@ go-build:
 
 go-test:
 	@cd "$(CURDIR)" && go vet ./go/... && go test ./go/...
+
+.PHONY: sdcl-check
+sdcl-check:
+	@if [ ! -d harnesses ]; then echo "sdcl: no harnesses/ dir; skipping"; exit 0; fi
+	@for h in harnesses/*.harness; do \
+	  for p in $$(cargo run -q -p sdcl -- phases); do \
+	    cargo run -q -p sdcl -- emit $$p $$h >/dev/null || { echo "FAIL: $$p $$h"; exit 1; }; \
+	  done; \
+	done
+	@echo "sdcl: all harnesses emit for all phases"
