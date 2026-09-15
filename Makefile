@@ -32,3 +32,16 @@ sdcl-check:
 	  done; \
 	done
 	@echo "sdcl: all harnesses emit for all phases"
+
+
+.PHONY: policy-agree
+policy-agree:
+	@bash policy/run-tests.sh 2>&1 | grep -E '^  (ok|FAIL)' | awk '{print $$2, $$NF}' > /tmp/fallback.txt
+	@cargo run -q -p policy-eval 2>&1 | grep -E '^  (ok|FAIL)' | awk '{print $$2, $$NF}' > /tmp/real.txt
+	@test -s /tmp/fallback.txt || { echo "policy-agree: fallback produced no rows"; exit 1; }
+	@test -s /tmp/real.txt     || { echo "policy-agree: cedar produced no rows";     exit 1; }
+	@if diff -q /tmp/fallback.txt /tmp/real.txt >/dev/null; then \
+	  echo "policy-agree: fallback and Cedar agree on $$(wc -l < /tmp/fallback.txt) rows"; \
+	else \
+	  echo "policy-agree: DIVERGENCE"; diff /tmp/fallback.txt /tmp/real.txt; exit 1; \
+	fi

@@ -95,6 +95,26 @@ fn main() -> Result<()> {
     let table_path = policy_dir.join("tests/decision-table.json");
     let policies =
         load_policies(&policy_dir).with_context(|| format!("loading {}", policy_dir.display()))?;
+    // GAP-5: loaded policy count must match .cedar files on disk.
+    {
+        let mut on_disk = 0usize;
+        for e in std::fs::read_dir(&policy_dir)? {
+            if e?.path().extension().and_then(|s| s.to_str()) == Some("cedar") {
+                on_disk += 1;
+            }
+        }
+        if let Ok(rd) = std::fs::read_dir(policy_dir.join("rules")) {
+            for e in rd {
+                if e?.path().extension().and_then(|s| s.to_str()) == Some("cedar") {
+                    on_disk += 1;
+                }
+            }
+        }
+        let loaded = policies.policies().count();
+        if loaded == 0 || loaded < on_disk {
+            anyhow::bail!("loaded {} policies from {} files on disk", loaded, on_disk);
+        }
+    }
     let table: DecisionTable = serde_json::from_str(&std::fs::read_to_string(&table_path)?)?;
     let auth = Authorizer::new();
     let (mut pass, mut fail) = (0usize, 0usize);
@@ -117,6 +137,20 @@ fn main() -> Result<()> {
             pass += 1;
         } else {
             println!("  FAIL  {:<40} want={} got={}", row.id, row.expect, got);
+            let reasons: Vec<String> = resp
+                .diagnostics()
+                .reason()
+                .map(|id| format!("{:?}", id))
+                .collect();
+            let errs: Vec<String> = resp
+                .diagnostics()
+                .errors()
+                .map(|e| format!("{:?}", e))
+                .collect();
+            println!("        reason: {}", reasons.join(", "));
+            if !errs.is_empty() {
+                println!("        errors: {}", errs.join(", "));
+            }
             fail += 1;
         }
     }
