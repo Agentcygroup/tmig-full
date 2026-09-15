@@ -71,4 +71,11 @@ for t in oecd-accountability oecd-risk unesco-eia coe-transparency \
     bash scripts/tests/standards/$t.sh || { echo "FAIL: standards/$t"; exit 1; }
 done
 
+
+echo "== industries-covered =="
+bash scripts/tests/industries-covered.sh
+
+echo "== rfc2119 =="
+bash scripts/tests/rfc2119.sh
+
 echo "ALL LOCAL CHECKS PASS"

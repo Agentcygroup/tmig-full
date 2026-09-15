@@ -19,6 +19,7 @@ python3 scripts/regenerate-invariants.py
 - `scripts/tests/edition-consistency.sh`
 - `scripts/tests/go-xt-agree.sh`
 - `scripts/tests/hooks-installed.sh`
+- `scripts/tests/industries-covered.sh`
 - `scripts/tests/locked-build.sh`
 - `scripts/tests/makefile-docs.sh`
 - `scripts/tests/no-absolute-paths.sh`
@@ -26,6 +27,7 @@ python3 scripts/regenerate-invariants.py
 - `scripts/tests/nonclaim-type-identity.sh`
 - `scripts/tests/open-tracking.sh`
 - `scripts/tests/resource-bounds.sh`
+- `scripts/tests/rfc2119.sh`
 - `scripts/tests/rustdoc.sh`
 - `scripts/tests/schema-presence.sh`
 - `scripts/tests/time-bounds.sh`
@@ -47,6 +49,16 @@ python3 scripts/regenerate-invariants.py
 - `parse_ok.rs`
 - `roundtrip.rs`
 - `shape.rs`
+- `smoke.rs`
+- `smoke.rs`
+- `smoke.rs`
+- `smoke.rs`
+- `smoke.rs`
+- `smoke.rs`
+- `smoke.rs`
+- `smoke.rs`
+- `smoke.rs`
+- `smoke.rs`
 - `smoke.rs`
 - `structural.rs`
 - `structure.rs`

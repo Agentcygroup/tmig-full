@@ -1,3 +1,5 @@
+Every derivation states its RFC 2119 requirement level. MUST = required without exception. SHOULD = recommended unless a documented reason exists. MAY = permitted. A derivation is not a claim of conformance.
+
 # Invariants derived from standards bodies
 
 Each check in `scripts/tests/standards/` cites its source. The check is a
