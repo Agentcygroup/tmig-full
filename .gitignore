@@ -71,3 +71,6 @@ receipts/freeze/*.json
 crates/*/*.cdx.json
 *.cdx.json
 tmig-full.spdx.json
+
+# infra observed state (recomputed by reconcile)
+infra/state/
