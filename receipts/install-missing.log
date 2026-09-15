@@ -1,0 +1,168 @@
+19:12:47 == brew prereqs ==
+19:12:48   ok   go
+19:12:48   ok   rust
+19:12:48   ok   cmake
+19:12:49   ok   ninja
+19:12:49   ok   pkg-config
+19:12:49   ok   freetype
+19:12:49   ok   graphviz
+19:12:50   ok   nmap
+19:12:50   ok   nikto
+19:12:50   ok   hydra
+19:12:50   ok   hashcat
+19:12:51   ok   john-jumbo
+19:12:51   ok   aircrack-ng
+19:12:51   ok   yara
+19:12:51   ok   proxychains-ng
+19:12:51   ok   tor
+19:12:52   install hping
+==> Downloading Homebrew API data
+✔︎ JSON API packages.arm64_tahoe.jws.json
+Warning: No available formula with the name "hping". Did you mean httping, dhcping, gping or fping?
+==> Searching for similarly named formulae and casks...
+==> Formulae
+httping
+dhcping
+gping
+fping
+
+To install httping, run:
+  brew install httping
+
+==> Casks
+hapigo
+
+To install hapigo, run:
+  brew install --cask hapigo
+19:12:53     FAIL hping
+19:12:53   ok   netcat
+19:12:54   ok   exploitdb
+19:12:54   ok   feroxbuster
+19:12:54   ok   sqlmap
+19:12:54   ok   make
+19:12:54 == clone missing tools ==
+19:12:54   ok   dnschef
+19:12:54   ok   setoolkit
+19:12:54   ok   xsser
+19:12:54   ok   xsstrike
+19:12:54   ok   wifite2
+19:12:54   ok   evilginx2
+19:12:54   ok   cuckoo
+19:12:54   ok   cve-search
+19:12:54 == install tools ==
+19:12:55   ok   setoolkit (reqs)
+19:12:56   ok   setoolkit (editable)
+19:12:56   setoolkit:       33 pkgs
+19:12:57   ok   xsser (reqs)
+19:12:58   ok   xsser (editable)
+19:12:58   xsser:        5 pkgs
+19:12:58   ok   xsstrike (reqs)
+19:12:59   xsstrike:        7 pkgs
+19:12:59   ok   dnschef (reqs)
+19:12:59   dnschef:        1 pkgs
+19:12:59   ok   wifite2 (script)
+19:12:59   ok   evilginx2 (go build)
+  error: subprocess-exited-with-error
+  
+  × Getting requirements to build editable did not run successfully.
+  │ exit code: 1
+  ╰─> [1 lines of output]
+      Cuckoo is Python2-only at the moment! Please use Python 2 to install it, i.e., `pip2 install -U cuckoo`.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+ERROR: Failed to build 'file:///Users/metadusa/tmig-full/tools/cuckoo' when getting requirements to build editable
+19:13:00   warn cuckoo (editable failed)
+19:13:01   cuckoo:        0 pkgs
+19:13:02   ok   cve-search (reqs)
+19:13:02   cve-search:       65 pkgs
+19:13:02 == jupyter pins ==
+19:13:02   ok   notebooks
+19:13:02 == summary ==
+19:13:02   tool sources: 8
+19:13:02   tool venvs:   8
+19:13:02   receipts:     8
+19:13:02   log:          /Users/metadusa/tmig-full/receipts/install-missing.log
+19:13:25 == brew prereqs ==
+19:13:26   ok   go
+19:13:26   ok   rust
+19:13:27   ok   cmake
+19:13:27   ok   ninja
+19:13:27   ok   pkg-config
+19:13:27   ok   freetype
+19:13:28   ok   graphviz
+19:13:28   ok   nmap
+19:13:28   ok   nikto
+19:13:28   ok   hydra
+19:13:29   ok   hashcat
+19:13:29   ok   john-jumbo
+19:13:29   ok   aircrack-ng
+19:13:29   ok   yara
+19:13:30   ok   proxychains-ng
+19:13:30   ok   tor
+19:13:30   install hping
+Warning: No available formula with the name "hping". Did you mean httping, dhcping, gping or fping?
+==> Searching for similarly named formulae and casks...
+==> Formulae
+httping
+dhcping
+gping
+fping
+
+To install httping, run:
+  brew install httping
+
+==> Casks
+hapigo
+
+To install hapigo, run:
+  brew install --cask hapigo
+19:13:30     FAIL hping
+19:13:31   ok   netcat
+19:13:31   ok   exploitdb
+19:13:31   ok   feroxbuster
+19:13:32   ok   sqlmap
+19:13:32   ok   make
+19:13:32 == clone missing tools ==
+19:13:32   ok   dnschef
+19:13:32   ok   setoolkit
+19:13:32   ok   xsser
+19:13:32   ok   xsstrike
+19:13:32   ok   wifite2
+19:13:32   ok   evilginx2
+19:13:32   ok   cuckoo
+19:13:32   ok   cve-search
+19:13:32 == install tools ==
+19:13:32   ok   setoolkit (reqs)
+19:13:34   ok   setoolkit (editable)
+19:13:34   setoolkit:       33 pkgs
+19:13:34   ok   xsser (reqs)
+19:13:35   ok   xsser (editable)
+19:13:35   xsser:        5 pkgs
+19:13:36   ok   xsstrike (reqs)
+19:13:36   xsstrike:        7 pkgs
+19:13:36   ok   dnschef (reqs)
+19:13:36   dnschef:        1 pkgs
+19:13:36   ok   wifite2 (script)
+19:13:37   ok   evilginx2 (go build)
+  error: subprocess-exited-with-error
+  
+  × Getting requirements to build editable did not run successfully.
+  │ exit code: 1
+  ╰─> [1 lines of output]
+      Cuckoo is Python2-only at the moment! Please use Python 2 to install it, i.e., `pip2 install -U cuckoo`.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+ERROR: Failed to build 'file:///Users/metadusa/tmig-full/tools/cuckoo' when getting requirements to build editable
+19:13:38   warn cuckoo (editable failed)
+19:13:38   cuckoo:        0 pkgs
+19:13:40   ok   cve-search (reqs)
+19:13:40   cve-search:       65 pkgs
+19:13:40 == jupyter pins ==
+19:13:40   ok   notebooks
+19:13:40 == summary ==
+19:13:40   tool sources: 8
+19:13:40   tool venvs:   8
+19:13:40   receipts:     8
+19:13:40   log:          /Users/metadusa/tmig-full/receipts/install-missing.log

@@ -1,0 +1,5 @@
+gymnasium==0.29.1
+stable-baselines3==2.3.2
+ray[tune]==2.34.0
+optuna==4.0.0
+hyperopt==0.2.7

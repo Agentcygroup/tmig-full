@@ -1,0 +1,5 @@
+jupyterlab==4.2.5
+papermill==2.6.0
+nbconvert==7.16.4
+httpx<0.28
+tornado<6.5

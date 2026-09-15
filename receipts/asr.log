@@ -1,0 +1,37 @@
+19:42:22 == installing ASR stack ==
+19:42:22   pip: soundfile
+19:42:22     ok
+19:42:22   pip: librosa
+19:42:24     ok
+19:42:24   pip: numpy
+19:42:25     ok
+19:42:25   pip: scipy
+19:42:25     ok
+19:42:25   pip: transformers (already installed)
+19:42:27     ok
+19:42:27   pip: faster-whisper
+19:42:28     ok
+19:42:28   pip: openai-whisper
+19:42:30     ok
+19:42:30   pip: speechbrain
+19:42:30     ok
+19:42:30   pip: vosk
+19:42:32     ok
+19:42:32   pip: pyannote.audio
+19:42:32     ok
+19:42:32   pip: nemo_toolkit[asr] (large, may skip)
+19:42:38     ok
+19:42:39   brew: whisper-cpp already installed
+19:42:39 == done — see /Users/metadusa/tmig-full/receipts/asr.log ==
+19:42:39 == ASR backends ==
+19:42:40   ok   transformers
+19:42:40   ok   faster_whisper
+19:42:41   ok   whisper
+19:42:42   ok   speechbrain
+19:42:42   ok   vosk
+19:42:42   ok   pyannote.audio
+19:42:43   ok   nemo
+19:42:43   ok   whisper.cpp (whisper-cli)
+19:42:43 == ASR demo — silence + tone ==
+19:44:15 == ASR demo — silence + tone ==
+19:44:33 == ASR demo — silence + tone ==

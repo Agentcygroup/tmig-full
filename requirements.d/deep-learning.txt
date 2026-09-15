@@ -1,0 +1,4 @@
+torch==2.4.0
+tensorflow==2.17.0
+keras==3.5.0
+pytorch-lightning==2.4.0
