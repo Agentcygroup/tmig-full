@@ -68,19 +68,4 @@ pub struct Cite {
 #[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize, Deserialize)]
 pub struct Ident(pub String);
 
-#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize, Deserialize)]
-pub struct NonEmpty(pub String);
-
-impl NonEmpty {
-    pub fn new(s: impl Into<String>) -> Option<Self> {
-        let s = s.into();
-        if s.trim().is_empty() {
-            None
-        } else {
-            Some(Self(s))
-        }
-    }
-    pub fn as_str(&self) -> &str {
-        &self.0
-    }
-}
+pub use nonclaim::NonClaim as NonEmpty;

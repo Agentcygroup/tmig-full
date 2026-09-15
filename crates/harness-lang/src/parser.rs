@@ -174,7 +174,7 @@ impl<'a> Parser<'a> {
         let s = self.parse_string()?;
         self.ws();
         self.expect(b';')?;
-        NonEmpty::new(s).ok_or(ParseError::EmptyNonclaim)
+        NonEmpty::new(s).map_err(|_| ParseError::EmptyNonclaim)
     }
 
     fn parse_cite(&mut self) -> Result<Cite, ParseError> {

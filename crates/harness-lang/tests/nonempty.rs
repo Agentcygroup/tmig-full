@@ -2,13 +2,13 @@ use harness_lang::NonEmpty;
 
 #[test]
 fn rejects_empty() {
-    assert!(NonEmpty::new("").is_none());
+    assert!(NonEmpty::new("").is_err());
 }
 
 #[test]
 fn rejects_whitespace_only() {
-    assert!(NonEmpty::new("   ").is_none());
-    assert!(NonEmpty::new("\t\n\r").is_none());
+    assert!(NonEmpty::new("   ").is_err());
+    assert!(NonEmpty::new("\t\n\r").is_err());
 }
 
 #[test]
