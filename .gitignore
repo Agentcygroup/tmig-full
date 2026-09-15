@@ -63,3 +63,4 @@ coverage/
 *.pre-bump
 receipts/freeze/*.json
 requirements.d/vision.txt
+out/
