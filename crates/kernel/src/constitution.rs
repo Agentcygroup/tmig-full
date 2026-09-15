@@ -14,7 +14,7 @@ pub struct Constitution {
 }
 
 impl Constitution {
-    /// Load the constitution from `kernel/kernel.cedar`.
+    /// Load the constitution from a `.cedar` file.
     pub fn load(path: &Path) -> Result<Self> {
         let policy = Policy::load(path)?;
         Ok(Self {
@@ -32,13 +32,14 @@ impl Constitution {
     /// Authorize an op against an entity.
     pub fn authorize(
         &self,
+        principal_name: &str,
         op: &Op,
         target: &EntityId,
         context: serde_json::Value,
     ) -> Result<Receipt> {
-        let decision = self
-            .policy
-            .authorize(op.name.as_str(), target.as_str(), context)?;
+        let decision =
+            self.policy
+                .authorize(principal_name, op.name.as_str(), target.as_str(), context)?;
         Ok(Receipt::new(
             op.name.clone(),
             vec![target.clone()],
@@ -75,7 +76,12 @@ mod tests {
         .unwrap();
         let target: EntityId = "image:1".parse().unwrap();
         let r = c
-            .authorize(&op, &target, serde_json::json!({"decision":"allow"}))
+            .authorize(
+                "kernel",
+                &op,
+                &target,
+                serde_json::json!({"decision":"allow"}),
+            )
             .unwrap();
         assert!(r.verify());
         assert_eq!(r.op.as_str(), "detect");

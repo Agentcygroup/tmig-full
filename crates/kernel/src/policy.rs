@@ -29,11 +29,12 @@ impl Policy {
     /// Ask the policy whether an op may run.
     pub fn authorize(
         &self,
+        principal_name: &str,
         action: &str,
         resource: &str,
         context: serde_json::Value,
     ) -> Result<String> {
-        let principal = r#"Principal::"kernel""#
+        let principal = format!(r#"Principal::"{principal_name}""#)
             .parse()
             .map_err(|e: cedar_policy::ParseErrors| Error::Schema(e.to_string()))?;
         let action = format!(r#"Action::"{action}""#)
@@ -87,13 +88,24 @@ mod tests {
     #[test]
     fn allow_when_context_says_allow() {
         let p = Policy::from_str(SRC, &PathBuf::from("test.cedar")).unwrap();
-        let r = p.authorize("detect", "image:1", serde_json::json!({"decision":"allow"}));
+        let r = p.authorize(
+            "kernel",
+            "detect",
+            "image:1",
+            serde_json::json!({"decision":"allow"}),
+        );
         assert!(r.is_ok());
     }
+
     #[test]
     fn deny_when_context_says_deny() {
         let p = Policy::from_str(SRC, &PathBuf::from("test.cedar")).unwrap();
-        let r = p.authorize("detect", "image:1", serde_json::json!({"decision":"deny"}));
+        let r = p.authorize(
+            "kernel",
+            "detect",
+            "image:1",
+            serde_json::json!({"decision":"deny"}),
+        );
         assert!(matches!(r, Err(Error::Denied { .. })));
     }
 }

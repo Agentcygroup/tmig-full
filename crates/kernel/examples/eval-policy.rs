@@ -5,7 +5,7 @@
 //! decision table, asks the Constitution to authorize the op. Compares
 //! the decision to the row's `expect` field. Exits 0 iff all match.
 
-use kernel::{Constitution, EntityId, Effect, Error, Op};
+use kernel::{Constitution, Effect, EntityId, Error, Op};
 use std::path::{Path, PathBuf};
 use std::str::FromStr;
 
@@ -58,7 +58,16 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         let id = row["id"].as_str().unwrap_or("?");
         let action = row["action"].as_str().unwrap_or("read");
         let resource = row["resource"].as_str().unwrap_or("res:1");
-        let ctx = row["context"].clone();
+        let principal = row["principal"].as_str().unwrap_or("kernel");
+        let mut ctx = row["context"].clone();
+        if let Some(rp) = row["resource_path"].as_str() {
+            if let Some(obj) = ctx.as_object_mut() {
+                obj.insert(
+                    "resource_path".to_string(),
+                    serde_json::Value::String(rp.to_string()),
+                );
+            }
+        }
         let expect = row["expect"].as_str().unwrap_or("deny");
 
         let op = match Op::new(action, Effect::Read, vec![], vec![]) {
@@ -78,7 +87,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             }
         };
 
-        let got = match constitution.authorize(&op, &target, ctx) {
+        let got = match constitution.authorize(principal, &op, &target, ctx) {
             Ok(r) if r.verify() => "allow",
             _ => "deny",
         };
@@ -95,5 +104,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let _ = std::fs::remove_file(&tmp);
 
     println!("  {pass} passed, {fail} failed");
-    if fail == 0 { Ok(()) } else { std::process::exit(1) }
+    if fail == 0 {
+        Ok(())
+    } else {
+        std::process::exit(1)
+    }
 }

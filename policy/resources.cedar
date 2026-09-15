@@ -1,16 +1,4 @@
-// The sandbox. Anything outside is denied.
-@id("policy.resource.sandbox")
-permit (
-    principal,
-    action,
-    resource
-)
-when {
-    resource.path like "/Users/metadusa/*" ||
-    resource.path like "/opt/tmig/*"     ||
-    resource.path like "/tmp/tmig-*"
-};
-
+// Egress is denied. Reads and writes are covered by the sandbox rule.
 @id("policy.resource.no-egress")
 forbid (
     principal,
@@ -18,7 +6,7 @@ forbid (
     resource
 )
 when {
-    resource.path like "http://*"  ||
-    resource.path like "https://*" ||
-    resource.path like "git@*"
+    context.resource_path like "http://*"  ||
+    context.resource_path like "https://*" ||
+    context.resource_path like "git@*"
 };

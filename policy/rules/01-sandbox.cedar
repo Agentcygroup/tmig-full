@@ -1,4 +1,4 @@
-// File writes must stay inside the sandbox.
+// Writes must stay inside the sandbox.
 @id("policy.rule.sandbox.write")
 forbid (
     principal,
@@ -6,7 +6,8 @@ forbid (
     resource
 )
 when {
-    !(resource.path like "/Users/metadusa/*" ||
-      resource.path like "/opt/tmig/*"     ||
-      resource.path like "/tmp/tmig-*")
+    context.resource_path != "" &&
+    !(context.resource_path like "/Users/metadusa/*" ||
+      context.resource_path like "/opt/tmig/*"     ||
+      context.resource_path like "/tmp/tmig-*")
 };

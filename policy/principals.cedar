@@ -1,38 +1,24 @@
-// The three principals that act in this system.
-// Nothing else may hold a Principal:: entity.
-@id("policy.principal.kernel")
+// Exactly three principals are permitted. Any other is denied.
+@id("policy.principal.allow")
 permit (
-    principal == Principal::"kernel",
+    principal,
     action,
     resource
 )
-when { context.principal == "kernel" };
+when {
+    context.principal == "kernel"    ||
+    context.principal == "reconcile" ||
+    context.principal == "xt"
+};
 
-@id("policy.principal.reconcile")
-permit (
-    principal == Principal::"reconcile",
-    action,
-    resource
-)
-when { context.principal == "reconcile" };
-
-@id("policy.principal.xt")
-permit (
-    principal == Principal::"xt",
-    action,
-    resource
-)
-when { context.principal == "xt" };
-
-// Any other principal is denied outright.
-@id("policy.principal.unknown")
+@id("policy.principal.deny")
 forbid (
     principal,
     action,
     resource
 )
 when {
-    principal != Principal::"kernel" &&
-    principal != Principal::"reconcile" &&
-    principal != Principal::"xt"
+    context.principal != "kernel"    &&
+    context.principal != "reconcile" &&
+    context.principal != "xt"
 };
