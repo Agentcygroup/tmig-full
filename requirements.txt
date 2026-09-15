@@ -99,7 +99,7 @@ scrapy==2.11.2
 
 # ---------------------------------------------------------------- crypto primitives
 cryptography==43.0.1
-pyjwt==2.9.0
+pyjwt==2.13.0
 oauthlib==3.2.2
 pycryptodome==3.20.0
 paramiko==3.5.0
