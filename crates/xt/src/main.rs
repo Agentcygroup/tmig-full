@@ -30,26 +30,6 @@ fn main() {
                 println!("{n}");
             }
         }
-        "policy" => {
-            let p = std::env::var("HOME")
-                .map(|h| {
-                    std::path::PathBuf::from(h)
-                        .join("intent")
-                        .join("policy.toml")
-                })
-                .unwrap();
-            match policy::load(&p) {
-                Ok(m) => {
-                    for (k, v) in m {
-                        println!("{v:>4}  {k}");
-                    }
-                }
-                Err(e) => {
-                    eprintln!("{e}");
-                    exit(1);
-                }
-            }
-        }
         "remote" => {
             let r = std::env::var("XT_REMOTE")
                 .map(std::path::PathBuf::from)
@@ -66,24 +46,35 @@ fn main() {
             let dir = repo.join("policies");
             let bundle = match policy::load(&dir) {
                 Ok(b) => b,
-                Err(e) => { eprintln!("policy: {e}"); exit(2); }
+                Err(e) => {
+                    eprintln!("policy: {e}");
+                    exit(2);
+                }
             };
             let mut reqs = Vec::new();
             for (name, layer) in &i.layers {
-                for (id, target) in &layer.targets {
+                for target in &layer.targets {
                     match policy::request_for(
-                        name, layer.strength, id, &target.kind,
+                        name,
+                        layer.strength,
+                        &target.id,
+                        &target.kind,
                         target.cmd.as_deref(),
                     ) {
                         Ok(r) => reqs.push(r),
-                        Err(e) => { eprintln!("policy: request: {e}"); exit(2); }
+                        Err(e) => {
+                            eprintln!("policy: request: {e}");
+                            exit(2);
+                        }
                     }
                 }
             }
             match policy::check(&bundle, &reqs) {
                 Ok(()) => println!("policy: ok ({} requests)", reqs.len()),
                 Err(vs) => {
-                    for v in &vs { eprintln!("violation: {} — {}", v.policy_id, v.reason); }
+                    for v in &vs {
+                        eprintln!("violation: {} — {}", v.policy_id, v.reason);
+                    }
                     exit(1);
                 }
             }

@@ -1,0 +1,17 @@
+Receipt {
+    run_id: "3168b2a06e3b650b24b937eecdfdd4c6b831a6f0737b1084c580b7b9de824f5f",
+    targets: [
+        Tr {
+            id: "release",
+            status: "fail",
+            input_id: "520ed76fa6adc2fc8b05c6254c73e76b967e33981dd59dab9db6143ec328ef6b",
+            output_id: "25bb84234fa4c42cf7b75753f461411bd58af75a53cd701359f9dcc3e50b4d53",
+        },
+    ],
+    non_claims: [
+        "no-mastery",
+        "no-accreditation",
+        "no-coherence-proof",
+        "no-completeness",
+    ],
+}

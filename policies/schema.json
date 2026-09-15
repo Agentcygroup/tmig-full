@@ -1,0 +1,14 @@
+{
+  "": {
+    "entityTypes": {
+      "Principal": { "shape": { "type": "Record", "attributes": {} } },
+      "Resource":  { "shape": { "type": "Record", "attributes": {} } }
+    },
+    "actions": {
+      "shell":     { "appliesTo": { "principalTypes": ["Principal"], "resourceTypes": ["Resource"], "context": { "type": "Record", "attributes": { "layer": {"type":"String"}, "strength": {"type":"Long"}, "cmd": {"type":"String"} } } } },
+      "checks":    { "appliesTo": { "principalTypes": ["Principal"], "resourceTypes": ["Resource"], "context": { "type": "Record", "attributes": { "layer": {"type":"String"}, "strength": {"type":"Long"}, "cmd": {"type":"String"} } } } },
+      "composite": { "appliesTo": { "principalTypes": ["Principal"], "resourceTypes": ["Resource"], "context": { "type": "Record", "attributes": { "layer": {"type":"String"}, "strength": {"type":"Long"}, "cmd": {"type":"String"} } } } },
+      "producer":  { "appliesTo": { "principalTypes": ["Principal"], "resourceTypes": ["Resource"], "context": { "type": "Record", "attributes": { "layer": {"type":"String"}, "strength": {"type":"Long"}, "cmd": {"type":"String"} } } } }
+    }
+  }
+}

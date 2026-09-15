@@ -1,6 +1,7 @@
 use cedar_policy::{Authorizer, Context, Entities, PolicySet, Request, Schema};
 use serde::Deserialize;
 use std::path::{Path, PathBuf};
+use std::str::FromStr;
 use thiserror::Error;
 
 #[derive(Debug, Error)]
@@ -17,7 +18,7 @@ pub enum PolicyError {
 
 pub struct PolicySetBundle {
     pub policies: PolicySet,
-    pub schema: Schema,
+    pub schema: Option<Schema>,
 }
 
 #[derive(Debug, Clone, Deserialize)]
@@ -27,11 +28,13 @@ pub struct Violation {
 }
 
 pub fn load(dir: &Path) -> Result<PolicySetBundle, PolicyError> {
-    let schema_path = dir.join("schema.cedarschema");
-    let schema_src = std::fs::read_to_string(&schema_path)
-        .map_err(|_| PolicyError::NotFound(schema_path.clone()))?;
-    let (schema, _w) = Schema::from_cedarschema_str(&schema_src)
-        .map_err(|e| PolicyError::Schema(e.to_string()))?;
+    let schema_path = dir.join("schema.json");
+    let schema = if schema_path.exists() {
+        let src = std::fs::read_to_string(&schema_path)?;
+        Some(Schema::from_json_str(&src).map_err(|e| PolicyError::Schema(e.to_string()))?)
+    } else {
+        None
+    };
 
     let mut policies = PolicySet::new();
     let mut entries: Vec<_> = std::fs::read_dir(dir)?
@@ -43,10 +46,27 @@ pub fn load(dir: &Path) -> Result<PolicySetBundle, PolicyError> {
     for e in entries {
         let p = e.path();
         let src = std::fs::read_to_string(&p)?;
-        let parsed = PolicySet::from_str(&src)
-            .map_err(|err| PolicyError::Parse { file: p.clone(), msg: err.to_string() })?;
-        policies = policies.merge(parsed);
+        let parsed = PolicySet::from_str(&src).map_err(|err| PolicyError::Parse {
+            file: p.clone(),
+            msg: err.to_string(),
+        })?;
+        // cedar-policy 4.12: merge mutates self in place and returns
+        // Result<HashMap<PolicyId, PolicyId>, PolicySetError>.
+        let collisions = policies
+            .merge(&parsed, true)
+            .map_err(|err| PolicyError::Parse {
+                file: p.clone(),
+                msg: err.to_string(),
+            })?;
+        if !collisions.is_empty() {
+            eprintln!(
+                "policy id collisions auto-renamed: {} in {}",
+                collisions.len(),
+                p.display()
+            );
+        }
     }
+
     Ok(PolicySetBundle { policies, schema })
 }
 
@@ -67,21 +87,22 @@ pub fn request_for(
     })
     .to_string();
 
-    Request::new(
-        principal.parse().map_err(|e: cedar_policy::ParseErrors| PolicyError::Schema(e.to_string()))?,
-        action.parse().map_err(|e: cedar_policy::ParseErrors| PolicyError::Schema(e.to_string()))?,
-        resource.parse().map_err(|e: cedar_policy::ParseErrors| PolicyError::Schema(e.to_string()))?,
-        Context::from_json_str(&context_json, None)
-            .map_err(|e| PolicyError::Schema(e.to_string()))?,
-        None,
-    )
-    .map_err(|e| PolicyError::Schema(e.to_string()))
+    let p = principal
+        .parse()
+        .map_err(|e: cedar_policy::ParseErrors| PolicyError::Schema(e.to_string()))?;
+    let a = action
+        .parse()
+        .map_err(|e: cedar_policy::ParseErrors| PolicyError::Schema(e.to_string()))?;
+    let r = resource
+        .parse()
+        .map_err(|e: cedar_policy::ParseErrors| PolicyError::Schema(e.to_string()))?;
+    let ctx = Context::from_json_str(&context_json, None)
+        .map_err(|e| PolicyError::Schema(e.to_string()))?;
+
+    Ok(Request::new(p, a, r, ctx, None).map_err(|e| PolicyError::Schema(e.to_string()))?)
 }
 
-pub fn check(
-    bundle: &PolicySetBundle,
-    requests: &[Request],
-) -> Result<(), Vec<Violation>> {
+pub fn check(bundle: &PolicySetBundle, requests: &[Request]) -> Result<(), Vec<Violation>> {
     let authorizer = Authorizer::new();
     let entities = Entities::empty();
     let mut violations = Vec::new();
@@ -92,12 +113,24 @@ pub fn check(
             let reason = decision
                 .diagnostics()
                 .reason()
-                .map(|s| s.to_string())
+                .next()
+                .map(|id| id.to_string())
                 .unwrap_or_else(|| "denied".to_string());
-            let id = reason.split_whitespace().next().unwrap_or("policy").to_string();
-            violations.push(Violation { policy_id: id, reason });
+            let id = reason
+                .split_whitespace()
+                .next()
+                .unwrap_or("policy")
+                .to_string();
+            violations.push(Violation {
+                policy_id: id,
+                reason,
+            });
         }
     }
 
-    if violations.is_empty() { Ok(()) } else { Err(violations) }
+    if violations.is_empty() {
+        Ok(())
+    } else {
+        Err(violations)
+    }
 }

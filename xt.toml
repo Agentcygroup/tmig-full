@@ -30,7 +30,7 @@ dir = "checks"
 [[layers.project.target]]
 id = "ci"
 kind = "composite"
-needs = ["rust:fmt", "rust:lint", "rust:test", "checks", "freeze-check"]
+needs = ["rust:fmt", "rust:lint", "rust:test", "checks", "freeze-check", "policy"]
 
 [[layers.project.target]]
 id = "all"
@@ -47,3 +47,36 @@ id = "freeze-check"
 kind = "shell"
 cmd = "python3 $HOME/intent/freeze/rewrite.py $HOME/intent/freeze/my-intent.freeze $PWD && git diff --quiet xt.toml docs/NON_CLAIMS.md"
 needs = ["freeze"]
+[[layers.project.target]]
+id = "lang-registry"
+kind = "checks"
+dir  = "checks/lang"
+
+[[layers.project.target]]
+id = "policy"
+kind = "shell"
+strength = 90
+cmd = "cargo run --release -p xt -- policy-check"
+
+[[layers.project.target]]
+id = "release"
+kind = "shell"
+strength = 95
+cmd = "cargo run --release -p release --bin xt-release -- --repo $PWD --out $PWD/out"
+
+[[layers.project.target]]
+id = "repro-check"
+kind = "shell"
+strength = 95
+cmd = "bash scripts/repro-check.sh"
+
+[[layers.project.target]]
+id = "reqs-check"
+kind = "shell"
+cmd = "python3 -m pip install -r requirements.txt --dry-run >/dev/null 2>&1"
+
+[[layers.project.target]]
+id = "verify"
+kind = "shell"
+strength = 95
+cmd = "bash scripts/verify.sh"

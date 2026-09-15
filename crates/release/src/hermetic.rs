@@ -16,8 +16,13 @@ impl HermeticEnv {
         let freeze_digest = digest_file(&freeze)?;
         let commit = run_capture(repo, "git", &["rev-parse", "HEAD"])?;
         let toolchain_hash = toolchain_hash()?;
-        Ok(Self { repo: repo.to_path_buf(), out: out.to_path_buf(),
-                  freeze_digest, commit, toolchain_hash })
+        Ok(Self {
+            repo: repo.to_path_buf(),
+            out: out.to_path_buf(),
+            freeze_digest,
+            commit,
+            toolchain_hash,
+        })
     }
 
     pub fn tarball(&self, src: &Path) -> std::io::Result<PathBuf> {
@@ -31,15 +36,34 @@ impl HermeticEnv {
         tar.mode(tar::HeaderMode::Deterministic);
 
         let mut entries: Vec<PathBuf> = walkdir::WalkDir::new(src)
-            .into_iter().filter_map(|e| e.ok())
+            .into_iter()
+            .filter_entry(|e| {
+                let n = e.file_name().to_string_lossy();
+                !matches!(
+                    n.as_ref(),
+                    "target"
+                        | "venvs"
+                        | "venvs-graph"
+                        | "tool-venvs"
+                        | "oss-providers"
+                        | "out"
+                        | ".git"
+                        | "taxonomy"
+                        | "copyleft"
+                        | "tools"
+                        | "receipts"
+                        | "node_modules"
+                )
+            })
+            .filter_map(|e| e.ok())
             .filter(|e| e.file_type().is_file())
             .map(|e| e.path().to_path_buf())
             .collect();
         entries.sort();
 
-        for entry in entries {
-            let rel = entry.strip_prefix(src).unwrap_or(&entry);
-            let meta = std::fs::metadata(&entry)?;
+        for entry in &entries {
+            let rel = entry.strip_prefix(src).unwrap_or(entry);
+            let meta = std::fs::metadata(entry)?;
             let mut h = tar::Header::new_gnu();
             h.set_size(meta.len());
             h.set_mode(0o644);
@@ -47,7 +71,7 @@ impl HermeticEnv {
             h.set_gid(0);
             h.set_mtime(0);
             h.set_cksum();
-            let f = std::fs::File::open(&entry)?;
+            let f = std::fs::File::open(entry)?;
             tar.append_data(&mut h, rel, f)?;
         }
 
@@ -72,8 +96,7 @@ impl HermeticEnv {
         gz.finish()?;
 
         let tarball_digest = digest_file(&path)?;
-        let mut sidecar = std::fs::File::create(
-            self.out.join(format!("{name}.sha256")))?;
+        let mut sidecar = std::fs::File::create(self.out.join(format!("{name}.sha256")))?;
         writeln!(sidecar, "{}  {}", tarball_digest, name)?;
         Ok(path)
     }
@@ -88,10 +111,14 @@ fn digest_file(p: &Path) -> std::io::Result<String> {
 
 fn run_capture(cwd: &Path, cmd: &str, args: &[&str]) -> std::io::Result<String> {
     let out = std::process::Command::new(cmd)
-        .args(args).current_dir(cwd).output()?;
+        .args(args)
+        .current_dir(cwd)
+        .output()?;
     if !out.status.success() {
-        return Err(std::io::Error::new(std::io::ErrorKind::Other,
-            format!("{cmd} failed")));
+        return Err(std::io::Error::new(
+            std::io::ErrorKind::Other,
+            format!("{cmd} failed"),
+        ));
     }
     Ok(String::from_utf8_lossy(&out.stdout).trim().to_string())
 }
