@@ -1,0 +1,56 @@
+#usda 1.0
+(
+    defaultPrim = "Actions"
+    subLayers = [ "../schemas/action.usda" ]
+)
+
+def Scope "Actions" {
+    def Action "read" {
+        string cedar_action = "read"
+        string purpose = "observe state without mutating anything"
+        string principal_scope = "kernel|reconcile|xt"
+        string resource_scope = "res:*"
+        string evidence = "policy/check.sh row"
+        string nonclaim = "read does not imply authorization of subsequent writes"
+    }
+    def Action "write" {
+        string cedar_action = "write"
+        string purpose = "create or modify a file inside the sandbox"
+        string principal_scope = "kernel|xt"
+        string resource_scope = "sandbox path"
+        string evidence = "policy/rules/01-sandbox.cedar"
+        string nonclaim = "write outside the sandbox is forbidden regardless of principal"
+    }
+    def Action "exec" {
+        string cedar_action = "exec"
+        string purpose = "execute a subprocess"
+        string principal_scope = "kernel|reconcile|xt"
+        string resource_scope = "command string"
+        string evidence = "policy/rules/02-boundary-cmds.cedar"
+        string nonclaim = "the boundary list is not exhaustive of all forbidden commands"
+    }
+    def Action "release" {
+        string cedar_action = "release"
+        string purpose = "build a tarball, tag a commit"
+        string principal_scope = "xt"
+        string resource_scope = "commit sha"
+        string evidence = "ci/release.sh"
+        string nonclaim = "release does not imply signing"
+    }
+    def Action "sign" {
+        string cedar_action = "sign"
+        string purpose = "cryptographically sign an artefact"
+        string principal_scope = "xt"
+        string resource_scope = "artefact digest"
+        string evidence = "release pipeline"
+        string nonclaim = "sign does not imply the signed content is correct"
+    }
+    def Action "push" {
+        string cedar_action = "push"
+        string purpose = "send commits or tags to a remote"
+        string principal_scope = "xt"
+        string resource_scope = "git remote"
+        string evidence = "git push output"
+        string nonclaim = "push does not imply review"
+    }
+}

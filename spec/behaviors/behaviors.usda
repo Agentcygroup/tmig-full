@@ -1,0 +1,161 @@
+#usda 1.0
+(
+    defaultPrim = "Behaviors"
+    subLayers = [ "../schemas/behavior.usda" ]
+)
+
+def Scope "Behaviors" {
+    def Behavior "parse" {
+        string crate = "harness-lang"
+        string entrypoint = "parser.rs:Parser::parse"
+        string inputs = "text"
+        string outputs = "Harness"
+        string evidence = "INV-parse-roundtrip"
+        string nonclaim = "parser accepts exactly the grammar in the file"
+        rel exercises_action = </Actions/read>
+    }
+    def Behavior "evaluate" {
+        string crate = "policy-eval"
+        string entrypoint = "main.rs:main"
+        string inputs = "policy/*.cedar, decision-table.json"
+        string outputs = "allow|deny per row"
+        string evidence = "make policy-agree"
+        string nonclaim = "evaluator is Cedar; it is not a formal verification"
+        rel exercises_action = </Actions/read>
+    }
+    def Behavior "emit" {
+        string crate = "sdcl"
+        string entrypoint = "emit/mod.rs:emit_phase"
+        string inputs = "Harness, Phase"
+        string outputs = "String"
+        string evidence = "INV-sdcl-valid-yaml"
+        string nonclaim = "emitted artifacts are drafts, not deployments"
+        rel exercises_action = </Actions/write>
+    }
+    def Behavior "monitor" {
+        string crate = "usd-binding"
+        string entrypoint = "ongoing.sh"
+        string inputs = "modality ports"
+        string outputs = "receipts/lifecycle-ongoing.log"
+        string evidence = "iso-42001-monitor"
+        string nonclaim = "monitoring does not imply health"
+        rel exercises_action = </Actions/exec>
+    }
+    def Behavior "dispatch" {
+        string crate = "xt"
+        string entrypoint = "main.rs:main"
+        string inputs = "argv"
+        string outputs = "exit code"
+        string evidence = "go-xt-agree"
+        string nonclaim = "dispatch forwards to subcommands without inspection"
+        rel exercises_action = </Actions/exec>
+    }
+    def Behavior "authorize" {
+        string crate = "kernel"
+        string entrypoint = "constitution.rs:authorize"
+        string inputs = "principal, op, target, context"
+        string outputs = "Receipt"
+        string evidence = "INV-nonclaim"
+        string nonclaim = "authorize names a principal but does not verify it"
+        rel exercises_action = </Actions/read>
+    }
+    def Behavior "seam-call" {
+        string crate = "seam"
+        string entrypoint = "web.rs:Web::call"
+        string inputs = "Message"
+        string outputs = "Message"
+        string evidence = "INV-seam-cycle"
+        string nonclaim = "cycle is bounded by MAX_DEPTH, not by content"
+        rel exercises_action = </Actions/exec>
+    }
+    def Behavior "release-tarball" {
+        string crate = "release"
+        string entrypoint = "hermetic.rs"
+        string inputs = "crate set"
+        string outputs = "tarball"
+        string evidence = "ISO 9001 evidence"
+        string nonclaim = "tarball contents are not scanned for secrets here"
+        rel exercises_action = </Actions/release>
+    }
+    def Behavior "addr-do" {
+        string crate = "addr"
+        string entrypoint = "addr.rs"
+        string inputs = "string"
+        string outputs = "bool"
+        string evidence = "INV-nonclaim"
+        string nonclaim = "addr does not imply reachability"
+        rel exercises_action = </Actions/read>
+    }
+    def Behavior "ffi-do" {
+        string crate = "ffi"
+        string entrypoint = "lib.rs"
+        string inputs = "ptr,len"
+        string outputs = "i32"
+        string evidence = "smoke"
+        string nonclaim = "ffi does not imply memory safety across the boundary"
+        rel exercises_action = </Actions/read>
+    }
+    def Behavior "intent-do" {
+        string crate = "intent"
+        string entrypoint = "lib.rs"
+        string inputs = "repo"
+        string outputs = "targets"
+        string evidence = "INV-extension-checks"
+        string nonclaim = "intent is a plan; it is not a commitment"
+        rel exercises_action = </Actions/read>
+    }
+    def Behavior "layer-do" {
+        string crate = "layer"
+        string entrypoint = "lib.rs"
+        string inputs = "layer"
+        string outputs = "strength"
+        string evidence = "INV-nonclaim"
+        string nonclaim = "layer does not enforce strength by itself"
+        rel exercises_action = </Actions/read>
+    }
+    def Behavior "nonclaim-do" {
+        string crate = "nonclaim"
+        string entrypoint = "lib.rs"
+        string inputs = "string"
+        string outputs = "NonClaim"
+        string evidence = "INV-nonclaim"
+        string nonclaim = "nonclaim rejects empty and forbidden words only"
+        rel exercises_action = </Actions/read>
+    }
+    def Behavior "policy-do" {
+        string crate = "policy"
+        string entrypoint = "lib.rs"
+        string inputs = "request"
+        string outputs = "allow|deny"
+        string evidence = "make policy-agree"
+        string nonclaim = "policy is a set of rules, not a proof of correctness"
+        rel exercises_action = </Actions/read>
+    }
+    def Behavior "remote-do" {
+        string crate = "remote"
+        string entrypoint = "lib.rs"
+        string inputs = "path"
+        string outputs = "Remote"
+        string evidence = "smoke"
+        string nonclaim = "remote cache is local; it is not a network service"
+        rel exercises_action = </Actions/read>
+    }
+    def Behavior "schema-do" {
+        string crate = "schema"
+        string entrypoint = "lib.rs"
+        string inputs = "Schema"
+        string outputs = "Registry"
+        string evidence = "INV-schema-presence"
+        string nonclaim = "schema does not imply validation of every input"
+        rel exercises_action = </Actions/read>
+    }
+    def Behavior "verify-do" {
+        string crate = "verify"
+        string entrypoint = "lib.rs"
+        string inputs = "value"
+        string outputs = "ok|err"
+        string evidence = "smoke"
+        string nonclaim = "verify exercises declared schemas only"
+        rel exercises_action = </Actions/read>
+    }
+}

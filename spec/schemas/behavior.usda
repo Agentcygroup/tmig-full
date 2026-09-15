@@ -1,0 +1,14 @@
+#usda 1.0
+(
+    defaultPrim = "BehaviorSchema"
+)
+
+class Behavior "BehaviorSchema" {
+    string crate            # which crate implements it
+    string entrypoint       # file:function
+    string inputs           # comma-separated
+    string outputs          # comma-separated
+    string evidence         # receipt/log
+    string nonclaim
+    rel    exercises_action # -> /Actions/<id>
+}

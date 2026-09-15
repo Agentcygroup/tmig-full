@@ -12,5 +12,6 @@ crates/remote
 crates/schema
 crates/sdcl
 crates/seam
+crates/usd-binding
 crates/verify
 crates/xt

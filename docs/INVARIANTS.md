@@ -29,6 +29,8 @@ Regenerate with `python3 scripts/regenerate-invariants.py`.
 - `scripts/tests/rustdoc.sh`
 - `scripts/tests/schema-presence.sh`
 - `scripts/tests/time-bounds.sh`
+- `scripts/tests/usd-actions-covered.sh`
+- `scripts/tests/usd-behaviors-covered.sh`
 - `scripts/tests/version-consistency.sh`
 
 ## Standards checks (`scripts/tests/standards/*.sh`)
@@ -70,6 +72,7 @@ Regenerate with `python3 scripts/regenerate-invariants.py`.
 - `execute_pass.rs`
 - `forbidden_words_match_policy.rs`
 - `nonempty.rs`
+- `parse.rs`
 - `parse_errors.rs`
 - `parse_missing_nonclaim.rs`
 - `parse_ok.rs`

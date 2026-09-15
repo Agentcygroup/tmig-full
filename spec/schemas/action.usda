@@ -1,0 +1,14 @@
+#usda 1.0
+(
+    defaultPrim = "ActionSchema"
+)
+
+class Action "ActionSchema" {
+    string cedar_action     # the Action::"..." name in policy/actions.cedar
+    string purpose          # why this action exists
+    string principal_scope  # which principals may invoke
+    string resource_scope   # which resources it targets
+    string evidence         # what receipt or log is emitted
+    string nonclaim         # mandatory
+    rel    policy_rule      # -> /Actions/<id>/PolicyRule
+}

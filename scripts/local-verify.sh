@@ -78,4 +78,9 @@ bash scripts/tests/industries-covered.sh
 echo "== rfc2119 =="
 bash scripts/tests/rfc2119.sh
 
+
+echo "== usd =="
+bash scripts/tests/usd-actions-covered.sh
+bash scripts/tests/usd-behaviors-covered.sh
+
 echo "ALL LOCAL CHECKS PASS"

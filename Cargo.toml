@@ -1,6 +1,7 @@
 [workspace]
 resolver = "2"
 members = [
+    "crates/usd-binding",
     "crates/nonclaim",
     "crates/seam",
     "crates/sdcl",
