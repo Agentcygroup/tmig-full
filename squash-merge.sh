@@ -11,9 +11,9 @@ for repo in team-tmig tmig-full; do
   PR_NUM=$(gh pr list --head fix/workflow-dispatch --json number --jq '.[0].number' || true)
   [[ -n "${PR_NUM:-}" ]] || continue
 
-  STATUS=$(gh pr checks "$PR_NUM" --json name,state --jq '.[] | select(.name=="land") | .state' | head -1)
+  STATUS=$(gh pr checks "$PR_NUM" --json name,state --jq '.[] | select(.name=="gate") | .state' | head -1)
   if [[ "$STATUS" != "SUCCESS" && "$STATUS" != "COMPLETED" ]]; then
-    echo "DENY_LAND: PR #$PR_NUM lacks successful required 'land' check (got ${STATUS:-MISSING})" >&2
+    echo "DENY_LAND: PR #$PR_NUM lacks successful required 'gate' check (got ${STATUS:-MISSING})" >&2
     exit 1
   fi
 
@@ -23,4 +23,4 @@ for repo in team-tmig tmig-full; do
   git pull --ff-only origin main
 done
 
-echo "== Gate-enforced merge complete =="
+echo "== Ranked delta + harness + ledger gate satisfied =="
