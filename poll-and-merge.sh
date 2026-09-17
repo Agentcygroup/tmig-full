@@ -2,45 +2,35 @@
 set -euo pipefail
 
 TAG="${1:-0.0.1}"
-echo "== Polling RFC-9842 Gate Status & Finalizing Sovereign Mesh Merge (Tag: $TAG) =="
+echo "== Polling polyglot land gate (Tag: $TAG) =="
 
 for repo in team-tmig tmig-full; do
   target_dir="$HOME/$repo"
-  if [ -d "$target_dir" ]; then
-    cd "$target_dir"
-    PR_NUM=$(gh pr list --head "fix/mesh-compliance" --json number --jq '.[0].number' || true)
+  [[ -d "$target_dir" ]] || continue
+  cd "$target_dir"
+  PR_NUM=$(gh pr list --head "fix/mesh-compliance" --json number --jq '.[0].number' || true)
+  [[ -n "${PR_NUM:-}" ]] || continue
 
-    if [ -n "${PR_NUM:-}" ]; then
-      echo "Monitoring PR #$PR_NUM on Agentcygroup/$repo..."
-
-      # Wait for required status check 'gate' to pass
-      while true; do
-        STATUS=$(gh pr checks "$PR_NUM" --json name,state --jq '.[] | select(.name=="gate") | .state' || echo "PENDING")
-        if [ "$STATUS" = "SUCCESS" ] || [ "$STATUS" = "COMPLETED" ]; then
-          echo "Gate status check passed for PR #$PR_NUM."
-          break
-        elif [ "$STATUS" = "FAILURE" ]; then
-          echo "Error: Gate status check failed for PR #$PR_NUM."
-          exit 1
-        fi
-        echo "Awaiting 'gate' check... current state: ${STATUS:-PENDING}"
+  echo "Monitoring PR #$PR_NUM on Agentcygroup/$repo..."
+  while true; do
+    STATUS=$(gh pr checks "$PR_NUM" --json name,state --jq '.[] | select(.name=="land") | .state' | head -1)
+    case "${STATUS:-PENDING}" in
+      SUCCESS|COMPLETED) break ;;
+      FAILURE|ERROR|CANCELLED|TIMED_OUT)
+        echo "DENY_LAND: required 'land' check is $STATUS" >&2
+        exit 1
+        ;;
+      *)
+        echo "Awaiting land check: ${STATUS:-PENDING}"
         sleep 10
-      done
+        ;;
+    esac
+  done
 
-      # Execute compliant squash merge with admin privileges
-      gh pr merge "$PR_NUM" --squash --admin --delete-branch
-      git checkout main
-      git pull origin main
-    fi
-  fi
+  # No --admin bypass. Repository rules remain authoritative.
+  gh pr merge "$PR_NUM" --squash --delete-branch
+  git checkout main
+  git pull --ff-only origin main
 done
 
-echo "== Verifying Apple Silicon MLX Cluster Node Synchronization =="
-for node in node-01 node-02 node-03; do
-  receipt_path="$HOME/receipts/Agentcygroup/mlx-cluster/$node/toroidal_state.json"
-  if [ -f "$receipt_path" ]; then
-    echo "Node [$node]: Verified Kaleidogami Bounding & Toroidal State."
-  fi
-done
-
-echo "== 100x Sovereign Mesh Pipeline Successfully Closed & Deployed =="
+echo "== Land gate satisfied =="
