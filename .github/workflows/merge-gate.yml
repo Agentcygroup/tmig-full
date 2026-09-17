@@ -1,0 +1,87 @@
+name: merge-gate
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: merge-gate-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  rust-verify:
+    runs-on: macos-14
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with: { fetch-depth: 0, persist-credentials: false }
+      - uses: dtolnay/rust-toolchain@stable
+      - name: rust workspace
+        run: |
+          cargo fmt --all -- --check
+          cargo clippy --all-targets --all-features -- -D warnings
+          cargo test --release --all-targets
+
+  gate:
+    name: land
+    needs: rust-verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with: { fetch-depth: 0, persist-credentials: false }
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: actions/setup-go@v5
+        with: { go-version: '1.22.x' }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - uses: ruby/setup-ruby@v1
+        with: { ruby-version: '3.3' }
+      - name: derive range
+        id: range
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            echo "base=${{ github.event.pull_request.base.sha }}" >> "$GITHUB_OUTPUT"
+            echo "head=${{ github.event.pull_request.head.sha }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "base=$(git rev-parse HEAD^)" >> "$GITHUB_OUTPUT"
+            echo "head=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          fi
+      - name: rank deltas
+        run: |
+          mkdir -p gate-out
+          python3 gate/merge_gate.py rank \
+            --base '${{ steps.range.outputs.base }}' \
+            --head '${{ steps.range.outputs.head }}' \
+            --output gate-out/delta-ranked.json
+      - name: polyglot harness
+        env:
+          RUST_UPSTREAM_PASS: '1'
+        run: bash gate/polyglot_harness.sh gate-out/delta-ranked.json gate-out/harness.json gate-out/ledger.jsonl
+      - name: grade ledger
+        run: |
+          python3 gate/merge_gate.py grade-ledger \
+            --ledger gate-out/ledger.jsonl \
+            --output gate-out/ledger-grade.json
+      - name: decide land
+        run: |
+          python3 gate/merge_gate.py evaluate \
+            --delta gate-out/delta-ranked.json \
+            --harness gate-out/harness.json \
+            --ledger-grade gate-out/ledger-grade.json \
+            --output gate-out/land-decision.json
+          grep -q '"decision": "ALLOW_LAND"' gate-out/land-decision.json
+      - name: upload gate evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: merge-gate-evidence-${{ github.sha }}
+          path: gate-out/
+          if-no-files-found: error
