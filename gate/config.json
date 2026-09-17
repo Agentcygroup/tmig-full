@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "minimum_ledger_grade_by_delta_rank": {
+    "critical": "A",
+    "high": "A",
+    "medium": "B",
+    "low": "C"
+  },
+  "rank_thresholds": {
+    "critical": 90,
+    "high": 70,
+    "medium": 40,
+    "low": 0
+  },
+  "critical_paths": [
+    ".github/workflows/",
+    "gate/",
+    "policy/",
+    "policies/",
+    "crates/kernel/",
+    "crates/policy/",
+    "crates/policy-eval/",
+    "Cargo.lock",
+    "go.mod",
+    "go.sum",
+    "rust-toolchain.toml",
+    "scripts/local-verify.sh",
+    "poll-and-merge.sh",
+    "squash-merge.sh"
+  ],
+  "high_paths": [
+    "crates/",
+    "go/",
+    "tmig/",
+    "bindings/",
+    "infra/",
+    "lifecycle/",
+    "ci/",
+    "harnesses/",
+    "checks/"
+  ],
+  "language_extensions": {
+    ".rs": "rust",
+    ".go": "go",
+    ".py": "python",
+    ".js": "node",
+    ".mjs": "node",
+    ".cjs": "node",
+    ".rb": "ruby",
+    ".sh": "shell",
+    ".cedar": "cedar",
+    ".usda": "usd",
+    ".toml": "config",
+    ".yml": "config",
+    ".yaml": "config",
+    ".json": "config"
+  },
+  "grade_points": {
+    "A": 4,
+    "B": 3,
+    "C": 2,
+    "D": 1,
+    "F": 0
+  }
+}
