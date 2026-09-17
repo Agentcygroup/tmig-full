@@ -2,7 +2,7 @@
 set -euo pipefail
 
 TAG="${1:-0.0.1}"
-echo "== Polling polyglot land gate (Tag: $TAG) =="
+echo "== Polling ranked polyglot merge gate (Tag: $TAG) =="
 
 for repo in team-tmig tmig-full; do
   target_dir="$HOME/$repo"
@@ -13,15 +13,15 @@ for repo in team-tmig tmig-full; do
 
   echo "Monitoring PR #$PR_NUM on Agentcygroup/$repo..."
   while true; do
-    STATUS=$(gh pr checks "$PR_NUM" --json name,state --jq '.[] | select(.name=="land") | .state' | head -1)
+    STATUS=$(gh pr checks "$PR_NUM" --json name,state --jq '.[] | select(.name=="gate") | .state' | head -1)
     case "${STATUS:-PENDING}" in
       SUCCESS|COMPLETED) break ;;
       FAILURE|ERROR|CANCELLED|TIMED_OUT)
-        echo "DENY_LAND: required 'land' check is $STATUS" >&2
+        echo "DENY_LAND: required 'gate' check is $STATUS" >&2
         exit 1
         ;;
       *)
-        echo "Awaiting land check: ${STATUS:-PENDING}"
+        echo "Awaiting gate check: ${STATUS:-PENDING}"
         sleep 10
         ;;
     esac
@@ -33,4 +33,4 @@ for repo in team-tmig tmig-full; do
   git pull --ff-only origin main
 done
 
-echo "== Land gate satisfied =="
+echo "== Ranked delta + harness + ledger gate satisfied =="
