@@ -4,4 +4,4 @@
 # Usage:
 #   python3 -m venv ~/tmig-full/venvs/orchestration
 #   ~/tmig-full/venvs/orchestration/bin/pip install -r ~/tmig-full/requirements-orchestration.txt
-apache-airflow==3.3.0
+apache-airflow==3.3.1
