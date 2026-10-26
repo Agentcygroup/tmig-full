@@ -100,7 +100,7 @@ cryptography>=43.0.3,<44
 pyjwt>=2.10.1,<3
 oauthlib==3.2.2
 pycryptodome==3.20.0
-paramiko==3.5.0
+paramiko==5.0.0
 
 # ---------------------------------------------------------------- testing
 pytest==9.0.3
