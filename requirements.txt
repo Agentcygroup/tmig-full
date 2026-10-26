@@ -35,7 +35,7 @@ gymnasium==0.29.1
 stable-baselines3==2.3.2
 ray[tune]>=2.39.0,<3
 optuna==4.0.0
-hyperopt==0.2.7
+hyperopt==0.3.0
 
 # ---------------------------------------------------------------- workflow
 mlflow>=2.19.0,<3
